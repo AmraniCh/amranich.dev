@@ -3,7 +3,8 @@
 return [
     'production' => false,
     'baseUrl' => '',
-    'title' => 'Jigsaw',
-    'description' => 'Website description.',
+    'title' => 'I\'m almost there!',
+    'description' => 'PHP, JavaScript Specialist, Open source Enthusiast',
     'collections' => [],
+    'siteName' => 'El Amrani Chakir',
 ];
