@@ -14,6 +14,9 @@ module.exports = {
       backgroundSize: {
         'fit': '100% 100%',
       },
+      letterSpacing: {
+        'widest-x2': '.25em',
+      },
     },
     backgroundImage: theme => ({
       'glass': "url('/assets/images/glass-bg.png')",
@@ -22,9 +25,6 @@ module.exports = {
     colors: {
       'black': '#444444',
       'brown': '#8A6445',
-    },
-    letterSpacing: {
-      'widest-x2': '.25em',
     },
   },
   variants: {
