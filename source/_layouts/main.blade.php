@@ -22,9 +22,9 @@
 
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
     </head>
-    <body class="font-ubuntu">
+    <body class="h-screen font-ubuntu tracking-wide bg-glass bg-no-repeat bg-fit flex justify-center items-center">
+
         @yield('body')
 
-        {{-- <script src="{{ mix('js/main.js', 'assets/build') }}"></script> --}}
     </body>
 </html>
