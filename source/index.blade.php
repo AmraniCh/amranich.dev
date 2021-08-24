@@ -1,11 +1,9 @@
 @extends('_layouts.main')
 
 @section('body')
-{{-- <img class="absolute top-28 left-2/4 transform -translate-x-2/4 w-24 h-24" src="assets/images/logo.png"> --}}
-
 <div class="flex flex-col justify-center items-center text-black select-none">
-    <img class="w-24 h-24 sm:absolute sm:top-8 sm:left-8" src="assets/images/logo.png" alt="El Amrani Chakir">
-    <img class="rounded-full mt-6 mb-4 w-40 h-40" src="assets/images/me.png" alt="El Amrani Chakir">
+    <img class="w-24 sm:absolute sm:top-8 sm:left-8" src="assets/images/logo.png" alt="El Amrani Chakir">
+    <img class="rounded-full mt-6 mb-4 w-40" src="assets/images/me.png" alt="El Amrani Chakir">
     <h1 class="text-2xl">amranich.dev</h1>
     <p class="text-4xl py-2 font-medium text-brown sm:text-6xl sm:pt-2">I am almost there!</p>
     <div class="py-2 flex flex-col align-start sm:flex-row sm:space-x-12 sm:pt-2">
@@ -21,6 +19,5 @@
         </a>
     </div>
 </div>
-
-<span class="absolute text-sm bottom-4 tracking-widest-x2 sm:right-8">{{ $page->email }}</span>
+<span class="absolute text-sm bottom-4 right-4 tracking-widest-x2 sm:right-8">{{ $page->email }}</span>
 @endsection
