@@ -1,0 +1,45 @@
+name: 🚀 Deloyement via FTP
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
+
+      - name: 🐘 Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+
+      - name: ℹ️ Check PHP Version
+        run: php -v
+
+      - name: ℹ️ Check Composer Version
+        run: composer -V
+
+      - name: 📦 Install dependencies for PHP
+        run: composer update --prefer-dist --no-progress
+
+      - uses: ⭐ actions/setup-node@v2
+        with:
+          node-version: '14'
+      - run: npm install
+      - run: npm run prod
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        with:
+          server: ${{ secrets.ftp_hostname }}
+          username: ${{ secrets.ftp_username }}
+          password: ${{ secrets.ftp_password }}
+          port: ${{ secrets.ftp_port }}
+          local-dir: ./build_production/
+          server-dir: .
