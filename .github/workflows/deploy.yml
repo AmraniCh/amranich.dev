@@ -28,11 +28,14 @@ jobs:
       - name: 📦 Install dependencies for PHP
         run: composer update --prefer-dist --no-progress
 
-      - uses: ⭐ actions/setup-node@v2
+      - name: ⭐ Setup NodeJs
+        uses: actions/setup-node@v2
         with:
           node-version: '14'
       - run: npm install
-      - run: npm run prod
+
+      - name: ⚙️ Run production
+        run: npm run prod
 
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
@@ -42,4 +45,4 @@ jobs:
           password: ${{ secrets.ftp_password }}
           port: ${{ secrets.ftp_port }}
           local-dir: ./build_production/
-          server-dir: .
+          server-dir: ./
