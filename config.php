@@ -10,7 +10,7 @@ return [
     'links' => [
         'github' => 'https://github.com/amranich',
         'behance' => 'https://www.behance.net/amranich',
-        'linkedin' => 'https://www.linkedin.com/in/el-amrani-chakir/',
+        'linkedin' => 'https://www.linkedin.com/in/el-amrani-shakir/',
     ],
     'email' => 'contact@amranich.dev',
 ];
