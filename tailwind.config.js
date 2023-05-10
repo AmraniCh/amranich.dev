@@ -12,6 +12,7 @@ module.exports = {
       colors: {
         'black': '#444444',
         'brown': '#8A6445',
+        'bg': '#E1C171',
       },
       backgroundImage: theme => ({
         'glass': "url('/assets/images/glass-bg.png')"

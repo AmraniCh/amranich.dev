@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="{{ $page->language ?? 'en' }}">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="{{ $page->description ?? $page->siteDescription }}">
+        <meta name="description" content="PHP, JavaScript Specialist, Open source Enthusiast">
 
-        <meta property="og:title" content="{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->siteName }}"/>
-        <meta property="og:type" content="{{ $page->type ?? 'website' }}" />
-        <meta property="og:url" content="{{ $page->getUrl() }}"/>
-        <meta property="og:description" content="{{ $page->description ?? $page->siteDescription }}" />
+        <meta property="og:title" content="I am almost there! | El Amrani Chakir"/>
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://amranich.dev/"/>
+        <meta property="og:description" content="PHP, JavaScript Specialist, Open source Enthusiast" />
 
-        <title>{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}</title>
+        <title>I am almost there! | El Amrani Chakir</title>
 
-        <link rel="home" href="{{ $page->baseUrl }}">
+        <link rel="home" href="https://amranich.dev">
 
         <link rel="shortcut icon" type="image/x-icon" href="/assets/icons/favicon.ico" />
         <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png" />
@@ -45,12 +45,35 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap">
 
-        <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=0847510c20015ae257b6c0b437f35784">
     </head>
     <body class="h-screen font-ubuntu tracking-wide bg-bg p-8">
         <div class="bg-glass bg-no-repeat bg-fit flex justify-center items-center h-full relative">
-            @yield('body')
+            <div class="flex flex-col justify-center items-center text-black select-none">
+    <img class="w-24 sm:absolute sm:top-8 sm:left-8" src="assets/images/logo.svg" alt="El Amrani Chakir">
+    <img class="rounded-full mt-6 mb-4 w-40" src="assets/images/me.jpg" alt="El Amrani Chakir">
+    <h1 class="text-2xl">amranich.dev</h1>
+    <p class="text-4xl py-2 font-medium text-brown sm:text-6xl sm:pt-2">I am almost there!</p>
+    <div class="py-2 flex flex-col align-start sm:flex-row sm:space-x-12 sm:pt-2">
+        <a class="tracking-widest-x2" href="https://github.com/amranich" target="blank">GitHub
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block bounce-right-animation" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                A<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+        </a>
+        <a class="tracking-widest-x2" href="https://www.linkedin.com/in/el-amrani-shakir/" target="blank">Linkedin
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block bounce-right-animation" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                A<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+        </a>
+        <a class="tracking-widest-x2" href="https://www.behance.net/amranich" target="blank">Behance
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block bounce-right-animation" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+        </a>
+    </div>
+</div>
+<span class="absolute text-sm bottom-4 tracking-widest-x2 sm:right-4 sm:right-8">contact@amranich.dev</span>
         </div>
-        <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
+        <script src="/assets/build/js/main.js?id=9a3976b92064a906dd1560b2bb4e8ca2"></script>
     </body>
 </html>
