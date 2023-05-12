@@ -10,6 +10,10 @@ mix.jigsaw()
         require('postcss-import'),
         require('tailwindcss'),
     ])
+    .css('source/_assets/css/app-down.css', 'css', [
+        require('postcss-import'),
+        require('tailwindcss'),
+    ])
     .options({
         processCssUrls: false,
     })

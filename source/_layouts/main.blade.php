@@ -8,10 +8,10 @@
 
         <meta property="og:title" content="{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->siteName }}"/>
         <meta property="og:type" content="{{ $page->type ?? 'website' }}" />
-        <meta property="og:url" content="{{ $page->getUrl() }}"/>
+        <meta property="og:url" content="/"/>
         <meta property="og:description" content="{{ $page->description ?? $page->siteDescription }}" />
 
-        <title>{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}</title>
+        <title>{{ $page->title ?? $page->siteName }}</title>
 
         <link rel="home" href="{{ $page->baseUrl }}">
 
@@ -45,12 +45,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap">
 
-        <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
+        <link rel="stylesheet" href="{{ mix($page->maintenance->enabled ? 'css/app-down.css' : 'css/main.css', 'assets/build') }}">
+
     </head>
-    <body class="h-screen font-ubuntu tracking-wide bg-bg p-8">
-        <div class="bg-glass bg-no-repeat bg-fit flex justify-center items-center h-full relative">
-            @yield('body')
-        </div>
+    <body class="font-ubuntu">
+        @yield('body')
         <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
     </body>
 </html>
