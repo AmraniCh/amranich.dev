@@ -2,10 +2,10 @@
 
 use TightenCo\Jigsaw\Jigsaw;
 
-/** @var $container \Illuminate\Container\Container */
-/** @var $events \TightenCo\Jigsaw\Events\EventBus */
+/** @var \Illuminate\Container\Container $container */
+/** @var \TightenCo\Jigsaw\Events\EventBus $events */
 
-/**
+/*
  * You can run custom code at different stages of the build process by
  * listening to the 'beforeBuild', 'afterCollections', and 'afterBuild' events.
  *
@@ -16,8 +16,7 @@ use TightenCo\Jigsaw\Jigsaw;
  * });
  */
 
-
-$events->beforeBuild(function (Jigsaw $jigsaw) {
+ $events->beforeBuild(function (Jigsaw $jigsaw) {
     $maintenanceConfig = $jigsaw->getConfig('maintenance');
 
     if ($maintenanceConfig['enabled']) {
@@ -30,7 +29,6 @@ $events->beforeBuild(function (Jigsaw $jigsaw) {
         );
     }
 });
-
 $events->afterBuild(function (Jigsaw $jigsaw) {
     $maintenanceConfig = $jigsaw->getConfig('maintenance');
     
