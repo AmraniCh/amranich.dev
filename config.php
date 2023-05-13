@@ -8,9 +8,9 @@ return [
 
     'collections'     => [],
 
-    'siteName'        => 'El Amrani Shakir Website',
+    'siteName'        => 'El Amrani Shakir\'s Website',
 
-    'siteDescription' => 'Passionate developer who loves building things from scratch, coding, problem-solving, and contributing to the open source community. Enjoys continuous learning.',
+    'siteDescription' => 'A software developer who loves building things from scratch, coding, problem-solving, and contributing to the open source community. Enjoys continuous learning.',
 
     'links'           => [
 
@@ -31,7 +31,7 @@ return [
         
         'enabled'         => true,
 
-        'siteName'        => 'El Amrani Shakir Website - Coming Soon',
+        'siteName'        => 'El Amrani Shakir\'s Website - Coming Soon',
         
     ],
 ];
