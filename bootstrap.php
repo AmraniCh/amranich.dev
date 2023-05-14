@@ -35,6 +35,9 @@ $events->afterBuild(function (Jigsaw $jigsaw) {
     if ($maintenanceConfig['enabled']) {
         $maintenancePageContent = $jigsaw->readOutputFile('app-down/index.html');
         $jigsaw->writeOutputFile('index.html', $maintenancePageContent);
+        unlink($jigsaw->getDestinationPath() . '/' . 'assets/build/css/main.css');
+    } else {
+        unlink($jigsaw->getDestinationPath() . '/' . 'assets/build/css/app-down.css');
     }
 
     unlink($jigsaw->getDestinationPath() . '/' . 'app-down/index.html');
