@@ -13,7 +13,7 @@ module.exports = {
       colors: {
         'black': '#444444',
         'brown': '#8A6445',
-        'bg': '#E1C171',
+        'yellow': '#E1C171',
       },
       backgroundImage: theme => ({
         'glass': "url('/assets/images/glass-bg.png')"
@@ -23,6 +23,10 @@ module.exports = {
       },
       letterSpacing: {
         'widest-x2': '.25em',
+      },
+      flexGrow: {
+        1: '1',
+        2: '2',
       },
     },
   },

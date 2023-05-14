@@ -48,8 +48,14 @@
         <link rel="stylesheet" href="{{ mix($page->maintenance->enabled ? 'css/app-down.css' : 'css/main.css', 'assets/build') }}">
 
     </head>
-    <body class="font-ubuntu">
-        @yield('body')
+    <body class="font-ubuntu text-black">
+
+        <div class="h-screen bg-yellow p-2 lg:p-8">
+            @yield('body')
+        </div>
+        
         <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
+
+        @stack('scripts')
     </body>
 </html>

@@ -29,7 +29,7 @@ return [
 
      'maintenance' => [
         
-        'enabled'         => true,
+        'enabled'         => false,
 
         'siteName'        => 'El Amrani Shakir\'s Website - Coming Soon',
         

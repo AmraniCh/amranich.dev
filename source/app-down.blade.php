@@ -1,7 +1,7 @@
 @extends('_layouts.main')
 
 @section('body')
-    <div class="h-screen bg-bg p-8">
+    <div class="h-screen bg-yellow p-8">
         <div class="bg-glass bg-no-repeat bg-fit flex justify-center items-center h-full relative rounded-lg">
             <div class="flex flex-col justify-center items-center text-black">
                 <img class="w-24 mb-4 sm:mb-0 sm:absolute sm:top-8 sm:left-8 select-none" src="assets/images/logo.svg" alt="El Amrani Chakir">
