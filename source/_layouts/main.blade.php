@@ -50,7 +50,7 @@
     </head>
     <body class="font-ubuntu text-black">
 
-        <div class="h-screen bg-yellow p-2 lg:p-8">
+        <div class="h-screen bg-yellow p-2 lg:p-8 relative">
             @yield('body')
         </div>
         
