@@ -40,6 +40,10 @@ $events->afterBuild(function (Jigsaw $jigsaw) {
         unlink($jigsaw->getDestinationPath() . '/' . 'assets/build/css/app-down.css');
     }
 
-    unlink($jigsaw->getDestinationPath() . '/' . 'app-down/index.html');
-    rmdir($jigsaw->getDestinationPath() . '/' . 'app-down');
+    if (file_exists($jigsaw->getDestinationPath() . '/' . 'app-down/index.html')) {
+        unlink($jigsaw->getDestinationPath() . '/' . 'app-down/index.html');
+    }
+    if (file_exists($jigsaw->getDestinationPath() . '/' . 'app-down')) {
+        rmdir($jigsaw->getDestinationPath() . '/' . 'app-down');
+    }
 });
