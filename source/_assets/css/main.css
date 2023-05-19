@@ -6,3 +6,12 @@
 /* .border-bone-300 {
     border-color: ;
 } */
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

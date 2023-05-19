@@ -20,7 +20,7 @@
                 </button>
 
                 <ul id="navbar-default"
-                    class="hidden flex flex-col grow-1 bg-slate-50 rounded p-4 w-full mb-4 lg:flex lg:justify-between lg:flex-row lg:sticky lg:bg-transparent lg:w-auto lg:mr-8 lg:mb-0">
+                    class="hidden flex flex-col grow-1 bg-slate-50 rounded p-4 w-full mb-4 lg:flex lg:justify-between lg:flex-row lg:sticky lg:bg-transparent lg:w-auto lg:mr-10 lg:mb-0">
 
                     <li><a href="#home"
                             class="block py-2 px-4 mb-2 rounded text-white relative bg-yellow before:content-[''] before:block before:w-0 before:h-1 before:rounded before:absolute before:-top-2 before:bg-yellow before:ease-linear before:duration-200 lg:before:active:w-full lg:before:w-full lg:bg-transparent lg:text-inherit lg:p-0 lg:hover:bg-inherit lg:mb-0">Home</a>
@@ -37,14 +37,6 @@
                     <li><a href="#contact"
                             class="block py-2 px-4 rounded hover:bg-slate-100 relative before:content-[''] before:block before:w-0 before:h-1 before:rounded before:absolute before:-top-2 before:bg-yellow before:ease-linear before:duration-200 lg:before:active:w-full lg:before:hover:w-full lg:bg-transparent lg:text-inherit lg:p-0 lg:hover:bg-inherit lg:mb-0">Contact
                             Me</a></li>
-
-                    {{-- <li><button type="button" id="dark-mode-toggle-btn" class="absolute bottom-4 right-4 lg:sticky -ml-2"><svg
-                            class="h-6 w-6 fill-black" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z">
-                            </path>
-                        </svg></button></li> --}}
                 </ul>
             </div>
             <!-- Top Bar End -->
@@ -85,31 +77,35 @@
             </div>
             <!-- Hero End -->
 
-            <!-- [Language Switcher & Social Links & Scroll Down Indicator && Dark Mode Switcher] Start -->
-            <div class="flex justify-between lg:mb-5 lg:justify-end lg:relative">
+            <!-- Top Section Footer Start -->
+            <div id="top-section-footer" class="flex justify-between -mb-5 lg:mb-1 lg:justify-center lg:relative">
                 <!-- Social Links Start -->
-                <ul class="hidden lg:block lg:absolute lg:bottom-10 lg:left-0">
-                    <li class="opacity-60 -rotate-90 mt-16">Behance</li>
-                    <li class="cursor-pointer -rotate-90 mt-16">Linkedin</li>
-                    <li class="cursor-pointer -rotate-90 mt-16">Github</li>
+                <ul id="top-section-footer-social-links" class="hidden lg:block lg:absolute lg:bottom-20 lg:-left-6">
+                    <li class="text-bone text-center cursor-pointer -rotate-90 tracking-widest-x2 uppercase mb-28">Behance
+                    </li>
+                    <li class="text-bone text-center cursor-pointer -rotate-90 tracking-widest-x2 uppercase mb-28">Linkedin
+                    </li>
+                    <li class="text-bone text-center cursor-pointer -rotate-90 tracking-widest-x2 uppercase">Github</li>
                 </ul>
                 <!-- Social Links End -->
 
                 <!-- Dark Mode Switcher Start -->
-                <button type="button" id="dark-mode-toggle-btn" class="lg:fixed lg:top-[4.3rem] lg:right[80px]"><svg
-                        class="h-6 w-6 fill-black" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+                <button type="button" id="top-section-footer-dark-mode-toggle-btn" class="animate-[fade-in] lg:fixed lg:top-[4rem] lg:right-[80px]">
+                    {{-- <svg class="h-8 w-8 fill-black" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z">
                         </path>
-                    </svg></button>
+                    </svg> --}}
+                    <svg style="color: rgb(223, 211, 201);" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8V16Z" fill="#dfd3c9"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM12 4V8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16V20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4Z" fill="#dfd3c9"></path> </svg>
+                </button>
                 <!-- Dark Mode Switcher End -->
 
                 <!-- Scroll Down Icon Indicator Start -->
-                <button type="button" class="lg:absolute lg:left-1/2">
-                    <!-- animate-bounce -->
-                    <svg class="h-8 w-8 fill-bone mt-2" width="26" height="40" viewBox="0 0 26 40" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+                <button type="button" id="top-section-footer-scroll-down-indicator"
+                    class="cursor-default animate-[fade-in] hidden -mb-3 lg:mb-2 lg:block">
+                    <svg class="h-8 w-8 animate-bounce fill-bone" width="26" height="40" viewBox="0 0 26 40"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M15.8298 38.5007H10.2928C5.32281 38.5007 1.25781 34.4357 1.25781 29.4667V10.3797C1.25781 5.4107 5.32381 1.3457 10.2928 1.3457H15.8288C20.7988 1.3457 24.8638 5.4107 24.8638 10.3797V29.4667C24.8638 34.4357 20.7978 38.5007 15.8288 38.5007H15.8298Z"
                             stroke="#444444" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
@@ -123,33 +119,14 @@
                 <!-- Scroll Down Icon Indicator End -->
 
                 <!-- Language Switcher Start -->
-                <ul class="">
+                <ul id="top-section-footer-lang-switcher" class="lg:absolute lg:bottom-12 lg:right-0">
                     <li class="opacity-60">EN</li>
                     <li class="cursor-pointer">FR</li>
                 </ul>
                 <!-- Language Switcher End -->
             </div>
-            <!-- [Language Switcher & Social Links & Scroll Down Indicator && Dark Mode Switcher] End -->
+            <!-- Top Section Footer End -->
         </div>
         <!-- Top Section End -->
     </div>
 @endsection
-
-@push('scripts')
-    <script>
-        const navbarMenu = () => {
-            document.getElementById('navbar-collapse-toggle-btn')
-                .addEventListener(
-                    'click',
-                    () => document.getElementById('navbar-default').classList.toggle('hidden')
-                );
-        }
-
-        const darkModeToggle = () => {
-            console.log("dark mode not implemented yet.");
-        }
-
-
-        [navbarMenu, darkModeToggle].forEach(f => f());
-    </script>
-@endpush
