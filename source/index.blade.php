@@ -2,7 +2,8 @@
 
 @section('body')
     <!-- Top Section Start -->
-    <div class="container bg-white max-w-7xl m-auto py-4 px-5 lg:py-8 lg:px-20 rounded-lg drop-shadow-lg h-[2000px]">
+    <div
+        class="container bg-white max-w-7xl m-auto py-4 px-5 dark:bg-[#222] lg:py-8 lg:px-20 rounded-lg drop-shadow-lg h-[2000px]">
         <div class="flex flex-col justify-between h-[92vh]">
             <!-- Top Bar Start -->
             <div class="flex justify-between items-center flex-wrap">
@@ -21,37 +22,42 @@
 
                 <ul id="navbar-default"
                     class="hidden flex flex-col grow-1 bg-slate-50 rounded p-4 w-full mb-4 lg:flex lg:justify-between lg:flex-row lg:sticky lg:bg-transparent lg:w-auto lg:mr-10 lg:mb-0">
-
-                    <li><a href="#home"
-                            class="block py-2 px-4 mb-2 rounded text-white relative bg-yellow before:content-[''] before:block before:w-0 before:h-1 before:rounded before:absolute before:-top-2 before:bg-yellow before:ease-linear before:duration-200 lg:before:active:w-full lg:before:w-full lg:bg-transparent lg:text-inherit lg:p-0 lg:hover:bg-inherit lg:mb-0">Home</a>
+                    <li>
+                        <a href="#home"
+                            class="block py-2 px-4 mb-2 rounded text-white relative dark:lg:text-white before:content-[''] before:block before:w-0 before:h-1 before:rounded before:absolute before:-top-2 before:bg-yellow before:ease-linear before:duration-200 lg:before:active:w-full lg:before:w-full lg:bg-transparent lg:text-inherit lg:p-0 lg:hover:bg-inherit lg:mb-0">Home</a>
                     </li>
-                    <li><a href="#projects"
-                            class="block py-2 px-4 mb-2 rounded hover:bg-slate-100 relative before:content-[''] before:block before:w-0 before:h-1 before:rounded before:absolute before:-top-2 before:bg-yellow before:ease-linear before:duration-200 lg:before:active:w-full lg:before:hover:w-full lg:bg-transparent lg:text-inherit lg:p-0 lg:hover:bg-inherit lg:mb-0">Projects</a>
+                    <li>
+                        <a href="#projects"
+                            class="block py-2 px-4 mb-2 rounded hover:bg-slate-100 relative dark:lg:text-white before:content-[''] before:block before:w-0 before:h-1 before:rounded before:absolute before:-top-2 before:bg-yellow before:ease-linear before:duration-200 lg:before:active:w-full lg:before:hover:w-full lg:bg-transparent lg:text-inherit lg:p-0 lg:hover:bg-inherit lg:mb-0">Projects</a>
                     </li>
-                    <li><a href="#services"
-                            class="block py-2 px-4 mb-2 rounded hover:bg-slate-100 relative before:content-[''] before:block before:w-0 before:h-1 before:rounded before:absolute before:-top-2 before:bg-yellow before:ease-linear before:duration-200 lg:before:active:w-full lg:before:hover:w-full lg:bg-transparent lg:text-inherit lg:p-0 lg:hover:bg-inherit lg:mb-0">Services</a>
+                    <li>
+                        <a href="#services"
+                            class="block py-2 px-4 mb-2 rounded hover:bg-slate-100 relative dark:lg:text-white before:content-[''] before:block before:w-0 before:h-1 before:rounded before:absolute before:-top-2 before:bg-yellow before:ease-linear before:duration-200 lg:before:active:w-full lg:before:hover:w-full lg:bg-transparent lg:text-inherit lg:p-0 lg:hover:bg-inherit lg:mb-0">Services</a>
                     </li>
-                    <li><a href="#blog"
-                            class="block py-2 px-4 mb-2 rounded hover:bg-slate-100 relative before:content-[''] before:block before:w-0 before:h-1 before:rounded before:absolute before:-top-2 before:bg-yellow before:ease-linear before:duration-200 lg:before:active:w-full lg:before:hover:w-full lg:bg-transparent lg:text-inherit lg:p-0 lg:hover:bg-inherit lg:mb-0">Blog</a>
+                    <li>
+                        <a href="#blog"
+                            class="block py-2 px-4 mb-2 rounded hover:bg-slate-100 relative dark:lg:text-white before:content-[''] before:block before:w-0 before:h-1 before:rounded before:absolute before:-top-2 before:bg-yellow before:ease-linear before:duration-200 lg:before:active:w-full lg:before:hover:w-full lg:bg-transparent lg:text-inherit lg:p-0 lg:hover:bg-inherit lg:mb-0">Blog</a>
                     </li>
-                    <li><a href="#contact"
-                            class="block py-2 px-4 rounded hover:bg-slate-100 relative before:content-[''] before:block before:w-0 before:h-1 before:rounded before:absolute before:-top-2 before:bg-yellow before:ease-linear before:duration-200 lg:before:active:w-full lg:before:hover:w-full lg:bg-transparent lg:text-inherit lg:p-0 lg:hover:bg-inherit lg:mb-0">Contact
-                            Me</a></li>
+                    <li>
+                        <a href="#contact"
+                            class="block py-2 px-4 rounded hover:bg-slate-100 relative dark:lg:text-white before:content-[''] before:block before:w-0 before:h-1 before:rounded before:absolute before:-top-2 before:bg-yellow before:ease-linear before:duration-200 lg:before:active:w-full lg:before:hover:w-full lg:bg-transparent lg:text-inherit lg:p-0 lg:hover:bg-inherit lg:mb-0">Contact
+                            Me</a>
+                    </li>
                 </ul>
             </div>
             <!-- Top Bar End -->
 
             <!-- Hero Start -->
             <div
-                class="flex items-center flex-col lg:mb-12 lg:flex-row lg:justify-between md:px-16 lg:gap-7 lg:px-8 xl:gap-14 xl:px-32">
-                <img class="rounded-full mb-2 w-40 lg:w-[800px] xl:w-[1000px] select-none" src="assets/images/me.jpg"
+                class="flex items-center flex-col lg:mb-16 lg:flex-row lg:justify-between md:px-16 lg:gap-7 lg:px-8 xl:gap-14 xl:px-32">
+                <img class="rounded-full mb-2 w-40 select-none lg:w-[800px] xl:w-[1000px]" src="assets/images/me.png"
                     alt="El Amrani Chakir">
 
                 <div class="flex flex-col items-center lg:items-start">
-                    <span class="mt-2">Hi there 👋 I'am</span>
-                    <h1 class="mt-2 text-4xl font-medium">El Amrani Shakir</h1>
-                    <h2 class="mt-2 text-lg font-medium">A Software Developer</h2>
-                    <p class="mt-3 font-light text-base text-center lg:text-justify tracking-wider">
+                    <span class="mt-2 dark:text-white">Hi there 👋 I'am</span>
+                    <h1 class="mt-2 text-4xl text-center font-medium dark:text-white">El Amrani Shakir</h1>
+                    <h2 class="mt-2 text-lg text-center font-medium dark:text-white">A Software Developer</h2>
+                    <p class="mt-3 font-light text-base text-center dark:text-white lg:text-justify tracking-wider">
                         Passionate and innovitive developer who loves building new things from scratch, coding,
                         problem-solving,
                         and contributing to
@@ -90,14 +96,21 @@
                 <!-- Social Links End -->
 
                 <!-- Dark Mode Switcher Start -->
-                <button type="button" id="top-section-footer-dark-mode-toggle-btn" class="animate-[fade-in] lg:fixed lg:top-[4rem] lg:right-[80px]">
+                <button type="button" id="top-section-footer-dark-mode-toggle-btn"
+                    class="animate-[fade-in] lg:fixed lg:top-[4rem] lg:right-[80px]">
                     {{-- <svg class="h-8 w-8 fill-black" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z">
                         </path>
                     </svg> --}}
-                    <svg style="color: rgb(223, 211, 201);" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8V16Z" fill="#dfd3c9"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM12 4V8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16V20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4Z" fill="#dfd3c9"></path> </svg>
+                    <svg style="color: rgb(223, 211, 201);" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8V16Z" fill="#dfd3c9"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM12 4V8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16V20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4Z"
+                            fill="#dfd3c9"></path>
+                    </svg>
                 </button>
                 <!-- Dark Mode Switcher End -->
 
@@ -120,8 +133,8 @@
 
                 <!-- Language Switcher Start -->
                 <ul id="top-section-footer-lang-switcher" class="lg:absolute lg:bottom-12 lg:right-0">
-                    <li class="opacity-60">EN</li>
-                    <li class="cursor-pointer">FR</li>
+                    <li class="opacity-60 dark:text-white">EN</li>
+                    <li class="cursor-pointer dark:text-white">FR</li>
                 </ul>
                 <!-- Language Switcher End -->
             </div>

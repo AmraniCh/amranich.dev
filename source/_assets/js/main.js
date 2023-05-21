@@ -1,13 +1,15 @@
 const navbarMenu = () => {
     document.getElementById('navbar-collapse-toggle-btn')
-        .addEventListener(
-            'click',
-            () => document.getElementById('navbar-default').classList.toggle('hidden')
-        );
+        .addEventListener('click', () => document.getElementById('navbar-default').classList.toggle('hidden'));
 }
 
 const darkModeToggle = () => {
-    console.log("dark mode not implemented yet.");
+    const $button = document.getElementById('top-section-footer-dark-mode-toggle-btn');
+    $button.addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark');
+        const isDark = document.documentElement.classList.contains('dark');
+        localStorage.theme = isDark ? 'dark' : 'light';
+    });
 }
 
 const toggleElementOnScrollDown = () => {
@@ -16,8 +18,7 @@ const toggleElementOnScrollDown = () => {
         const $topSectionFooterSocialLinks = document.getElementById('top-section-footer-social-links');
         const $topSectionFooterLangSwitcher = document.getElementById('top-section-footer-lang-switcher');
         const $topSectionFooterDarkModeBtn = document.getElementById('top-section-footer-dark-mode-toggle-btn');
-        const $topSectionFooterScrollDownIndicator = document.getElementById(
-            'top-section-footer-scroll-down-indicator');
+        const $topSectionFooterScrollDownIndicator = document.getElementById('top-section-footer-scroll-down-indicator');
         const helpers = {
             addTransitionClasses($ele) {
                 transitionClasses.map(cls => $ele.classList.add(cls));
@@ -32,22 +33,8 @@ const toggleElementOnScrollDown = () => {
         handleScrollDownIndicator($topSectionFooterScrollDownIndicator, window.scrollY);
         handleDarkModeBtn($topSectionFooterDarkModeBtn, window.scrollY, window.innerWidth);
 
-        function handleDarkModeBtn($ele, scrollY, winWidth) {
-            if (winWidth >= 1024) {
-                return;
-            }
-
-            if (scrollY === 0) {
-                helpers.addTransitionClasses($ele);
-                $ele.classList.remove('opacity-0');
-                return;
-            }
-
-            helpers.removeTransitionClasses($ele);
-            $ele.classList.add('opacity-0');
-        }
-
         function handleSocialLinks($ele, scrollY) {
+            // console.log($ele, scrollY);
             if (scrollY === 0) {
                 helpers.addTransitionClasses($ele);
                 $ele.classList.remove('invisible');
@@ -88,17 +75,41 @@ const toggleElementOnScrollDown = () => {
             $ele.classList.add('opacity-0');
         }
 
-        
+        function handleDarkModeBtn($ele, scrollY, winWidth) {
+            if (winWidth >= 1024) {
+                return;
+            }
 
-        
+            if (scrollY === 0) {
+                helpers.addTransitionClasses($ele);
+                $ele.classList.remove('opacity-0');
+                return;
+            }
+
+            helpers.removeTransitionClasses($ele);
+            $ele.classList.add('opacity-0');
+        }
     });
 }
 
+const initDarkMode = () => {
+    const isOsDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const isStorageTheme = localStorage.theme !== undefined;
+    const isStorageDark = isStorageTheme && localStorage.theme === 'dark';
+
+    if (isStorageTheme) {
+        document.documentElement.classList[isStorageDark ? 'add' : 'remove']('dark');
+    } else {
+        document.documentElement.classList[isOsDark ? 'add' : 'remove']('dark');
+        localStorage.theme = isOsDark ? 'dark' : 'light';
+    }
+}
 
 [
 
-    navbarMenu, 
-    darkModeToggle, 
+    initDarkMode,
+    navbarMenu,
+    darkModeToggle,
     toggleElementOnScrollDown,
 
 ].forEach(f => f());
