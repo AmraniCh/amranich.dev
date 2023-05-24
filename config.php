@@ -1,10 +1,17 @@
 <?php
 
+use Illuminate\Support\Str;
+use Illuminate\Filesystem\Filesystem;
+use Illuminate\Translation\FileLoader;
+use Illuminate\Translation\Translator;
+
 return [
 
     'production'      => false,
 
     'baseUrl'         => '',
+
+    'local'           => 'en',
 
     'collections'     => [],
 
@@ -22,6 +29,20 @@ return [
 
     'email'           => 'contact@amranich.dev',
 
+    'trans'           => function ($page, $key, $locale = null) {
+        if (!$locale) {
+            $locale = $page->locale;
+        }
+
+        $loader     = new FileLoader(new Filesystem(), __DIR__ . '/lang');
+        $translator = new Translator($loader, $locale);
+
+        return $translator->get($key);
+    },
+
+    'selected'       => function ($page, $section) {
+        return Str::contains($page->getPath(), $section) ? 'selected' : '';
+    },
 
     /**
      * Maintenance mode options.

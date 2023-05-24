@@ -1,4 +1,4 @@
 ---
 extends: '_index'
-locale: en
+locale: fr
 ---

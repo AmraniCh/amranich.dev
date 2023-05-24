@@ -12,3 +12,8 @@
     opacity: 1;
   }
 }
+
+
+.lang-switcher-btn.selected {
+  @apply opacity-60 cursor-default;
+}

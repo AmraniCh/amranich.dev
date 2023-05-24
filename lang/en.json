@@ -1,0 +1,13 @@
+{
+    "nav.home": "Home",
+    "nav.projects": "projects",
+    "nav.services": "services",
+    "nav.blog": "blog",
+    "nav.contact": "contact me",
+    "hero.greet": "Hi there 👋 I'am",
+    "hero.fullname": "El Amrani Shakir",
+    "hero.title": "A Software Developer",
+    "hero.short": "Passionate and innovitive developer who loves building new things from scratch, coding, problem-solving, and contributing to the open source community. Enjoys continuous learning.",
+    "hero.resume": "resume",
+    "hero.contact": "Contact Me!"
+}

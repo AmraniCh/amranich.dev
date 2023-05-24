@@ -1,5 +1,6 @@
 {
     "require": {
-        "tightenco/jigsaw": "^1.6"
+        "tightenco/jigsaw": "^1.6",
+        "illuminate/translation": "^9.52"
     }
 }
