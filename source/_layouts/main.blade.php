@@ -54,7 +54,7 @@
             @yield('body')
         </div>
         
-        <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
+        <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
 
         @stack('scripts')
     </body>

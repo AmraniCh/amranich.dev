@@ -3,12 +3,15 @@
 @section('body')
     <!-- Top Section Start -->
     <div
-        class="container bg-white max-w-7xl m-auto py-4 px-5 dark:bg-[#222] lg:py-8 lg:px-20 rounded-lg drop-shadow-lg h-[2000px]">
-        <div class="flex flex-col justify-between h-[92vh]">
+        class="container bg-white max-w-7xl m-auto py-4 px-5 dark:bg-[#222] lg:py-8 lg:px-20 rounded-lg drop-shadow-lg h-[3000px]">
+
+        <div class="flex flex-col justify-between h-[92vh] relative">
             <!-- Top Bar Start -->
             <div class="flex justify-between items-center flex-wrap">
                 <div class="grow-2">
-                    <img class="w-16 lg:w-24 mb-4 select-none" src="/assets/images/logo.svg" alt="El Amrani Chakir">
+                    <a href="/">
+                        <img class="w-16 lg:w-24 mb-4 select-none" src="/assets/images/logo.svg" alt="El Amrani Chakir">
+                    </a>
                 </div>
 
                 <button type="button" class="lg:hidden float-right" id="navbar-collapse-toggle-btn">
@@ -21,34 +24,34 @@
                 </button>
 
                 <ul id="navbar-default"
-                    class="hidden flex flex-col grow-1 bg-slate-50 rounded p-4 w-full mb-4 lg:flex lg:justify-between lg:flex-row lg:sticky lg:bg-transparent lg:w-auto lg:mr-10 lg:mb-0">
+                    class="hidden flex flex-col grow-1 bg-bone/30 rounded p-4 w-full mb-4 lg:flex lg:justify-between lg:flex-row lg:sticky lg:bg-transparent lg:w-auto lg:mr-12 lg:mb-0">
                     <li>
                         <a href="#home"
-                            class="block py-2 px-4 mb-2 rounded capitalize text-white relative dark:lg:text-white before:content-[''] before:block before:w-0 before:h-1 before:rounded before:absolute before:-top-2 before:bg-yellow before:ease-linear before:duration-200 lg:before:active:w-full lg:before:w-full lg:bg-transparent lg:text-inherit lg:p-0 lg:hover:bg-inherit lg:mb-0">
+                            class="block py-2 px-4 mb-2 rounded capitalize text-white bg-yellow relative dark:lg:text-white before:content-[''] before:block before:w-0 before:h-1 before:rounded before:absolute before:-top-2 before:bg-yellow before:ease-linear before:duration-200 lg:before:active:w-full lg:before:w-full lg:bg-transparent lg:text-inherit lg:p-0 lg:hover:bg-inherit lg:mb-0">
                             {{ $page->trans('nav.home') }}
                         </a>
                     </li>
                     <li>
                         <a href="#projects"
-                            class="block py-2 px-4 mb-2 rounded capitalize hover:bg-slate-100 relative dark:lg:text-white before:content-[''] before:block before:w-0 before:h-1 before:rounded before:absolute before:-top-2 before:bg-yellow before:ease-linear before:duration-200 lg:before:active:w-full lg:before:hover:w-full lg:bg-transparent lg:text-inherit lg:p-0 lg:hover:bg-inherit lg:mb-0">
+                            class="block py-2 px-4 mb-2 rounded capitalize hover:bg-slate-50 relative dark:lg:text-white before:content-[''] before:block before:w-0 before:h-1 before:rounded before:absolute before:-top-2 before:bg-yellow before:ease-linear before:duration-200 lg:before:active:w-full lg:before:hover:w-full lg:bg-transparent lg:text-inherit lg:p-0 lg:hover:bg-inherit lg:mb-0">
                             {{ $page->trans('nav.projects') }}
                         </a>
                     </li>
                     <li>
                         <a href="#services"
-                            class="block py-2 px-4 mb-2 rounded capitalize hover:bg-slate-100 relative dark:lg:text-white before:content-[''] before:block before:w-0 before:h-1 before:rounded before:absolute before:-top-2 before:bg-yellow before:ease-linear before:duration-200 lg:before:active:w-full lg:before:hover:w-full lg:bg-transparent lg:text-inherit lg:p-0 lg:hover:bg-inherit lg:mb-0">
+                            class="block py-2 px-4 mb-2 rounded capitalize hover:bg-slate-50 relative dark:lg:text-white before:content-[''] before:block before:w-0 before:h-1 before:rounded before:absolute before:-top-2 before:bg-yellow before:ease-linear before:duration-200 lg:before:active:w-full lg:before:hover:w-full lg:bg-transparent lg:text-inherit lg:p-0 lg:hover:bg-inherit lg:mb-0">
                             {{ $page->trans('nav.services') }}
                         </a>
                     </li>
                     <li>
                         <a href="#blog"
-                            class="block py-2 px-4 mb-2 rounded capitalize hover:bg-slate-100 relative dark:lg:text-white before:content-[''] before:block before:w-0 before:h-1 before:rounded before:absolute before:-top-2 before:bg-yellow before:ease-linear before:duration-200 lg:before:active:w-full lg:before:hover:w-full lg:bg-transparent lg:text-inherit lg:p-0 lg:hover:bg-inherit lg:mb-0">
+                            class="block py-2 px-4 mb-2 rounded capitalize hover:bg-slate-50 relative dark:lg:text-white before:content-[''] before:block before:w-0 before:h-1 before:rounded before:absolute before:-top-2 before:bg-yellow before:ease-linear before:duration-200 lg:before:active:w-full lg:before:hover:w-full lg:bg-transparent lg:text-inherit lg:p-0 lg:hover:bg-inherit lg:mb-0">
                             {{ $page->trans('nav.blog') }}
                         </a>
                     </li>
                     <li>
                         <a href="#contact"
-                            class="block py-2 px-4 rounded capitalize hover:bg-slate-100 relative dark:lg:text-white before:content-[''] before:block before:w-0 before:h-1 before:rounded before:absolute before:-top-2 before:bg-yellow before:ease-linear before:duration-200 lg:before:active:w-full lg:before:hover:w-full lg:bg-transparent lg:text-inherit lg:p-0 lg:hover:bg-inherit lg:mb-0">
+                            class="block py-2 px-4 rounded capitalize hover:bg-slate-50 relative dark:lg:text-white before:content-[''] before:block before:w-0 before:h-1 before:rounded before:absolute before:-top-2 before:bg-yellow before:ease-linear before:duration-200 lg:before:active:w-full lg:before:hover:w-full lg:bg-transparent lg:text-inherit lg:p-0 lg:hover:bg-inherit lg:mb-0">
                             {{ $page->trans('nav.contact') }}
                         </a>
                     </li>
@@ -57,21 +60,23 @@
             <!-- Top Bar End -->
 
             <!-- Hero Start -->
-            <div
-                class="flex items-center flex-col lg:mb-16 lg:flex-row lg:justify-between md:px-16 lg:gap-5 lg:px-8 xl:px-32">
+            <div class="flex items-center flex-col lg:mb-16 lg:flex-row lg:justify-between md:px-16 xl:gap-5 xl:px-32">
                 <img class="rounded-full mb-2 w-40 select-none lg:w-[800px] xl:w-[1000px]" src="/assets/images/me.png"
                     alt="El Amrani Chakir">
 
                 <div class="flex flex-col items-center lg:items-start">
                     <span class="mt-2 dark:text-white">{{ $page->trans('hero.greet') }}</span>
-                    <h1 class="mt-2 text-4xl text-center font-medium dark:text-white">{{ $page->trans('hero.fullname') }}</h1>
-                    <h2 class="mt-2 text-lg text-center font-medium dark:text-white">{{ $page->trans('hero.title') }}</h2>
-                    <p class="mt-4 font-light text-base text-center dark:text-white lg:text-justify tracking-wider">
+                    <h1 class="mt-2 text-4xl text-center font-medium capitalize dark:text-white">
+                        {{ $page->trans('hero.fullname') }}</h1>
+                    <h2 class="mt-2 text-lg text-center font-medium capitalize dark:text-white">
+                        {{ $page->trans('hero.title') }}</h2>
+                    <p
+                        class="mt-4 font-light text-base text-center capitalize dark:text-white lg:text-justify tracking-wider">
                         {{ $page->trans('hero.short') }}
                     </p>
                     <div class="mt-5 flex justify-between gap-5 md:justify-start">
                         <button type="button"
-                            class="flex items-center bg-yellow text-white py-2 px-3 rounded-sm uppercase border-2 border-bone hover:opacity-75 active:opacity-100">
+                            class="flex items-center bg-yellow text-white py-2 px-3 rounded-sm capitalize border-2 border-bone hover:opacity-75 active:opacity-100">
                             <svg class="h-4 w-4 fill-white mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                                 <path
@@ -94,19 +99,22 @@
                 <!-- Social Links Start -->
                 <ul id="top-section-footer-social-links" class="hidden lg:block lg:absolute lg:bottom-20 lg:-left-6">
                     <li>
-                        <a href="{{ $page->links->behance }}" target="blank" class="block text-bone text-center cursor-pointer -rotate-90 tracking-widest-x2 uppercase mb-28">
+                        <a href="{{ $page->links->behance }}" target="blank"
+                            class="block text-bone text-center cursor-pointer -rotate-90 tracking-widest-x2 uppercase mb-28 hover:opacity-70">
                             Behance
                         </a>
 
                     </li>
                     <li>
-                        <a href="{{ $page->links->linkedin }}" target="blank" class="block text-bone text-center cursor-pointer -rotate-90 tracking-widest-x2 uppercase mb-28">
+                        <a href="{{ $page->links->linkedin }}" target="blank"
+                            class="block text-bone text-center cursor-pointer -rotate-90 tracking-widest-x2 uppercase mb-28 hover:opacity-70">
                             Linkedin
                         </a>
 
                     </li>
                     <li>
-                        <a href="{{ $page->links->github }}" target="blank" class="block text-bone text-center cursor-pointer -rotate-90 tracking-widest-x2 uppercase">
+                        <a href="{{ $page->links->github }}" target="blank"
+                            class="block text-bone text-center cursor-pointer -rotate-90 tracking-widest-x2 uppercase hover:opacity-70">
                             Github
                         </a>
                     </li>
@@ -115,7 +123,7 @@
 
                 <!-- Dark Mode Switcher Start -->
                 <button type="button" id="top-section-footer-dark-mode-toggle-btn"
-                    class="animate-[fade-in] lg:fixed lg:top-[4rem] lg:right-[80px]">
+                    class="lg:fixed lg:top-[4rem] lg:right-[80px]">
                     {{-- <svg class="h-8 w-8 fill-black" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -134,7 +142,7 @@
 
                 <!-- Scroll Down Icon Indicator Start -->
                 <button type="button" id="top-section-footer-scroll-down-indicator"
-                    class="cursor-default animate-[fade-in] hidden -mb-3 lg:mb-2 lg:block">
+                    class="cursor-default hidden -mb-3 lg:mb-2 lg:block">
                     <svg class="h-8 w-8 animate-bounce fill-bone" width="26" height="40" viewBox="0 0 26 40"
                         fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -152,16 +160,27 @@
                 <!-- Language Switcher Start -->
                 <ul id="top-section-footer-lang-switcher-container" class="lg:absolute lg:bottom-12 lg:right-0">
                     <li>
-                        <a href="/en" class="lang-switcher-btn dark:text-white {{ $page->selected('en') }}">EN</a>
+                        <a href="/en" class="lang-switcher-btn dark:text-white {{ $page->selected('en') }}"
+                            data-default="true">EN</a>
                     </li>
                     <li>
-                        <a href="/fr" class="lang-switcher-btn cursor-pointer dark:text-white {{ $page->selected('fr') }}">FR</a>
+                        <a href="/fr"
+                            class="lang-switcher-btn cursor-pointer dark:text-white {{ $page->selected('fr') }}">FR</a>
                     </li>
                 </ul>
                 <!-- Language Switcher End -->
             </div>
             <!-- Top Section Footer End -->
+
+            <!-- Animated Background SVGs Start -->
+            <div id="svgs-container" class="absolute h-full w-full -z-50">
+            </div>
+            <!-- Animated Background SVGs End -->
+
+            <!-- Top Section Footer End -->
+
         </div>
         <!-- Top Section End -->
+
     </div>
 @endsection
