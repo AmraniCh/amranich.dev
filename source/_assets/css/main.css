@@ -2,7 +2,6 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-
 @keyframes sparkling {
   0% {
     opacity: .3; 
@@ -32,10 +31,9 @@
 .animate-sparkling {
   animation-name: sparkling;
   animation-timing-function: linear;
-  animation-duration: 5s;
+  animation-duration: 7s;
   animation-iteration-count: infinite;
 }
-
 
 .lang-switcher-btn.selected {
   @apply opacity-60 cursor-default;

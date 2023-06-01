@@ -1,3 +1,4 @@
+import settings from "../settings";
 import heroBackgroundEffects from "./hero-background-effects";
 
 export default function (hideOnScrollY) {

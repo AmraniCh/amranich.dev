@@ -2,7 +2,7 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
  content: require('fast-glob').sync([
-    'source/**/*.{blade.php,blade.md,md,html,vue,js}',
+    'source/**/*.{blade.php,blade.md,md,html,vue,js,css}',
     '!source/**/_tmp/*', // exclude temporary files
     'lang/*' // exclude temporary files
   ],{ dot: true }),
