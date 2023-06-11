@@ -20,32 +20,27 @@
         <ul id="navbar-default"
             class="hidden flex flex-col grow-1 bg-bone/30 rounded p-4 w-full mb-4 lg:flex lg:justify-between lg:flex-row lg:sticky lg:bg-transparent lg:w-auto lg:mr-12 lg:mb-0">
             <li>
-                <a href="#home"
-                    class="block py-2 px-4 mb-2 rounded capitalize text-white bg-yellow relative dark:lg:text-white before:content-[''] before:block before:w-0 before:h-1 before:rounded before:absolute before:-top-2 before:bg-yellow before:ease-linear before:duration-200 lg:before:active:w-full lg:before:w-full lg:bg-transparent lg:text-inherit lg:p-0 lg:hover:bg-inherit lg:mb-0">
+                <a href="#home" class="hero-nav-item line-before-static">
                     {{ $page->trans('nav.home') }}
                 </a>
             </li>
             <li>
-                <a href="#projects"
-                    class="block py-2 px-4 mb-2 rounded capitalize hover:bg-slate-50 relative dark:lg:text-white before:content-[''] before:block before:w-0 before:h-1 before:rounded before:absolute before:-top-2 before:bg-yellow before:ease-linear before:duration-200 lg:before:active:w-full lg:before:hover:w-full lg:bg-transparent lg:text-inherit lg:p-0 lg:hover:bg-inherit lg:mb-0">
+                <a href="#projects" class="hero-nav-item line-before line-before-hover">
                     {{ $page->trans('nav.projects') }}
                 </a>
             </li>
             <li>
-                <a href="#services"
-                    class="block py-2 px-4 mb-2 rounded capitalize hover:bg-slate-50 relative dark:lg:text-white before:content-[''] before:block before:w-0 before:h-1 before:rounded before:absolute before:-top-2 before:bg-yellow before:ease-linear before:duration-200 lg:before:active:w-full lg:before:hover:w-full lg:bg-transparent lg:text-inherit lg:p-0 lg:hover:bg-inherit lg:mb-0">
+                <a href="#services" class="hero-nav-item line-before line-before-hover">
                     {{ $page->trans('nav.services') }}
                 </a>
             </li>
             <li>
-                <a href="#blog"
-                    class="block py-2 px-4 mb-2 rounded capitalize hover:bg-slate-50 relative dark:lg:text-white before:content-[''] before:block before:w-0 before:h-1 before:rounded before:absolute before:-top-2 before:bg-yellow before:ease-linear before:duration-200 lg:before:active:w-full lg:before:hover:w-full lg:bg-transparent lg:text-inherit lg:p-0 lg:hover:bg-inherit lg:mb-0">
+                <a href="#blog" class="hero-nav-item line-before line-before-hover">
                     {{ $page->trans('nav.blog') }}
                 </a>
             </li>
             <li>
-                <a href="#contact"
-                    class="block py-2 px-4 rounded capitalize hover:bg-slate-50 relative dark:lg:text-white before:content-[''] before:block before:w-0 before:h-1 before:rounded before:absolute before:-top-2 before:bg-yellow before:ease-linear before:duration-200 lg:before:active:w-full lg:before:hover:w-full lg:bg-transparent lg:text-inherit lg:p-0 lg:hover:bg-inherit lg:mb-0">
+                <a href="#contact" class="hero-nav-item line-before line-before-hover">
                     {{ $page->trans('nav.contact') }}
                 </a>
             </li>
@@ -59,20 +54,31 @@
             alt="El Amrani Chakir">
 
         <div class="flex flex-col items-center lg:items-start">
-            <span class="mt-2 dark:text-white">{{ $page->trans('hero.greet') }}</span>
+            <span class="mt-2 first-letter:capitalize dark:text-white">
+                {{ $page->trans('hero.greet') }}
+            </span>
             <h1 class="mt-2 text-4xl text-center font-medium capitalize dark:text-white">
-                {{ $page->trans('hero.fullname') }}</h1>
+                {{ $page->trans('hero.fullname') }}
+            </h1>
             <h2 class="mt-2 text-lg text-center font-medium capitalize dark:text-white">
-                {{ $page->trans('hero.title') }}</h2>
+                {{ $page->trans('hero.title') }}
+            </h2>
             <p class="mt-4 font-light text-base text-center capitalize dark:text-white lg:text-justify tracking-wider">
                 {{ $page->trans('hero.short') }}
             </p>
             <div class="mt-5 flex justify-between gap-5 md:justify-start">
-                <x-buttons.primary text="{{ $page->trans('hero.resume') }}" icon='<svg class="h-4 w-4 fill-white mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                    <path
-                        d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V304H176c-35.3 0-64 28.7-64 64V512H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128zM176 352h32c30.9 0 56 25.1 56 56s-25.1 56-56 56H192v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V448 368c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24H192v48h16zm96-80h32c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H304c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H320v96h16zm80-112c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V432 368z" />
-                </svg>'/>
+                <x-buttons.primary>
+                    <x-slot:text>
+                        {{ $page->trans('hero.resume') }}
+                    </x-slot>
+
+                    <svg class="h-4 w-4 fill-white mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                            d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V304H176c-35.3 0-64 28.7-64 64V512H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128zM176 352h32c30.9 0 56 25.1 56 56s-25.1 56-56 56H192v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V448 368c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24H192v48h16zm96-80h32c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H304c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H320v96h16zm80-112c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V432 368z" />
+                    </svg>
+
+                </x-buttons.primary>
 
                 <x-buttons.secondary text="{{ $page->trans('hero.contact') }}"/>
             </div>

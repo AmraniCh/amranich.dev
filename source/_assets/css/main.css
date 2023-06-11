@@ -36,5 +36,57 @@
 }
 
 .lang-switcher-btn.selected {
-  @apply opacity-60 cursor-default;
+  @apply 
+    opacity-60 
+    cursor-default;
+}
+
+.hero-nav-item {
+  @apply
+    block 
+    py-2 
+    px-4 
+    mb-2 
+    rounded 
+    capitalize 
+    relative
+    hover:bg-slate-50 
+    lg:bg-transparent 
+    lg:p-0 
+    lg:hover:bg-inherit 
+    lg:mb-0
+    dark:lg:text-white
+}
+
+.line-before {
+  @apply 
+    before:content-[''] 
+    before:block 
+    before:w-0 
+    before:h-1 
+    before:rounded 
+    before:absolute 
+    before:-top-2 
+    before:bg-yellow 
+    before:ease-linear 
+    before:duration-200;
+}
+
+.line-before-hover {
+  @apply lg:before:hover:w-full;
+}
+
+.line-before-static {
+  @apply 
+    line-before
+    bg-yellow 
+    text-white 
+    hover:text-black 
+    lg:text-black
+    lg:before:w-full
+    lg:bg-transparent;
+}
+
+.section-ctr {
+  @apply my-12;
 }
