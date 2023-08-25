@@ -5,7 +5,7 @@ export default function (hideOnScrollY) {
     window.addEventListener('scroll', () => {
         handleSocialLinks($topSectionFooterSocialLinks, hideOnScrollY, window.scrollY);
         handleLangSwitcher($topSectionFooterLangSwitcher, hideOnScrollY, window.scrollY);
-        handleScrollDownIndicator($topSectionFooterScrollDownIndicator, hideOnScrollY, window.scrollY);
+        // handleScrollDownIndicator($topSectionFooterScrollDownIndicator, hideOnScrollY, window.scrollY);
         handleDarkModeBtn($topSectionFooterDarkModeBtn, hideOnScrollY, window.scrollY, window.innerWidth);
         handleBackgroundSvgs(hideOnScrollY, window.scrollY);
     });
