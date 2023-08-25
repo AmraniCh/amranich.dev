@@ -87,6 +87,6 @@
     lg:bg-transparent;
 }
 
-.section-ctr {
-  @apply my-12;
+.section {
+  @apply py-28;
 }
