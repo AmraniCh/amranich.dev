@@ -15,7 +15,7 @@ return [
 
     'collections'     => [],
 
-    'siteName'        => 'El Amrani Shakir\'s Website',
+    'siteName'        => "El Amrani Shakir's Website",
 
     'siteDescription' => 'A software developer who loves building things from scratch, coding, problem-solving, and contributing to the open source community. Enjoys continuous learning.',
 
@@ -48,11 +48,11 @@ return [
      * Maintenance mode options.
      */
 
-     'maintenance' => [
-        
+    'maintenance' => [
+
         'enabled'         => false,
 
         'siteName'        => 'El Amrani Shakir\'s Website - Coming Soon',
-        
+
     ],
 ];
