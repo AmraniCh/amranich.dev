@@ -1,4 +1,4 @@
-<div class="flex flex-col justify-between h-[92vh] relative">
+<div class="flex flex-col justify-between h-[92vh] px-4 lg:px-16 mb-6 relative">
     
     <!-- Top Bar Start -->
     <div class="flex justify-between items-center flex-wrap">
@@ -57,13 +57,13 @@
             <span class="mt-2 first-letter:capitalize dark:text-white">
                 {{ $page->trans('hero.greet') }}
             </span>
-            <h1 class="mt-2 text-4xl text-center font-medium capitalize dark:text-white">
+            <h1 class="mt-2 text-5xl text-center font-bold capitalize dark:text-white">
                 {{ $page->trans('hero.fullname') }}
             </h1>
             <h2 class="mt-2 text-lg text-center font-medium capitalize dark:text-white">
                 {{ $page->trans('hero.title') }}
             </h2>
-            <p class="mt-4 font-light text-base text-center capitalize dark:text-white lg:text-justify tracking-wider">
+            <p class="mt-4  text-base text-center capitalize dark:text-white lg:text-justify">
                 {{ $page->trans('hero.short') }}
             </p>
             <div class="mt-5 flex justify-between gap-5 md:justify-start">
@@ -93,21 +93,21 @@
         <ul id="top-section-footer-social-links" class="hidden lg:block lg:absolute lg:bottom-20 lg:-left-6">
             <li>
                 <a href="{{ $page->links->behance }}" target="blank"
-                    class="block text-bone text-center cursor-pointer -rotate-90 tracking-widest-x2 uppercase mb-28 hover:opacity-70">
+                    class="block text-bone text-center font-normal cursor-pointer -rotate-90 tracking-widest-x2 uppercase mb-28 hover:opacity-70">
                     Behance
                 </a>
 
             </li>
             <li>
                 <a href="{{ $page->links->linkedin }}" target="blank"
-                    class="block text-bone text-center cursor-pointer -rotate-90 tracking-widest-x2 uppercase mb-28 hover:opacity-70">
+                    class="block text-bone text-center font-normal cursor-pointer -rotate-90 tracking-widest-x2 uppercase mb-28 hover:opacity-70">
                     Linkedin
                 </a>
 
             </li>
             <li>
                 <a href="{{ $page->links->github }}" target="blank"
-                    class="block text-bone text-center cursor-pointer -rotate-90 tracking-widest-x2 uppercase hover:opacity-70">
+                    class="block text-bone text-center font-normal cursor-pointer -rotate-90 tracking-widest-x2 uppercase hover:opacity-70">
                     Github
                 </a>
             </li>
