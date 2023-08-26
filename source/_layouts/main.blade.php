@@ -50,7 +50,7 @@
     </head>
     <body class="font-ubuntu text-black">
 
-        <div class="bg-yellow p-2 relative lg:p-8">
+        <div class="bg-[#e1c1718f] p-2 relative lg:p-8">
             @yield('body')
         </div>
         
