@@ -2,7 +2,7 @@
 
 @section('body')
     <div
-        class="container bg-white max-w-7xl m-auto py-4 dark:bg-[#222] lg:py-8 rounded-lg drop-shadow-xl shadow-xl shadow-black h-[3000px]">
+        class="container bg-white max-w-7xl m-auto py-4 dark:bg-[#222] lg:py-8 rounded-lg drop-shadow-sm shadow-black h-[3000px]">
 
         @include('_partials.hero')
         @include('_partials.about-me')
