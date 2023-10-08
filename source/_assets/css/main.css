@@ -79,12 +79,13 @@
 .line-before-static {
   @apply 
     line-before
-    bg-yellow 
-    text-white 
+    bg-white 
+    text-bone 
     hover:text-black 
     lg:text-black
     lg:before:w-full
-    lg:bg-transparent;
+    lg:bg-transparent
+    font-semibold
 }
 
 .section {
