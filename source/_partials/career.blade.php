@@ -5,11 +5,11 @@
         <div class="w-full bgx-[#fff8e5c9] -mx-5 -my-3 px-5 py-3 rounded hover:bg-bone/20 bg-white group dark:bg-[#fff8e1] dark:hover:bg-white shadow-sm">
             <div class="flex justify-between items-center">
                 <div>
-                    <h3 class="capitalize text-2xl font-medium text-yellow">mid level software developer</h3>
+                    <h3 class="capitalize text-2xl font-medium text-yellow">{{ $page->trans('career.secondposition.title') }}</h3>
                     <div class="mt-3">
-                        <p class="text-md">PI Marketing · Full-time</p>
-                        <p class="text-sm mt-1">Nov 2021 - Present</p>
-                        <p class="text-xs mt-1">Tangier, Morocco</p>
+                        <p class="text-md">{{ $page->trans('career.secondposition.company') }}</p>
+                        <p class="text-sm mt-1">{{ $page->trans('career.secondposition.duration') }}</p>
+                        <p class="text-xs mt-1">{{ $page->trans('career.secondposition.location') }}</p>
                     </div>
                 </div>
                 <div class="mr-4">
@@ -21,11 +21,11 @@
         <div class="w-full bgx-[#fff8e5c9] -mx-5 -my-3 px-5 py-3 rounded hover:bg-bone/20 bg-white group dark:bg-[#fff8e1] dark:hover:bg-white shadow-sm">
             <div class="flex justify-between items-center">
                 <div>
-                    <h3 class="capitalize text-2xl font-medium text-yellow">full stuck developer</h3>
+                    <h3 class="capitalize text-2xl font-medium text-yellow">{{ $page->trans('career.firstposition.title') }}</h3>
                     <div class="mt-3">
-                        <p class="text-md">Map-concepts · Internship</p>
-                        <p class="text-sm mt-1">Jan 2021 - Jun 2021</p>
-                        <p class="text-xs mt-1">Tangier, Morocco</p>
+                        <p class="text-md">{{ $page->trans('career.firstposition.company') }}</p>
+                        <p class="text-sm mt-1">{{ $page->trans('career.firstposition.duration') }}</p>
+                        <p class="text-xs mt-1">{{ $page->trans('career.firstposition.location') }}</p>
                     </div>
                 </div>
                 <div class="mr-4">
@@ -37,11 +37,11 @@
         <div class="w-full bgx-[#fff8e5c9] -mx-5 -my-3 px-5 py-3 rounded hover:bg-bone/20 bg-white group dark:bg-[#fff8e1] dark:hover:bg-white shadow-sm">
             <div class="flex justify-between items-center">
                 <div>
-                    <h3 class="capitalize text-2xl font-medium text-yellow">bachelor's degree, software and web development</h3>
+                    <h3 class="capitalize text-2xl font-medium text-yellow">{{ $page->trans('career.lasteducation.title') }}</h3>
                     <div class="mt-3">
-                        <p class="text-md">Abdelmalek Essaâdi University</p>
-                        <p class="text-sm mt-1">2017 - 2020</p>
-                        <p class="text-xs mt-1">Tetouan, Morocco</p>
+                        <p class="text-md">{{ $page->trans('career.lasteducation.institut') }}</p>
+                        <p class="text-sm mt-1">{{ $page->trans('career.lasteducation.duration') }}</p>
+                        <p class="text-xs mt-1">{{ $page->trans('career.lasteducation.location') }}</p>
                     </div>
                 </div>
                 <div class="mr-4">
@@ -51,7 +51,7 @@
         </div>
     </div>
 
-    <span class="block mt-8 text-sm text-bone font-medium italic">
-        * visit my <a href="{{ $page->links->linkedin }}" target="_blank" class="text-blue-300 underline">Linkedin</a> profile for more information about my career.
+    <span class="block mt-8 text-sm text-bone italic">
+        * {{ $page->trans('career.linkedinnotice.1') }} <a href="{{ $page->links->linkedin }}" target="_blank" class="text-blue-300 underline">Linkedin</a> {{ $page->trans('career.linkedinnotice.2') }}.
     </span>
 </div>

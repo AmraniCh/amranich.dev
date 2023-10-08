@@ -3,6 +3,7 @@
     "nav.projects": "projets",
     "nav.services": "services",
     "nav.blog": "blog",
+
     "nav.contact": "contact",
     "hero.greet": "bonjour! 👋 je suis",
     "hero.fullname": "shakir el amrani",
@@ -10,9 +11,24 @@
     "hero.short": "je suis passionné et innovant, j'adore construire les choses à partir de zéro, coder, résoudre des problèmes et contribuer à la communauté open source. j'apprécie l'apprentissage continu.",
     "hero.resume": "mon CV",
     "hero.contact": "contactez-moi!",
+
     "about.heading": "un peu à propos de moi",
     "about.content": "Je suis un développeur de logiciels basé à Tanger, au Maroc. Mes 3 années d'expérience en développement de logiciels m'ont permis d'acquérir une solide base pour la création de logiciels modernes et de solutions web complexes. Récemment, j'ai obtenu mon diplôme en développement de logiciels et web avec mention. J'apprécie d'apprendre comment les choses fonctionnent en coulisses et de résoudre des problèmes. Je suis également passionné par les logiciels open source et j'ai toujours été enthousiasmé à l'idée de partager mes connaissances avec d'autres développeurs et de travailler ensemble pour construire des choses qui profitent au monde.",
     "care-about.heading": "ce qui m'importe lorsque je développe",
 
-    "career.heading": "Carrier"
+    "career.heading": "Résumé de carrière",
+    "career.secondposition.title": "mid level développeur logiciel",
+    "career.secondposition.company": "PI Marketing · Temps plein",
+    "career.secondposition.duration": "Nov 2021 - Présent",
+    "career.secondposition.location": "Tanger, Maroc",
+    "career.firstposition.title": "Développeur full-stack",
+    "career.firstposition.company": "Map-concepts · Stage rémunéré",
+    "career.firstposition.duration": "Jan 2021 - Juin 2021",
+    "career.firstposition.location": "Tanger, Maroc",
+    "career.lasteducation.title": "Licence Professionnelle en Logiciels et Développement Web",
+    "career.lasteducation.institut": "Université Abdelmalek Essaâdi",
+    "career.lasteducation.duration": "2017 - 2020",
+    "career.lasteducation.location": "Tétouan, Maroc",
+    "career.linkedinnotice.1": "Visitez mon",
+    "career.linkedinnotice.2": "profil pour plus d'informations sur ma carrière"
 }
