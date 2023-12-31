@@ -44,15 +44,4 @@ return [
         return Str::contains($page->getPath(), $section) ? 'selected' : '';
     },
 
-    /**
-     * Maintenance mode options.
-     */
-
-    'maintenance' => [
-
-        'enabled'         => false,
-
-        'siteName'        => 'El Amrani Shakir\'s Website - Coming Soon',
-
-    ],
 ];

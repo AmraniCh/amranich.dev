@@ -17,9 +17,9 @@
                     </defs>
                 </svg>
 
-                <h3 class="text-xl font-medium mt-2 dark:text-white">Performance</h3>
+                <h3 class="text-xl font-medium mt-2">Performance</h3>
             </div>
-            <p class="mt-4 text-center md:text-justify dark:text-white">
+            <p class="mt-4 text-center md:text-justify">
                 Every second of loading time counts, caching, manifying, using CDN and a lot of things should be
                 considired when developing a web application.
             </p>
@@ -48,9 +48,9 @@
                 </svg>
 
 
-                <h3 class="text-xl font-medium mt-2 dark:text-white">Security</h3>
+                <h3 class="text-xl font-medium mt-2">Security</h3>
             </div>
-            <p class="mt-4 text-center md:text-justify dark:text-white">
+            <p class="mt-4 text-center md:text-justify">
                 Insecure web applications can give a chance for attackers to get access to a database or to a whole
                 hosting server, so every line of code should be thought through.
             </p>
@@ -91,9 +91,9 @@
                 </svg>
 
 
-                <h3 class="text-xl font-medium mt-2 dark:text-white">User Experience</h3>
+                <h3 class="text-xl font-medium mt-2">User Experience</h3>
             </div>
-            <p class="mt-4 text-center md:text-justify dark:text-white">
+            <p class="mt-4 text-center md:text-justify">
                 User experience is the key to a successful web application, before typing code I’m always sketching
                 out
                 the user interfaces either in a white papers or in a user experience design tool like adobe XD or
@@ -127,9 +127,9 @@
                 </svg>
 
 
-                <h3 class="text-xl font-medium mt-2 dark:text-white">Code Quality</h3>
+                <h3 class="text-xl font-medium mt-2">Code Quality</h3>
             </div>
-            <p class="mt-4 text-center md:text-justify dark:text-white">
+            <p class="mt-4 text-center md:text-justify">
                 Mastering the programming language, following the best practices and wrinting tests (TDD) should be
                 enogth to ensure the best quality of the code.
             </p>

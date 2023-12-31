@@ -1,21 +1,18 @@
 {
-    "nav.home": "Home",
+    "nav.home": "intro",
     "nav.projects": "projects",
     "nav.services": "services",
     "nav.blog": "blog",
     "nav.contact": "contact me",
-
     "hero.greet": "hi there 👋 I'am",
     "hero.fullname": "shakir el amrani",
     "hero.title": "a software developer",
     "hero.short": "passionate and innovitive developer who loves building new things from scratch, coding, problem-solving, and contributing to the open source community. enjoys continuous learning.",
     "hero.resume": "resume",
-    "hero.contact": "contact me!",
-
+    "hero.contact": "contact",
     "about.heading": "a little about me",
     "about.content": "I am a software developer based in Tangier, Morocco. My 3 years of software development experience has given me a strong foundation for building modern software and complex web solutions. Recently, I graduated with a Bachelor's degree in Software and Web Development with honors. I am enjoy learning how things works behind the scenes and solving problems, I am also very passionate about open source software, and I've always been excited to share my knowledge with other developers and work together to build things that benefit the world.",
-    "care-about.heading": "what I care about when I am developing",
-
+    "care-about.heading": "what I care about",
     "career.heading": "career brief",
     "career.secondposition.title": "mid level software developer",
     "career.secondposition.company": "PI Marketing · Full-time",

@@ -3,7 +3,7 @@
 @section('body')
     <div class="bg-yellow p-8 h-full">
         <div class="bg-glass bg-no-repeat bg-fit flex justify-center items-center h-full relative rounded-lg drop-shadow-lg">
-            <div class="flex flex-col justify-center items-center text-black">
+            <div class="flex flex-col justify-center items-center text-yellow-900">
                 <img class="w-24 mb-4 sm:mb-0 sm:absolute sm:top-8 sm:left-8 select-none" src="assets/images/logo.svg" alt="El Amrani Chakir">
                 <img class="rounded-full mb-2 w-40" src="assets/images/me.jpg" alt="El Amrani Chakir">
                 <h1 class="text-2xl tracking-widest">amranich.dev</h1>

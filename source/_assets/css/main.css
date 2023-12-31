@@ -1,30 +1,30 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 @keyframes sparkling {
   0% {
-    opacity: .3; 
+    opacity: 0.3;
   }
 
   20% {
-    opacity: .8; 
+    opacity: 0.8;
   }
 
   40% {
-    opacity: .4; 
+    opacity: 0.4;
   }
 
   60% {
-    opacity: .6; 
+    opacity: 0.6;
   }
 
   80% {
-    opacity: .9; 
+    opacity: 0.9;
   }
 
   100% {
-    opacity: .3; 
+    opacity: 0.3;
   }
 }
 
@@ -35,39 +35,42 @@
   animation-iteration-count: infinite;
 }
 
+.lang-switcher-btn {
+  @apply inline-block 
+    w-full 
+    bg-brown-300 
+    px-1 
+    dark:bg-brown-500;
+}
+
 .lang-switcher-btn.selected {
-  @apply 
+  @apply text-brown-500
     opacity-60 
-    cursor-default;
+    cursor-default
+    dark:text-yellow-100;
 }
 
 .hero-nav-item {
-  @apply
-    block 
+  @apply block 
     py-2 
     px-4 
-    mb-2 
     rounded 
     capitalize 
     relative
-    hover:bg-slate-50 
     lg:bg-transparent 
-    lg:p-0 
-    lg:hover:bg-inherit 
-    lg:mb-0
-    dark:lg:text-white
+    lg:p-0
+    dark:text-yellow-900;
 }
 
 .line-before {
-  @apply 
-    before:content-[''] 
+  @apply before:content-[''] 
     before:block 
     before:w-0 
     before:h-1 
     before:rounded 
     before:absolute 
     before:-top-2 
-    before:bg-yellow 
+    before:bg-yellow-400 
     before:ease-linear 
     before:duration-200;
 }
@@ -77,17 +80,17 @@
 }
 
 .line-before-static {
-  @apply 
-    line-before
+  @apply line-before
     bg-white 
-    text-bone 
-    hover:text-black 
-    lg:text-black
+    text-brown-400 
+    hover:text-yellow-900 
+    lg:text-yellow-900
     lg:before:w-full
     lg:bg-transparent
     font-semibold
+    dark:text-yellow-400;
 }
 
 .section {
-  @apply py-28;
+  @apply py-20 lg:py-28;
 }

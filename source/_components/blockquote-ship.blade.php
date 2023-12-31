@@ -1,6 +1,6 @@
 <blockquote class="relative">
     <!-- Quotes Svg Start -->
-    <svg class="w-14 h-14 absolute -top-4 left-4 fill-[#7c6727] dark:-top-6 dark:fill-yellow" xmlns="http://www.w3.org/2000/svg" height="1em"
+    <svg class="w-12 h-12 absolute -top-4 left-4 fill-yellow-900 dark:-top-6 dark:fill-yellow" xmlns="http://www.w3.org/2000/svg" height="1em"
         viewBox="0 0 448 512">
         <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
         <path
@@ -17,7 +17,7 @@
     <!-- Background Ship End -->
 
     <!-- Blackquote Text Content Start -->
-    <span class="text-lg italic capitalize absolute left-[27%] top-[32%]">
+    <span class="text-lg italic capitalize absolute left-[27%] top-[32%] dark:text-yellow-900">
         Don’t Imitate, Understand.
     </span>
     <!-- Blackquote Text Content End -->
