@@ -2,15 +2,12 @@ name: 🚀 Deloyement via FTP
 
 on:
   push:
-    branches:
-      - master
     tags:
       - '*'
-    
+
 jobs:
   web-deploy:
     name: 🎉 Deploy
-    if: contains(github.event.head_commit.message, '(deploy)')
     runs-on: ubuntu-latest
 
     steps:
