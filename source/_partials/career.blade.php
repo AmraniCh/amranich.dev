@@ -7,9 +7,9 @@
                 <div>
                     <h3 class="text-xl capitalize font-medium text-yellow lg:text-2xl">{{ $page->trans('career.secondposition.title') }}</h3>
                     <div class="mt-3">
-                        <p class="text-md max-w-[180px]">{{ $page->trans('career.secondposition.company') }}</p>
-                        <p class="text-sm mt-1 max-w-[180px]">{{ $page->trans('career.secondposition.duration') }}</p>
-                        <p class="text-xs mt-1 max-w-[180px]">{{ $page->trans('career.secondposition.location') }}</p>
+                        <p class="text-md max-w-[180px] md:max-w-[initial]">{{ $page->trans('career.secondposition.company') }}</p>
+                        <p class="text-sm mt-1 max-w-[180px] md:max-w-[initial]">{{ $page->trans('career.secondposition.duration') }}</p>
+                        <p class="text-xs mt-1 max-w-[180px] md:max-w-[initial]">{{ $page->trans('career.secondposition.location') }}</p>
                     </div>
                 </div>
                 <div class="mr-4">
@@ -23,9 +23,9 @@
                 <div>
                     <h3 class="text-xl capitalize font-medium text-yellow lg:text-2xl">{{ $page->trans('career.firstposition.title') }}</h3>
                     <div class="mt-3">
-                        <p class="text-md max-w-[180px]">{{ $page->trans('career.firstposition.company') }}</p>
-                        <p class="text-sm mt-1 max-w-[180px]">{{ $page->trans('career.firstposition.duration') }}</p>
-                        <p class="text-xs mt-1 max-w-[180px]">{{ $page->trans('career.firstposition.location') }}</p>
+                        <p class="text-md max-w-[180px] md:max-w-[initial]">{{ $page->trans('career.firstposition.company') }}</p>
+                        <p class="text-sm mt-1 max-w-[180px] md:max-w-[initial]">{{ $page->trans('career.firstposition.duration') }}</p>
+                        <p class="text-xs mt-1 max-w-[180px] md:max-w-[initial]">{{ $page->trans('career.firstposition.location') }}</p>
                     </div>
                 </div>
                 <div class="mr-4">
@@ -39,9 +39,9 @@
                 <div>
                     <h3 class="text-xl capitalize font-medium text-yellow lg:text-2xl">{{ $page->trans('career.lasteducation.title') }}</h3>
                     <div class="mt-3">
-                        <p class="text-md max-w-[180px]">{{ $page->trans('career.lasteducation.institut') }}</p>
-                        <p class="text-sm mt-1 max-w-[180px]">{{ $page->trans('career.lasteducation.duration') }}</p>
-                        <p class="text-xs mt-1 max-w-[180px]">{{ $page->trans('career.lasteducation.location') }}</p>
+                        <p class="text-md max-w-[180px] md:max-w-[initial]">{{ $page->trans('career.lasteducation.institut') }}</p>
+                        <p class="text-sm mt-1 max-w-[180px] md:max-w-[initial]">{{ $page->trans('career.lasteducation.duration') }}</p>
+                        <p class="text-xs mt-1 max-w-[180px] md:max-w-[initial]">{{ $page->trans('career.lasteducation.location') }}</p>
                     </div>
                 </div>
                 <div class="mr-4">
