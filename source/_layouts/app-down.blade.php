@@ -52,7 +52,7 @@
 
 <body class="h-screen font-ubuntu text-yellow-900 dark:text-yellow-200">
 
-    <div class="h-screen bg-yellow-300 p-2 relative lg:p-8">
+    <div class="h-full bg-yellow-300 p-4 sm:p-0 sm:bg-transparent">
         @yield('body')
     </div>
 
