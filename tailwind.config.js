@@ -4,7 +4,7 @@ module.exports = {
   content: require('fast-glob').sync([
     'source/**/*.{blade.php,blade.md,md,html,vue,js,css}',
     '!source/**/_tmp/*', // exclude temporary files
-    'lang/*' // exclude temporary files
+    'lang/*'
   ], { dot: true }),
   theme: {
     extend: {
@@ -12,15 +12,6 @@ module.exports = {
         sans: ['Ubuntu', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        // 'black': '#956437',
-        // 'brown': '#8A6445',
-        // // 'yellow': '#E1C171',
-        // 'yellow': {
-        //   'primary': '#E1C171',
-        //   'light': '#e1c1718f',
-        //   'lighter': '#fdf0d259',
-        // },
-        // 'bone': '#DFD3C1',
         'yellow': {
           '100': '#fefaef',
           '200': '#f5ead1',

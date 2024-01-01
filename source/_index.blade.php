@@ -20,7 +20,7 @@
                         GitHub       
                     </a>
 
-                    <a class="tracking-widest-x2 text-sm font-medium" href="{{ $page->links->linkedin }}" target="blank">
+                    <a class="flex items-center gap-2 tracking-widest-x2 text-sm font-medium" href="{{ $page->links->linkedin }}" target="blank">
                         <svg class="w-4 h-4 fill-yellow text-yellow inline-block"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-6 h-6">
@@ -30,7 +30,7 @@
                         Linkedin
                     </a>
 
-                    <a class="tracking-widest-x2 text-sm font-medium" href="{{ $page->links->behance }}" target="blank">
+                    <a class="flex items-center gap-2 tracking-widest-x2 text-sm font-medium" href="{{ $page->links->behance }}" target="blank">
                         <svg class="w-4 h-4 fill-yellow text-yellow inline-block"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-6 h-6">
