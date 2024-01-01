@@ -1,5 +1,5 @@
 <div class="section px-8 lg:px-16 bg-yellow-100 dark:bg-inherit">
-    <x-section-heading text="{{ $page->trans('about.heading') }}" />
+    <x-section-heading text="{!! $page->trans('about.heading') !!}" />
 
     <div class="flex flex-col justify-between items-center gap-16 lg:flex-row  lg:gap-20">
 

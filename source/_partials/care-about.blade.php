@@ -1,5 +1,5 @@
 <div class="section px-8 lg:px-16">
-    <x-section-heading text="{{ $page->trans('care-about.heading') }}" />
+    <x-section-heading text="{!! $page->trans('care-about.heading') !!}" />
 
     <div class="flex flex-wrap justify-center gap-12 md:gap-6">
         <div class="w-3/4 sm:w-3/5 md:basis-[48%]">
