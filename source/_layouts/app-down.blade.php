@@ -33,9 +33,9 @@
 
     <link rel="icon" type="image/png" sizes="196x196" href="/assets/icons/android-chrome-196x196.png" />
 
-    <meta name="theme-color" content="#e7d8b1" />
+    <meta name="theme-color" content="#ead59e" />
 
-    <meta name="msapplication-TileColor" content="#e7d8b1" />
+    <meta name="msapplication-TileColor" content="#ead59e" />
     <meta name="msapplication-TileImage" content="/assets/icons/windows-tile.png">
     <meta name="msapplication-square70x70logo" content="/assets/icons/windows-small-tile.png" />
     <meta name="msapplication-square150x150logo" content="/assets/icons/windows-medium-tile.png" />
