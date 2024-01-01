@@ -5,7 +5,7 @@
         <div class="w-full bgx-[#fff8e5c9] lg:-mx-5 -my-3 px-5 py-3 rounded hover:bg-bone/20 bg-white group dark:bg-[#fff8e1] dark:hover:bg-white shadow-sm">
             <div class="relative lg:flex lg:justify-between lg:items-center">
                 <div>
-                    <h3 class="capitalize text-2xl font-medium text-yellow">{{ $page->trans('career.secondposition.title') }}</h3>
+                    <h3 class="text-xl capitalize font-medium text-yellow lg:text-2xl">{{ $page->trans('career.secondposition.title') }}</h3>
                     <div class="mt-3">
                         <p class="text-md max-w-[180px]">{{ $page->trans('career.secondposition.company') }}</p>
                         <p class="text-sm mt-1 max-w-[180px]">{{ $page->trans('career.secondposition.duration') }}</p>
@@ -21,7 +21,7 @@
         <div class="w-full bgx-[#fff8e5c9] lg:-mx-5 -my-3 px-5 py-3 rounded hover:bg-bone/20 bg-white group dark:bg-[#fff8e1] dark:hover:bg-white shadow-sm">
             <div class="relative lg:flex lg:justify-between lg:items-center">
                 <div>
-                    <h3 class="capitalize text-2xl font-medium text-yellow">{{ $page->trans('career.firstposition.title') }}</h3>
+                    <h3 class="text-xl capitalize font-medium text-yellow lg:text-2xl">{{ $page->trans('career.firstposition.title') }}</h3>
                     <div class="mt-3">
                         <p class="text-md max-w-[180px]">{{ $page->trans('career.firstposition.company') }}</p>
                         <p class="text-sm mt-1 max-w-[180px]">{{ $page->trans('career.firstposition.duration') }}</p>
@@ -37,7 +37,7 @@
         <div class="w-full bgx-[#fff8e5c9] lg:-mx-5 -my-3 px-5 py-3 rounded hover:bg-bone/20 bg-white group dark:bg-[#fff8e1] dark:hover:bg-white shadow-sm">
             <div class="relative lg:flex lg:justify-between lg:items-center">
                 <div>
-                    <h3 class="capitalize text-2xl font-medium text-yellow">{{ $page->trans('career.lasteducation.title') }}</h3>
+                    <h3 class="text-xl capitalize font-medium text-yellow lg:text-2xl">{{ $page->trans('career.lasteducation.title') }}</h3>
                     <div class="mt-3">
                         <p class="text-md max-w-[180px]">{{ $page->trans('career.lasteducation.institut') }}</p>
                         <p class="text-sm mt-1 max-w-[180px]">{{ $page->trans('career.lasteducation.duration') }}</p>
