@@ -115,7 +115,8 @@
         <!-- Social Links End -->
 
         <!-- Dark Mode Switcher Start -->
-        <button type="button" id="top-section-footer-dark-mode-toggle-btn" class="absolute left-4 -bottom-2 lg:bottom-[initial] lg:left-[initial] lg:fixed lg:top-[5.4rem] lg:right-[80px]">
+        <button type="button" id="top-section-footer-dark-mode-toggle-btn"
+            class="absolute left-4 -bottom-2 lg:bottom-[initial] lg:left-[initial] lg:fixed lg:top-[5.4rem] lg:right-[80px]">
             <svg style="color: rgb(223, 211, 201);" width="32" height="32" viewBox="0 0 24 24" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8V16Z" fill="#dfd3c1"></path>
@@ -144,14 +145,13 @@
         <!-- Scroll Down Icon Indicator End -->
 
         <!-- Language Switcher Start -->
-        <ul id="top-section-footer-lang-switcher-container" class="flex flex-col absolute right-4 -bottom-2 lg:absolute lg:bottom-12 lg:right-0">
+        <ul id="top-section-footer-lang-switcher-container"
+            class="flex flex-col absolute right-4 -bottom-2 lg:absolute lg:bottom-12 lg:right-0">
             <li>
-                <a href="/en" class="lang-switcher-btn  {{ $page->selected('en') }}"
-                    data-default="true">EN</a>
+                <a href="/en" class="lang-switcher-btn  {{ $page->selected('en') }}" data-default="true">EN</a>
             </li>
             <li>
-                <a href="/fr"
-                    class="lang-switcher-btn cursor-pointer  {{ $page->selected('fr') }}">FR</a>
+                <a href="/fr" class="lang-switcher-btn cursor-pointer  {{ $page->selected('fr') }}">FR</a>
             </li>
         </ul>
         <!-- Language Switcher End -->
@@ -162,7 +162,6 @@
     <div id="svgs-container" class="absolute h-full w-full -z-50">
     </div>
     <!-- Animated Background SVGs End -->
-
 
     {{-- <svg class="absolute -top-8 -right-8 -z-50 opacity-30 w-2/5 blur-[2px] dark:opacity-5" version="1.2"
         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1000">
