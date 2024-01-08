@@ -18,7 +18,7 @@
         </button>
 
         <ul id="navbar-default"
-            class="hidden absolute top-[10%] left-[50%] translate-x-[-50%] lg:flex flex-col gap-2 grow-1 bg-yellow-300 rounded p-4 w-[92%] lg:translate-x-0 lg:flex-grow-1 lg:gap-8 xl:gap-16 lg:justify-center lg:flex-row lg:sticky lg:bg-transparent lg:w-auto">
+            class="hidden absolute top-[10%] left-[50%] translate-x-[-50%] lg:flex flex-col gap-2 grow-1 bg-yellow-300 rounded p-4 w-[92%] lg:translate-x-0 lg:flex-grow-1 lg:gap-14 xl:gap-16 lg:justify-center lg:flex-row lg:sticky lg:bg-transparent lg:w-auto">
             <li>
                 <a href="#home" class="hero-nav-item line-before-static">
                     {{ $page->trans('nav.home') }}
@@ -50,7 +50,7 @@
 
     <!-- Intro Start -->
     <div
-        class="flex items-center flex-col lg:mb-16 lg:flex-row lg:justify-between md:px-8 xl:gap-5 xl:px-28 xl:translate-x-[56px]">
+        class="flex items-center flex-col lg:mb-16 lg:flex-row lg:justify-between md:px-8 xl:gap-5 xl:px-28 lg:translate-x-[36px] xl:translate-x-[56px]">
         <img class="rounded-full mb-2 w-40 select-none lg:w-[375px] lg:h-[90%]" src="/assets/images/me.png"
             alt="El Amrani Chakir">
 
