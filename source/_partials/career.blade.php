@@ -54,7 +54,7 @@
                         {{ $page->trans('career.last-education.title') }}</h3>
                     <div class="mt-3">
                         <p class="text-md max-w-[180px] md:max-w-[initial]">
-                            {{ $page->trans('career.last-education.institut') }}</p>
+                            {{ $page->trans('career.last-education.institute') }}</p>
                         <p class="text-sm mt-1 max-w-[180px] md:max-w-[initial]">
                             {{ $page->trans('career.last-education.duration') }}</p>
                         <p class="text-xs mt-1 max-w-[180px] md:max-w-[initial]">
