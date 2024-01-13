@@ -28,6 +28,17 @@
     "career.last-education.institute": "Université Abdelmalek Essaâdi",
     "career.last-education.duration": "2017 - 2020",
     "career.last-education.location": "Tétouan, Maroc",
-    "career.linkedin-notice.1": "Visitez mon",
-    "career.linkedin-notice.2": "profil pour plus d'informations sur ma carrière"
+    "career.linkedin-notice.1": "voir plus sur LinkedIn",
+    "featured-projects.title": "projets en vedette",
+    "featured-projects.card-title": "projet en vedette",
+    "featured-projects.first-project.date": "février 2024",
+    "featured-projects.first-project.title": "Mon Portfolio de Site Web Personnel",
+    "featured-projects.first-project.desc": "Mon site web de portfolio est conçu pour présenter à la fois ma personnalité et mes compétences en tant que développeur de logiciels.",
+    "featured-projects.second-project.date": "septembre 2020",
+    "featured-projects.second-project.title": "Gestionnaire de fichiers FTP",
+    "featured-projects.second-project.desc": "Une application web de client FTP pour gérer vos fichiers FTP, construite avec une architecture MVC simple, sans utiliser de frameworks ou de bibliothèques (sauf les miens).",
+    "featured-projects.third-project.date": "janvier 2020",
+    "featured-projects.third-project.title": "Gestionnaire de bases de données MySQL",
+    "featured-projects.third-project.desc": "Une application web pour gérer les bases de données MySQL localement avec prise en charge de la journalisation pour toutes les opérations CRUD MySQL.",
+    "open-source.heading": "open source"
 }

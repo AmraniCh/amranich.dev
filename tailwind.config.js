@@ -12,6 +12,7 @@ module.exports = {
         sans: ['Ubuntu', ...defaultTheme.fontFamily.sans],
       },
       colors: {
+        transparent: 'transparent',
         'yellow': {
           '100': '#fefaef',
           '200': '#f5ead1',

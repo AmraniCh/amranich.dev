@@ -28,8 +28,7 @@
     "career.last-education.institute": "Abdelmalek Essaâdi University",
     "career.last-education.duration": "2017 - 2020",
     "career.last-education.location": "Tetouan, Morocco",
-    "career.linkedin-notice.1": "Feel free to visit my",
-    "career.linkedin-notice.2": "LinkedIn profile for more information about my career",
+    "career.linkedin-notice.1": "view more in Linkedin",
     "featured-projects.title": "featured projects",
     "featured-projects.card-title": "featured project",
     "featured-projects.first-project.date": "february 2024",
@@ -40,5 +39,6 @@
     "featured-projects.second-project.desc": "A web-based FTP client application to manage your FTP files, built with a simple MVC architecture, no frameworks or libraries are used (except my owns).",
     "featured-projects.third-project.date": "January 2020",
     "featured-projects.third-project.title": "MySQL Databases Manager",
-    "featured-projects.third-project.desc": "a web application to manage MySQL databases locally with support of logging for all MySQL CRUD operations."
+    "featured-projects.third-project.desc": "a web application to manage MySQL databases locally with support of logging for all MySQL CRUD operations.",
+    "open-source.heading": "open source"
 }
