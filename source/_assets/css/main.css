@@ -28,11 +28,27 @@
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0.1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .animate-sparkling {
   animation-name: sparkling;
   animation-timing-function: linear;
   animation-duration: 7s;
   animation-iteration-count: infinite;
+}
+
+.animate-fade-in {
+  animation-name: fadeIn;
+  animation-timing-function: linear;
+  animation-duration: 1.5s;
 }
 
 .lang-switcher-btn {

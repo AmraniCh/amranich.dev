@@ -9,6 +9,7 @@
         @include('_partials.care-about')
         @include('_partials.career')
         @include('_partials.featured-projects')
+        @include('_partials.open-source')
 
     </div>
 @endsection
