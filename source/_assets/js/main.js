@@ -6,13 +6,11 @@ import languageSwitcher from "./imports/language-switcher";
 import heroBackgroundEffects from "./imports/hero-background-effects";
 import githubRepos from "./imports/github-repos";
 
-window.addEventListener('DOMContentLoaded', () => {
-
+window.addEventListener("DOMContentLoaded", () => {
     navbarMenu();
     darkMode();
     languageSwitcher();
     scrollEffects(settings.hideOnScrollY);
     heroBackgroundEffects(settings.heroBackgroundSvg);
-    githubRepos(settings.githubPinnedRepos, settings.packagistRepos);
-
+    githubRepos(settings.githubRepos);
 });

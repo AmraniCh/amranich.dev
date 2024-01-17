@@ -18,18 +18,20 @@ export default {
         mobileBreakpoint: 1024,
     },
 
-    githubPinnedRepos: [
-        "lazzard/php-ftp-client",
-        "amranich/github-code-font-changer",
-        "amranich/ftp-filemanager",
-        "amranich/vanilla-filemanager",
-        "amranich/ajax-router",
-        "amranich/how-jQuery-works"
-    ],
-
-    packagistRepos: [
-        "lazzard/php-ftp-client",
-        "amranich/ajax-router",
-    ],
-
+    githubRepos: {
+        pinnedRepos: [
+            "lazzard/php-ftp-client",
+            "amranich/github-code-font-changer",
+            "amranich/ftp-filemanager",
+            "amranich/vanilla-filemanager",
+            "amranich/ajax-router",
+            "amranich/how-jQuery-works"
+        ],
+        packagistRepos: [
+            "lazzard/php-ftp-client",
+            "amranich/ajax-router",
+        ],
+        cacheExpireHours: 8,
+        skeletonTimeoutSeconds: 1.5
+    }
 };

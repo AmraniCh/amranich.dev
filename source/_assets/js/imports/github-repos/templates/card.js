@@ -52,7 +52,7 @@ export default async ({
                 <!-- footer -->
                 <div class="flex justify-between items-center">
 
-                    <div class="flex gap-5">
+                    <div class="flex gap-2 md:gap-5">
 
                         <!-- stars -->
                         <a href="https://github.com/lazzard/php-ftp-client/stargazers" target="_blank"
@@ -80,8 +80,7 @@ export default async ({
                         </a>
                     </div>
 
-
-                    <div class="flex gap-1.5">
+                    <div class="flex flex-wrap gap-1.5">
                         ${githubLangs.map(lang => `
                             <span
                                 class="bg-yellow-200 text-yellow-900 text-xs text-center whitespace-nowrap font-medium px-2 py-0.5 rounded  dark:text-yellow-900">
@@ -89,9 +88,7 @@ export default async ({
                             </span>
                         `).join('')}
                     </div>
-
                 </div>
-
             </div>
         </div>
     </li>
