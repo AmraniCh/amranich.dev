@@ -14,6 +14,8 @@ export default function (settings) {
             return;
         }
 
+        githubReposFetched = true;
+
         // show loading skeletons
         settings.pinnedRepos.forEach(repo => cards.innerHTML += skeleton(repo));
 
@@ -55,19 +57,16 @@ export default function (settings) {
                 cardsData.push(cardData);
                 renderRepository(cardData);
             });
-
-
-            if (cardsData.length) {
-                const ttl = new Date();
-                ttl.setTime(ttl.getTime() + settings.cacheExpireHours * 60 * 60 * 1000);
-                localStorage.setItem('repos', JSON.stringify({
-                    data: cardsData,
-                    ttl: ttl.getTime()
-                }));
-            }
         });
 
-        githubReposFetched = true;
+        if (cardsData.length) {
+            const ttl = new Date();
+            ttl.setTime(ttl.getTime() + settings.cacheExpireHours * 60 * 60 * 1000);
+            localStorage.setItem('repos', JSON.stringify({
+                data: cardsData,
+                ttl: ttl.getTime()
+            }));
+        }
     });
 
     async function renderRepository(data) {
