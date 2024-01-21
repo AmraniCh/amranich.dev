@@ -20,19 +20,28 @@ export default function (settings) {
         settings.pinnedRepos.forEach(repo => cards.innerHTML += skeleton(repo));
 
         const reposCache = JSON.parse(localStorage.getItem('repos'));
+
         if (reposCache && (new Date().getTime()) < reposCache.ttl) {
             reposCache.data.forEach(repo => renderRepository(repo));
             return;
         }
 
-        const cardsData = [];
+        if (!localStorage.getItem('repos') || (reposCache && (new Date().getTime()) >= reposCache.ttl)) {
+            const ttl = new Date();
+            ttl.setTime(ttl.getTime() + settings.cacheExpireHours * 60 * 60 * 1000);
+            localStorage.setItem('repos', JSON.stringify({
+                data: [],
+                ttl: ttl.getTime()
+            }));
+        }
+
         settings.pinnedRepos.forEach(async repo => {
             await fetch(`https://api.github.com/repos/${repo}`).then(res => {
                 if (res.ok) {
                     return res.json();
                 }
 
-                throw new Error("Unable to fetch");
+                throw new Error("Unable to fetch the repositories from GitHub API.");
             }).then(async json => {
                 var cardData = {
                     githubRepo: json,
@@ -54,19 +63,18 @@ export default function (settings) {
                     };
                 }
 
-                cardsData.push(cardData);
                 renderRepository(cardData);
+
+                const reposFromCache = JSON.parse(localStorage.getItem('repos'));
+                if (Array.isArray(reposFromCache.data)) {
+                    localStorage.setItem('repos', JSON.stringify({
+                        data: reposFromCache.data.concat([cardData]),
+                        ttl: reposFromCache.ttl
+                    }));
+                }
+
             });
         });
-
-        if (cardsData.length) {
-            const ttl = new Date();
-            ttl.setTime(ttl.getTime() + settings.cacheExpireHours * 60 * 60 * 1000);
-            localStorage.setItem('repos', JSON.stringify({
-                data: cardsData,
-                ttl: ttl.getTime()
-            }));
-        }
     });
 
     async function renderRepository(data) {
