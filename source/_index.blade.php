@@ -10,6 +10,7 @@
         @include('_partials.career')
         @include('_partials.featured-projects')
         @include('_partials.open-source')
+        @include('_partials.contact-me')
 
     </div>
 @endsection

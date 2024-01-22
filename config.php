@@ -9,7 +9,7 @@ return [
 
     'production'      => false,
 
-    'baseUrl'         => '',
+    'baseUrl'         => 'http://localhost:3000',
 
     'local'           => 'en',
 

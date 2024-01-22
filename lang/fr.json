@@ -40,5 +40,13 @@
     "featured-projects.third-project.date": "janvier 2020",
     "featured-projects.third-project.title": "Gestionnaire de bases de données MySQL",
     "featured-projects.third-project.desc": "Une application web pour gérer les bases de données MySQL localement avec prise en charge de la journalisation pour toutes les opérations CRUD MySQL.",
-    "open-source.heading": "open source"
+    "open-source.heading": "open source",
+    "contact-me.heading": "me contacter",
+    "contact-me.p.1": "Je suis toujours ouvert pour discuter de votre projet ou partager des connaissances. N'hésitez pas à me contacter pour toute question ou si vous avez un projet sur lequel nous pouvons travailler ensemble",
+    "contact-me.p.2": "Si vous n'aimez pas les formulaires, envoyez-moi un e-mail à",
+    "contact-me.p.3": "Suivez-moi sur",
+    "contact-me.form.fullname.placeholder": "Votre Nom Complet",
+    "contact-me.form.email.placeholder": "E-mail",
+    "contact-me.form.message.placeholder": "Message",
+    "contact-me.form.submit": "Envoyer"
 }

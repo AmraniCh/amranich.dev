@@ -40,5 +40,13 @@
     "featured-projects.third-project.date": "January 2020",
     "featured-projects.third-project.title": "MySQL Databases Manager",
     "featured-projects.third-project.desc": "a web application to manage MySQL databases locally with support of logging for all MySQL CRUD operations.",
-    "open-source.heading": "open source"
+    "open-source.heading": "open source",
+    "contact-me.heading": "get in touch",
+    "contact-me.p.1": "I am always open to discussing your project or sharing knowledge. Feel free to contact me with any questions or if you have a project we can work on together",
+    "contact-me.p.2": "If you don’t like forms email me at",
+    "contact-me.p.3": "Follow me on",
+    "contact-me.form.fullname.placeholder": "Your Full Name",
+    "contact-me.form.email.placeholder": "Email",
+    "contact-me.form.message.placeholder": "Message",
+    "contact-me.form.submit": "Send"
 }
