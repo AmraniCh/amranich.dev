@@ -9,9 +9,26 @@ use Symfony\Component\Mailer\Transport\SendmailTransport;
 const DEV_BASE_URL = 'http://localhost:3000';
 const PROD_BASE_URL = 'https://amranich.dev';
 
-header('Access-Control-Allow-Origin: ' . $baseUrl);
-
 try {
+    if (!function_exists('getDomainFromUrl')) {
+        function getDomainFromUrl(string $url) {
+            return str_ireplace('www.', '', parse_url($url, PHP_URL_HOST));
+        }
+    }
+
+    $baseUrl = '';
+    $fullUrl = sprintf("%s://%s", isset($_SERVER['HTTPS']) && $_SERVER['HTTPS']  === 'on' ? 'https': 'http', $_SERVER['HTTP_HOST']);
+
+    if (getDomainFromUrl($fullUrl) === getDomainFromUrl(PROD_BASE_URL)) {
+        $baseUrl = PROD_BASE_URL;
+    } elseif (getDomainFromUrl($fullUrl) === getDomainFromUrl(DEV_BASE_URL)) {
+        $baseUrl = DEV_BASE_URL;
+    } else {
+        throw new \LogicException("Cannot decide the base URL.");
+    }
+
+    header('Access-Control-Allow-Origin: ' . $baseUrl);
+
     if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
         http_response_code(400);
         exit(json_encode([
@@ -20,36 +37,10 @@ try {
         ]));
     }
 
-    if (!function_exists('getUrlDomain')) {
-        function getUrlDomain(string $url) {
-            return str_ireplace('www.', '', parse_url($url, PHP_URL_HOST));
-        }
-    }
-
-    $baseUrl = '';
-    $fullUrl = sprintf("%s://%s", isset($_SERVER['HTTPS']) && $_SERVER['HTTPS']  === 'on' ? 'https': 'http', $_SERVER['HTTP_HOST']);
-    if (getUrlDomain($fullUrl) === getUrlDomain(PROD_BASE_URL)) {
-        $baseUrl = PROD_BASE_URL;
-    } elseif (getUrlDomain($fullUrl) === getUrlDomain(DEV_BASE_URL)) {
-        $baseUrl = DEV_BASE_URL;
-    } else {
-        throw new \LogicException("Cannot decide the base URL.");
-    }
-
-    // check for origin
-    if ($baseUrl !== $fullUrl) {
-        http_response_code(400);
-        exit(json_encode([
-            'message' => '',
-            'status' => 'error'
-        ]));
-    }
-
     require __DIR__ . '/vendor/autoload.php';
-
+    
     header('Content-Type: application/json');
 
-    // validate required parameters
     $validator = new Validator;
     $validation = $validator->make($_POST, [
         'fullname' => 'required|regex:/^[a-zA-Z]+(?:\s[a-zA-Z]+)+$/',

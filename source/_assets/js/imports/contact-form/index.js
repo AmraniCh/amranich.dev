@@ -5,16 +5,20 @@ export default function () {
     const submitBtn = form.querySelector('.primary-btn');
     const alert = initAlert(form);
 
+    function toggleLoading(loading) {
+        submitBtn.classList[loading ? 'add' : 'remove']('loading');
+        submitBtn.disabled = loading;
+    }
+
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
 
         alert.clear();
 
-        submitBtn.classList.add('loading');
-        submitBtn.disabled = true;
+        toggleLoading(true);
 
         const formData = new FormData(form);
-        const res = await fetch('send_email.php', {
+        const res = await fetch(location.origin + '/send_email.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',
@@ -24,12 +28,19 @@ export default function () {
                 email: formData.get('email'),
                 message: formData.get('message')
             })
+        }).catch(err => {
+            console.log(err);
+            alert({
+                message: "A client error occurred while sending your email: " + err.message,
+                type: alert.ERROR_TYPE
+            });
+            toggleLoading(false);
+            throw err;
         });
         const json = await res.json();
         const message = json.message;
 
-        submitBtn.classList.remove('loading');
-        submitBtn.disabled = false;
+        toggleLoading(false);
 
         alert({
             message,
