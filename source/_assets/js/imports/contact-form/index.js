@@ -29,7 +29,6 @@ export default function () {
                 message: formData.get('message')
             })
         }).catch(err => {
-            console.log(err);
             alert({
                 message: "A client error occurred while sending your email: " + err.message,
                 type: alert.ERROR_TYPE

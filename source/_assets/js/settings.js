@@ -32,6 +32,6 @@ export default {
             "amranich/ajax-router",
         ],
         cacheExpireHours: 8,
-        skeletonTimeoutSeconds: 2.5
+        skeletonTimeoutSeconds: 1.5
     }
 };

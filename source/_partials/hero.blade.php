@@ -18,7 +18,7 @@
         </button>
 
         <ul id="navbar-default"
-            class="hidden absolute top-[10%] left-[50%] translate-x-[-50%] lg:flex flex-col gap-2 grow-1 bg-yellow-300 rounded p-4 w-[92%] lg:translate-x-0 lg:flex-grow-1 lg:gap-14 xl:gap-16 lg:justify-center lg:flex-row lg:sticky lg:bg-transparent lg:w-auto">
+            class="hidden absolute top-[10%] left-[50%] translate-x-[-50%] lg:flex flex-col gap-2 grow-1 bg-yellow-300 rounded p-4 w-[92%] lg:translate-x-0 lg:flex-grow-1 lg:gap-14 xl:gap-[4.5rem] lg:justify-center lg:flex-row lg:sticky lg:bg-transparent lg:w-auto">
             <li>
                 <a href="#home" class="hero-nav-item line-before-static">
                     {{ $page->trans('nav.home') }}
@@ -73,7 +73,8 @@
                         {{ $page->trans('hero.resume') }}
                     </x-slot>
 
-                    <svg class="h-4 w-4 fill-white mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <svg class="inline h-4 w-4 fill-white mr-1 group-hover:fill-gray-900"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                         <path
                             d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V304H176c-35.3 0-64 28.7-64 64V512H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128zM176 352h32c30.9 0 56 25.1 56 56s-25.1 56-56 56H192v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V448 368c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24H192v48h16zm96-80h32c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H304c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H320v96h16zm80-112c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V432 368z" />
@@ -116,16 +117,20 @@
         <!-- Social Links End -->
 
         <!-- Dark Mode Switcher Start -->
-        <button type="button" id="top-section-footer-dark-mode-toggle-btn"
-            class="absolute left-4 -bottom-2 lg:bottom-[initial] lg:left-[initial] lg:fixed lg:top-[5.4rem] lg:right-[80px]">
-            <svg style="color: rgb(223, 211, 201);" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8V16Z" fill="#dfd3c1"></path>
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM12 4V8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16V20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4Z"
-                    fill="#dfd3c1"></path>
-            </svg>
-        </button>
+        <div
+            class="absolute left-4 -bottom-2 lg:bottom-[initial] lg:left-[initial] lg:fixed lg:top-[4.8rem] lg:right-[80px]">
+            <button id="top-section-footer-dark-mode-toggle-btn"
+                class="h-12 w-12 rounded-lg p-2 bg-brown-200 lg:bg-transparent lg:hover:bg-brown-200 dark:hover:bg-yellow-50">
+                <svg class="fill-brown-500 block dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                </svg>
+                <svg class="fill-yellow-500 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                        fill-rule="evenodd" clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
         <!-- Dark Mode Switcher End -->
 
         <!-- Scroll Down Icon Indicator Start -->
