@@ -11,6 +11,7 @@
         @include('_partials.featured-projects')
         @include('_partials.open-source')
         @include('_partials.contact-me')
+        @include('_partials.footer')
 
     </div>
 @endsection
