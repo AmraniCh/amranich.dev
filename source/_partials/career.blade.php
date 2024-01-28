@@ -1,4 +1,4 @@
-<div class="section px-8 lg:px-16 bg-yellow-100 dark:bg-inherit">
+<div class="colored-section">
     <x-section-heading text="{!! $page->trans('career.heading') !!}" />
 
     <div class="flex flex-col gap-8 dark:text-yellow-900">

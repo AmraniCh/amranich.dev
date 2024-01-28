@@ -1,4 +1,4 @@
-<div class="section px-8 lg:px-16">
+<div class="section">
     <x-section-heading text="{!! $page->trans('care-about.heading') !!}" />
 
     <div class="flex flex-wrap justify-center gap-12 md:gap-10 lg:gap-12">

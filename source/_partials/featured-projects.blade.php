@@ -1,4 +1,4 @@
-<div class="section px-8 xl:px-16">
+<div class="section">
     <x-section-heading text="{!! $page->trans('featured-projects.title') !!}" />
 
     <div class="flex flex-col gap-10 xl:gap-16">

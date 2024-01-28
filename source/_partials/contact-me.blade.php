@@ -1,4 +1,4 @@
-<div class="section px-8 lg:px-16">
+<div class="section">
     <x-section-heading text="{!! $page->trans('contact-me.heading') !!}" />
 
     <div class="flex flex-col gap-12 lg:flex-row">
