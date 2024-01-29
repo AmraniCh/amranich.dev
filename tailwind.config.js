@@ -14,7 +14,8 @@ module.exports = {
       colors: {
         transparent: 'transparent',
         'yellow': {
-          '100': '#fefaef',
+          '50': '#FFFDF7',
+          '100': '#F7EED9',
           '200': '#f5ead1',
           '300': '#ead59e',
           '400': '#e1c171',

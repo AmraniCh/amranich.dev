@@ -2,7 +2,7 @@
     <span
         class="absolute top-0 left-0 mt-1 ml-1 h-full w-full rounded bg-yellow-900/70 group-hover:top-0.5 group-hover:left-0.5 group-hover:duration-100"></span>
     <span
-        class="capitalize fold-bold relative inline-block h-full w-full rounded border-2 border-yellow-900 bg-yellow-900 px-3 py-1  md:px-6 md:py-2 text-base font-bold text-white transition duration-100 group-hover:bg-yellow-500 group-hover:text-gray-900 dark:bg-transparent dark:border-yellow-400">
+        class="capitalize fold-bold relative inline-block h-full w-full rounded border-2 border-yellow-900 bg-yellow-900 px-3 py-1  md:px-6 md:py-2 text-base font-bold text-white transition duration-100 group-hover:bg-yellow-50 group-hover:text-yellow-900 dark:bg-transparent dark:border-yellow-400">
 
         <svg class="spinner hidden w-4 h-4 me-2 text-white animate-spin" aria-hidden="true" role="status"
             viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">

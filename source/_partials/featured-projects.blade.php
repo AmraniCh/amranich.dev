@@ -1,7 +1,7 @@
 <div class="section">
     <x-section-heading text="{!! $page->trans('featured-projects.title') !!}" />
 
-    <div class="flex flex-col gap-10 xl:gap-16">
+    <div class="flex flex-col gap-10 xl:gap-20">
 
         <x-featured-project snapshot="personal-webiste-snapshot.jpg"
             snapshotAlt="Shakir El Amrani's personal website snapshot" date="{!! $page->trans('featured-projects.first-project.date') !!}"

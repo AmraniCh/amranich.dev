@@ -3,7 +3,7 @@
 
     <div class="flex flex-wrap justify-center gap-12 md:gap-10 lg:gap-12">
         <div
-            class="w-full sm:w-3/5 md:basis-[47%] border-2 border-yellow-900 rounded p-3 shadow-[15px_15px_0_0_#f5ead1]">
+            class="bg-white w-full sm:w-3/5 md:basis-[47%] border-2 border-yellow-900 rounded p-3 shadow-[8px_8px_0_0_#8F7023] hover:-translate-y-2 hover:transition-transform hover:shadow-lg hover:duration-300">
             <div class="flex flex-col items-center md:items-start">
                 <svg width="49" height="50" viewBox="0 0 49 50" fill="none" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -18,16 +18,16 @@
                     </defs>
                 </svg>
 
-                <h3 class="text-xl font-medium mt-2">Performance</h3>
+                <h3 class="text-xl font-medium mt-1">Performance</h3>
             </div>
-            <p class="mt-4 text-center md:text-left md:text-balance">
+            <p class="mt-3 text-sm text-center md:text-left md:text-balance">
                 Every second of loading time counts, caching, manifying, using CDN and a lot of things should be
                 considired when developing a web application.
             </p>
         </div>
 
         <div
-            class="w-full sm:w-3/5 md:basis-[47%] border-2 border-yellow-900 rounded p-3 shadow-[15px_15px_0_0_#f5ead1]">
+            class="bg-white w-full sm:w-3/5 md:basis-[47%] border-2 border-yellow-900 rounded p-3 shadow-[8px_8px_0_0_#8F7023] hover:-translate-y-2 hover:transition-transform hover:shadow-lg hover:duration-300">
             <div class="flex flex-col items-center md:items-start">
                 <svg width="48" height="50" viewBox="0 0 48 50" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -50,16 +50,16 @@
                 </svg>
 
 
-                <h3 class="text-xl font-medium mt-2">Security</h3>
+                <h3 class="text-xl font-medium mt-1">Security</h3>
             </div>
-            <p class="mt-4 text-center md:text-left md:text-balance">
+            <p class="mt-3 text-sm text-center md:text-left md:text-balance">
                 Insecure web applications can give a chance for attackers to get access to a database or to a whole
                 hosting server, so every line of code should be thought through.
             </p>
         </div>
 
         <div
-            class="w-full sm:w-3/5 md:basis-[47%] border-2 border-yellow-900 rounded p-3 shadow-[15px_15px_0_0_#f5ead1]">
+            class="bg-white w-full sm:w-3/5 md:basis-[47%] border-2 border-yellow-900 rounded p-3 shadow-[8px_8px_0_0_#8F7023] hover:-translate-y-2 hover:transition-transform hover:shadow-lg hover:duration-300">
             <div class="flex flex-col items-center md:items-start">
                 <svg width="49" height="50" viewBox="0 0 49 50" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -94,9 +94,9 @@
                 </svg>
 
 
-                <h3 class="text-xl font-medium mt-2">User Experience</h3>
+                <h3 class="text-xl font-medium mt-1">User Experience</h3>
             </div>
-            <p class="mt-4 text-center md:text-left md:text-balance">
+            <p class="mt-3 text-sm text-center md:text-left md:text-balance">
                 User experience is the key to a successful web application, before typing code I’m always sketching
                 out
                 the user interfaces either in a white papers or in a user experience design tool like adobe XD or
@@ -105,7 +105,7 @@
         </div>
 
         <div
-            class="w-full sm:w-3/5 md:basis-[47%] border-2 border-yellow-900 rounded p-3 shadow-[15px_15px_0_0_#f5ead1]">
+            class="bg-white w-full sm:w-3/5 md:basis-[47%] border-2 border-yellow-900 rounded p-3 shadow-[8px_8px_0_0_#8F7023] hover:-translate-y-2 hover:transition-transform hover:shadow-lg hover:duration-300">
             <div class="flex flex-col items-center md:items-start">
                 <svg width="55" height="50" viewBox="0 0 55 50" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -131,9 +131,9 @@
                 </svg>
 
 
-                <h3 class="text-xl font-medium mt-2">Code Quality</h3>
+                <h3 class="text-xl font-medium mt-1">Code Quality</h3>
             </div>
-            <p class="mt-4 text-center md:text-left md:text-balance">
+            <p class="mt-3 text-sm text-center md:text-left md:text-balance">
                 Mastering the programming language, following the best practices and wrinting tests (TDD) should be
                 enogth to ensure the best quality of the code.
             </p>

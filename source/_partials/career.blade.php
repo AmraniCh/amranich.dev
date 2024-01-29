@@ -1,9 +1,9 @@
-<div class="colored-section">
+<div class="section">
     <x-section-heading text="{!! $page->trans('career.heading') !!}" />
 
     <div class="flex flex-col gap-8 dark:text-yellow-900">
         <div
-            class="w-full bgx-[#fff8e5c9] px-5 py-3 rounded hover:bg-bone/20 bg-white group dark:bg-[#fff8e1] dark:hover:bg-white shadow-sm">
+            class="w-full border-2 border-yellow-900 px-5 py-4 rounded hover:bg-bone/20 bg-white hover:-translate-y-2 hover:transition-transform hover:shadow-lg hover:duration-300 group dark:bg-[#fff8e1] dark:hover:bg-white shadow-sm">
             <div class="relative lg:flex lg:justify-between lg:items-center">
                 <div>
                     <h3 class="text-xl capitalize font-medium text-yellow lg:text-2xl">
@@ -25,7 +25,7 @@
         </div>
 
         <div
-            class="w-full bgx-[#fff8e5c9] px-5 py-3 rounded hover:bg-bone/20 bg-white group dark:bg-[#fff8e1] dark:hover:bg-white shadow-sm">
+            class="w-full border-2 border-yellow-900 px-5 py-4 rounded hover:bg-bone/20 bg-white hover:-translate-y-2 hover:transition-transform hover:shadow-lg hover:duration-300 group dark:bg-[#fff8e1] dark:hover:bg-white shadow-sm">
             <div class="relative lg:flex lg:justify-between lg:items-center">
                 <div>
                     <h3 class="text-xl capitalize font-medium text-yellow lg:text-2xl">
@@ -47,7 +47,7 @@
         </div>
 
         <div
-            class="w-full bgx-[#fff8e5c9] px-5 py-3 rounded hover:bg-bone/20 bg-white group dark:bg-[#fff8e1] dark:hover:bg-white shadow-sm">
+            class="w-full border-2 border-yellow-900 px-5 py-4 rounded hover:bg-bone/20 bg-white hover:-translate-y-2 hover:transition-transform hover:shadow-lg hover:duration-300 group dark:bg-[#fff8e1] dark:hover:bg-white shadow-sm">
             <div class="relative lg:flex lg:justify-between lg:items-center">
                 <div>
                     <h3 class="text-xl capitalize font-medium text-yellow lg:text-2xl">

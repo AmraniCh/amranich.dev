@@ -53,15 +53,15 @@
 
         <form id="contactMeForm" class="flex flex-col gap-4 lg:flex-1">
             <input type="text" name="fullname"
-                class="p-2 bg-transparent border border-brown-500 rounded-md !outline-none focus:ring-4 focus:ring-yellow-900 dark:bg-white focus:focus:ring-yellow-500 dark:text-yellow-900"
+                class="p-2 bg-transparent border-2 border-brown-500 rounded-md !outline-none focus:ring-4 focus:ring-yellow-900 dark:bg-white focus:focus:ring-yellow-500 dark:text-yellow-900"
                 placeholder="{!! $page->trans('contact-me.form.fullname.placeholder') !!}" required>
 
             <input type="email" name="email"
-                class="p-2 bg-transparent border border-brown-500 rounded-md !outline-none focus:ring-4 focus:ring-yellow-900 dark:bg-white focus:focus:ring-yellow-500 dark:text-yellow-900"
+                class="p-2 bg-transparent border-2 border-brown-500 rounded-md !outline-none focus:ring-4 focus:ring-yellow-900 dark:bg-white focus:focus:ring-yellow-500 dark:text-yellow-900"
                 placeholder="{!! $page->trans('contact-me.form.email.placeholder') !!}" required>
 
             <textarea name="message"
-                class="p-2 border border-brown-500 rounded-md h-36 !outline-none focus:ring-4 focus:ring-yellow-900 focus:focus:ring-yellow-500 dark:text-yellow-900"
+                class="p-2 bg-transparent border-2 border-brown-500 rounded-md h-36 !outline-none focus:ring-4 focus:ring-yellow-900 focus:focus:ring-yellow-500 dark:text-yellow-900"
                 placeholder="{!! $page->trans('contact-me.form.message.placeholder') !!}" required></textarea>
 
             <div class="alerts flex flex-col gap-3 hidden"></div>

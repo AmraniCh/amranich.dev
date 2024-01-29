@@ -18,7 +18,7 @@
         </button>
 
         <ul id="navbar-default"
-            class="hidden absolute top-[10%] left-[50%] translate-x-[-50%] lg:flex flex-col gap-2 grow-1 bg-yellow-300 rounded p-4 w-[92%] lg:translate-x-0 lg:flex-grow-1 lg:gap-14 xl:gap-[4.5rem] lg:justify-center lg:flex-row lg:sticky lg:bg-transparent lg:w-auto">
+            class="hidden absolute top-[10%] left-[50%] translate-x-[-50%] lg:flex flex-col gap-2 grow-1 bg-yellow-300 rounded p-4 w-[92%] lg:translate-x-0 lg:flex-grow-1 lg:gap-14 xl:gap-[3.7rem] lg:justify-center lg:flex-row lg:sticky lg:bg-transparent lg:w-auto">
             <li>
                 <a href="#home" class="hero-nav-item line-before-static">
                     {{ $page->trans('nav.home') }}
@@ -26,22 +26,22 @@
             </li>
             <li>
                 <a href="#projects" class="hero-nav-item line-before line-before-hover">
-                    {{ $page->trans('nav.projects') }}
+                    {{ $page->trans('nav.1') }}
                 </a>
             </li>
             <li>
                 <a href="#services" class="hero-nav-item line-before line-before-hover">
-                    {{ $page->trans('nav.services') }}
+                    {{ $page->trans('nav.2') }}
                 </a>
             </li>
             <li>
                 <a href="#blog" class="hero-nav-item line-before line-before-hover">
-                    {{ $page->trans('nav.blog') }}
+                    {{ $page->trans('nav.3') }}
                 </a>
             </li>
             <li>
                 <a href="#contact" class="hero-nav-item line-before line-before-hover">
-                    {{ $page->trans('nav.contact') }}
+                    {{ $page->trans('nav.4') }}
                 </a>
             </li>
         </ul>
@@ -58,7 +58,8 @@
             <span class="mt-2 first-letter:capitalize">
                 {{ $page->trans('hero.greet') }}
             </span>
-            <h1 class="mt-2 text-5xl text-center font-bold capitalize lg:text-left">
+            <h1
+                class="mt-2 text-5xl text-center font-bold capitalize lg:text-left bg-gradient-to-l from-yellow-600 to-yellow-900 bg-clip-text text-transparent dark:text-yellow-200">
                 {{ $page->trans('hero.fullname') }}
             </h1>
             <h2 class="mt-2 text-lg text-center font-medium capitalize lg:text-left">
@@ -73,7 +74,7 @@
                         {{ $page->trans('hero.resume') }}
                     </x-slot>
 
-                    <svg class="inline h-4 w-4 fill-white mr-1 group-hover:fill-gray-900"
+                    <svg class="inline h-5 w-5 fill-white mr-1 group-hover:fill-yellow-900"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                         <path
@@ -94,33 +95,22 @@
         <!-- Social Links Start -->
         <ul id="top-section-footer-social-links" class="hidden lg:block lg:absolute lg:bottom-20 lg:-left-6">
             <li>
-                <a href="{{ $page->links->behance }}" target="blank"
-                    class="block text-brown-400 text-center font-normal cursor-pointer -rotate-90 tracking-widest-x2 uppercase mb-28 hover:opacity-70">
-                    Behance
-                </a>
-
+                <x-vertical-social-link text="Behance" link="{{ $page->links->behance }}" />
             </li>
             <li>
-                <a href="{{ $page->links->linkedin }}" target="blank"
-                    class="block text-brown-400 text-center font-normal cursor-pointer -rotate-90 tracking-widest-x2 uppercase mb-28 hover:opacity-70">
-                    Linkedin
-                </a>
-
+                <x-vertical-social-link text="Linkedin" link="{{ $page->links->linkedin }}" />
             </li>
             <li>
-                <a href="{{ $page->links->github }}" target="blank"
-                    class="block text-brown-400 text-center font-normal cursor-pointer -rotate-90 tracking-widest-x2 uppercase hover:opacity-70">
-                    Github
-                </a>
+                <x-vertical-social-link text="Github" link="{{ $page->links->github }}" isLastItem="" />
             </li>
         </ul>
         <!-- Social Links End -->
 
         <!-- Dark Mode Switcher Start -->
         <div
-            class="absolute left-4 -bottom-2 lg:bottom-[initial] lg:left-[initial] lg:fixed lg:top-[4.8rem] lg:right-[80px]">
+            class="absolute left-4 -bottom-2 lg:bottom-[initial] lg:left-[initial] lg:fixed lg:top-[75px] lg:right-[53px]">
             <button id="top-section-footer-dark-mode-toggle-btn"
-                class="h-12 w-12 rounded-lg p-2 bg-brown-200 lg:bg-transparent lg:hover:bg-brown-200 dark:hover:bg-yellow-50">
+                class="h-12 w-12 rounded-lg p-2 bg-brown-200 lg:bg-transparent lg:hover:bg-yellow-100 dark:hover:bg-yellow-50">
                 <svg class="fill-brown-500 block dark:hidden" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
                 </svg>

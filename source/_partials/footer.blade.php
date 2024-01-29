@@ -1,4 +1,4 @@
-<div class="border-t border-brown-300 pt-4 dark:border-[#463103] dark:border-t-2">
+<div class="border-t border-brown-300 p-4 dark:border-[#463103] dark:border-t-2">
     <div class="flex flex-col items-center gap-1 text-sm lg:flex-row lg:justify-center lg:text-xs">
         <span>
             Crafted with

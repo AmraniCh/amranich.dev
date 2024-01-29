@@ -50,11 +50,10 @@
 
 </head>
 
-<body class="font-ubuntu text-yellow-900 dark:text-yellow-200">
+<body
+    class="py-2 px-2 md:py-4 md:px-4 lg:px-8 lg:py-8 font-ubuntu bg-yellow-200 text-yellow-900 dark:bg-[#231e17] dark:text-yellow-200">
 
-    <div class="bg-yellow-200 p-2 relative lg:p-8">
-        @yield('body')
-    </div>
+    @yield('body')
 
     <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
 
