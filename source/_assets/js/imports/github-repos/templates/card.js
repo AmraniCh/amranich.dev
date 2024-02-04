@@ -6,7 +6,7 @@ export default async ({
     downloads
 }) => `
     <li class="md:p-3 w-full md:w-1/2">
-        <div class="border bg-white border-yellow-900 dark:border-yellow-200 shadow-sm rounded-md p-4 h-full flex animate-fade-in hover:-translate-y-2 hover:transition-transform hover:shadow-lg hover:duration-300 dark:bg-transparent">
+        <div class="card border bg-white border-yellow-900 shadow-sm rounded-md p-4 h-full flex animate-[fadeIn_.3s_ease-out] hover:-translate-y-2 hover:transition-transform hover:shadow-lg hover:duration-300 dark:border-yellow-200 dark:bg-transparent">
             <div class="relative flex flex-col w-full">
                 <!-- header -->
                 <div class="flex justify-between">

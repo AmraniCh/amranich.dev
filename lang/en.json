@@ -35,7 +35,7 @@
     "featured-projects.first-project.title": "My Personal Portfolio Website",
     "featured-projects.first-project.desc": "my portfolio website is designed to showcase both my personality and skills as a software developer.",
     "featured-projects.second-project.date": "september 2020",
-    "featured-projects.second-project.title": "FTP Files Manager Web Application",
+    "featured-projects.second-project.title": "FTP File Manager Web Application",
     "featured-projects.second-project.desc": "A web-based FTP client application to manage your FTP files, built with a simple MVC architecture, no frameworks or libraries are used (except my owns).",
     "featured-projects.third-project.date": "January 2020",
     "featured-projects.third-project.title": "MySQL Databases Manager",

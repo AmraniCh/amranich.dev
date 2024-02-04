@@ -1,7 +1,7 @@
 <div
-    class="{{ isset($highlight) ? 'border-2 border-yellow-900 bg-yellow-200 p-4 rounded-md text-yellow-950' : 'text-yellow-900' }}">
+    class="card opacity-0 {{ isset($highlight) ? 'border-2 border-yellow-900 bg-yellow-200 p-4 rounded-md text-yellow-950' : 'text-yellow-900' }}">
     <div
-        class="flex flex-col w-full {{ !isset($highlight) ? 'grayscale hover:grayscale-0 dark:text-yellow-200' : '' }} transition-all lg:flex-row lg:gap-10">
+        class="flex flex-col w-full {{ !isset($highlight) ? 'grayscale hover:grayscale-0 dark:text-yellow-200' : '' }} lg:flex-row lg:gap-10">
         <!-- Project Snapshot -->
         <div class="lg:flex lg:items-center lg:flex-shrink-0">
             <img class="w-full lg:w-[500px] xl:w-[600px] rounded-md" src="/assets/images/{{ $snapshot }}"

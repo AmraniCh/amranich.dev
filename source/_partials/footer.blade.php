@@ -1,4 +1,4 @@
-<div class="border-t border-brown-300 p-4 dark:border-[#463103] dark:border-t-2">
+<div class="border-t border-yellow-700 py-4 lg:mx-16 dark:border-yellow-200 dark:border-t-2">
     <div class="flex flex-col items-center gap-1 text-sm lg:flex-row lg:justify-center lg:text-xs">
         <span>
             Crafted with
@@ -12,7 +12,7 @@
         <span>and Deployed via FTP with Github Actions</span>
         @if ($page->version)
             <a class="lg:ml-1" href="https://github.com/AmraniCh/amranich.dev/releases/tag/v0.1.8" target="_blank">
-                <x-badges.base text="{{ $page->version }}" />
+                <x-badge text="{{ $page->version }}" />
             </a>
         @endif
     </div>

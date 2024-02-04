@@ -1,11 +1,11 @@
-<div class="section">
+<div class="section about-me-section">
     <x-section-heading text="{!! $page->trans('about.heading') !!}" />
 
     <div class="flex flex-col justify-between items-center gap-16 lg:flex-row lg:gap-20">
 
-        <div class="flex flex-col gap-6">
+        <div class="flex flex-col gap-6 opacity-0 text">
             <p
-                class="first-letter:text-5xl text-justify lg:text-left  text-md leading-7 md:leading-loose xl:leading-loose md:text-lg xl:text-xl md:ml-4">
+                class="first-letter:text-5xl text-justify lg:text-left text-md leading-7 md:leading-loose xl:leading-loose md:text-lg xl:text-xl md:ml-4">
                 {{ $page->trans('about.content.1') }}
             </p>
 
@@ -20,9 +20,7 @@
             </p>
         </div>
 
-        <div>
-            <x-blockquote-ship />
-        </div>
+        <x-blockquote-ship />
     </div>
 
 </div>
