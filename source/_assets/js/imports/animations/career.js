@@ -1,9 +1,9 @@
-export default function () {
-    document.querySelectorAll(".career-section .card").forEach((card, i) => {
-        const observer = new IntersectionObserver((entries) =>
-            card.classList.toggle("animate-[fadeInDown_.6s_ease-out_forwards]", entries[0].isIntersecting)
-        );
+import { animateOnVisibility } from "../../helpers";
 
-        observer.observe(card);
+export default function () {
+    animateOnVisibility({
+        element: document.querySelectorAll(".career-section .card"),
+        animationClass: "animate-[fadeInDown_.5s_ease-out_forwards]",
+        options: { threshold: .6 }
     });
 }

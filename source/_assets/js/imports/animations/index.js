@@ -3,6 +3,7 @@ import aboutMe from "./about-me";
 import careAbout from "./care-about";
 import career from "./career";
 import featuredProjects from "./featured-projects";
+import { animateOnVisibility } from "../../helpers";
 
 export default function (settings) {
 	[
@@ -17,15 +18,9 @@ export default function (settings) {
 }
 
 function animateSections() {
-	const elements = document.querySelectorAll(".section");
-	elements.forEach((ele) => {
-		const observer = new IntersectionObserver((entries) => {
-			ele.classList.toggle(
-				"animate-[fadeInUp_.8s_ease-out_.2s_forwards]",
-				entries[0].isIntersecting
-			);
-		});
-
-		observer.observe(ele);
+	animateOnVisibility({
+		element: document.querySelectorAll(".section"),
+		animationClass: "animate-[fadeInUp_.8s_ease-out_forwards]",
+		options: { threshold: .3 }
 	});
 }

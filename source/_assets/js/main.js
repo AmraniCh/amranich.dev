@@ -7,10 +7,10 @@ import contactForm from "./imports/contact-form";
 import animations from "./imports/animations";
 
 window.addEventListener("DOMContentLoaded", () => {
-  navbarMenu();
-  darkMode();
-  languageSwitcher();
-  animations(settings.animations);
-  githubRepos(settings.githubRepos);
-  contactForm();
+	navbarMenu();
+	darkMode();
+	languageSwitcher();
+	animations(settings.animations);
+	githubRepos(settings.githubRepos);
+	contactForm();
 });

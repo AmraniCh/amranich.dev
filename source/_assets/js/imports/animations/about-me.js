@@ -1,13 +1,16 @@
+import { animateOnVisibility } from "../../helpers";
+
 export default function () {
-    [
-        document.querySelector(".about-me-section .text"),
-        document.querySelector(".about-me-section .favorite-quote")
-    ]
-        .forEach((ele, i) => {
-            const observer = new IntersectionObserver((entries) => {
-                ele.classList.toggle('animate-[zoomIn_.7s_ease-out_forwards]', entries[0].isIntersecting);
-                ele.style.animationDelay = (i === 0) ? '.2s' : `.${i + 4}s`;
-            });
-            observer.observe(ele);
-        });
+    const section = document.querySelector(".about-me-section");
+    const options = { threshold: 0.6 };
+    animateOnVisibility({
+        element: section.querySelector(".text"),
+        animationClass: "animate-[zoomIn_.7s_ease-out_.2s_forwards]",
+        options,
+    });
+    animateOnVisibility({
+        element: section.querySelector(".favorite-quote"),
+        animationClass: "animate-[zoomIn_.7s_ease-out_.4s_forwards]",
+        options,
+    });
 }
