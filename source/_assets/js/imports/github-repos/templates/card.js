@@ -1,4 +1,4 @@
-import emojiReplacer from "../utils/emoji-replacer"
+import { replaceEmoji } from "../../../helpers";
 
 export default async ({
     githubRepo,
@@ -46,7 +46,7 @@ export default async ({
 
                 <!-- body -->
                 <p class="flex-1 my-2">
-                    ${await emojiReplacer(githubRepo.description)}
+                    ${await replaceEmoji(githubRepo.description)}
                 </p>
 
                 <!-- footer -->
@@ -92,4 +92,4 @@ export default async ({
             </div>
         </div>
     </li>
-`
+`;
