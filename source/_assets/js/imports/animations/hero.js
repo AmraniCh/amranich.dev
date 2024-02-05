@@ -1,10 +1,14 @@
 export default function (settings) {
+
 	renderBackgroundStars(settings.heroBackgroundSvg);
-	window.addEventListener("scroll", () => {
-		animateOnScrollBackgroundStars(settings, window.scrollY);
-		animateOnScrollSocialLinks(settings.hideOnScrollY, window.scrollY);
-		animateOnScrollLangSwitcher(settings.hideOnScrollY, window.scrollY);
+
+	window.addEventListener("scroll", function () {
+		animateOnScrollBackgroundStars(settings, this.scrollY);
+		animateOnScrollSocialLinks(settings.hideOnScrollY, this.scrollY);
+		animateOnScrollLangSwitcher(settings.hideOnScrollY, this.scrollY);
+		animateOnScrollDarkModeBtn(settings.hideOnScrollY, this.scrollY);
 	});
+
 }
 
 function renderBackgroundStars(settings) {
@@ -63,7 +67,7 @@ function renderBackgroundStars(settings) {
 function animateOnScrollBackgroundStars(settings, scrollY) {
 	if (scrollY > settings.hideOnScrollY) {
 		document.querySelectorAll('#svgs-container svg').forEach($svg => {
-			const animationClass = Array.from($svg.classList).find((c) => c.search("animate-") !== -1);
+			const animationClass = Array.from($svg.classList).find(c => c.search("animate-") !== -1);
 			$svg.classList.remove(animationClass);
 		});
 	} else {
@@ -72,11 +76,13 @@ function animateOnScrollBackgroundStars(settings, scrollY) {
 }
 
 function animateOnScrollSocialLinks(hideOnScrollY, scrollY) {
-	const $ele = document.getElementById("top-section-footer-social-links");
+	if (window.innerWidth < 1024) {
+		return;
+	}
+
+	const $ele = document.getElementById("hero-section-footer-social-links");
 	const animationStorageKey = "social-links-animation-class";
-	var animationClass = Array.from($ele.classList).find(
-		(c) => c.search("animate-") !== -1
-	);
+	var animationClass = Array.from($ele.classList).find(c => c.search("animate-") !== -1);
 
 	if (!animationClass) {
 		animationClass = localStorage.getItem(animationStorageKey);
@@ -94,11 +100,33 @@ function animateOnScrollSocialLinks(hideOnScrollY, scrollY) {
 }
 
 function animateOnScrollLangSwitcher(hideOnScrollY, scrollY) {
-	const $ele = document.getElementById("top-section-footer-lang-switcher-container");
+	const $ele = document.getElementById("hero-section-footer-lang-switcher-container");
 	const animationStorageKey = "lang-switcher-animation-class";
-	var animationClass = Array.from($ele.classList).find(
-		(c) => c.search("animate-") !== -1
-	);
+	var animationClass = Array.from($ele.classList).find(c => c.search("animate-") !== -1);
+
+	if (!animationClass) {
+		animationClass = localStorage.getItem(animationStorageKey);
+	} else {
+		localStorage.setItem(animationStorageKey, animationClass);
+	}
+
+	if (scrollY > hideOnScrollY) {
+		$ele.classList.remove(animationClass);
+		localStorage.setItem(animationStorageKey, animationClass);
+	} else if (!$ele.classList.contains(animationClass)) {
+		$ele.classList.add(animationClass);
+		$ele.style.animationDelay = "0s";
+	}
+}
+
+function animateOnScrollDarkModeBtn(hideOnScrollY, scrollY) {
+	if (window.innerWidth >= 1024) { // on small screens only
+		return;
+	}
+
+	const $ele = document.getElementById('hero-section-footer-dark-mode-toggle-btn');
+	const animationStorageKey = "dark-mode-toggle-btn-animation-class";
+	var animationClass = Array.from($ele.classList).find(c => c.search("heroControlsFadeInUp") !== -1);
 
 	if (!animationClass) {
 		animationClass = localStorage.getItem(animationStorageKey);

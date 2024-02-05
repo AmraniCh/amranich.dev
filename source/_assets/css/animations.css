@@ -1,3 +1,13 @@
+:root {
+    --hero-controls-bottom: 0
+}
+
+@media(min-width: 1024px) {
+    :root {
+        --hero-controls-bottom: @apply bottom-12;
+    }
+}
+
 @keyframes sparkling {
     0% {
         opacity: 0.1;
@@ -25,96 +35,85 @@
 }
 
 @keyframes fadeIn {
-    0% {
+    from {
         opacity: 0;
     }
 
-    100% {
+    to {
         opacity: 1;
     }
 }
 
 @keyframes fadeInLeft {
-    0% {
+    from {
         opacity: 0;
         transform: translateX(-20px);
     }
 
-    100% {
+    to {
         opacity: 1;
         transform: translateX(0);
     }
 }
 
 @keyframes fadeInRight {
-    0% {
+    from {
         opacity: 0;
         transform: translateX(20px);
     }
 
-    100% {
+    to {
         opacity: 1;
         transform: translateX(0);
     }
 }
 
 @keyframes fadeInDown {
-    0% {
+    from {
         opacity: 0;
         transform: translateY(-20px);
     }
 
-    100% {
+    to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
 @keyframes fadeInUp {
-    0% {
+    from {
         opacity: 0;
         transform: translateY(20px);
     }
 
-    100% {
+    to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
 @keyframes socialLinksFadeInUp {
-    0% {
+    from {
         opacity: 0;
         @apply -bottom-96;
     }
 
-    100% {
+    to {
         opacity: 1;
         @apply bottom-20;
     }
 }
 
-@keyframes langSwitcherFadeInUp {
-    0% {
+
+@keyframes heroControlsFadeInUp {
+    from {
         opacity: 0;
         @apply -bottom-96;
     }
 
-    100% {
+    to {
         opacity: 1;
-        @apply bottom-12;
-    }
-}
-
-@keyframes langSwitcherFadeInUpMobile {
-    0% {
-        opacity: 0;
-        @apply -bottom-96;
-    }
-
-    100% {
-        opacity: 1;
-        @apply -bottom-2;
+        bottom: var(--hero-controls-bottom) !important;
     }
 }
 
@@ -131,5 +130,15 @@
     100% {
         opacity: 1;
         transform: scale(1);
+    }
+}
+
+@keyframes moveUp {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-8px);
     }
 }

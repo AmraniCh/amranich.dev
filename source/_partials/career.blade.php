@@ -2,8 +2,8 @@
     <x-section-heading text="{!! $page->trans('career.heading') !!}" />
 
     <div class="flex flex-col gap-8 dark:text-yellow-900">
-        <div class="card w-full border-2 border-yellow-900 px-5 py-4 rounded opacity-0 hover:bg-bone/20 bg-white hover:-translate-y-2 hover:transition-transform hover:shadow-lg hover:duration-300 group dark:bg-[#fff8e1] dark:hover:bg-white shadow-sm"
-            style="animation-delay: .3s">
+        <div class="card group px-5 py-4 w-full bg-white border-2 border-yellow-900 shadow-sm rounded opacity-0 hover:bg-yellow-100 hover:transition-colors hover:duration-300 dark:bg-[#fff8e1] dark:hover:bg-white"
+            style="animation-delay: .2s">
             <div class="relative lg:flex lg:justify-between lg:items-center">
                 <div>
                     <h3 class="text-xl capitalize font-medium text-yellow lg:text-2xl">
@@ -24,8 +24,8 @@
             </div>
         </div>
 
-        <div class="card w-full border-2 border-yellow-900 px-5 py-4 rounded opacity-0 hover:bg-bone/20 bg-white hover:-translate-y-2 hover:transition-transform hover:shadow-lg hover:duration-300 group dark:bg-[#fff8e1] dark:hover:bg-white shadow-sm"
-            style="animation-delay: .4s">
+        <div class="card group px-5 py-4 w-full bg-white border-2 border-yellow-900 shadow-sm rounded opacity-0 hover:bg-yellow-100 hover:transition-colors hover:duration-300 dark:bg-[#fff8e1] dark:hover:bg-white"
+            style="animation-delay: .3s">
             <div class="relative lg:flex lg:justify-between lg:items-center">
                 <div>
                     <h3 class="text-xl capitalize font-medium text-yellow lg:text-2xl">
@@ -46,8 +46,8 @@
             </div>
         </div>
 
-        <div class="card w-full border-2 border-yellow-900 px-5 py-4 rounded opacity-0 hover:bg-bone/20 bg-white hover:-translate-y-2 hover:transition-transform hover:shadow-lg hover:duration-300 group dark:bg-[#fff8e1] dark:hover:bg-white shadow-sm"
-            style="animation-delay: .5s">
+        <div class="card group px-5 py-4 w-full bg-white border-2 border-yellow-900 shadow-sm rounded opacity-0 hover:bg-yellow-100 hover:transition-colors hover:duration-300 dark:bg-[#fff8e1] dark:hover:bg-white"
+            style="animation-delay: .4s">
             <div class="relative lg:flex lg:justify-between lg:items-center">
                 <div>
                     <h3 class="text-xl capitalize font-medium text-yellow lg:text-2xl">
@@ -69,5 +69,6 @@
         </div>
     </div>
 
-    <x-anchor link="{{ $page->links->linkedin }}" text="{{ $page->trans('career.linkedin-notice.1') }}" />
+    <x-anchor class="view-more-link opacity-0" link="{{ $page->links->linkedin }}"
+        text="{{ $page->trans('career.linkedin-notice.1') }}" />
 </div>

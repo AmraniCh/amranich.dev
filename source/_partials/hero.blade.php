@@ -101,10 +101,10 @@
     </div>
     <!-- Intro End -->
 
-    <!-- Top Section Footer Start -->
-    <div id="top-section-footer" class="flex justify-between -mb-5 lg:mb-1 lg:justify-center lg:relative">
+    <!-- Hero Section Footer Start -->
+    <div id="hero-section-footer" class="flex justify-between -mb-5 lg:mb-1 lg:justify-center lg:relative">
         <!-- Social Links Start -->
-        <ul id="top-section-footer-social-links"
+        <ul id="hero-section-footer-social-links"
             class="hidden lg:block lg:absolute lg:-left-6 lg:opacity-0 lg:animate-[socialLinksFadeInUp_.7s_ease-out_forwards]"
             style="animation-delay: 1.2s">
             <li>
@@ -120,24 +120,22 @@
         <!-- Social Links End -->
 
         <!-- Dark Mode Switcher Start -->
-        <div
-            class="absolute left-4 -bottom-2 opacity-0 animate-[fadeInUp_.5s_ease-out_1.1s_forwards] lg:bottom-[initial] lg:left-[initial] lg:fixed lg:top-[75px] lg:right-[53px] lg:opacity-0 lg:animate-[fadeInDown_.3s_ease-out_.6s_forwards]">
-            <button id="top-section-footer-dark-mode-toggle-btn"
-                class="h-12 w-12 rounded-lg p-2 bg-brown-200 lg:bg-transparent lg:hover:bg-yellow-100 dark:hover:bg-yellow-50">
-                <svg class="fill-brown-500 block dark:hidden" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                </svg>
-                <svg class="fill-yellow-500 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
-                    <path
-                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                        fill-rule="evenodd" clip-rule="evenodd"></path>
-                </svg>
-            </button>
-        </div>
+        <button id="hero-section-footer-dark-mode-toggle-btn"
+            class="absolute left-4 -bottom-2 h-12 w-12 rounded-lg p-2 bg-brown-200 opacity-0 animate-[heroControlsFadeInUp_.5s_ease-out_1.1s_forwards] lg:bg-transparent lg:hover:bg-yellow-100 lg:animate-[fadeInDown_.3s_ease-out_.6s_forwards] lg:bottom-[initial] lg:left-[initial] lg:fixed lg:top-[75px] lg:right-[53px] dark:hover:bg-yellow-50">
+            <svg class="fill-brown-500 block dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+            </svg>
+            <svg class="fill-yellow-500 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                    fill-rule="evenodd" clip-rule="evenodd"></path>
+            </svg>
+        </button>
+
         <!-- Dark Mode Switcher End -->
 
         <!-- Scroll Down Icon Indicator Start -->
-        <button type="button" id="top-section-footer-scroll-down-indicator"
+        <button type="button" id="hero-section-footer-scroll-down-indicator"
             class="cursor-default hidden -mb-3 lg:mb-2 lg:block">
             <svg class="h-8 w-8 fill-brown-400 lg:-translate-y-1/4 lg:opacity-0 lg:animate-[fadeIn_1s_ease-out_1.6s_forwards,bounce_1s_ease-out_2s_infinite]"
                 width="26" height="40" viewBox="0 0 26 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -154,8 +152,8 @@
         <!-- Scroll Down Icon Indicator End -->
 
         <!-- Language Switcher Start -->
-        <ul id="top-section-footer-lang-switcher-container"
-            class="flex flex-col absolute right-4 -bottom-2 opacity-0 animate-[fadeInUp_.5s_ease-out_1.1s_forwards] lg:absolute lg:bottom-12 lg:right-0 lg:animate-[langSwitcherFadeInUp_.7s_ease-out_1.2s_forwards]">
+        <ul id="hero-section-footer-lang-switcher-container"
+            class="flex flex-col absolute right-4 -bottom-2 opacity-0 animate-[heroControlsFadeInUp_.5s_ease-out_forwards] animation-delay-[1.1s] lg:absolute lg:bottom-12 lg:right-0 lg:animation-delay-[1.2s] lg:animation-duration-[.7s]">
             <li>
                 <a href="/en" class="lang-switcher-btn  {{ $page->selected('en') }}" data-default="true">EN</a>
             </li>
@@ -165,7 +163,7 @@
         </ul>
         <!-- Language Switcher End -->
     </div>
-    <!-- Top Section Footer End -->
+    <!-- Hero Section Footer End -->
 
     <!-- Animated Background SVGs Start -->
     <div id="svgs-container" class="absolute h-full w-full -z-50">

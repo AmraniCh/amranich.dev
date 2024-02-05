@@ -41,7 +41,7 @@ export async function replaceEmoji(text) {
  * 
  * @param {HTMLElement|NodeList} element - The element or NodeList of elements to observe for visibility changes.
  * @param {string} animationClass - The CSS class to toggle on the elements when they become visible or invisible.
- * @param {IntersectionObserverInit} [options={}] - Additional options to configure the Intersection Observer.
+ * @param {IntersectionObserverInit} [options={}] - Intersection Observer options.
  * @throws {Error} Throws an error if the 'element' parameter is neither a NodeList nor an HTMLElement.
  */
 export function animateOnVisibility({ element, animationClass, options = {} }) {
@@ -56,8 +56,9 @@ export function animateOnVisibility({ element, animationClass, options = {} }) {
     }
 
     elements.forEach((ele) => {
-        (new IntersectionObserver((entries) => {
-            ele.classList.toggle(animationClass, entries[0].isIntersecting);
-        }, options)).observe(ele);
+        (new IntersectionObserver(
+            entries => ele.classList.toggle(animationClass, entries[0].isIntersecting),
+            options
+        )).observe(ele);
     });
 }

@@ -4,7 +4,7 @@
 @endphp
 
 <a href="{{ $link ?? '#' }}" {{ $isLink ? 'target="_blank"' : '' }}
-    class="group mt-6 text-sm capitalize text-yellow-900 dark:text-yellow-200 inline-flex gap-2 cursor-pointer md:float-right">
+    class="group mt-6 text-sm capitalize text-yellow-900 dark:text-yellow-200 inline-flex gap-2 cursor-pointer md:float-right {{ $class ?? '' }}">
     <span
         class="font-semibold border-b-2 border-transparent hover:border-b-2 hover:border-b-yellow-500">{!! $text !!}</span>
 

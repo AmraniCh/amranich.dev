@@ -20,7 +20,7 @@ export default function (settings) {
 function animateSections() {
 	animateOnVisibility({
 		element: document.querySelectorAll(".section"),
-		animationClass: "animate-[fadeInUp_.8s_ease-out_forwards]",
-		options: { threshold: .3 }
+		animationClass: "animate-[fadeInUp_.7s_ease-out_forwards]",
+		options: { threshold: 0 }
 	});
 }

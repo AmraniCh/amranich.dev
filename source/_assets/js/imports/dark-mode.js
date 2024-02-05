@@ -1,4 +1,4 @@
-export default function() {
+export default function () {
     const isOsDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     const isStorageTheme = localStorage.theme !== undefined;
     const isStorageDark = isStorageTheme && localStorage.theme === 'dark';
@@ -11,7 +11,7 @@ export default function() {
     }
 
     // dark mode button click event handle
-    const $button = document.getElementById('top-section-footer-dark-mode-toggle-btn');
+    const $button = document.getElementById('hero-section-footer-dark-mode-toggle-btn');
     $button.addEventListener('click', () => {
         document.documentElement.classList.toggle('dark');
         const isDark = document.documentElement.classList.contains('dark');

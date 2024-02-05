@@ -3,7 +3,7 @@
 
     <div class="flex flex-wrap justify-center gap-12 md:gap-10 lg:gap-12">
         <div
-            class="card bg-white w-full sm:w-3/5 md:basis-[47%] border-2 border-yellow-900 rounded p-3 shadow-[8px_8px_0_0_#8F7023] opacity-0">
+            class="card bg-white w-full sm:w-3/5 md:basis-[47%] border-2 border-yellow-900 rounded p-3 shadow-[8px_8px_0_0] shadow-yellow-900 opacity-0 hover:bg-yellow-100 hover:transition-colors hover:duration-300">
             <div class="flex flex-col items-center md:items-start">
                 <svg width="49" height="50" viewBox="0 0 49 50" fill="none" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -27,7 +27,7 @@
         </div>
 
         <div
-            class="card bg-white w-full sm:w-3/5 md:basis-[47%] border-2 border-yellow-900 rounded p-3 shadow-[8px_8px_0_0_#8F7023] opacity-0">
+            class="card bg-white w-full sm:w-3/5 md:basis-[47%] border-2 border-yellow-900 rounded p-3 shadow-[8px_8px_0_0] shadow-yellow-900 opacity-0 hover:bg-yellow-100 hover:transition-colors hover:duration-300">
             <div class="flex flex-col items-center md:items-start">
                 <svg width="48" height="50" viewBox="0 0 48 50" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -59,7 +59,7 @@
         </div>
 
         <div
-            class="card bg-white w-full sm:w-3/5 md:basis-[47%] border-2 border-yellow-900 rounded p-3 shadow-[8px_8px_0_0_#8F7023] opacity-0">
+            class="card bg-white w-full sm:w-3/5 md:basis-[47%] border-2 border-yellow-900 rounded p-3 shadow-[8px_8px_0_0] shadow-yellow-900 opacity-0 hover:bg-yellow-100 hover:transition-colors hover:duration-300">
             <div class="flex flex-col items-center md:items-start">
                 <svg width="49" height="50" viewBox="0 0 49 50" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -105,7 +105,7 @@
         </div>
 
         <div
-            class="card bg-white w-full sm:w-3/5 md:basis-[47%] border-2 border-yellow-900 rounded p-3 shadow-[8px_8px_0_0_#8F7023] opacity-0 ">
+            class="card bg-white w-full sm:w-3/5 md:basis-[47%] border-2 border-yellow-900 rounded p-3 shadow-[8px_8px_0_0] shadow-yellow-900 opacity-0 hover:bg-yellow-100 hover:transition-colors hover:duration-300">
             <div class="flex flex-col items-center md:items-start">
                 <svg width="55" height="50" viewBox="0 0 55 50" fill="none"
                     xmlns="http://www.w3.org/2000/svg">

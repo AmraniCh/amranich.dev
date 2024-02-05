@@ -12,7 +12,7 @@ export default function () {
         animateOnVisibility({
             element: card,
             animationClass,
-            options: { threshold: .6 }
-        })
+            options: { threshold: 0.1 }
+        });
     });
 }

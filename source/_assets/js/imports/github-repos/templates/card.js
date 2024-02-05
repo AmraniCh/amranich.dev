@@ -6,7 +6,7 @@ export default async ({
     downloads
 }) => `
     <li class="md:p-3 w-full md:w-1/2">
-        <div class="card border bg-white border-yellow-900 shadow-sm rounded-md p-4 h-full flex animate-[fadeIn_.3s_ease-out] hover:-translate-y-2 hover:transition-transform hover:shadow-lg hover:duration-300 dark:border-yellow-200 dark:bg-transparent">
+        <div class="card group bg-white border border-yellow-900 rounded-md p-4 h-full flex animate-[fadeIn_.5s_ease-out_forwards] hover:animate-[moveUp_.3s_ease-out_forwards] hover:bg-yellow-100 hover:duration-500  hover:shadow-lg dark:border-yellow-200 dark:bg-transparent">
             <div class="relative flex flex-col w-full">
                 <!-- header -->
                 <div class="flex justify-between">
@@ -83,7 +83,7 @@ export default async ({
                     <div class="flex flex-wrap gap-1.5">
                         ${githubLangs.map(lang => `
                             <span
-                                class="bg-yellow-200 text-yellow-950 text-xs text-center whitespace-nowrap font-medium px-2 py-0.5 rounded  dark:text-yellow-900">
+                                class="bg-yellow-200 text-yellow-950 text-xs text-center whitespace-nowrap font-medium px-2 py-0.5 rounded group-hover:bg-white border border-yellow-900 dark:text-yellow-900">
                                 ${lang}
                             </span>
                         `).join('')}
