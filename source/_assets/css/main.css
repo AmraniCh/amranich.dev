@@ -25,11 +25,11 @@ html {
 }
 
 .lang-switcher-btn {
-	@apply inline-block w-full bg-brown-500 text-yellow-50 px-1 dark:bg-brown-500;
+	@apply inline-block w-full bg-brown-500 text-yellow-50 px-1 hover:bg-yellow-900 dark:bg-brown-500;
 }
 
 .lang-switcher-btn.selected {
-	@apply bg-brown-300 text-yellow-900 opacity-60 cursor-default dark:text-yellow-100;
+	@apply bg-brown-300 text-yellow-900 cursor-default opacity-60 dark:text-yellow-100;
 }
 
 .hero-nav-item {
