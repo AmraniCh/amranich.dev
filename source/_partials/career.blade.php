@@ -6,7 +6,7 @@
             style="animation-delay: .2s">
             <div class="relative lg:flex lg:justify-between lg:items-center">
                 <div>
-                    <h3 class="text-xl capitalize font-medium text-yellow lg:text-2xl">
+                    <h3 class="script-font text-xl capitalize text-yellow lg:text-2xl">
                         {{ $page->trans('career.second-position.title') }}</h3>
                     <div class="mt-3">
                         <p class="text-md max-w-[180px] md:max-w-[initial]">
@@ -28,7 +28,7 @@
             style="animation-delay: .3s">
             <div class="relative lg:flex lg:justify-between lg:items-center">
                 <div>
-                    <h3 class="text-xl capitalize font-medium text-yellow lg:text-2xl">
+                    <h3 class="script-font text-xl capitalize text-yellow lg:text-2xl">
                         {{ $page->trans('career.first-position.title') }}</h3>
                     <div class="mt-3">
                         <p class="text-md max-w-[180px] md:max-w-[initial]">
@@ -50,7 +50,7 @@
             style="animation-delay: .4s">
             <div class="relative lg:flex lg:justify-between lg:items-center">
                 <div>
-                    <h3 class="text-xl capitalize font-medium text-yellow lg:text-2xl">
+                    <h3 class="script-font text-xl capitalize text-yellow lg:text-2xl">
                         {{ $page->trans('career.last-education.title') }}</h3>
                     <div class="mt-3">
                         <p class="text-md max-w-[180px] md:max-w-[initial]">

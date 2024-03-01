@@ -13,7 +13,8 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ["Ubuntu", ...defaultTheme.fontFamily.sans],
+				sans: ["Urbanist", ...defaultTheme.fontFamily.sans],
+				mono: ["Roboto Mono", ...defaultTheme.fontFamily.mono],
 			},
 			colors: {
 				transparent: "transparent",

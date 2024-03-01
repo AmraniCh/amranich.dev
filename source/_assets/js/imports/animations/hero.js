@@ -100,7 +100,7 @@ function animateOnScrollSocialLinks(hideOnScrollY, scrollY) {
 }
 
 function animateOnScrollLangSwitcher(hideOnScrollY, scrollY) {
-	const $ele = document.getElementById("hero-section-footer-lang-switcher-container");
+	const $ele = document.getElementById("hero-section-footer-lang-switcher");
 	const animationStorageKey = "lang-switcher-animation-class";
 	var animationClass = Array.from($ele.classList).find(c => c.search("animate-") !== -1);
 

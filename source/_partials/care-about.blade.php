@@ -18,7 +18,7 @@
                     </defs>
                 </svg>
 
-                <h3 class="text-xl font-medium mt-1">Performance</h3>
+                <h3 class="script-font text-xl font-medium mt-1">Performance</h3>
             </div>
             <p class="mt-3 text-sm text-center md:text-left">
                 Every second of loading time counts, caching, manifying, using CDN and a lot of things should be
@@ -50,7 +50,7 @@
                 </svg>
 
 
-                <h3 class="text-xl font-medium mt-1">Security</h3>
+                <h3 class="script-font text-xl font-medium mt-1">Security</h3>
             </div>
             <p class="mt-3 text-sm text-center md:text-left">
                 Insecure web applications can give a chance for attackers to get access to a database or to a whole
@@ -93,8 +93,7 @@
                     </defs>
                 </svg>
 
-
-                <h3 class="text-xl font-medium mt-1">User Experience</h3>
+                <h3 class="script-font text-xl font-medium mt-1">User Experience</h3>
             </div>
             <p class="mt-3 text-sm text-center md:text-left">
                 User experience is the key to a successful web application, before typing code I’m always sketching
@@ -131,7 +130,7 @@
                 </svg>
 
 
-                <h3 class="text-xl font-medium mt-1">Code Quality</h3>
+                <h3 class="script-font text-xl font-medium mt-1">Code Quality</h3>
             </div>
             <p class="mt-3 text-sm text-center md:text-left">
                 Mastering the programming language, following the best practices and wrinting tests (TDD) should be

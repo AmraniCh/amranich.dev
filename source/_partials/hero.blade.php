@@ -1,4 +1,4 @@
-<div class="flex flex-col justify-between h-[92vh] px-4 lg:px-16 mb-6 relative">
+<div class="hero-section flex flex-col justify-between px-4 lg:px-16 mb-6 relative">
 
     <!-- Top Bar Start -->
     <div class="flex justify-between items-center flex-wrap">
@@ -20,7 +20,7 @@
         </button>
 
         <ul id="navbar-default"
-            class="hidden absolute top-[10%] left-[50%] translate-x-[-50%] lg:flex flex-col gap-2 grow-1 bg-yellow-300 rounded p-4 w-[92%] lg:translate-x-0 lg:flex-grow-1 lg:gap-14 xl:gap-[3.7rem] lg:justify-center lg:flex-row lg:sticky lg:bg-transparent lg:w-auto">
+            class="hidden text-lg absolute top-[10%] left-[50%] translate-x-[-50%] lg:flex flex-col gap-2 grow-1 bg-yellow-300 rounded p-4 w-[92%] lg:translate-x-0 lg:flex-grow-1 lg:gap-14 xl:gap-[3.3rem] lg:justify-center lg:flex-row lg:sticky lg:bg-transparent lg:w-auto">
             <li>
                 <a href="#home"
                     class="hero-nav-item line-before-static lg:opacity-0 lg:animate-[fadeInDown_.3s_ease-out_.1s_forwards]">
@@ -67,11 +67,11 @@
                 {{ $page->trans('hero.greet') }}
             </span>
             <h1
-                class="mt-2 text-5xl text-center font-bold capitalize lg:text-left bg-gradient-to-l from-yellow-600 to-yellow-900 bg-clip-text text-transparent opacity-0 animate-[fadeInUp_.3s_ease-out_.6s_forwards] lg:animate-[fadeInUp_.3s_ease-out_1s_forwards] dark:text-yellow-200">
+                class="script-font tracking-wide mt-2 text-4xl text-center font-bold capitalize md:text-5xl lg:text-left bg-gradient-to-l from-yellow-600 to-yellow-900 bg-clip-text text-transparent opacity-0 animate-[fadeInUp_.3s_ease-out_.6s_forwards] lg:animate-[fadeInUp_.3s_ease-out_1s_forwards] dark:text-yellow-200">
                 {{ $page->trans('hero.fullname') }}
             </h1>
             <h2
-                class="mt-2 text-lg text-center font-medium capitalize opacity-0 animate-[fadeInUp_.3s_ease-out_.7s_forwards] lg:text-left lg:animate-[fadeInUp_.3s_ease-out_1.1s_forwards]">
+                class="script-font mt-2 text-lg text-center font-medium capitalize opacity-0 animate-[fadeInUp_.3s_ease-out_.7s_forwards] lg:text-lef lg:text-2xl lg:animate-[fadeInUp_.3s_ease-out_1.1s_forwards]">
                 {{ $page->trans('hero.title') }}
             </h2>
             <p
@@ -102,7 +102,7 @@
     <!-- Intro End -->
 
     <!-- Hero Section Footer Start -->
-    <div id="hero-section-footer" class="flex justify-between -mb-5 lg:mb-1 lg:justify-center lg:relative">
+    <div id="hero-section-footer" class="flex justify-between lg:justify-center lg:relative">
         <!-- Social Links Start -->
         <ul id="hero-section-footer-social-links"
             class="hidden lg:block lg:absolute lg:-left-6 lg:opacity-0 lg:animate-[socialLinksFadeInUp_.7s_ease-out_forwards]"
@@ -152,7 +152,7 @@
         <!-- Scroll Down Icon Indicator End -->
 
         <!-- Language Switcher Start -->
-        <ul id="hero-section-footer-lang-switcher-container"
+        <ul id="hero-section-footer-lang-switcher"
             class="flex flex-col absolute right-4 -bottom-2 opacity-0 animate-[heroControlsFadeInUp_.5s_ease-out_forwards] animation-delay-[1.1s] lg:absolute lg:bottom-12 lg:right-0 lg:animation-delay-[1.2s] lg:animation-duration-[.7s]">
             <li>
                 <a href="/en" class="lang-switcher-btn  {{ $page->selected('en') }}" data-default="true">EN</a>

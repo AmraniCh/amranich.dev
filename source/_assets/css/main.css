@@ -3,16 +3,41 @@
 @import "tailwindcss/utilities";
 @import './animations.css';
 
+html {
+	font-weight: 500;
+}
+
+.badge {
+	@apply font-mono font-medium -tracking-wider
+}
+
+#hero-section-footer-social-links .link {
+	font-family: 'Roboto Mono';
+	@apply !font-normal
+}
+
+.script-font {
+	font-family: 'Dangrek';
+}
+
+#hero-section-footer-lang-switcher {
+	@apply script-font border-2 border-yellow-950 rounded shadow-sm
+}
+
 .lang-switcher-btn {
-	@apply inline-block w-full bg-brown-300 px-1 dark:bg-brown-500;
+	@apply inline-block w-full bg-brown-500 text-yellow-50 px-1 dark:bg-brown-500;
 }
 
 .lang-switcher-btn.selected {
-	@apply text-brown-500 opacity-60 cursor-default dark:text-yellow-100;
+	@apply bg-brown-300 text-yellow-900 opacity-60 cursor-default dark:text-yellow-100;
 }
 
 .hero-nav-item {
-	@apply block py-2 px-4 rounded capitalize relative lg:bg-transparent lg:p-0 text-yellow-900 dark:lg:text-yellow-200;
+	@apply font-medium text-lg block py-2 px-4 rounded capitalize relative lg:bg-transparent lg:p-0 text-yellow-900 dark:lg:text-yellow-200;
+}
+
+#navbar-default li:nth-child(1) .hero-nav-item {
+	@apply font-extrabold
 }
 
 .line-before {
@@ -24,7 +49,7 @@
 }
 
 .line-before-static {
-	@apply line-before bg-white text-brown-400 hover:text-yellow-900 lg:text-yellow-900 lg:before:w-full lg:bg-transparent font-semibold dark:text-yellow-400;
+	@apply line-before bg-white text-brown-400 hover:text-yellow-900 lg:text-yellow-900 lg:before:w-full lg:bg-transparent dark:text-yellow-400;
 }
 
 .section {

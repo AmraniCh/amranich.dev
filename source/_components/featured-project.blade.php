@@ -13,7 +13,7 @@
             <span class="inline-block text-xs italic font-light capitalize">{!! $date !!}</span>
 
             <!-- Title -->
-            <h5 class="mt-2 capitalize flex items-center gap-2">
+            <h5 class="text-sm mt-2 capitalize flex items-center gap-2">
                 {!! $title !!}
                 @if (isset($highlight))
                     <div class="flex items-center gap-1">
@@ -35,7 +35,8 @@
                     </div>
                 @endif
             </h5>
-            <h3 class="mt-3 text-lg font-bold tracking-wider lg:text-2xl">
+
+            <h3 class="script-font mt-3 text-lg font-medium tracking-wide lg:text-2xl">
                 {!! $projectTitle !!}
             </h3>
 

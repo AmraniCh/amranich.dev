@@ -44,14 +44,19 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dangrek:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+
 
     <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
-
 </head>
 
 <body
-    class="py-2 px-2 md:py-4 md:px-4 lg:px-8 lg:py-8 font-ubuntu bg-yellow-200 text-yellow-900 dark:bg-[#231e17] dark:text-yellow-200">
+    class="py-2 px-2 md:py-4 md:px-4 lg:px-8 lg:py-8 bg-yellow-200 text-yellow-900 dark:bg-[#231e17] dark:text-yellow-200">
 
     @yield('body')
 
