@@ -48,5 +48,12 @@
     "contact-me.form.fullname.placeholder": "Your Full Name",
     "contact-me.form.email.placeholder": "Email",
     "contact-me.form.message.placeholder": "Message",
-    "contact-me.form.submit": "Send"
+    "contact-me.form.submit": "Send",
+    "scroll-indicator.hero": "intro",
+    "scroll-indicator.about": "about",
+    "scroll-indicator.care-about": "care about",
+    "scroll-indicator.career": "career",
+    "scroll-indicator.projects": "projects",
+    "scroll-indicator.open-source": "open source",
+    "scroll-indicator.contact": "contact"
 }

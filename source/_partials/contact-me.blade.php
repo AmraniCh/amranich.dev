@@ -1,4 +1,4 @@
-<div class="section">
+<div class="section scroll-indicator" data-scroll-indicator-text="{!! $page->trans('scroll-indicator.contact') !!}">
     <x-section-heading text="{!! $page->trans('contact-me.heading') !!}" />
 
     <div class="flex flex-col gap-12 lg:flex-row">

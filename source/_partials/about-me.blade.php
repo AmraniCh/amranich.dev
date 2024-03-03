@@ -1,4 +1,4 @@
-<div class="section about-me-section">
+<div class="section about-me-section scroll-indicator" data-scroll-indicator-text="{!! $page->trans('scroll-indicator.about') !!}">
     <x-section-heading text="{!! $page->trans('about.heading') !!}" />
 
     <div class="flex flex-col justify-between items-center gap-16 lg:flex-row lg:gap-20">

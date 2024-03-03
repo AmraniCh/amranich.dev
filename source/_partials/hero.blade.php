@@ -1,13 +1,12 @@
-<div class="hero-section flex flex-col justify-between px-4 lg:px-16 mb-6 relative">
+<div class="hero-section scroll-indicator flex flex-col justify-between px-4 lg:px-16 mb-6 relative z-0"
+    data-scroll-indicator-text="{!! $page->trans('scroll-indicator.hero') !!}">
 
     <!-- Top Bar Start -->
     <div class="flex justify-between items-center flex-wrap">
-        <div class="grow-2">
-            <a href="/">
-                <img class="w-16 lg:w-24 mb-4 select-none opacity-0 animate-[fadeIn_.6s_ease-out_.1s_forwards] lg:animate-[fadeIn_.3s_ease-out_.1s_forwards]"
-                    src="/assets/images/logo.svg" alt="El Amrani Chakir">
-            </a>
-        </div>
+        <a href="/">
+            <img class="w-16 lg:w-24 mb-4 select-none opacity-0 animate-[fadeIn_.6s_ease-out_.1s_forwards] lg:animate-[fadeIn_.3s_ease-out_.1s_forwards]"
+                src="/assets/images/logo.svg" alt="El Amrani Chakir">
+        </a>
 
         <button type="button" class="lg:hidden float-right opacity-0 animate-[fadeIn_.6s_ease-out_.3s_forwards]"
             id="navbar-collapse-toggle-btn">
@@ -20,7 +19,7 @@
         </button>
 
         <ul id="navbar-default"
-            class="hidden text-lg absolute top-[10%] left-[50%] translate-x-[-50%] lg:flex flex-col gap-2 grow-1 bg-yellow-300 rounded p-4 w-[92%] lg:translate-x-0 lg:flex-grow-1 lg:gap-14 xl:gap-[3.3rem] lg:justify-center lg:flex-row lg:sticky lg:bg-transparent lg:w-auto">
+            class="hidden text-lg absolute top-[10%] left-[50%] translate-x-[-50%] lg:flex flex-col gap-2 grow-1 bg-yellow-300 rounded p-4 w-[92%] lg:translate-x-0 lg:flex-grow-1 lg:gap-12 xl:gap-[3.66rem] lg:items-center lg:justify-end lg:flex-row lg:sticky lg:bg-transparent lg:w-auto">
             <li>
                 <a href="#home"
                     class="hero-nav-item line-before-static lg:opacity-0 lg:animate-[fadeInDown_.3s_ease-out_.1s_forwards]">
@@ -50,6 +49,21 @@
                     class="hero-nav-item line-before line-before-hover lg:opacity-0 lg:animate-[fadeInDown_.5s_ease-out_.5s_forwards]">
                     {{ $page->trans('nav.4') }}
                 </a>
+            </li>
+            <li>
+                <!-- Dark Mode Switcher Start -->
+                <button id="hero-section-footer-dark-mode-toggle-btn"
+                    class="absolute top-1 right-0 h-12 w-12 rounded-lg p-2 bg-brown-200 opacity-0 animate-[heroControlsFadeInUp_.5s_ease-out_1.1s_forwards] lg:bg-transparent lg:hover:bg-yellow-100 lg:animate-[fadeInDown_.3s_ease-out_.6s_forwards] dark:hover:bg-yellow-50">
+                    <svg class="fill-brown-500 block dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                    <svg class="fill-yellow-500 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                            fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <!-- Dark Mode Switcher End -->
             </li>
         </ul>
     </div>
@@ -121,7 +135,7 @@
 
         <!-- Dark Mode Switcher Start -->
         <button id="hero-section-footer-dark-mode-toggle-btn"
-            class="absolute left-4 -bottom-2 h-12 w-12 rounded-lg p-2 bg-brown-200 opacity-0 animate-[heroControlsFadeInUp_.5s_ease-out_1.1s_forwards] lg:bg-transparent lg:hover:bg-yellow-100 lg:animate-[fadeInDown_.3s_ease-out_.6s_forwards] lg:bottom-[initial] lg:left-[initial] lg:fixed lg:top-[75px] lg:right-[53px] dark:hover:bg-yellow-50">
+            class="absolute left-4 -bottom-2 h-12 w-12 rounded-lg p-2 bg-brown-200 opacity-0 animate-[heroControlsFadeInUp_.5s_ease-out_1.1s_forwards] lg:hidden">
             <svg class="fill-brown-500 block dark:hidden" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
             </svg>
@@ -131,7 +145,6 @@
                     fill-rule="evenodd" clip-rule="evenodd"></path>
             </svg>
         </button>
-
         <!-- Dark Mode Switcher End -->
 
         <!-- Scroll Down Icon Indicator Start -->

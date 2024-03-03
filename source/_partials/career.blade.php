@@ -1,4 +1,4 @@
-<div class="section career-section">
+<div class="section career-section scroll-indicator" data-scroll-indicator-text="{!! $page->trans('scroll-indicator.career') !!}">
     <x-section-heading text="{!! $page->trans('career.heading') !!}" />
 
     <div class="flex flex-col gap-8 dark:text-yellow-900">
