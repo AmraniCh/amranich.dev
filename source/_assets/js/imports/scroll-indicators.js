@@ -1,7 +1,7 @@
 export default function () {
 	const $container = document.getElementById("scrollIndicators");
 
-	if (window.innerWidth < 1200) {
+	if (window.innerWidth < 1024) {
 		return;
 	}
 
@@ -21,7 +21,6 @@ export default function () {
 		$sec.classList.add(uniqueClass);
 
 		li.classList.add('indicator');
-		// li.dataset.scrollIndicatorText = text;
 		li.dataset.target = '.' + uniqueClass;
 		li.style.animationDelay = ((i + 1) / 5) + 's';
 		li.setAttribute('data-title', text)
@@ -29,7 +28,13 @@ export default function () {
 		li.addEventListener('click', (e) => {
 			const ele = e.target.closest('li.indicator');
 			const targetSection = ele.dataset.target;
-			document.querySelector(targetSection).scrollIntoView({ behavior: 'smooth' });
+
+			if (i === 0) {
+				document.body.scrollIntoView({ behavior: 'smooth' });
+			} else {
+				document.querySelector(targetSection).scrollIntoView({ behavior: 'smooth' });
+			}
+
 			li.focus();
 		});
 
