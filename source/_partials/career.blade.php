@@ -1,72 +1,36 @@
 <div class="section career-section scroll-indicator" data-scroll-indicator-text="{!! $page->trans('scroll-indicator.career') !!}">
     <x-section-heading text="{!! $page->trans('career.heading') !!}" />
 
-    <div class="flex flex-col gap-8 dark:text-yellow-900">
-        <div class="card group px-5 py-4 w-full bg-white border-2 border-yellow-900 shadow-sm rounded opacity-0 hover:bg-yellow-100 hover:transition-colors hover:duration-300 dark:bg-[#fff8e1] dark:hover:bg-white"
-            style="animation-delay: .2s">
-            <div class="relative lg:flex lg:justify-between lg:items-center">
-                <div>
-                    <h3 class="script-font text-xl capitalize text-yellow lg:text-2xl">
-                        {{ $page->trans('career.second-position.title') }}</h3>
-                    <div class="mt-3">
-                        <p class="text-md max-w-[180px] md:max-w-[initial]">
-                            {{ $page->trans('career.second-position.company') }}</p>
-                        <p class="text-sm mt-1 max-w-[180px] md:max-w-[initial]">
-                            {{ $page->trans('career.second-position.duration') }}</p>
-                        <p class="text-xs mt-1 max-w-[180px] md:max-w-[initial]">
-                            {{ $page->trans('career.second-position.location') }}</p>
-                    </div>
-                </div>
-                <div class="mr-4">
-                    <img class="absolute right-0 bottom-0 max-w-[5rem] border shadow-xs p-1 lg:static"
-                        src="/assets/images/pi-marketing.jpg" alt="PI Mareting">
-                </div>
-            </div>
-        </div>
+    <div class="flex flex-col gap-5 dark:text-yellow-900">
 
-        <div class="card group px-5 py-4 w-full bg-white border-2 border-yellow-900 shadow-sm rounded opacity-0 hover:bg-yellow-100 hover:transition-colors hover:duration-300 dark:bg-[#fff8e1] dark:hover:bg-white"
-            style="animation-delay: .3s">
-            <div class="relative lg:flex lg:justify-between lg:items-center">
-                <div>
-                    <h3 class="script-font text-xl capitalize text-yellow lg:text-2xl">
-                        {{ $page->trans('career.first-position.title') }}</h3>
-                    <div class="mt-3">
-                        <p class="text-md max-w-[180px] md:max-w-[initial]">
-                            {{ $page->trans('career.first-position.company') }}</p>
-                        <p class="text-sm mt-1 max-w-[180px] md:max-w-[initial]">
-                            {{ $page->trans('career.first-position.duration') }}</p>
-                        <p class="text-xs mt-1 max-w-[180px] md:max-w-[initial]">
-                            {{ $page->trans('career.first-position.location') }}</p>
-                    </div>
-                </div>
-                <div class="mr-4">
-                    <img class="absolute right-0 bottom-0 max-w-[5rem] border shadow-xs p-1 lg:static"
-                        src="/assets/images/map-concepts.jpg" alt="Map-concepts">
-                </div>
-            </div>
-        </div>
+        <x-career-card style="animation-delay: .2s" title="{{ $page->trans('career.3-position.title') }}"
+            company="{{ $page->trans('career.3-position.company') }}"
+            duration="{{ $page->trans('career.3-position.duration') }}"
+            location="{{ $page->trans('career.3-position.location') }}"
+            logo="{{ $page->trans('career.3-position.location') }}" logoUrl="/assets/images/pi-marketing.jpg"
+            logoAlt="{{ $page->trans('career.3-position.company') }}" />
 
-        <div class="card group px-5 py-4 w-full bg-white border-2 border-yellow-900 shadow-sm rounded opacity-0 hover:bg-yellow-100 hover:transition-colors hover:duration-300 dark:bg-[#fff8e1] dark:hover:bg-white"
-            style="animation-delay: .4s">
-            <div class="relative lg:flex lg:justify-between lg:items-center">
-                <div>
-                    <h3 class="script-font text-xl capitalize text-yellow lg:text-2xl">
-                        {{ $page->trans('career.last-education.title') }}</h3>
-                    <div class="mt-3">
-                        <p class="text-md max-w-[180px] md:max-w-[initial]">
-                            {{ $page->trans('career.last-education.institute') }}</p>
-                        <p class="text-sm mt-1 max-w-[180px] md:max-w-[initial]">
-                            {{ $page->trans('career.last-education.duration') }}</p>
-                        <p class="text-xs mt-1 max-w-[180px] md:max-w-[initial]">
-                            {{ $page->trans('career.last-education.location') }}</p>
-                    </div>
-                </div>
-                <div class="mr-4">
-                    <img class="absolute right-0 bottom-0 max-w-[5rem] border shadow-xs p-1 lg:static"
-                        src="/assets/images/university-logo.jpg" alt="Université Abdelmalek Essaâdi">
-                </div>
-            </div>
-        </div>
+        <x-career-card style="animation-delay: .3s" title="{{ $page->trans('career.2-position.title') }}"
+            company="{{ $page->trans('career.2-position.company') }}"
+            duration="{{ $page->trans('career.2-position.duration') }}"
+            location="{{ $page->trans('career.2-position.location') }}"
+            logo="{{ $page->trans('career.2-position.location') }}" logoUrl="/assets/images/pi-marketing.jpg"
+            logoAlt="{{ $page->trans('career.2-position.company') }}" />
+
+        <x-career-card style="animation-delay: .4s" title="{{ $page->trans('career.1-position.title') }}"
+            company="{{ $page->trans('career.1-position.company') }}"
+            duration="{{ $page->trans('career.1-position.duration') }}"
+            location="{{ $page->trans('career.1-position.location') }}"
+            logo="{{ $page->trans('career.1-position.location') }}" logoUrl="/assets/images/map-concepts.jpg"
+            logoAlt="{{ $page->trans('career.1-position.company') }}" />
+
+        <x-career-card style="animation-delay: .5s" title="{{ $page->trans('career.last-education.title') }}"
+            company="{{ $page->trans('career.last-education.institute') }}"
+            duration="{{ $page->trans('career.last-education.duration') }}"
+            location="{{ $page->trans('career.last-education.location') }}"
+            logo="{{ $page->trans('career.last-education.location') }}" logoUrl="/assets/images/university-logo.jpg"
+            logoAlt="{{ $page->trans('career.last-education.institute') }}" />
+
     </div>
 
     <x-anchor class="view-more-link opacity-0" link="{{ $page->links->linkedin }}"

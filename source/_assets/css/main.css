@@ -64,6 +64,13 @@ html {
 	@apply inline;
 }
 
+.career-section .card:not(:first-child) {
+	@apply before:content-[''] before:block before:w-1 before:h-6 before:bg-yellow-900 before:absolute before:left-12 before:-top-6
+}
+
+/**
+ * Scroll indicators styles
+ */
 #scrollIndicators {
 	@apply hidden absolute top-0 -right-10 flex items-center justify-center h-screen;
 }
