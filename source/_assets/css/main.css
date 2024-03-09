@@ -50,16 +50,14 @@ html {
 }
 
 /* Various Styles */
-#hero-section-footer-lang-switcher {
-	@apply script-font border-2 border-yellow-950 rounded shadow-sm
-}
-
 .lang-switcher-btn {
-	@apply inline-block w-full bg-brown-500 text-yellow-50 px-1 hover:bg-yellow-900 dark:bg-brown-500;
+	/* @apply inline-block w-full bg-brown-500 text-yellow-50 px-1 hover:bg-yellow-900 dark:bg-brown-500; */
+	@apply inline-block px-1 w-full bg-brown-300 opacity-60 text-yellow-900 hover:bg-yellow-900 hover:opacity-100 hover:text-yellow-50 dark:text-yellow-100;
 }
 
 .lang-switcher-btn.selected {
-	@apply bg-brown-300 text-yellow-900 cursor-default opacity-60 dark:text-yellow-100;
+	/* @apply bg-brown-300 text-yellow-900 cursor-default opacity-60 dark:text-yellow-100; */
+	@apply bg-brown-500 text-yellow-50 cursor-default dark:bg-brown-500 pointer-events-none;
 }
 
 .hero-nav-item {

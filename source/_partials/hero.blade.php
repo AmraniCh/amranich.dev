@@ -166,7 +166,7 @@
 
         <!-- Language Switcher Start -->
         <ul id="hero-section-footer-lang-switcher"
-            class="flex flex-col absolute right-4 -bottom-2 opacity-0 animate-[heroControlsFadeInUp_.5s_ease-out_forwards] animation-delay-[1.1s] lg:absolute lg:bottom-12 lg:right-0 lg:animation-delay-[1.2s] lg:animation-duration-[.7s]">
+            class="flex flex-col absolute script-font border-2 border-yellow-950 hover:border-yellow-900 rounded shadow-sm right-4 -bottom-2 opacity-0 animate-[heroControlsFadeInUp_.5s_ease-out_forwards] animation-delay-[1.1s] lg:absolute lg:bottom-12 lg:right-0 lg:animation-delay-[1.2s] lg:animation-duration-[.7s]">
             <li>
                 <a href="/en" class="lang-switcher-btn  {{ $page->selected('en') }}" data-default="true">EN</a>
             </li>
