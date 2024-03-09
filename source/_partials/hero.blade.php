@@ -122,13 +122,13 @@
             class="hidden lg:block lg:absolute lg:-left-6 lg:opacity-0 lg:animate-[socialLinksFadeInUp_.7s_ease-out_forwards]"
             style="animation-delay: 1.2s">
             <li>
-                <x-vertical-social-links text="Behance" link="{{ $page->links->behance }}" />
+                <x-vertical-link text="Behance" link="{{ $page->links->behance }}" />
             </li>
             <li>
-                <x-vertical-social-links text="Linkedin" link="{{ $page->links->linkedin }}" />
+                <x-vertical-link text="Linkedin" link="{{ $page->links->linkedin }}" />
             </li>
             <li>
-                <x-vertical-social-links text="Github" link="{{ $page->links->github }}" isLastItem="" />
+                <x-vertical-link text="Github" link="{{ $page->links->github }}" />
             </li>
         </ul>
         <!-- Social Links End -->

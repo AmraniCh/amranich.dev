@@ -3,6 +3,7 @@
 @import "tailwindcss/utilities";
 @import './animations.css';
 
+/* Font related styles */
 html {
 	font-weight: 500;
 }
@@ -20,6 +21,35 @@ html {
 	font-family: 'Dangrek';
 }
 
+
+/* Scroll indicators styles */
+#scrollIndicators {
+	@apply hidden absolute top-0 -right-10 flex items-center justify-center h-screen;
+}
+
+#scrollIndicators .indicators {
+	@apply fixed;
+}
+
+#scrollIndicators .indicators .indicator.active,
+#scrollIndicators .indicators .indicator:hover {
+	@apply bg-yellow-900 scale-125;
+}
+
+#scrollIndicators .indicators .indicator {
+	@apply relative cursor-pointer opacity-0 w-3 h-3 rounded-sm shadow-[2px_2px_0_0] shadow-yellow-900 bg-brown-400 duration-75 transition-colors animate-[fadeIn_.5s_ease-out_forwards];
+}
+
+#scrollIndicators .indicators .indicator:hover::after {
+	content: attr(data-title);
+	@apply bg-yellow-50 rounded-sm border-2 border-yellow-900 px-1 py-0.5 absolute right-1/2 translate-x-1/2 -top-7 text-xs capitalize
+}
+
+#scrollIndicators .indicators .indicator:not(:last-child) {
+	@apply mb-5;
+}
+
+/* Various Styles */
 #hero-section-footer-lang-switcher {
 	@apply script-font border-2 border-yellow-950 rounded shadow-sm
 }
@@ -68,31 +98,6 @@ html {
 	@apply before:content-[''] before:block before:w-1 before:h-6 before:bg-yellow-900 before:absolute before:left-12 before:-top-6
 }
 
-/**
- * Scroll indicators styles
- */
-#scrollIndicators {
-	@apply hidden absolute top-0 -right-10 flex items-center justify-center h-screen;
-}
-
-#scrollIndicators .indicators {
-	@apply fixed;
-}
-
-#scrollIndicators .indicators .indicator.active,
-#scrollIndicators .indicators .indicator:hover {
-	@apply bg-yellow-900 scale-125;
-}
-
-#scrollIndicators .indicators .indicator {
-	@apply relative cursor-pointer opacity-0 w-3 h-3 rounded-sm shadow-[2px_2px_0_0] shadow-yellow-900 bg-brown-400 duration-75 transition-colors animate-[fadeIn_.5s_ease-out_forwards];
-}
-
-#scrollIndicators .indicators .indicator:hover::after {
-	content: attr(data-title);
-	@apply bg-yellow-50 rounded-sm border-2 border-yellow-900 px-1 py-0.5 absolute right-1/2 translate-x-1/2 -top-7 text-xs capitalize
-}
-
-#scrollIndicators .indicators .indicator:not(:last-child) {
-	@apply mb-5;
+.hero-section ul#hero-section-footer-social-links li:not(:last-child) .link {
+	@apply mb-32
 }
