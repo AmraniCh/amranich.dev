@@ -4,22 +4,22 @@ export default {
 
 		heroBackgroundSvg: {
 			desktop: {
-				numEachSvg: 5, // define the duplication number for each svg
-				maxDelaySeconds: 7, // in seconds
-				topRange: [
+				numEachSvg: 6, // Number of duplicate SVGs
+				maxDelaySeconds: 10, // Maximum animation delay in seconds
+				verticalRanges: [ // Ranges for vertical positioning
 					[15, 32],
 					[65, 85],
 				],
-				leftRange: [[10, 90]],
+				horizontalRanges: [[10, 90]], // Ranges for horizontal positioning
 			},
 			mobile: {
-				numEachSvg: 3,
-				maxDelaySeconds: 3,
-				topRange: [
+				numEachSvg: 4,
+				maxDelaySeconds: 4,
+				verticalRanges: [
 					[5, 28],
 					[88, 95],
 				],
-				leftRange: [[10, 90]],
+				horizontalRanges: [[5, 95]],
 			},
 			mobileBreakpoint: 1024,
 		},

@@ -8,12 +8,11 @@ export default function (settings) {
 		animateOnScrollLangSwitcher(settings.hideOnScrollY, this.scrollY);
 		animateOnScrollDarkModeBtn(settings.hideOnScrollY, this.scrollY);
 	});
-
 }
 
 function renderBackgroundStars(settings) {
-	const $svgsContainer = document.getElementById('svgs-container');
-	const $svgs = [
+	const $svgContainer = document.getElementById('heroBackgroundSvgContainer');
+	const $svgList = [
 		`<svg class="w-4 h-4 fill-yellow-200 text-yellow absolute -z-10 opacity-0 animate-[sparkling_8s_ease-out_infinite]"
                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-6 h-6">
@@ -30,27 +29,61 @@ function renderBackgroundStars(settings) {
 	const device = window.innerWidth < settings.mobileBreakpoint ? 'mobile' : 'desktop';
 	const numEachSvg = settings[device].numEachSvg;
 	const maxDelaySeconds = settings[device].maxDelaySeconds;
-	const topRange = settings[device].topRange;
-	const leftRange = settings[device].leftRange;
+	const verticalRanges = settings[device].verticalRanges;
+	const horizontalRanges = settings[device].horizontalRanges;
 	var it = 0, il = 0;
+	const topValues = [];
+	const leftValues = [];
 
-	$svgsContainer.innerHTML = '';
+	$svgContainer.innerHTML = '';
 
-	$svgs.forEach($svg => {
+	$svgList.forEach($svg => {
 
 		for (var j = 0; j < numEachSvg; j++) {
 			const tempDiv = document.createElement('div');
 			tempDiv.innerHTML = $svg;
 			const $svgElement = tempDiv.firstChild;
 
-			const topMinMax = topRange[it];
-			const randTop = Math.round(Math.random() * (topMinMax[1] - topMinMax[0]) + topMinMax[0]);
+			const topMinMax = verticalRanges[it];
+			const leftMinMax = horizontalRanges[il];
 
-			const leftMinMax = leftRange[il];
-			const randLeft = Math.round(Math.random() * (leftMinMax[1] - leftMinMax[0]) + leftMinMax[0]);
+			const getRandomPosition = (minMax) => {
+				const generateRandom = () => Math.round(Math.random() * (minMax[1] - minMax[0]) + minMax[0]);
 
-			it = it === topRange.length - 1 ? 0 : it + 1;
-			il = il === leftRange.length - 1 ? 0 : il + 1;
+				const isPositionTaken = (random) => {
+					if (topValues.includes(random) || leftValues.includes(random)) {
+						return true;
+					}
+
+					for (let v of [...topValues, ...leftValues]) {
+						if (random >= (v - 10) && random <= (v + 10)) {
+							return true;
+						}
+					}
+
+					return false;
+				};
+
+				var position = generateRandom();
+
+				var tries = 0;
+				while (tries < 10 && isPositionTaken(position)) {
+					position = generateRandom();
+					tries++;
+				}
+
+				return position;
+			};
+
+
+			const randTop = getRandomPosition(topMinMax);
+			const randLeft = getRandomPosition(leftMinMax);
+
+			topValues.push(randTop);
+			leftValues.push(randLeft);
+
+			it = it === verticalRanges.length - 1 ? 0 : it + 1;
+			il = il === horizontalRanges.length - 1 ? 0 : il + 1;
 
 			$svgElement.style.top = randTop + '%';
 			$svgElement.style.left = randLeft + '%';
@@ -58,15 +91,14 @@ function renderBackgroundStars(settings) {
 			$svgElement.classList.add('animate-[fade-in]');
 			$svgElement.style.animationDelay = Math.round(Math.random() * maxDelaySeconds * 10) / 10 + 's';
 
-			$svgsContainer.appendChild($svgElement);
+			$svgContainer.appendChild($svgElement);
 		}
 	});
-
 }
 
 function animateOnScrollBackgroundStars(settings, scrollY) {
 	if (scrollY > settings.hideOnScrollY) {
-		document.querySelectorAll('#svgs-container svg').forEach($svg => {
+		document.querySelectorAll('#heroBackgroundSvgContainer svg').forEach($svg => {
 			const animationClass = Array.from($svg.classList).find(c => c.search("animate-") !== -1);
 			$svg.classList.remove(animationClass);
 		});

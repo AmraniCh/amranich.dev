@@ -179,7 +179,32 @@
     <!-- Hero Section Footer End -->
 
     <!-- Animated Background SVGs Start -->
-    <div id="svgs-container" class="absolute h-full w-full -z-50">
+    <div id="heroBackgroundSvgContainer" class="absolute h-full w-full -z-50">
+        <!-- Mobile SVGs Fallback for no JS -->
+        <x-svg.star classes="top-[20%] left-[20%] animation-delay-[.2s] md:hidden" />
+        <x-svg.star classes="top-[15%] left-[75%] animation-delay-[.3s] md:hidden" />
+        <x-svg.star classes="top-[25%] left-[85%] animation-delay-[.4s] md:hidden" />
+        <x-svg.star classes="top-[12%] left-[9%] animation-delay-[.8s] md:hidden" />
+        <x-svg.star classes="top-[30%] left-[8%] animation-delay-[1s] md:hidden" />
+
+        <x-svg.star classes="top-[83%] left-[20%] animation-delay-[.2s] md:hidden" />
+        <x-svg.star classes="top-[85%] left-[75%] animation-delay-[.8s] md:hidden" />
+        <x-svg.star classes="top-[88%] left-[85%] animation-delay-[1.2s] md:hidden" />
+        <x-svg.star classes="top-[90%] left-[5%] animation-delay-[1s] md:hidden" />
+
+        <!-- Desktop SVGs Fallback for no JS -->
+        <x-svg.star classes="md:top-[24%] md:left-[16%] md:animation-delay-[.2s]" />
+        <x-svg.star classes="md:top-[20%] md:left-[32%] md:animation-delay-[.4s]" />
+        <x-svg.star classes="md:top-[45%] md:left-[38%] md:animation-delay-[.6s]" />
+        <x-svg.star classes="md:top-[25%] md:left-[55%] md:animation-delay-[.8s]" />
+        <x-svg.star classes="md:top-[40%] md:left-[70%] md:animation-delay-[1s]" />
+        <x-svg.star classes="md:top-[22%] md:left-[77%] md:animation-delay-[1.2s]" />
+
+        <x-svg.star classes="md:top-[72%] md:left-[15%] md:animation-delay-[1.4s]" />
+        <x-svg.star classes="md:top-[83%] md:left-[25%] md:animation-delay-[1.4s]" />
+        <x-svg.star classes="md:top-[75%] md:left-[45%] md:animation-delay-[1.6s]" />
+        <x-svg.star classes="md:top-[67%] md:left-[65%] md:animation-delay-[1.8s]" />
+        <x-svg.star classes="md:top-[74%] md:left-[82%] md:animation-delay-[2s]" />
     </div>
     <!-- Animated Background SVGs End -->
 </div>
