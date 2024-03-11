@@ -1,4 +1,4 @@
-<div class="card group px-4 py-2 w-full bg-white border border-yellow-800 shadow-sm rounded opacity-0 hover:bg-yellow-100 hover:transition-colors hover:duration-300 dark:bg-brown-900 dark:border-yellow-200 dark:hover:bg-brown-900"
+<div class="card group px-4 py-2 w-full bg-white border border-yellow-800 shadow-sm rounded opacity-0 hover:bg-yellow-100 hover:transition-colors hover:duration-300 dark:bg-brown-900 dark:border-yellow-200 dark:hover:bg-dark"
     style="{{ $style ?? '' }}">
     <div class="relative lg:flex lg:justify-between lg:items-center">
         <div>

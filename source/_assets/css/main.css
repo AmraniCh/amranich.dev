@@ -38,7 +38,7 @@ html {
 }
 
 #scrollIndicators .indicators .indicator {
-	@apply relative cursor-pointer opacity-0 w-4 h-4 rounded-s-sm rounded-r-sm shadow-[3px_3px_0_0] shadow-yellow-800 bg-brown-300 duration-75 transition-colors animate-[fadeIn_.5s_ease-out_forwards] dark:bg-transparent dark:border-2 dark:border-yellow-200 dark:shadow-yellow-200;
+	@apply relative cursor-pointer opacity-0 w-4 h-4 rounded-s-sm rounded-r-sm shadow-[3px_3px_0_0] shadow-yellow-800 bg-brown-300 duration-75 transition-colors animate-[fadeIn_.5s_ease-out_forwards] dark:bg-brown-900 dark:border-2 dark:border-yellow-200 dark:shadow-yellow-200;
 }
 
 #scrollIndicators .indicators .indicator:hover::after {
