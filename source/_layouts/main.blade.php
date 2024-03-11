@@ -55,8 +55,7 @@
     <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 </head>
 
-<body
-    class="py-2 px-2 md:py-4 md:px-4 lg:px-8 lg:py-8 bg-yellow-200 text-yellow-900 dark:bg-[#231e17] dark:text-yellow-200">
+<body class="sm:p-2 md:py-4 md:px-4 lg:px-8 lg:py-8 bg-yellow-200 text-yellow-800 dark:md:bg-dark dark:text-yellow-200">
 
     @yield('body')
 

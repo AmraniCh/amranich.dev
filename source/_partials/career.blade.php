@@ -1,7 +1,7 @@
 <div class="section career-section scroll-indicator" data-scroll-indicator-text="{!! $page->trans('scroll-indicator.career') !!}">
     <x-section-heading text="{!! $page->trans('career.heading') !!}" />
 
-    <div class="flex flex-col gap-5 dark:text-yellow-900">
+    <div class="flex flex-col gap-5">
 
         <x-career-card style="animation-delay: .2s" title="{{ $page->trans('career.3-position.title') }}"
             company="{{ $page->trans('career.3-position.company') }}"

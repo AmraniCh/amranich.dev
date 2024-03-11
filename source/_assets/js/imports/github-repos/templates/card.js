@@ -6,12 +6,12 @@ export default async ({
     downloads
 }) => `
     <li class="md:p-3 w-full md:w-1/2">
-        <div class="card group bg-white border border-yellow-900 rounded-md p-4 h-full flex animate-[fadeIn_.5s_ease-out_forwards] hover:animate-[moveUp_.3s_ease-out_forwards] hover:bg-yellow-100 hover:duration-500  hover:shadow-lg dark:border-yellow-200 dark:bg-transparent">
+        <div class="card group bg-white border border-yellow-800 rounded-md p-4 h-full flex animate-[fadeIn_.5s_ease-out_forwards] hover:animate-[moveUp_.3s_ease-out_forwards] hover:bg-yellow-100 hover:duration-500 hover:shadow-lg dark:border-yellow-200 dark:bg-brown-900 dark:hover:bg-brown-900">
             <div class="relative flex flex-col w-full">
                 <!-- header -->
                 <div class="flex justify-between">
                     <div class="flex items-center gap-2.5">
-                        <svg class="fill-yellow-900 dark:fill-yellow-200" xmlns="http://www.w3.org/2000/svg"
+                        <svg class="fill-yellow-800 dark:fill-yellow-200" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 16 16" width="16" height="16">
                             <path
                                 d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z">
@@ -26,7 +26,7 @@ export default async ({
                         <!-- downloads -->
                         <a href="${downloads.url}" target="_blank"
                             class="flex items-center gap-1">
-                            <svg class="h-4 w-4 fill-yellow-900 dark:fill-yellow-200"
+                            <svg class="h-4 w-4 fill-yellow-800 dark:fill-yellow-200"
                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16"
                                 height="16">
                                 <path
@@ -57,7 +57,7 @@ export default async ({
                         <!-- stars -->
                         <a href="https://github.com/lazzard/php-ftp-client/stargazers" target="_blank"
                             class="flex items-center gap-1">
-                            <svg class="fill-yellow-900 dark:fill-yellow-200 w-4 h-4"
+                            <svg class="fill-yellow-800 dark:fill-yellow-200 w-4 h-4"
                                 xmlns="http://www.w3.org/2000/svg" height="16" width="18"
                                 viewBox="0 0 576 512">
                                 <path
@@ -69,7 +69,7 @@ export default async ({
                         <!-- forks -->
                         <a href="https://github.com/lazzard/php-ftp-client/forks" target="_blank"
                             class="flex items-center gap-1">
-                            <svg class="fill-yellow-900 dark:fill-yellow-200 w-4 h-4"
+                            <svg class="fill-yellow-800 dark:fill-yellow-200 w-4 h-4"
                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16"
                                 height="16">
                                 <path
@@ -83,7 +83,7 @@ export default async ({
                     <div class="flex flex-wrap gap-1.5">
                         ${githubLangs.map(lang => `
                             <span
-                                class="badge bg-yellow-200 text-yellow-950 text-xs text-center whitespace-nowrap font-medium px-2 py-0.5 rounded group-hover:bg-white border border-yellow-900 dark:text-yellow-900">
+                                class="badge bg-yellow-800 text-white text-xs text-center whitespace-nowrap font-medium px-2 py-0.5 rounded dark:bg-transparent dark:text-yellow-200 dark:border dark:border-yellow-200 dark:hover:bg-yellow-200 dark:hover:text-yellow-900">
                                 ${lang}
                             </span>
                         `).join('')}

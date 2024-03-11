@@ -11,10 +11,11 @@ export default function () {
     }
 
     // dark mode button click event handle
-    const $button = document.getElementById('hero-section-footer-dark-mode-toggle-btn');
-    $button.addEventListener('click', () => {
-        document.documentElement.classList.toggle('dark');
-        const isDark = document.documentElement.classList.contains('dark');
-        localStorage.theme = isDark ? 'dark' : 'light';
+    Array.from(document.querySelectorAll('.dark-mode-toggle-btn')).forEach(function ($btn) {
+        $btn.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            const isDark = document.documentElement.classList.contains('dark');
+            localStorage.theme = isDark ? 'dark' : 'light';
+        });
     });
 }

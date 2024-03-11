@@ -3,6 +3,7 @@
 @import "tailwindcss/utilities";
 @import './animations.css';
 
+
 /* Font related styles */
 html {
 	font-weight: 500;
@@ -33,35 +34,42 @@ html {
 
 #scrollIndicators .indicators .indicator.active,
 #scrollIndicators .indicators .indicator:hover {
-	@apply bg-yellow-900 scale-125;
+	@apply bg-yellow-800 scale-125 dark:bg-yellow-200 dark:border-yellow-200 dark:shadow-yellow-200;
 }
 
 #scrollIndicators .indicators .indicator {
-	@apply relative cursor-pointer opacity-0 w-3 h-3 rounded-sm shadow-[2px_2px_0_0] shadow-yellow-900 bg-brown-400 duration-75 transition-colors animate-[fadeIn_.5s_ease-out_forwards];
+	@apply relative cursor-pointer opacity-0 w-4 h-4 rounded-s-sm rounded-r-sm shadow-[3px_3px_0_0] shadow-yellow-800 bg-brown-300 duration-75 transition-colors animate-[fadeIn_.5s_ease-out_forwards] dark:bg-transparent dark:border-2 dark:border-yellow-200 dark:shadow-yellow-200;
 }
 
 #scrollIndicators .indicators .indicator:hover::after {
 	content: attr(data-title);
-	@apply bg-yellow-50 rounded-sm border-2 border-yellow-900 px-1 py-0.5 absolute right-1/2 translate-x-1/2 -top-7 text-xs capitalize
+	@apply bg-yellow-50 rounded-sm border-2 border-yellow-800 px-1 py-0.5 absolute right-1/2 translate-x-1/2 -top-7 text-xs capitalize dark:border-yellow-50 dark:text-yellow-800
 }
 
 #scrollIndicators .indicators .indicator:not(:last-child) {
 	@apply mb-5;
 }
 
+/* control class */
+.control {
+	@apply border border-yellow-800 p-3 bg-white rounded-md text-lg font-semibold focus:ring-4 focus:ring-brown-500 !outline-none focus:border-transparent dark:bg-brown-900 dark:border-yellow-200 dark:focus:border-transparent dark:focus:ring-yellow-200
+}
+
+.control::placeholder {
+	@apply text-yellow-800 dark:text-inherit;
+}
+
 /* Various Styles */
 .lang-switcher-btn {
-	/* @apply inline-block w-full bg-brown-500 text-yellow-50 px-1 hover:bg-yellow-900 dark:bg-brown-500; */
-	@apply inline-block px-1 w-full bg-brown-300 opacity-60 text-yellow-900 hover:bg-yellow-900 hover:opacity-100 hover:text-yellow-50 dark:text-yellow-100;
+	@apply inline-block px-1 w-full bg-brown-50 text-yellow-800 hover:bg-yellow-800 hover:opacity-100 hover:text-yellow-50 dark:bg-transparent dark:text-yellow-200 dark:hover:bg-yellow-200 dark:hover:text-yellow-900;
 }
 
 .lang-switcher-btn.selected {
-	/* @apply bg-brown-300 text-yellow-900 cursor-default opacity-60 dark:text-yellow-100; */
-	@apply bg-brown-500 text-yellow-50 cursor-default dark:bg-brown-500 pointer-events-none;
+	@apply bg-yellow-800 text-yellow-50 cursor-default pointer-events-none dark:bg-yellow-200 dark:text-yellow-900;
 }
 
 .hero-nav-item {
-	@apply font-medium text-lg block py-2 px-4 rounded capitalize relative lg:bg-transparent lg:p-0 text-yellow-900 dark:lg:text-yellow-200;
+	@apply font-medium text-lg block py-2 px-4 rounded capitalize relative lg:bg-transparent lg:p-0 dark:lg:text-yellow-200;
 }
 
 #navbar-default li:nth-child(1) .hero-nav-item {
@@ -77,7 +85,7 @@ html {
 }
 
 .line-before-static {
-	@apply line-before bg-white text-brown-400 hover:text-yellow-900 lg:text-yellow-900 lg:before:w-full lg:bg-transparent dark:text-yellow-400;
+	@apply line-before bg-white text-brown-500 hover:text-yellow-800 lg:text-yellow-800 lg:before:w-full lg:bg-transparent dark:text-yellow-400;
 }
 
 .section {
@@ -85,7 +93,7 @@ html {
 }
 
 .colored-section {
-	@apply bg-yellow-50 dark:bg-inherit text-yellow-900 dark:text-yellow-300;
+	@apply bg-yellow-50 dark:bg-inherit text-yellow-800 dark:text-yellow-300;
 }
 
 .primary-btn.loading .spinner {
@@ -93,7 +101,7 @@ html {
 }
 
 .career-section .card:not(:first-child) {
-	@apply before:content-[''] before:block before:w-1 before:h-6 before:bg-yellow-900 before:absolute before:left-12 before:-top-6
+	@apply before:content-[''] before:block before:w-1 before:h-6 before:bg-yellow-800 before:absolute before:left-12 before:-top-6 dark:before:bg-yellow-200
 }
 
 .hero-section ul#hero-section-footer-social-links li:not(:last-child) .link {

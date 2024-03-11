@@ -3,7 +3,7 @@
 
     <div class="flex flex-col gap-10 xl:gap-20">
 
-        <x-featured-project snapshot="personal-webiste-snapshot.jpg"
+        <x-featured-project highlight="{{ false }}" snapshot="personal-webiste-snapshot.jpg"
             snapshotAlt="Shakir El Amrani's personal website snapshot" date="{!! $page->trans('featured-projects.first-project.date') !!}"
             title="{!! $page->trans('featured-projects.card-title') !!}" projectTitle="{!! $page->trans('featured-projects.first-project.title') !!}" projectDesc="{!! $page->trans('featured-projects.first-project.desc') !!}">
 
@@ -17,7 +17,7 @@
 
         </x-featured-project>
 
-        <x-featured-project highlight="" snapshotAlt="FTP file manager web application snapshot"
+        <x-featured-project highlight="{{ true }}" snapshotAlt="FTP file manager web application snapshot"
             snapshot="ftp-filemanager-snapshot.png" date="{!! $page->trans('featured-projects.second-project.date') !!}" title="{!! $page->trans('featured-projects.card-title') !!}"
             projectTitle="{!! $page->trans('featured-projects.second-project.title') !!}" projectDesc="{!! $page->trans('featured-projects.second-project.desc') !!}">
 
@@ -40,7 +40,7 @@
         </x-featured-project>
 
 
-        <x-featured-project snapshot="mysql-database-manager-snapshot.png"
+        <x-featured-project highlight="{{ false }}" snapshot="mysql-database-manager-snapshot.png"
             snapshotAlt="MySQL Database Manager web application snapshot" date="{!! $page->trans('featured-projects.third-project.date') !!}"
             title="{!! $page->trans('featured-projects.card-title') !!}" projectTitle="{!! $page->trans('featured-projects.third-project.title') !!}"
             projectDesc="{!! $page->trans('featured-projects.third-project.desc') !!}">

@@ -1,4 +1,4 @@
-<div class="border-t border-yellow-700 mt-10 p-4 lg:mx-16 dark:border-yellow-200 dark:border-t-2">
+<div class="border-t-2 border-yellow-800 mt-10 p-5 lg:mx-16 dark:border-yellow-200">
     <div class="flex flex-col items-center gap-1 text-sm lg:flex-row lg:justify-center lg:text-xs">
         <span>
             Crafted with
