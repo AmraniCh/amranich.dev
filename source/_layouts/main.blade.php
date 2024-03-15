@@ -53,6 +53,52 @@
 
 
     <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
+
+    <noscript>
+        <style>
+            .noscript-opacity-1,
+            .section {
+                opacity: 1;
+            }
+
+            .hero-section {
+                height: 92vh;
+            }
+
+            #navbar-default li:last-child,
+            .dark-mode-toggle-btn {
+                display: none
+            }
+
+            @media (min-width: 1024px) {
+                #navbar-default {
+                    gap: 3.9rem;
+                }
+            }
+
+            @media (min-width: 1280px) {
+                #navbar-default {
+                    gap: 4.5rem;
+                }
+            }
+
+            :target {
+                animation: fadeInUp 1.5s ease;
+            }
+
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        </style>
+    </noscript>
 </head>
 
 <body class="sm:p-2 md:py-4 md:px-4 lg:px-8 lg:py-8 bg-yellow-200 text-yellow-800 dark:md:bg-dark dark:text-yellow-200">

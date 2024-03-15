@@ -1,6 +1,6 @@
 import settings from "./settings";
 import navbarMenu from "./imports/navbar-menu";
-import darkMode from "./imports/dark-mode";
+import darkMode from "./imports/dark-mode-switcher";
 import languageSwitcher from "./imports/language-switcher";
 import animations from "./imports/animations";
 import githubRepos from "./imports/github-repos";

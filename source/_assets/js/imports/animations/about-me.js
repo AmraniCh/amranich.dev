@@ -1,8 +1,7 @@
 import { animateOnVisibility } from "../../helpers";
 
 export default function () {
-    const section = document.querySelector(".about-me-section");
-    const options = { threshold: 0.1 };
+    const section = document.querySelector(".about-me-section"), options = { threshold: 0.1 };
 
     animateOnVisibility({
         element: section.querySelector(".text"),

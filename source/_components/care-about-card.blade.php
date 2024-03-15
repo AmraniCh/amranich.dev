@@ -1,4 +1,4 @@
-  <div class="card group relative sm:w-3/5 md:basis-[47%] opacity-0 w-full">
+  <div class="card noscript-opacity-1 group relative sm:w-3/5 md:basis-[47%] opacity-0 w-full">
       <span
           class="absolute top-0 left-0 mt-2 ml-2 md:mt-3 md:ml-3 h-full w-full rounded bg-yellow-200 group-hover:top-0.5 group-hover:left-0.5 group-hover:duration-200 dark:bg-brown-900 dark:group-hover:bg-brown-900">
       </span>

@@ -19,7 +19,7 @@
         </button>
 
         <ul id="navbar-default"
-            class="hidden text-lg absolute top-[10%] left-[50%] translate-x-[-50%] lg:flex flex-col gap-2 grow-1 bg-yellow-300 rounded p-4 w-[92%] lg:translate-x-0 lg:flex-grow-1 lg:gap-12 xl:gap-[3.6rem] lg:items-center lg:justify-end lg:flex-row lg:sticky lg:bg-transparent lg:w-auto">
+            class="hidden text-lg absolute top-[10%] left-[50%] translate-x-[-50%] lg:flex flex-col gap-2 grow-1 bg-yellow-300 rounded p-4 w-[92%] lg:translate-x-0 lg:gap-12 lg:items-center lg:justify-end lg:flex-row lg:sticky lg:bg-transparent lg:w-auto xl:gap-[3.6rem]">
             <li>
                 <a href="#home"
                     class="hero-nav-item line-before-static lg:opacity-0 lg:animate-[fadeInDown_.3s_ease-out_.1s_forwards]">
@@ -27,25 +27,25 @@
                 </a>
             </li>
             <li>
-                <a href="#projects"
+                <a href="#career-section"
                     class="hero-nav-item line-before line-before-hover lg:opacity-0 lg:animate-[fadeInDown_.5s_ease-out_.2s_forwards]">
                     {{ $page->trans('nav.1') }}
                 </a>
             </li>
             <li>
-                <a href="#services"
+                <a href="#projects-section"
                     class="hero-nav-item line-before line-before-hover lg:opacity-0 lg:animate-[fadeInDown_.5s_ease-out_.3s_forwards]">
                     {{ $page->trans('nav.2') }}
                 </a>
             </li>
             <li>
-                <a href="#blog"
+                <a href="#opensource-section"
                     class="hero-nav-item line-before line-before-hover lg:opacity-0 lg:animate-[fadeInDown_.5s_ease-out_.4s_forwards]">
                     {{ $page->trans('nav.3') }}
                 </a>
             </li>
             <li>
-                <a href="#contact"
+                <a href="#contact-section"
                     class="hero-nav-item line-before line-before-hover lg:opacity-0 lg:animate-[fadeInDown_.5s_ease-out_.5s_forwards]">
                     {{ $page->trans('nav.4') }}
                 </a>
@@ -135,7 +135,7 @@
 
         <!-- Dark Mode Switcher Start -->
         <button
-            class="absolute left-4 -bottom-2 h-12 w-12 rounded-lg p-2 bg-brown-500 opacity-0 animate-[heroControlsFadeInUp_.5s_ease-out_1.1s_forwards] lg:hidden">
+            class="dark-mode-toggle-btn absolute left-4 -bottom-2 h-12 w-12 rounded-lg p-2 bg-brown-500 opacity-0 animate-[heroControlsFadeInUp_.5s_ease-out_1.1s_forwards] lg:hidden">
             <svg class="fill-brown-500 block dark:hidden" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
             </svg>
@@ -146,6 +146,19 @@
             </svg>
         </button>
         <!-- Dark Mode Switcher End -->
+
+        <!-- Language Switcher Start -->
+        <ul id="hero-section-footer-lang-switcher"
+            class="flex flex-col absolute script-font border-2 border-yellow-800 hover:border-yellow-800 rounded shadow-sm right-4 -bottom-2 opacity-0 animate-[heroControlsFadeInUp_.5s_ease-out_forwards] animation-delay-[1.1s] lg:absolute lg:bottom-12 lg:right-0 lg:animation-delay-[1.2s] lg:animation-duration-[.7s] dark:border-yellow-200">
+            <li>
+                <a href="/en"
+                    class="lang-switcher-btn {{ $page->getPath() ? $page->selected('en') : 'selected' }}">EN</a>
+            </li>
+            <li>
+                <a href="/fr" class="lang-switcher-btn cursor-pointer {{ $page->selected('fr') }}">FR</a>
+            </li>
+        </ul>
+        <!-- Language Switcher End -->
 
         <!-- Scroll Down Icon Indicator Start -->
         <button type="button" id="hero-section-footer-scroll-down-indicator"
@@ -159,18 +172,6 @@
             </svg>
         </button>
         <!-- Scroll Down Icon Indicator End -->
-
-        <!-- Language Switcher Start -->
-        <ul id="hero-section-footer-lang-switcher"
-            class="flex flex-col absolute script-font border-2 border-yellow-800 hover:border-yellow-800 rounded shadow-sm right-4 -bottom-2 opacity-0 animate-[heroControlsFadeInUp_.5s_ease-out_forwards] animation-delay-[1.1s] lg:absolute lg:bottom-12 lg:right-0 lg:animation-delay-[1.2s] lg:animation-duration-[.7s] dark:border-yellow-200">
-            <li>
-                <a href="/en" class="lang-switcher-btn {{ $page->selected('en') }}" data-default="true">EN</a>
-            </li>
-            <li>
-                <a href="/fr" class="lang-switcher-btn cursor-pointer {{ $page->selected('fr') }}">FR</a>
-            </li>
-        </ul>
-        <!-- Language Switcher End -->
     </div>
     <!-- Hero Section Footer End -->
 

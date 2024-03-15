@@ -4,7 +4,7 @@ import skeleton from "./templates/skeleton";
 export default function (settings) {
     var githubReposFetched = false;
 
-    const openSourceSection = document.getElementsByClassName("open-source-section")[0];
+    const openSourceSection = document.getElementsByClassName("opensource-section")[0];
     const openSourceSectionOffsetTop = openSourceSection.offsetTop;
     const cards = openSourceSection.querySelector(".cards");
 

@@ -55,10 +55,6 @@ module.exports = {
 			letterSpacing: {
 				"widest-x2": ".25em",
 			},
-			flexGrow: {
-				1: "1",
-				2: "2",
-			},
 		},
 	},
 	plugins: [

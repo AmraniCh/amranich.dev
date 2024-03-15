@@ -1,4 +1,4 @@
-<blockquote class="favorite-quote relative opacity-0 group">
+<blockquote class="favorite-quote noscript-opacity-1 relative opacity-0 group">
     <!-- Quotes Svg Start -->
     <svg class="w-16 h-16 absolute -top-5 left-4 fill-yellow-800 dark:-top-6 dark:fill-yellow-200"
         xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">

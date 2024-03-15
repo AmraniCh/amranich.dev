@@ -2,7 +2,6 @@
     <x-section-heading text="{!! $page->trans('care-about.heading') !!}" />
 
     <div class="flex flex-wrap justify-center gap-12 md:gap-10 lg:gap-12">
-
         <x-care-about-card title="{!! $page->trans('care-about.1.title') !!}" description="{!! $page->trans('care-about.1.desc') !!}">
             @slot('icon')
                 <svg width="49" height="50" viewBox="0 0 49 50" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -88,6 +87,5 @@
                 </svg>
             @endslot
         </x-care-about-card>
-
     </div>
 </div>
