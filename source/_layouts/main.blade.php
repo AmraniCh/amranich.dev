@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="{{ $page->description ?? $page->siteDescription }}">
+    <meta name="description" content="{{ $page->description ?? $page->trans('siteDescription') }}">
 
-    <meta property="og:title" content="{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->siteName }}" />
+    <meta property="og:title" content="{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->trans('siteName') }}" />
     <meta property="og:type" content="{{ $page->type ?? 'website' }}" />
     <meta property="og:url" content="/" />
-    <meta property="og:description" content="{{ $page->description ?? $page->siteDescription }}" />
+    <meta property="og:description" content="{{ $page->description ?? $page->trans('siteDescription') }}" />
 
-    <title>{{ $page->title ?? $page->siteName }}</title>
+    <title>{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->trans('siteName') }}</title>
 
     <link rel="home" href="{{ $page->baseUrl }}">
 
@@ -50,7 +50,6 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700;900&display=swap"
         rel="stylesheet">
-
 
     <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 
