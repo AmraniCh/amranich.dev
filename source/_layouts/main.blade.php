@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ $page->language ?? 'en' }}">
+<html lang="{{ $page->getPath() ?: $page->local }}">
 
 <head>
     <meta charset="utf-8">
