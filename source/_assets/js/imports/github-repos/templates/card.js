@@ -55,7 +55,7 @@ export default async ({
                     <div class="flex gap-2 md:gap-5">
 
                         <!-- stars -->
-                        <a href="https://github.com/lazzard/php-ftp-client/stargazers" target="_blank"
+                        <a href="${githubRepo.html_url}/stargazers" target="_blank"
                             class="flex items-center gap-1">
                             <svg class="fill-yellow-800 dark:fill-yellow-200 w-4 h-4"
                                 xmlns="http://www.w3.org/2000/svg" height="16" width="18"
@@ -83,7 +83,7 @@ export default async ({
                     <div class="flex flex-wrap gap-1.5">
                         ${githubLangs.map(lang => `
                             <span
-                                class="badge bg-yellow-800 text-white text-xs text-center whitespace-nowrap font-medium px-2 py-0.5 rounded dark:bg-transparent dark:text-yellow-200 dark:border dark:border-yellow-200 dark:hover:bg-yellow-200 dark:hover:text-yellow-900">
+                                class="badge bg-yellow-800 text-white text-xs text-center whitespace-nowrap font-medium px-2 py-0.5 rounded border border-transparent hover:bg-transparent hover:border hover:border-yellow-800 hover:text-inherit dark:bg-transparent dark:text-yellow-200 dark:border dark:border-yellow-200 dark:hover:bg-yellow-200 dark:hover:text-yellow-900">
                                 ${lang}
                             </span>
                         `).join('')}

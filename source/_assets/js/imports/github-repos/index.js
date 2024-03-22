@@ -5,8 +5,10 @@ export default function (settings) {
     var githubReposFetched = false;
 
     const openSourceSection = document.getElementsByClassName("opensource-section")[0];
+    const cardsContainer = openSourceSection.querySelector(".cards-ctr");
     const openSourceSectionOffsetTop = openSourceSection.offsetTop;
-    const cards = openSourceSection.querySelector(".cards");
+
+    clearRepositories();
 
     window.addEventListener('scroll', () => {
         const windowOffset = window.scrollY + window.innerHeight;
@@ -16,8 +18,8 @@ export default function (settings) {
 
         githubReposFetched = true;
 
-        // show loading skeletons
-        settings.pinnedRepos.forEach(repo => cards.innerHTML += skeleton(repo));
+        // render loading skeletons
+        settings.pinnedRepos.forEach(repo => cardsContainer.innerHTML += skeleton(repo));
 
         const reposCache = JSON.parse(localStorage.getItem('repos'));
 
@@ -76,6 +78,16 @@ export default function (settings) {
             });
         });
     });
+
+
+    function clearRepositories() {
+        const cards = Array.from(cardsContainer.querySelectorAll('.card'));
+        if (cards.length === 0) {
+            return;
+        }
+
+        cards.forEach(card => card.remove());
+    }
 
     async function renderRepository(data) {
         const skeleton = openSourceSection.querySelector(`.skeleton[data-repo="${data.githubRepo.full_name.toLowerCase()}"]`);

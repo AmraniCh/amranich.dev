@@ -18,4 +18,4 @@ use App\Listeners\FetchVersion;
  */
 
 
-$events->beforeBuild([FetchVersion::class]);
+$events->beforeBuild([FetchVersion::class, FetchGhRepos::class]);
