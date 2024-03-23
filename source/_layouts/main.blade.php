@@ -7,12 +7,16 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="{{ $page->description ?? $page->trans('siteDescription') }}">
 
+    <title>{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->trans('siteName') }}</title>
+
+    <meta name="author" content="{{ $page->author }}">
+
+    <meta name="title" content="{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->trans('siteName') }}">
+    
     <meta property="og:title" content="{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->trans('siteName') }}" />
     <meta property="og:type" content="{{ $page->type ?? 'website' }}" />
     <meta property="og:url" content="/" />
     <meta property="og:description" content="{{ $page->description ?? $page->trans('siteDescription') }}" />
-
-    <title>{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->trans('siteName') }}</title>
 
     <link rel="home" href="{{ $page->baseUrl }}">
 

@@ -9,8 +9,7 @@ return [
     'production' => false,
     'baseUrl' => 'http://localhost:3000',
     'local' => 'en',
-    'siteName' => "Shakir El Amrani", // TODO
-    'siteDescription' => 'A software developer who loves building things from scratch, coding, problem-solving, and contributing to the open source community. Enjoys continuous learning.',
+    'author' => "Shakir El Amrani",
     'email'  => 'contact@amranich.dev',
     'links' => [
         'github'   => 'https://github.com/amranich',
