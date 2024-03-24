@@ -10,7 +10,7 @@
     <!-- Background Ship Start -->
     <svg width="254" height="225" viewBox="0 0 254 225" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
-            class="fill-white stroke-2 stroke-yellow-800  dark:fill-brown-900 dark:stroke-yellow-200 dark:group-hover:fill-dark"
+            class="fill-white stroke-2 stroke-yellow-800 group-hover:fill-yellow-200 dark:fill-brown-900 dark:stroke-transparent dark:group-hover:fill-dark dark:group-hover:stroke-yellow-200"
             d="M110.682 3.11378C37.2204 -10.9224 8.84828 61.5978 3.8449 99.6125C-26.1754 263.103 191.03 220.036 202.508 216.846C213.987 213.656 249.305 174.578 252.836 99.6125C256.368 24.6471 202.508 20.659 110.682 3.11378Z" />
     </svg>
     <!-- Background Ship End -->

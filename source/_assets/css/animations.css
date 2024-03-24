@@ -142,3 +142,14 @@
         transform: translateY(-8px);
     }
 }
+
+@keyframes mouseScrollDown {
+    0%,
+    100% {
+        transform: translateY(-10%);
+    }
+
+    50% {
+        transform: none;
+    }
+}

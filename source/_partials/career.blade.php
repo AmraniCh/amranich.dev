@@ -2,8 +2,7 @@
     data-scroll-indicator-text="{!! $page->trans('scroll-indicator.career') !!}">
     <x-section-heading text="{!! $page->trans('career.heading') !!}" />
 
-    <div class="flex flex-col gap-5">
-
+    <div class="relative flex flex-col gap-5">
         <x-career-card style="animation-delay: .2s" title="{{ $page->trans('career.3-position.title') }}"
             company="{{ $page->trans('career.3-position.company') }}"
             duration="{{ $page->trans('career.3-position.duration') }}"
@@ -31,7 +30,6 @@
             location="{{ $page->trans('career.last-education.location') }}"
             logo="{{ $page->trans('career.last-education.location') }}" logoUrl="/assets/images/university-logo.jpg"
             logoAlt="{{ $page->trans('career.last-education.institute') }}" />
-
     </div>
 
     <x-anchor class="view-more-link opacity-0" link="{{ $page->links->linkedin }}"

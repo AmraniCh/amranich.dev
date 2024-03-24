@@ -2,7 +2,7 @@
     data-scroll-indicator-text="{!! $page->trans('scroll-indicator.projects') !!}">
     <x-section-heading text="{!! $page->trans('featured-projects.title') !!}" />
 
-    <div class="flex flex-col gap-10 xl:gap-20">
+    <div class="flex flex-col gap-10 xl:gap-24">
 
         <x-featured-project highlight="{{ false }}" snapshot="personal-webiste-snapshot.jpg"
             snapshotAlt="Shakir El Amrani's personal website snapshot" date="{!! $page->trans('featured-projects.first-project.date') !!}"

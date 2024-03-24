@@ -1,6 +1,6 @@
 export default (repo) => `
     <li class="skeleton md:p-3 w-full md:w-1/2 animate-pulse" data-repo="${repo.toLowerCase()}">
-        <div class="bg-white border border-yellow-300 shadow-sm rounded-md p-4 h-full flex flex-col justify-center dark:bg-transparent">
+        <div class="bg-white border border-yellow-300 shadow-sm rounded-md p-4 h-full flex flex-col justify-center dark:bg-brown-900 dark:border-transparent">
 
             <div class="relative">
 

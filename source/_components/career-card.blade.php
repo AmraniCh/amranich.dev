@@ -1,4 +1,4 @@
-<div class="card noscript-opacity-1 group px-4 py-2 w-full bg-white border border-yellow-800 shadow-sm rounded opacity-0 animate-[fadeInDown_.5s_ease-out_forwards] hover:bg-yellow-100 hover:transition-colors hover:duration-300 dark:bg-brown-900 dark:border-yellow-200 dark:hover:bg-dark"
+<div class="card noscript-opacity-1 relative group px-4 py-2 w-full bg-white border border-yellow-800 shadow-sm rounded opacity-0 animate-[fadeInDown_.5s_ease-out_forwards] hover:bg-yellow-100 hover:transition-colors hover:duration-300 dark:bg-brown-900 dark:border-transparent dark:hover:bg-dark dark:hover:border-yellow-200"
     style="{{ $style ?? '' }}">
     <div class="relative lg:flex lg:justify-between lg:items-center">
         <div>
@@ -15,7 +15,7 @@
             </div>
         </div>
         <div class="mr-4">
-            <img class="absolute right-0 bottom-0 max-w-[5rem] border border-yellow-800 rounded p-1 lg:static dark:border-yellow-200"
+            <img class="absolute right-0 bottom-0 max-w-[5rem] border border-yellow-800 rounded p-1 lg:static dark:border-transparent"
                 src="{{ $logoUrl }}" alt="{!! $logoAlt !!}">
         </div>
     </div>

@@ -163,11 +163,12 @@
         <!-- Scroll Down Icon Indicator Start -->
         <button type="button" id="hero-section-footer-scroll-down-indicator"
             class="cursor-default hidden -mb-3 lg:mb-3 lg:block">
-            <svg class="h-8 w-8 fill-brown-50 lg:-translate-y-1/4 lg:opacity-0 lg:animate-[fadeIn_1s_ease-out_1.6s_forwards,bounce_1.8s_ease-out_2s_infinite] drop-shadow-sm dark:fill-dark"
+            <svg class="h-8 w-8 fill-brown-50 lg:-translate-y-1/4 lg:opacity-0 lg:animate-[fadeIn_1s_ease-out_1.6s_forwards] drop-shadow-sm dark:fill-dark"
                 width="26" height="40" viewBox="0 0 26 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="stroke-2 stroke-yellow-950 dark:stroke-yellow-200"
                     d="M15.8298 38.5007H10.2928C5.32281 38.5007 1.25781 34.4357 1.25781 29.4667V10.3797C1.25781 5.4107 5.32381 1.3457 10.2928 1.3457H15.8288C20.7988 1.3457 24.8638 5.4107 24.8638 10.3797V29.4667C24.8638 34.4357 20.7978 38.5007 15.8288 38.5007H15.8298Z" />
-                <path class="stroke-2 stroke-yellow-950 dark:stroke-yellow-200"
+                <path
+                    class="stroke-2 stroke-yellow-950 dark:stroke-yellow-200 lg:animate-[mouseScrollDown_2s_linear_infinite]"
                     d="M13.1448 31.1548H12.9768C12.4388 31.1535 11.9232 30.9392 11.5428 30.5587C11.1624 30.1783 10.9481 29.6628 10.9468 29.1248V23.0798C10.9468 21.9638 11.8608 21.0508 12.9768 21.0508H13.1448C14.2608 21.0508 15.1748 21.9638 15.1748 23.0808V29.1268C15.1748 30.2428 14.2608 31.1568 13.1448 31.1568V31.1548Z" />
             </svg>
         </button>

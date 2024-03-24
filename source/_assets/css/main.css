@@ -32,13 +32,13 @@ html {
 	@apply fixed;
 }
 
+#scrollIndicators .indicators .indicator {
+	@apply relative cursor-pointer opacity-0 w-4 h-4 rounded-s-sm rounded-r-sm shadow-[3px_3px_0_0] shadow-yellow-800 bg-brown-100 duration-75 transition-colors animate-[fadeIn_.5s_ease-out_forwards] dark:bg-brown-900 dark:border-2 dark:border-yellow-200 dark:shadow-yellow-200;
+}
+
 #scrollIndicators .indicators .indicator.active,
 #scrollIndicators .indicators .indicator:hover {
 	@apply bg-yellow-800 scale-125 dark:bg-yellow-200 dark:border-yellow-200 dark:shadow-yellow-200;
-}
-
-#scrollIndicators .indicators .indicator {
-	@apply relative cursor-pointer opacity-0 w-4 h-4 rounded-s-sm rounded-r-sm shadow-[3px_3px_0_0] shadow-yellow-800 bg-brown-300 duration-75 transition-colors animate-[fadeIn_.5s_ease-out_forwards] dark:bg-brown-900 dark:border-2 dark:border-yellow-200 dark:shadow-yellow-200;
 }
 
 #scrollIndicators .indicators .indicator:hover::after {
@@ -52,7 +52,7 @@ html {
 
 /* control class */
 .control {
-	@apply border border-yellow-800 p-3 bg-white rounded-md text-lg font-semibold focus:ring-4 focus:ring-brown-500 !outline-none focus:border-transparent dark:bg-brown-900 dark:border-yellow-200 dark:focus:border-transparent dark:focus:ring-yellow-200
+	@apply border border-yellow-800 p-3 bg-white rounded-md text-lg font-semibold focus:ring-4 focus:ring-brown-500 !outline-none focus:border-transparent dark:bg-brown-900 dark:border-transparent dark:focus:border-transparent dark:focus:ring-yellow-200 dark:focus:bg-transparent
 }
 
 .control::placeholder {
@@ -101,7 +101,7 @@ html {
 }
 
 .career-section .card:not(:first-child) {
-	@apply before:content-[''] before:block before:w-1 before:h-6 before:bg-yellow-800 before:absolute before:left-12 before:-top-6 dark:before:bg-yellow-200
+	@apply before:content-[''] before:block before:w-1 before:h-[1.25rem] before:bg-yellow-800 before:absolute before:left-12 before:-top-[1.3rem] dark:before:bg-yellow-200 before:-z-10
 }
 
 .hero-section ul#hero-section-footer-social-links li:not(:last-child) .link {

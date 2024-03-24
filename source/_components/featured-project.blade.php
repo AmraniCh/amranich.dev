@@ -1,11 +1,12 @@
 <div
     class="card noscript-opacity-1 opacity-0 {{ $highlight ? 'px-4 py-8 rounded-md bg-white border-2 border-dashed border-yellow-800 dark:bg-brown-900 dark:border-yellow-200' : '' }}">
-    <div class="flex flex-col w-full lg:flex-row lg:gap-6">
+    <div class="flex flex-col w-full {{ $highlight ? 'lg:flex-row-reverse' : 'lg:flex-row' }} lg:gap-6">
         <!-- Project Snapshot -->
         <div class="lg:flex lg:items-center lg:flex-shrink-0">
             <img class="w-full lg:w-[500px] xl:w-[600px] rounded-md" src="/assets/images/{{ $snapshot }}"
                 alt="{{ $snapshotAlt }}">
         </div>
+        <!-- Project Description -->
         <div class="mt-3 lg:flex lg:flex-col lg:justify-center">
 
             <!-- Date -->
