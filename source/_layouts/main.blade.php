@@ -9,14 +9,15 @@
 
     <title>{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->trans('siteName') }}</title>
 
+    <meta name="title" content="{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->trans('siteName') }}">
+
     <meta name="author" content="{{ $page->author }}">
 
-    <meta name="title" content="{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->trans('siteName') }}">
-    
     <meta property="og:title" content="{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->trans('siteName') }}" />
     <meta property="og:type" content="{{ $page->type ?? 'website' }}" />
     <meta property="og:url" content="/" />
     <meta property="og:description" content="{{ $page->description ?? $page->trans('siteDescription') }}" />
+    <meta property="og:image" content="{{ $page->baseUrl }}/assets/images/me.png" />
 
     <link rel="home" href="{{ $page->baseUrl }}">
 
