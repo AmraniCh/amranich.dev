@@ -51,7 +51,7 @@ class FetchGhRepos
                     packagistDownloadsCount: !empty($packagistData) ? $packagistData['downloads']['total'] : 0
                 )));
             } catch (ClientException $ex) {
-                if ($ex->getCode() !== 403) {
+                if (!in_array($ex->getCode(), [403, 429])) {
                     throw $ex;
                 }
 

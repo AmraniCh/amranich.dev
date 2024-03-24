@@ -16,7 +16,7 @@ class FetchVersion
             $tags = json_decode($response->getBody(), true);
             $jigsaw->setConfig('version', $tags[0]["name"]);
         } catch (ClientException $ex) {
-            if ($ex->getCode() !== 403) {
+            if (!in_array($ex->getCode(), [403, 429])) {
                 throw $ex;
             }
 
