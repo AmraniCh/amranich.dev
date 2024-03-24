@@ -50,13 +50,23 @@ html {
 	@apply mb-5;
 }
 
-/* control class */
+/* control class (for input/textarea..) */
 .control {
 	@apply border border-yellow-800 p-3 bg-white rounded-md text-lg font-semibold focus:ring-4 focus:ring-brown-500 !outline-none focus:border-transparent dark:bg-brown-900 dark:border-transparent dark:focus:border-transparent dark:focus:ring-yellow-200 dark:focus:bg-transparent
 }
 
 .control::placeholder {
 	@apply text-yellow-800 dark:text-inherit;
+}
+
+/* Projects Archive Viewer */
+
+.archive-viewer-overlay {
+	@apply fixed top-0 left-0 bottom-0 right-0 bg-yellow-200 opacity-0 transition-opacity duration-1000 invisible;
+}
+
+.archive-viewer-overlay:target {
+	@apply visible opacity-100;
 }
 
 /* Various Styles */

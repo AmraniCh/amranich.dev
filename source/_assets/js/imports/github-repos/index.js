@@ -79,7 +79,6 @@ export default function (settings) {
         });
     });
 
-
     function clearRepositories() {
         const cards = Array.from(cardsContainer.querySelectorAll('.card'));
         if (cards.length === 0) {

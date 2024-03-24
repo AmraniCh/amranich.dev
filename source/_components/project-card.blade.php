@@ -1,5 +1,5 @@
 <div
-    class="card noscript-opacity-1 opacity-0 {{ $highlight ? 'px-4 py-8 rounded-md bg-white border-2 border-dashed border-yellow-800 dark:bg-brown-900 dark:border-yellow-200' : '' }}">
+    class="card noscript-opacity-1 opacity-0 {{ $highlight ? 'px-4 py-8 rounded-md bg-white border-2 border-dashed border-yellow-800 dark:bg-brown-900 dark:border-transparent' : '' }}">
     <div class="flex flex-col w-full {{ $highlight ? 'lg:flex-row-reverse' : 'lg:flex-row' }} lg:gap-6">
         <!-- Project Snapshot -->
         <div class="lg:flex lg:items-center lg:flex-shrink-0">
