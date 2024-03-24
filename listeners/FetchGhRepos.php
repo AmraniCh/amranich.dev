@@ -80,8 +80,7 @@ class FetchGhRepos
     private function getPackagistRepo(string $repo): array
     {
         try {
-            $client = new Client();
-            $response = $client->get("https://packagist.org/packages/$repo/stats.json");
+            $response = $this->client->get("https://packagist.org/packages/$repo/stats.json");
 
             return json_decode((string)$response->getBody(), true);
         } catch (ClientException $ex) {
