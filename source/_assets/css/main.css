@@ -59,15 +59,6 @@ html {
 	@apply text-yellow-800 dark:text-inherit;
 }
 
-/* Projects Archive Viewer */
-
-.archive-viewer-overlay {
-	@apply fixed top-0 left-0 bottom-0 right-0 bg-yellow-200 opacity-0 transition-opacity duration-1000 invisible;
-}
-
-.archive-viewer-overlay:target {
-	@apply visible opacity-100;
-}
 
 /* Various Styles */
 .lang-switcher-btn {

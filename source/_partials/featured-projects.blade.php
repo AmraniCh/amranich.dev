@@ -55,7 +55,7 @@
             </x-slot>
         </x-project-card>
 
-        <div id="archive-project-tip"
+        <div
             class="flex items-center gap-4 p-4 bg-white border border-yellow-800 rounded-lg dark:bg-dark dark:border-yellow-200">
             <div class="flex items-center gap-2">
                 <svg class="w-10 h-10 shrink-0 fill-yellow-400 dark:fill-yellow-200" xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +74,7 @@
                 </p>
             </div>
 
-            <x-buttons.secondary text="Archive" class="shrink-0" :useLink="true" href="#archive-viewer"
+            <x-buttons.secondary text="Archive" class="shrink-0" :useLink="true" href="#projetcs-archive"
                 :reverseDirection="true">
                 <svg class="w-5 h-5 fill-brown-500 group-hover:fill-yellow-50 group-hover:scale-110 dark:fill-yellow-200 dark:group-hover:fill-yellow-900"
                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3"
