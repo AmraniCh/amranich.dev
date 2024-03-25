@@ -1,4 +1,5 @@
-<div class="section care-about-section scroll-indicator" data-scroll-indicator-text="{!! $page->trans('scroll-indicator.care-about') !!}">
+<div class="section care-about-section scroll-spy-indicator-subscriber"
+    data-scroll-indicator-text="{!! $page->trans('scroll-indicator.care-about') !!}">
     <x-section-heading text="{!! $page->trans('care-about.heading') !!}" />
 
     <div class="flex flex-wrap justify-center gap-12 md:gap-10 lg:gap-12">

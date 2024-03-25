@@ -22,31 +22,30 @@ html {
 	font-family: 'Dangrek';
 }
 
-
 /* Scroll indicators styles */
-#scrollIndicators {
-	@apply hidden absolute top-0 -right-10 flex items-center justify-center h-screen;
+#scroll-spy-indicators {
+	@apply hidden absolute top-0 items-center justify-center h-screen lg:flex lg:-right-6 xl:-right-10;
 }
 
-#scrollIndicators .indicators {
+#scroll-spy-indicators .indicators {
 	@apply fixed;
 }
 
-#scrollIndicators .indicators .indicator {
+#scroll-spy-indicators .indicators .indicator {
 	@apply relative cursor-pointer opacity-0 w-4 h-4 rounded-s-sm rounded-r-sm shadow-[3px_3px_0_0] shadow-yellow-800 bg-brown-100 duration-75 transition-colors animate-[fadeIn_.5s_ease-out_forwards] dark:bg-brown-900 dark:border-2 dark:border-yellow-200 dark:shadow-yellow-200;
 }
 
-#scrollIndicators .indicators .indicator.active,
-#scrollIndicators .indicators .indicator:hover {
+#scroll-spy-indicators .indicators .indicator.active,
+#scroll-spy-indicators .indicators .indicator:hover {
 	@apply bg-yellow-800 scale-125 dark:bg-yellow-200 dark:border-yellow-200 dark:shadow-yellow-200;
 }
 
-#scrollIndicators .indicators .indicator:hover::after {
+#scroll-spy-indicators .indicators .indicator:hover::after {
 	content: attr(data-title);
 	@apply bg-yellow-50 rounded-sm border-2 border-yellow-800 px-1 py-0.5 absolute right-1/2 translate-x-1/2 -top-7 text-xs capitalize dark:border-yellow-50 dark:text-yellow-800
 }
 
-#scrollIndicators .indicators .indicator:not(:last-child) {
+#scroll-spy-indicators .indicators .indicator:not(:last-child) {
 	@apply mb-5;
 }
 
@@ -58,7 +57,6 @@ html {
 .control::placeholder {
 	@apply text-yellow-800 dark:text-inherit;
 }
-
 
 /* Various Styles */
 .lang-switcher-btn {

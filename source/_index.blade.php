@@ -13,6 +13,6 @@
         @include('_partials.contact-me')
         @include('_partials.footer')
 
-        <div id="scrollIndicators"></div>
+        <div id="scroll-spy-indicators"></div>
     </div>
 @endsection

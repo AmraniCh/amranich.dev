@@ -1,4 +1,4 @@
-<div class="hero-section scroll-indicator flex flex-col justify-between px-4 lg:px-16 mb-6 relative z-0"
+<div class="hero-section scroll-spy-indicator-subscriber flex flex-col justify-between px-4 lg:px-16 mb-6 relative z-0"
     data-scroll-indicator-text="{!! $page->trans('scroll-indicator.hero') !!}">
 
     <!-- Top Bar Start -->

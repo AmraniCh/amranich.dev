@@ -1,4 +1,4 @@
-<div id="projects-section" class="section projects-section scroll-indicator"
+<div id="projects-section" class="section projects-section scroll-spy-indicator-subscriber"
     data-scroll-indicator-text="{!! $page->trans('scroll-indicator.projects') !!}">
     <x-section-heading text="{!! $page->trans('featured-projects.title') !!}" />
 
