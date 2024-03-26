@@ -24,7 +24,7 @@
                 @endif
             </h5>
 
-            <h3 class="script-font mt-3 text-lg font-medium tracking-wide lg:text-2xl">
+            <h3 class="script-font mt-3 text-lg font-medium tracking-wide lg:text-3xl">
                 {!! $projectTitle !!}
             </h3>
 
