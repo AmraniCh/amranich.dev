@@ -2,11 +2,11 @@ export default function (settings) {
 
 	renderBackgroundStars(settings.heroBackgroundSvg);
 
-	window.addEventListener("scroll", function () {
-		animateOnScrollBackgroundStars(settings, this.scrollY);
-		animateOnScrollSocialLinks(settings.hideOnScrollY, this.scrollY);
-		animateOnScrollLangSwitcher(settings.hideOnScrollY, this.scrollY);
-		animateOnScrollDarkModeBtn(settings.hideOnScrollY, this.scrollY);
+	document.getElementById("wrapper").addEventListener("scroll", function () {
+		animateOnScrollBackgroundStars(settings, this.scrollTop);
+		animateOnScrollSocialLinks(settings.hideOnScrollY, this.scrollTop);
+		animateOnScrollLangSwitcher(settings.hideOnScrollY, this.scrollTop);
+		animateOnScrollDarkModeBtn(settings.hideOnScrollY, this.scrollTop);
 	});
 }
 
@@ -152,9 +152,9 @@ function animateOnScrollDarkModeBtn(hideOnScrollY, scrollY) {
 		return;
 	}
 
-	const $ele = document.getElementById('dark-mode-toggle-btn');
+	const $button = document.getElementById('dark-mode-toggle-btn-mobile');
 	const animationStorageKey = "dark-mode-toggle-btn-animation-class";
-	var animationClass = Array.from($ele.classList).find(c => c.search("heroControlsFadeInUp") !== -1);
+	var animationClass = Array.from($button.classList).find(c => c.search("heroControlsFadeInUp") !== -1);
 
 	if (!animationClass) {
 		animationClass = localStorage.getItem(animationStorageKey);
@@ -163,10 +163,10 @@ function animateOnScrollDarkModeBtn(hideOnScrollY, scrollY) {
 	}
 
 	if (scrollY > hideOnScrollY) {
-		$ele.classList.remove(animationClass);
+		$button.classList.remove(animationClass);
 		localStorage.setItem(animationStorageKey, animationClass);
-	} else if (!$ele.classList.contains(animationClass)) {
-		$ele.classList.add(animationClass);
-		$ele.style.animationDelay = "0s";
+	} else if (!$button.classList.contains(animationClass)) {
+		$button.classList.add(animationClass);
+		$button.style.animationDelay = "0s";
 	}
 }

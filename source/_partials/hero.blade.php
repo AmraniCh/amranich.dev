@@ -53,7 +53,7 @@
             <li>
                 <!-- Dark Mode Switcher Start -->
                 <button
-                    class="dark-mode-toggle-btn absolute top-1 -right-2 h-12 w-12 rounded-lg p-2 bg-brown-500 opacity-0 animate-[heroControlsFadeInUp_.5s_ease-out_1.1s_forwards] lg:bg-transparent lg:hover:bg-yellow-100 lg:animate-[fadeInDown_.3s_ease-out_.6s_forwards] dark:hover:bg-yellow-50">
+                    class="dark-mode-toggle-btn hidden absolute top-1 -right-2 h-12 w-12 rounded-lg p-2 bg-brown-500 opacity-0 animate-[heroControlsFadeInUp_.5s_ease-out_1.1s_forwards] lg:block lg:bg-transparent lg:hover:bg-yellow-100 lg:animate-[fadeInDown_.3s_ease-out_.6s_forwards] dark:hover:bg-yellow-50">
                     <svg class="fill-yellow-800 block dark:hidden" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
                     </svg>
@@ -133,10 +133,10 @@
         </ul>
         <!-- Social Links End -->
 
-        <!-- Dark Mode Switcher Start -->
-        <button
-            class="dark-mode-toggle-btn absolute left-4 -bottom-2 h-12 w-12 rounded-lg p-2 bg-brown-500 opacity-0 animate-[heroControlsFadeInUp_.5s_ease-out_1.1s_forwards] lg:hidden">
-            <svg class="fill-brown-500 block dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+        <!-- Dark Mode Switcher Mobile Start -->
+        <button id="dark-mode-toggle-btn-mobile"
+            class="dark-mode-toggle-btn absolute left-4 -bottom-2 h-12 w-12 rounded-lg p-2 bg-brown-50 opacity-0 animate-[heroControlsFadeInUp_.5s_ease-out_1.1s_forwards] lg:hidden dark:bg-yellow-200">
+            <svg class="fill-yellow-800 block dark:hidden" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
             </svg>
             <svg class="fill-yellow-500 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
@@ -145,7 +145,7 @@
                     fill-rule="evenodd" clip-rule="evenodd"></path>
             </svg>
         </button>
-        <!-- Dark Mode Switcher End -->
+        <!-- Dark Mode Switcher Mobile End -->
 
         <!-- Language Switcher Start -->
         <ul id="hero-section-footer-lang-switcher"

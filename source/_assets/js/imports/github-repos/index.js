@@ -10,8 +10,8 @@ export default function (settings) {
 
     clearRepositories();
 
-    window.addEventListener('scroll', () => {
-        const windowOffset = window.scrollY + window.innerHeight;
+    document.getElementById("wrapper").addEventListener('scroll', function () {
+        const windowOffset = this.scrollTop + window.innerHeight;
         if (windowOffset < (openSourceSectionOffsetTop + (openSourceSection.offsetHeight / 2)) || githubReposFetched) {
             return;
         }
