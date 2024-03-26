@@ -1,4 +1,4 @@
-import { animateOnVisibility } from "../../helpers";
+import { animateOnVisibility } from "../../../helpers";
 
 export default function () {
     document.querySelectorAll(".care-about-section .card").forEach((card, i) => {

@@ -1,8 +1,8 @@
-import hero from "./hero";
-import aboutMe from "./about-me";
-import careAbout from "./care-about";
-import career from "./career";
-import featuredProjects from "./featured-projects";
+import hero from "./sections/hero";
+import aboutMe from "./sections/about-me";
+import careAbout from "./sections/care-about";
+import career from "./sections/career";
+import featuredProjects from "./sections/featured-projects";
 import { animateOnVisibility } from "../../helpers";
 
 export default function (settings) {

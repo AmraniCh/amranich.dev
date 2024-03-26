@@ -2,7 +2,7 @@
     data-scroll-indicator-text="{!! $page->trans('scroll-indicator.projects') !!}">
     <x-section-heading text="{!! $page->trans('featured-projects.title') !!}" />
 
-    <div class="flex flex-col gap-10 xl:gap-24">
+    <div class="flex flex-col gap-10 lg:gap-16 xl:gap-24">
 
         <x-project-card highlight="{{ false }}" snapshot="personal-webiste-snapshot.jpg"
             snapshotAlt="Shakir El Amrani's personal website snapshot" date="{!! $page->trans('featured-projects.first-project.date') !!}"
@@ -56,7 +56,7 @@
         </x-project-card>
 
         <div
-            class="flex items-center gap-4 p-4 bg-white border border-yellow-800 rounded-lg dark:bg-dark dark:border-yellow-200">
+            class="tip flex items-center gap-4 p-4 bg-white border border-yellow-800 rounded-lg dark:bg-dark dark:border-yellow-200">
             <div class="flex items-center gap-2">
                 <svg class="w-10 h-10 shrink-0 fill-yellow-400 dark:fill-yellow-200" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 30 30" width="30px" height="30px">
