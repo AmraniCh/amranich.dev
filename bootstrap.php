@@ -2,6 +2,7 @@
 
 use App\Listeners\FetchGhRepos;
 use App\Listeners\FetchVersion;
+use App\Listeners\LoadProjects;
 
 /** var \Illuminate\Container\Container $container */
 /** var \TightenCo\Jigsaw\Events\EventBus $events */
@@ -18,4 +19,4 @@ use App\Listeners\FetchVersion;
  */
 
 
-$events->beforeBuild([FetchVersion::class, FetchGhRepos::class]);
+$events->beforeBuild([FetchVersion::class, FetchGhRepos::class, LoadProjects::class]);
