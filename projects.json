@@ -1,6 +1,26 @@
 [
     {
-        "release_date": "2024-02-01",
+        "date": {
+            "start": "2023-06-01",
+            "end": "2024-01-01"
+        },
+        "name": "Cloud Master",
+        "made_at": "PI Marketing",
+        "stack": [
+            "Laravel",
+            "Docker",
+            "Redis",
+            "React",
+            "Redux",
+            "Swagger"
+        ],
+        "links": {}
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2025-01-01"
+        },
         "name": "Cloud Master 2",
         "made_at": "PI Marketing",
         "stack": [
@@ -11,49 +31,6 @@
             "Redux",
             "Swagger"
         ],
-        "links": {
-            "link": "link3",
-            "github": "link1",
-            "behance": "link2",
-            "chrome": "link3"
-        }
-    },
-    {
-        "release_date": "2024-01-01",
-        "name": "Cloud Master 1",
-        "made_at": "PI Marketing",
-        "stack": [
-            "Laravel",
-            "Docker",
-            "Redis",
-            "React",
-            "Redux",
-            "Swagger"
-        ],
-        "links": {
-            "link": "link3",
-            "github": "link1",
-            "behance": "link2",
-            "chrome": "link3"
-        }
-    },
-    {
-        "release_date": "2024-03-01",
-        "name": "Cloud Master 3",
-        "made_at": "PI Marketing",
-        "stack": [
-            "Laravel",
-            "Docker",
-            "Redis",
-            "React",
-            "Redux",
-            "Swagger"
-        ],
-        "links": {
-            "link": "link3",
-            "github": "link1",
-            "behance": "link2",
-            "chrome": "link3"
-        }
+        "links": {}
     }
 ]

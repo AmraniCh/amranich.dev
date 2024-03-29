@@ -25,21 +25,29 @@
         </div>
 
         <div class="content mt-8">
-
             <table class="w-full text-left">
                 <thead class="capitalize">
-                    <th class="pr-6 py-4">release date</th>
+                    <th class="pr-6 py-4">date</th>
                     <th class="pr-6 py-4">name</th>
                     <th class="hidden pr-6 py-4 md:table-cell">stack</th>
                     <th class="pr-6 py-4">made at</th>
                     <th class="hidden pr-6 py-4 lg:table-cell">links</th>
                 </thead>
                 <tbody>
-
                     @foreach ($page->projects as $project)
                         <tr class="border-b border-brown-50 last:border-none dark:border-brown-900">
                             <td class="pr-6 py-4">
-                                {{ $project->getReleaseDateHuman() }}
+                                <div class="flex items-center gap-2">
+                                    @if ($project->getStartDateHuman())
+                                        <span>{{ $project->getStartDateHuman() }}</span>
+                                        <svg class="w-4 h-4 dark:fill-yellow-200" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 448 512">
+                                            <path
+                                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                        </svg>
+                                    @endif
+                                    <span>{{ $project->getEndDateHuman() }} </span>
+                                </div>
                             </td>
                             <td class="pr-6 py-4">
                                 <div class="flex flex-col justify-center gap-1">
@@ -60,10 +68,7 @@
                                         </div>
                                     @endif
                                 </div>
-
                             </td>
-
-
                             <td class="hidden pr-6 py-4 md:table-cell">
                                 @if (!$project->getStack()->isEmpty())
                                     <div class="flex flex-wrap gap-1">
@@ -97,42 +102,6 @@
                             </td>
                         </tr>
                     @endforeach
-
-
-                    {{-- <tr class="border-b border-brown-50 last:border-none">
-                        <td class="pr-6 py-4">
-                            Jan 2024
-                        </td>
-                        <td class="pr-6 py-4">
-                            Cloud Master
-                        </td>
-                        <td class="pr-6 py-4">
-                            PI Marketing
-                        </td>
-                        <td class="pr-6 py-4">
-                            <x-badge text="Laravel" />
-                        </td>
-                        <td class="pr-6 py-4">
-                            link
-                        </td>
-                    </tr>
-                    <tr class="border-b border-brown-50 last:border-none">
-                        <td class="pr-6 py-4">
-                            Jan 2024
-                        </td>
-                        <td class="pr-6 py-4">
-                            Cloud Master
-                        </td>
-                        <td class="pr-6 py-4">
-                            PI Marketing
-                        </td>
-                        <td class="pr-6 py-4">
-                            <x-badge text="Laravel" />
-                        </td>
-                        <td class="pr-6 py-4">
-                            link
-                        </td>
-                    </tr> --}}
                 </tbody>
             </table>
 

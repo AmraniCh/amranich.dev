@@ -6,24 +6,24 @@ use Illuminate\Support\Collection;
 
 class Project
 {
-    private string $releaseDate;
+    private array $date;
     private string $name;
     private string $madeAt;
     private Collection $stack;
     private Collection $links;
 
-    public function __construct(string $releaseDate, string $name, string $madeAt, Collection $stack, Collection $links)
+    public function __construct(array $date, string $name, string $madeAt, Collection $stack, Collection $links)
     {
-        $this->releaseDate = $releaseDate;
+        $this->date = $date;
         $this->name = $name;
         $this->madeAt = $madeAt;
         $this->stack = $stack;
         $this->links = $links;
     }
 
-    public function getReleaseDate(): string
+    public function getDate(): array
     {
-        return $this->releaseDate;
+        return $this->date;
     }
 
     public function getName(): string
@@ -46,11 +46,18 @@ class Project
         return $this->links;
     }
 
-    public function getReleaseDateHuman(): string
+    public function getStartDateHuman(): string
     {
-        // dd(strtotime($this->getReleaseDate()));
+        if (!$this->getDate()['start']) {
+            return '';
+        }
 
-        return date("M Y", strtotime($this->getReleaseDate()));
+        return $this->formatDate($this->getDate()['start']);
+    }
+
+    public function getEndDateHuman(): string
+    {
+        return $this->formatDate($this->getDate()['end']);
     }
 
     public static function getLinkSvgHtml(string $source): string
@@ -62,5 +69,10 @@ class Project
         }
 
         return file_get_contents($svgFilePath);
+    }
+
+    private function formatDate(string $date): string
+    {
+        return date("M Y", strtotime($date));
     }
 }

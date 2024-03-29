@@ -13,38 +13,46 @@ class LoadProjects
 
     public function handle(Jigsaw $jigsaw)
     {
-        $jsonFile = dirname(__DIR__) . '/' . self::FILENAME;
-
-        if (!file_exists($jsonFile)) {
-            throw new \RuntimeException(sprintf("'%s' file not found in root directory.", self::FILENAME));
-        }
-
-        if (($content = file_get_contents($jsonFile)) === false) {
-            throw new \RuntimeException(sprintf("Can't read projects file '%s' content.", $jsonFile));
-        }
-
-        if (($projects = json_decode($content, true)) === NULL) {
-            throw new \RuntimeException(sprintf("Unable to decode projects file '%s' JSON content.", $jsonFile));
-        }
-
         $projectsCollection = collect();
+        $projects = $this->tryDecodeProjectsJsonFile(dirname(__DIR__) . '/' . self::FILENAME);
 
         foreach ($projects as $project) {
             $projectsCollection->push(
                 new Project(
-                    releaseDate: $project['release_date'],
+                    date: $project['date'],
                     name: $project['name'],
                     madeAt: $project['made_at'],
                     stack: collect($project['stack']),
-                    links: collect($project['links'])
+                    links: collect($project['links']),
                 )
             );
         }
 
-        // sort projects by release date from older to newest
         $projectsArray = $projectsCollection->toArray();
-        usort($projectsArray, fn (Project $a, Project $b) =>  strtotime($a->getReleaseDate()) - strtotime($b->getReleaseDate()));
+
+        // sort projects by release date from older to newest
+        usort($projectsArray, fn (Project $a, Project $b) =>  strtotime($a->getDate()['end']) - strtotime($b->getDate()['end']));
 
         $jigsaw->setConfig('projects', collect($projectsArray));
+    }
+
+    /**
+     * @throws \RuntimeException
+     */
+    private function tryDecodeProjectsJsonFile(string $file): array
+    {
+        if (!file_exists($file)) {
+            throw new \RuntimeException(sprintf("'%s' file not found in root directory.", self::FILENAME));
+        }
+
+        if (($content = file_get_contents($file)) === false) {
+            throw new \RuntimeException(sprintf("Can't read projects file '%s' content.", $file));
+        }
+
+        if (($projects = json_decode($content, true)) === NULL) {
+            throw new \RuntimeException(sprintf("Unable to decode projects file '%s' JSON content.", $file));
+        }
+
+        return $projects;
     }
 }
