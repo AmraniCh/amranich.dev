@@ -2,10 +2,9 @@
 
 namespace App\Listeners;
 
-use App\Models\Project;
-use GuzzleHttp\Client;
+use App\Models\Project\ContributionLevel;
+use App\Models\Project\Project;
 use TightenCo\Jigsaw\Jigsaw;
-use GuzzleHttp\Exception\ClientException;
 
 class LoadProjects
 {
@@ -24,6 +23,8 @@ class LoadProjects
                     madeAt: $project['made_at'],
                     stack: collect($project['stack']),
                     links: collect($project['links']),
+                    contributionLevel: new ContributionLevel($project['contribution_level']),
+                    tasks: collect($project['tasks']),
                 )
             );
         }
@@ -31,7 +32,7 @@ class LoadProjects
         $projectsArray = $projectsCollection->toArray();
 
         // sort projects by release date from older to newest
-        usort($projectsArray, fn (Project $a, Project $b) =>  strtotime($a->getDate()['end']) - strtotime($b->getDate()['end']));
+        usort($projectsArray, fn (Project $a, Project $b) =>  strtotime($b->getDate()['end']) - strtotime($a->getDate()['end']));
 
         $jigsaw->setConfig('projects', collect($projectsArray));
     }

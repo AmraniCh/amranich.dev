@@ -1,36 +1,24 @@
 [
     {
         "date": {
-            "start": "2023-06-01",
-            "end": "2024-01-01"
-        },
-        "name": "Cloud Master",
-        "made_at": "PI Marketing",
-        "stack": [
-            "Laravel",
-            "Docker",
-            "Redis",
-            "React",
-            "Redux",
-            "Swagger"
-        ],
-        "links": {}
-    },
-    {
-        "date": {
             "start": "",
-            "end": "2025-01-01"
+            "end": "2021-07-01"
         },
-        "name": "Cloud Master 2",
-        "made_at": "PI Marketing",
+        "name": "Fatima Majdoub Consulting Team",
+        "made_at": "Freelance",
         "stack": [
             "Laravel",
-            "Docker",
-            "Redis",
-            "React",
-            "Redux",
-            "Swagger"
+            "Voyager Admin",
+            "Bootstrap"
         ],
-        "links": {}
+        "links": {
+            "link": "http://foodbuzz.ma"
+        },
+        "contribution_level": "low edit",
+        "tasks": [
+            "Implemented user authentication system",
+            "Designed and developed dashboard interface",
+            "Optimized database queries for improved performance"
+        ]
     }
 ]

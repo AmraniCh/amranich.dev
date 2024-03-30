@@ -7,6 +7,8 @@ module.exports = {
 			"source/**/*.blade.php",
 			"source/**/*.js",
 			"source/**/*.css",
+			"models/**/*.php",
+			"projects.json"
 		],
 		{ dot: true }
 	),
