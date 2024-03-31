@@ -90,10 +90,6 @@ class Project
 
     public function getContributionLevelHtml(bool $hideOnDesktop): string
     {
-        if ($this->getTasks()->isEmpty()) {
-            return BladeCompiler::render(sprintf('<x-badge text="%s" class="%s"/>', $this->getContributionLevel(), $hideOnDesktop ? 'lg:hidden' : ''));
-        }
-
         $questionSvg = '<svg class="w-3 h-3 fill-yellow-50 group-hover:fill-brown-900"
             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <path
@@ -106,16 +102,22 @@ class Project
 
                 <div
                     class="absolute -top-5 left-1/2 -translate-x-[30%] -translate-y-full w-max max-w-xs md:max-w-sm px-5 py-2 bg-brown-900 text-white rounded hidden shadow-lg whitespace-normal group-hover:block dark:bg-brown-800">
-                    <h3>Tasks:</h3>
-                    <ul class="ml-2 list-disc dark:list-[circle]">
             ';
 
-        $this->getTasks()->each(function ($task) use (&$html) {
-            $html .= '<li><span class="-ml-1">' . $task . '</span></li>';
-        });
+        if (!$this->getTasks()->isEmpty()) {
+            $html .= '<h3>Tasks:</h3>
+                    <ul class="ml-2 list-disc dark:list-[circle]">';
 
-        $html .= '</ul>
-                    <i class="absolute top-full left-[30%] -ml-4 w-7 h-4 overflow-hidden after:content-[\'\'] after:absolute after:w-4 after:h-4 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:rotate-45 after:bg-brown-900 after:shadow-lg"></i>
+            $this->getTasks()->each(function ($task) use (&$html) {
+                $html .= '<li><span class="-ml-1">' . $task . '</span></li>';
+            });
+
+            $html .= '</ul>';
+        } else {
+            $html .= '<p class="text-sm">' . ContributionLevel::LEVELS[strtolower($this->getContributionLevel())] . '</p>';
+        }
+
+        $html .= '<i class="absolute top-full left-[30%] -ml-4 w-7 h-4 overflow-hidden after:content-[\'\'] after:absolute after:w-4 after:h-4 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:rotate-45 after:bg-brown-900 after:shadow-lg"></i>
                 </div>
             </div>';
 
