@@ -1,13 +1,3 @@
-:root {
-    --hero-controls-bottom: 0
-}
-
-@media(min-width: 1024px) {
-    :root {
-        --hero-controls-bottom: @apply bottom-12;
-    }
-}
-
 @keyframes sparkling {
     0% {
         opacity: 0.1;
@@ -113,7 +103,7 @@
 
     to {
         opacity: 1;
-        bottom: var(--hero-controls-bottom) !important;
+        bottom: 3rem !important;
     }
 }
 
@@ -144,6 +134,7 @@
 }
 
 @keyframes mouseScrollDown {
+
     0%,
     100% {
         transform: translateY(-10%);
