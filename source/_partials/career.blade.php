@@ -3,28 +3,35 @@
     <x-section-heading text="{!! $page->trans('career.heading') !!}" />
 
     <div class="relative flex flex-col gap-5">
-        <x-career-card style="animation-delay: .2s" title="{{ $page->trans('career.3-position.title') }}"
+        <x-career-card style="animation-delay: .2s" title="{{ $page->trans('career.4-position.title') }}"
+            company="{{ $page->trans('career.4-position.company') }}"
+            duration="{{ $page->trans('career.4-position.duration') }}"
+            location="{{ $page->trans('career.4-position.location') }}"
+            logo="{{ $page->trans('career.4-position.location') }}" logoUrl="/assets/images/pi-marketing.jpg"
+            logoAlt="{{ $page->trans('career.4-position.company') }}" />
+
+        <x-career-card style="animation-delay: .3s" title="{{ $page->trans('career.3-position.title') }}"
             company="{{ $page->trans('career.3-position.company') }}"
             duration="{{ $page->trans('career.3-position.duration') }}"
             location="{{ $page->trans('career.3-position.location') }}"
             logo="{{ $page->trans('career.3-position.location') }}" logoUrl="/assets/images/pi-marketing.jpg"
             logoAlt="{{ $page->trans('career.3-position.company') }}" />
 
-        <x-career-card style="animation-delay: .3s" title="{{ $page->trans('career.2-position.title') }}"
+        <x-career-card style="animation-delay: .4s" title="{{ $page->trans('career.2-position.title') }}"
             company="{{ $page->trans('career.2-position.company') }}"
             duration="{{ $page->trans('career.2-position.duration') }}"
             location="{{ $page->trans('career.2-position.location') }}"
             logo="{{ $page->trans('career.2-position.location') }}" logoUrl="/assets/images/pi-marketing.jpg"
             logoAlt="{{ $page->trans('career.2-position.company') }}" />
 
-        <x-career-card style="animation-delay: .4s" title="{{ $page->trans('career.1-position.title') }}"
+        <x-career-card style="animation-delay: .5s" title="{{ $page->trans('career.1-position.title') }}"
             company="{{ $page->trans('career.1-position.company') }}"
             duration="{{ $page->trans('career.1-position.duration') }}"
             location="{{ $page->trans('career.1-position.location') }}"
             logo="{{ $page->trans('career.1-position.location') }}" logoUrl="/assets/images/map-concepts.jpg"
             logoAlt="{{ $page->trans('career.1-position.company') }}" />
 
-        <x-career-card style="animation-delay: .5s" title="{{ $page->trans('career.last-education.title') }}"
+        <x-career-card style="animation-delay: .6s" title="{{ $page->trans('career.last-education.title') }}"
             company="{{ $page->trans('career.last-education.institute') }}"
             duration="{{ $page->trans('career.last-education.duration') }}"
             location="{{ $page->trans('career.last-education.location') }}"
