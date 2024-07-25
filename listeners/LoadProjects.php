@@ -32,7 +32,10 @@ class LoadProjects
         $projectsArray = $projectsCollection->toArray();
 
         // sort projects by release date from older to newest
-        usort($projectsArray, fn (Project $a, Project $b) =>  strtotime($b->getDate()['end']) - strtotime($a->getDate()['end']));
+        usort(
+            $projectsArray,
+            fn (Project $a, Project $b) =>  strtotime($b->getDate()['end'] ?: $b->getDate()['start']) - strtotime($a->getDate()['end'] ?: $a->getDate()['start'])
+        );
 
         $jigsaw->setConfig('projects', collect($projectsArray));
     }

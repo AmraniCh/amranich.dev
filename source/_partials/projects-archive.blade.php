@@ -1,16 +1,6 @@
 <div id="projetcs-archive"
     class="fixed top-0 left-0 bottom-0 right-0 bg-yellow-50 opacity-0 transition-opacity duration-1000 px-4 py-4 invisible overflow-auto target:visible target:opacity-100 md:px-12 md:py-12 dark:bg-dark">
 
-    <style>
-        .tooltip .top {
-            /* min-width: 200px;
-            max-width: 400px; */
-        }
-    </style>
-
-
-
-
     <div class="max-w-7xl m-auto">
         <div class="relative flex justify-between items-center">
             <div class="flex flex-col gap-2.5">
@@ -25,7 +15,7 @@
                 </a>
 
                 <h2
-                    class="text-4xl font-extrabold bg-gradient-to-l from-yellow-400 to-yellow-500 text-transparent bg-clip-text ">
+                    class="text-2xl md:text-3xl lg:text-4xl font-extrabold bg-gradient-to-l from-yellow-400 to-yellow-500 text-transparent bg-clip-text ">
                     Projects
                     Archive
                     ({{ $page->projects->count() }})
@@ -59,6 +49,8 @@
                                 <div class="flex items-center gap-2">
                                     @if ($project->getStartDateHuman())
                                         <span class="lg:whitespace-nowrap">{{ $project->getStartDateHuman() }}</span>
+                                    @endif
+                                    @if ($project->getStartDateHuman() && $project->getEndDateHuman())
                                         <svg class="w-4 h-4 fill-yellow-800 dark:fill-yellow-200"
                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                             <path

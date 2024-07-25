@@ -65,16 +65,12 @@ class Project
 
     public function getStartDateHuman(): string
     {
-        if (!$this->getDate()['start']) {
-            return '';
-        }
-
-        return $this->formatDate($this->getDate()['start']);
+        return $this->getDate()['start'] ? $this->formatDate($this->getDate()['start']) : '';
     }
 
     public function getEndDateHuman(): string
     {
-        return $this->formatDate($this->getDate()['end']);
+        return $this->getDate()['end'] ? $this->formatDate($this->getDate()['end']) : '';
     }
 
     public static function getLinkSvgHtml(string $source): string
@@ -109,7 +105,7 @@ class Project
                     <ul class="ml-2 list-disc dark:list-[circle]">';
 
             $this->getTasks()->each(function ($task) use (&$html) {
-                $html .= '<li><span class="-ml-1">' . $task . '</span></li>';
+                $html .= '<li><span class="text-sm">' . $task . '</span></li>';
             });
 
             $html .= '</ul>';
