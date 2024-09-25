@@ -19,6 +19,7 @@ export default function (settings) {
         githubReposFetched = true;
 
         // render loading skeletons
+        cardsContainer.innerHTML = '';
         settings.pinnedRepos.forEach(repo => cardsContainer.innerHTML += skeleton(repo));
 
         const reposCache = JSON.parse(localStorage.getItem('repos'));
@@ -74,7 +75,6 @@ export default function (settings) {
                         ttl: reposFromCache.ttl
                     }));
                 }
-
             });
         });
     });
