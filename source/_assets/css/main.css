@@ -2,6 +2,7 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 @import './animations.css';
+@import './scrollbar.css';
 
 
 /* Font related styles */
