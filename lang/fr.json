@@ -26,7 +26,7 @@
     "care-about.4.title": "qualité du code",
     "care-about.4.desc": "Maîtriser le langage de programmation, suivre les meilleures pratiques et écrire des tests lorsque c'est nécessaire devrait suffire à garantir la meilleure qualité du code.",
     "career.heading": "Résumé de carrière",
-    "career.4-position.title": "responsable intérimaire du département développement",
+    "career.4-position.title": "Intérim Dev Team Lead",
     "career.4-position.company": "PI Marketing · Temps plein",
     "career.4-position.duration": "Avril 2024 - Présent",
     "career.4-position.location": "Tanger, Maroc",
@@ -73,5 +73,8 @@
     "scroll-indicator.career": "carrière",
     "scroll-indicator.projects": "projets",
     "scroll-indicator.open-source": "open source",
-    "scroll-indicator.contact": "contact"
+    "scroll-indicator.contact": "contact",
+    "not-found-page.title": "Page non trouvée",
+    "not-found-page.p1": "la page que vous recherchez est introuvable.",
+    "not-found-page.back-button-text": "accueil"
 }

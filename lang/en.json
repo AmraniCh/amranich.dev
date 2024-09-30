@@ -26,7 +26,7 @@
     "care-about.4.title": "code quality",
     "care-about.4.desc": "Mastering the programming language, following the best practices and writing tests (TDD) when necessary should be enough to ensure the best quality of the code.",
     "career.heading": "career brief",
-    "career.4-position.title": "interim head of development department",
+    "career.4-position.title": "Interim Dev Team Lead",
     "career.4-position.company": "PI Marketing · Full-time",
     "career.4-position.duration": "Apr 2024 - Present",
     "career.4-position.location": "Tangier, Morocco",
@@ -73,5 +73,8 @@
     "scroll-indicator.career": "career",
     "scroll-indicator.projects": "projects",
     "scroll-indicator.open-source": "open source",
-    "scroll-indicator.contact": "contact"
+    "scroll-indicator.contact": "contact",
+    "not-found-page.title": "Page Not Found",
+    "not-found-page.p1": "the page you’re looking for is not found.",
+    "not-found-page.back-button-text": "home"
 }
