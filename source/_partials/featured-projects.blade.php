@@ -4,7 +4,7 @@
 
     <div class="flex flex-col gap-10 lg:gap-16 xl:gap-24">
 
-        <x-project-card highlight="{{ false }}" snapshot="personal-webiste-snapshot.jpg"
+        <x-project-card highlight="{{ false }}" snapshot="website-snapshot.jpg"
             snapshotAlt="Shakir El Amrani's personal website snapshot" date="{!! $page->trans('featured-projects.first-project.date') !!}"
             title="{!! $page->trans('featured-projects.card-title') !!}" projectTitle="{!! $page->trans('featured-projects.first-project.title') !!}" projectDesc="{!! $page->trans('featured-projects.first-project.desc') !!}">
 
@@ -14,6 +14,7 @@
                 <x-badge text="Tailwindcss" />
                 <x-badge text="Vanilla Js" />
                 <x-badge text="ES6" />
+                <x-badge text="Github Actions" />
             </x-slot>
 
         </x-project-card>
