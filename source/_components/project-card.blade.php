@@ -40,7 +40,7 @@
 
             <!-- Actions -->
             <div class="flex items-center justify-center gap-4 lg:justify-start">
-                <x-buttons.secondary text="source">
+                <x-buttons.secondary text="source" href="{{ $sourceLink ?? '' }}" target="_blank">
 
                     <svg class="fill-yellow-800 group-hover:fill-yellow-50 dark:fill-yellow-200 dark:group-hover:fill-yellow-900"
                         xmlns="http://www.w3.org/2000/svg" height="16" width="15.5" viewBox="0 0 496 512">
@@ -49,7 +49,7 @@
                     </svg>
                 </x-buttons.secondary>
 
-                <x-buttons.secondary text="sketches">
+                <x-buttons.secondary text="sketches" href="{{ $sketchLink ?? '' }}" target="_blank">
                     <svg class="fill-yellow-800 group-hover:fill-yellow-50 dark:fill-yellow-200 dark:group-hover:fill-yellow-900"
                         xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512">
                         <path

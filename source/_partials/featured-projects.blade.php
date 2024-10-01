@@ -6,7 +6,8 @@
 
         <x-project-card highlight="{{ false }}" snapshot="website-snapshot.jpg"
             snapshotAlt="Shakir El Amrani's personal website snapshot" date="{!! $page->trans('featured-projects.first-project.date') !!}"
-            title="{!! $page->trans('featured-projects.card-title') !!}" projectTitle="{!! $page->trans('featured-projects.first-project.title') !!}" projectDesc="{!! $page->trans('featured-projects.first-project.desc') !!}">
+            title="{!! $page->trans('featured-projects.card-title') !!}" projectTitle="{!! $page->trans('featured-projects.first-project.title') !!}" projectDesc="{!! $page->trans('featured-projects.first-project.desc') !!}"
+            sourceLink="https://github.com/AmraniCh/amranich.dev" sketchLink="">
 
             <x-slot:stack>
                 <x-badge text="PHP" />
@@ -21,7 +22,9 @@
 
         <x-project-card highlight="{{ true }}" snapshotAlt="FTP file manager web application snapshot"
             snapshot="ftp-filemanager-snapshot.png" date="{!! $page->trans('featured-projects.second-project.date') !!}" title="{!! $page->trans('featured-projects.card-title') !!}"
-            projectTitle="{!! $page->trans('featured-projects.second-project.title') !!}" projectDesc="{!! $page->trans('featured-projects.second-project.desc') !!}">
+            projectTitle="{!! $page->trans('featured-projects.second-project.title') !!}" projectDesc="{!! $page->trans('featured-projects.second-project.desc') !!}"
+            sourceLink="https://github.com/AmraniCh/ftp-filemanager"
+            sketchLink="https://www.behance.net/gallery/104400253/FTP-Client-web-application">
 
             <x-slot:stack>
                 <x-badge text="PHP" />
@@ -44,7 +47,8 @@
         <x-project-card highlight="{{ false }}" snapshot="mysql-database-manager-snapshot.png"
             snapshotAlt="MySQL Database Manager web application snapshot" date="{!! $page->trans('featured-projects.third-project.date') !!}"
             title="{!! $page->trans('featured-projects.card-title') !!}" projectTitle="{!! $page->trans('featured-projects.third-project.title') !!}"
-            projectDesc="{!! $page->trans('featured-projects.third-project.desc') !!}">
+            projectDesc="{!! $page->trans('featured-projects.third-project.desc') !!}" sourceLink="https://github.com/AmraniCh/php-databases-manager"
+            sketchLink="https://www.behance.net/gallery/90446911/PHP-Databases-Manager">
 
             <x-slot:stack>
                 <x-badge text="PHP" />
@@ -75,8 +79,7 @@
                 </p>
             </div>
 
-            <x-buttons.secondary text="Archive" class="shrink-0" :useLink="true" href="#projetcs-archive"
-                :reverseDirection="true">
+            <x-buttons.secondary text="Archive" class="shrink-0" href="#projetcs-archive" :reverseDirection="true">
                 <svg class="w-5 h-5 fill-brown-500 group-hover:fill-yellow-50 group-hover:scale-125 group-hover:duration-300 dark:fill-yellow-200 dark:group-hover:fill-yellow-900"
                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3"
                     stroke="currentColor" class="w-6 h-6">

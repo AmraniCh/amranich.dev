@@ -1,8 +1,10 @@
-@props(['text', 'class' => '', 'slot' => '', 'useLink' => false, 'href' => '', 'reverseDirection' => false])
+@props(['text', 'class' => '', 'slot' => '', 'href' => '', 'reverseDirection' => false, 'target' => ''])
 
-<?php $element = $useLink ? 'a' : 'button'; ?>
+@if ($href)
+    <a href="{{ $href }}" @if ($target) target="{{ $target }}" @endif>
+@endif
 
-<{{ $element }} type="button" class="group relative {{ $class }}" {{ $href ? "href=$href" : '' }}>
+<button type="button" class="group relative {{ $class }}">
     <span
         class="absolute top-0 left-0 mt-1 ml-1 h-full w-full rounded bg-brown-400 group-hover:top-0.5 group-hover:left-0.5 group-hover:duration-100 group-hover:bg-yellow-900 dark:bg-dark dark:border-2 dark:border-yellow-200 dark:group-hover:bg-dark"></span>
     <span
@@ -10,5 +12,8 @@
         {{ $slot }}
         {{ $text }}
     </span>
+</button>
 
-    </{{ $element }}>
+@if ($href)
+    </a>
+@endif
