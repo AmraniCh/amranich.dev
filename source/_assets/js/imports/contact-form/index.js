@@ -18,10 +18,11 @@ export default function () {
         toggleLoading(true);
 
         const formData = new FormData(form);
-        const res = await fetch(location.origin + '/send_email.php', {
+        const res = await fetch('/send_email.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',
+                'X-REQUESTED-WITH': 'XMLHttpRequest'
             },
             body: new URLSearchParams({
                 fullname: formData.get('fullname'),

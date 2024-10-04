@@ -1,9 +1,14 @@
 {
     "require": {
         "symfony/mailer": "^6.0",
-        "rakit/validation": "^0.19.0"
+        "rakit/validation": "^1.4"
     },
     "require-dev": {
         "symfony/var-dumper": "^6.0"
+    },
+    "autoload": {
+        "classmap": [
+            "emitter.class.php"
+        ]
     }
 }

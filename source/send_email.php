@@ -1,46 +1,48 @@
 <?php
 
+require __DIR__ . '/vendor/autoload.php';
+
 use Rakit\Validation\Validator;
 use Symfony\Component\Mime\Email;
 use Symfony\Component\Mime\Address;
 use Symfony\Component\Mailer\Mailer;
 use Symfony\Component\Mailer\Transport\SendmailTransport;
 
+$sender = new Emitter();
+
 const DEV_BASE_URL = 'http://localhost:3000';
 const PROD_BASE_URL = 'https://amranich.dev';
 
 try {
-    if (!function_exists('getDomainFromUrl')) {
-        function getDomainFromUrl(string $url) {
+    if (!function_exists('getUrlDomain')) {
+        function getUrlDomain(string $url)
+        {
             return str_ireplace('www.', '', parse_url($url, PHP_URL_HOST));
         }
     }
 
     $baseUrl = '';
-    $fullUrl = sprintf("%s://%s", isset($_SERVER['HTTPS']) && $_SERVER['HTTPS']  === 'on' ? 'https': 'http', $_SERVER['HTTP_HOST']);
+    $fullUrl = sprintf("%s://%s", isset($_SERVER['HTTPS']) && $_SERVER['HTTPS']  === 'on' ? 'https' : 'http', $_SERVER['HTTP_HOST']);
 
-    if (getDomainFromUrl($fullUrl) === getDomainFromUrl(PROD_BASE_URL)) {
+    if (getUrlDomain($fullUrl) === getUrlDomain(PROD_BASE_URL)) {
         $baseUrl = PROD_BASE_URL;
-    } elseif (getDomainFromUrl($fullUrl) === getDomainFromUrl(DEV_BASE_URL)) {
+    } elseif (getUrlDomain($fullUrl) === getUrlDomain(DEV_BASE_URL)) {
         $baseUrl = DEV_BASE_URL;
     } else {
         throw new \LogicException("Cannot decide the base URL.");
     }
 
-    header('Access-Control-Allow-Origin: ' . $baseUrl);
+    //header('Access-Control-Allow-Origin: ' . $baseUrl);
+
+    header('Access-Control-Allow-Origin: *');
 
     if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-        http_response_code(400);
-        exit(json_encode([
-            'message' => '',
-            'status' => 'error'
-        ]));
+        $sender->emit(message: '', status: Emitter::ERROR_STATUS, code: 500);
     }
 
-    require __DIR__ . '/vendor/autoload.php';
-    
     header('Content-Type: application/json');
 
+    // validate required parameters
     $validator = new Validator;
     $validation = $validator->make($_POST, [
         'fullname' => 'required|regex:/^[a-zA-Z]+(?:\s[a-zA-Z]+)+$/',
@@ -51,11 +53,8 @@ try {
     $validation->validate();
 
     if ($validation->fails()) {
-        exit(json_encode([
-            'message' => $validation->errors()->all(),
-            'status' => 'error'
-        ]));
-    } 
+        $sender->emit(message: $validation->errors()->all(), status: Emitter::ERROR_STATUS, code: 400);
+    }
 
     $transport = new SendmailTransport();
     $mailer = new Mailer($transport);
@@ -68,16 +67,17 @@ try {
 
     $mailer->send($email);
 
-    exit(json_encode([
-        'message' => "Thank you for reaching out, I'll respond at my earliest convenience.",
-        'status' => 'success'
-    ]));
-
-} catch(\Throwable $ex) {
+    $sender->emit(
+        message: "Thank you for reaching out, I'll respond at my earliest convenience.",
+        status: Emitter::SUCCESS_STATUS,
+        code: 200
+    );
+} catch (\Throwable $ex) {
     error_log("Caught $ex");
-    http_response_code(500);
-    exit(json_encode([
-        'message' => 'Internal Server Error, Please contact me using my email address.',
-        'status' => 'error'
-    ]));
+
+    $sender->emit(
+        message: "Internal Server Error, Please contact me using my email address.",
+        status: Emitter::ERROR_STATUS,
+        code: 500
+    );
 }
