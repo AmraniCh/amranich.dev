@@ -1,6 +1,6 @@
 @props(['text', 'class' => '', 'slot' => '', 'href' => '', 'reverseDirection' => false, 'target' => ''])
 
-@if ($href)
+@if (isset($href) && $href)
     <a href="{{ $href }}" @if ($target) target="{{ $target }}" @endif>
 @endif
 
@@ -14,6 +14,6 @@
     </span>
 </button>
 
-@if ($href)
+@if (isset($href) && $href)
     </a>
 @endif

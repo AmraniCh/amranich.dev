@@ -1,3 +1,7 @@
+@if (isset($href) && $href)
+    <a href="{{ $href }}" @if ($target) target="{{ $target }}" @endif>
+@endif
+
 <button type="{{ isset($submit) ? 'submit' : 'button' }}" class="group relative primary-btn">
     <span
         class="absolute top-0 left-0 mt-1 ml-1 h-full w-full rounded bg-yellow-900 group-hover:top-0.5 group-hover:left-0.5 group-hover:duration-100 dark:bg-dark dark:border-2 dark:border-yellow-200"></span>
@@ -16,3 +20,7 @@
         {{ $text ?? '' }}
     </span>
 </button>
+
+@if (isset($href) && $href)
+    </a>
+@endif

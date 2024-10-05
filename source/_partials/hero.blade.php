@@ -95,7 +95,7 @@
             </p>
             <div
                 class="mt-5 flex justify-between gap-5 opacity-0 animate-[fadeInUp_.3s_ease-out_.9s_forwards] md:justify-start lg:animate-[fadeInUp_.3s_ease-out_1.3s_forwards]">
-                <x-buttons.primary>
+                <x-buttons.primary href="/CHAKIR_EL_AMRANI_EN.pdf" target="_blank">
                     <x-slot:text>
                         {{ $page->trans('hero.resume') }}
                     </x-slot>
@@ -108,10 +108,9 @@
 
                 </x-buttons.primary>
 
-                <x-buttons.secondary text="{{ $page->trans('hero.contact') }}" />
+                <x-buttons.secondary href="#contact-section" text="{{ $page->trans('hero.contact') }}" />
             </div>
         </div>
-
     </div>
     <!-- Intro End -->
 
