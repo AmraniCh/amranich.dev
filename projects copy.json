@@ -1,0 +1,820 @@
+[
+    {
+        "date": {
+            "start": "",
+            "end": "2021-07-01"
+        },
+        "name": "Fatima Majdoub Consulting Team",
+        "made_at": "Freelance",
+        "stack": [
+            "Laravel",
+            "Voyager Admin",
+            "Bootstrap"
+        ],
+        "links": {
+            "link": "http://foodbuzz.ma"
+        },
+        "contribution_level": "low edit"
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2021-07-01"
+        },
+        "name": "Foodbuzz Agency Showcase",
+        "made_at": "Freelance",
+        "stack": [
+            "Laravel",
+            "Voyager Admin",
+            "Bootstrap"
+        ],
+        "links": {
+            "link": "http://foodbuzz.ma"
+        }
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2023-10-01"
+        },
+        "name": "Zenlayer VPS Manager",
+        "made_at": "PI Marketing",
+        "stack": [
+            "PHP",
+            "cURL",
+            "APIs",
+            "React",
+            "Bootstrap",
+            "Zenlayer Cloud API",
+            "Networking"
+        ],
+        "links": {}
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2022-06-01"
+        },
+        "name": "Equinix VPS Manager",
+        "made_at": "PI Marketing",
+        "stack": [
+            "PHP",
+            "cURL",
+            "APIs",
+            "React",
+            "Bootstrap"
+        ],
+        "links": {}
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2022-04-01"
+        },
+        "name": "AutoLogin Chrome Extension",
+        "made_at": "PI Marketing",
+        "stack": [
+            "HTML",
+            "SCSS",
+            "JavaScript",
+            "Webpack",
+            "JavasScript Obfuscator"
+        ],
+        "links": {}
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2023-06-01"
+        },
+        "name": "AutoLogin Manager",
+        "made_at": "PI Marketing",
+        "stack": [
+            "PHP",
+            "Slim 3",
+            "Blade",
+            "Eloquent",
+            "MySQL",
+            "Tailwind",
+            "Rollup"
+        ],
+        "links": {}
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2023-01-01"
+        },
+        "name": "UnsubCentral-suppression-file-crawler",
+        "made_at": "PI Marketing",
+        "stack": [
+            "PHP",
+            "cURL"
+        ],
+        "links": {}
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2023-12-01"
+        },
+        "name": "google-drive-suppression-file-crawler",
+        "made_at": "PI Marketing",
+        "stack": [
+            "Python 2.7",
+            "PyDrive",
+            "Docker"
+        ],
+        "links": {}
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2023-01-01"
+        },
+        "name": "ezepo-suppression-file-crawler",
+        "made_at": "PI Marketing",
+        "stack": [
+            "PHP",
+            "cURL"
+        ],
+        "links": {}
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2023-01-01"
+        },
+        "name": "enable-organization-customization-script",
+        "made_at": "PI Marketing",
+        "stack": [
+            "PowerShell",
+            "ExchangePowerShell"
+        ],
+        "links": {}
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2022-04-01"
+        },
+        "name": "Office365 API Domains",
+        "made_at": "PI Marketing",
+        "stack": [
+            "PHP",
+            "cURL",
+            "PowerShell",
+            "ExchangePowerShell",
+            "Microsoft Graph API",
+            "NameCheap API",
+            "NameSilo API",
+            "React",
+            "Bootstrap"
+        ],
+        "links": {}
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2023-06-01"
+        },
+        "name": "Image to Table Encoder",
+        "made_at": "PI Marketing",
+        "stack": [
+            "HTML",
+            "Bootstrap",
+            "jQuery",
+            "Docker"
+        ],
+        "links": {}
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2023-06-01"
+        },
+        "name": "FreeDNS Manager",
+        "made_at": "PI Marketing",
+        "stack": [
+            "Python",
+            "Playwright",
+            "Docker"
+        ],
+        "links": {}
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2023-04-01"
+        },
+        "name": "Hostwinds VPS Manager",
+        "made_at": "PI Marketing",
+        "stack": [
+            "PHP",
+            "cURL",
+            "APIs",
+            "React",
+            "Bootstrap"
+        ],
+        "links": {}
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2022-12-01"
+        },
+        "name": "1cloud.ru VPS Manager",
+        "made_at": "PI Marketing",
+        "stack": [
+            "PHP",
+            "cURL",
+            "APIs",
+            "React",
+            "Bootstrap"
+        ],
+        "links": {}
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2022-03-01"
+        },
+        "name": "Reg.ru VPS Manager",
+        "made_at": "PI Marketing",
+        "stack": [
+            "PHP",
+            "cURL",
+            "APIs",
+            "React",
+            "Bootstrap"
+        ],
+        "links": {}
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2023-01-01"
+        },
+        "name": "VMTA SMTP Configurator",
+        "made_at": "PI Marketing",
+        "stack": [
+            "PHP",
+            "Slim 3",
+            "JavaScript",
+            "Tailwind",
+            "Rollup"
+        ],
+        "links": {}
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2022-12-01"
+        },
+        "name": "Newsletters Subscriber Automation Scripts",
+        "made_at": "PI Marketing",
+        "stack": [
+            "Python",
+            "Playwright"
+        ],
+        "links": {}
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2022-12-01"
+        },
+        "name": "Sprinthost VPS Manager",
+        "made_at": "PI Marketing",
+        "stack": [
+            "PHP",
+            "cURL",
+            "APIs",
+            "React",
+            "Bootstrap"
+        ],
+        "links": {}
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2022-08-01"
+        },
+        "name": "IBM VPS Manager",
+        "made_at": "PI Marketing",
+        "stack": [
+            "PHP",
+            "cURL",
+            "APIs",
+            "React",
+            "Bootstrap",
+            "IBM Cloud",
+            "Networking"
+        ],
+        "links": {}
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2022-06-01"
+        },
+        "name": "ESP Emails Filter Tool",
+        "made_at": "PI Marketing",
+        "stack": [
+            "PHP",
+            "Slim",
+            "NodeJs",
+            "SocketIO",
+            "React",
+            "Tailwind",
+            "Rollup",
+            "IMAP",
+            "PowerShell",
+            "Microsoft Graph",
+            "Azure AD"
+        ],
+        "links": {}
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2022-05-01"
+        },
+        "name": "SMTP Test Tool",
+        "made_at": "PI Marketing",
+        "stack": [
+            "PHP",
+            "Slim",
+            "PHPMailer",
+            "Tailwind",
+            "Rollup"
+        ],
+        "links": {}
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2022-04-01"
+        },
+        "name": "Subdomains Enumerator",
+        "made_at": "PI Marketing",
+        "stack": [
+            "PHP",
+            "React",
+            "Tailwind",
+            "Rollup"
+        ],
+        "links": {}
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2019-10-01"
+        },
+        "name": "UI/UX Designer Landing Page",
+        "made_at": "Independent",
+        "stack": [
+            "Figma"
+        ],
+        "links": {
+            "behance": "https://www.behance.net/gallery/85414497/UIUX-Designer-Landing-Page"
+        }
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2021-08-01"
+        },
+        "name": "Form Validate JS Library",
+        "made_at": "Open Source",
+        "stack": [
+            "JavaScript",
+            "ESLint"
+        ],
+        "links": {
+            "github": "https://github.com/AmraniCh/form-validate-js"
+        }
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2022-12-01"
+        },
+        "name": "Windows Services Watcher Script",
+        "made_at": "Open Source",
+        "stack": [
+            "PowerShell"
+        ],
+        "links": {
+            "github": "https://github.com/AmraniCh/windows-services-watcher"
+        }
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2021-07-01"
+        },
+        "name": "Github Code Font Changer",
+        "made_at": "Open Source",
+        "stack": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "github": "https://github.com/AmraniCh/github-code-font-changer",
+            "chrome": "https://chromewebstore.google.com/detail/github-code-font-changer/jmbophfanmlfkloliildahlpnlbojhfi"
+        }
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2020-08-01"
+        },
+        "name": "Vanilla File Manager",
+        "made_at": "Open Source",
+        "stack": [
+            "HTML",
+            "SCSS",
+            "JavaScript",
+            "Polyfills",
+            "Rollup"
+        ],
+        "links": {
+            "github": "https://github.com/AmraniCh/vanilla-filemanager"
+        }
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2022-02-01"
+        },
+        "name": "AJAX Router",
+        "made_at": "Open Source",
+        "stack": [
+            "PHP",
+            "PHPUnit",
+            "Github Actions"
+        ],
+        "links": {
+            "github": "https://github.com/AmraniCh/ajax-router",
+            "prize": "https://amranich.dev/certs/phpclasses-february-2022-innovation-award.pdf"
+        }
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2022-11-01"
+        },
+        "name": "OS Logo Fetcher",
+        "made_at": "Open Source",
+        "stack": [
+            "PHP"
+        ],
+        "links": {
+            "github": "https://github.com/AmraniCh/os-logo-fetcher"
+        }
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2023-01-01"
+        },
+        "name": "Slim Elegant",
+        "made_at": "Open Source",
+        "stack": [
+            "PHP",
+            "Slim",
+            "MVC"
+        ],
+        "links": {
+            "github": "https://github.com/AmraniCh/slim-elegant"
+        }
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2021-02-01"
+        },
+        "name": "Map-Labels",
+        "made_at": "Map-concepts",
+        "stack": [
+            "C#",
+            "PDFsharp",
+            "MetroFramework"
+        ],
+        "links": {}
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2021-03-01"
+        },
+        "name": "IFMIA Website UI Design",
+        "made_at": "Map-concepts",
+        "stack": [
+            "Figma"
+        ],
+        "links": {
+            "link": "https://www.figma.com/file/jv8B279eYreVUnlVhUnOdg/Ifmia-Website-Design?type=design&node-id=1-204&mode=design"
+        }
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2020-09-01"
+        },
+        "name": "FTP File Manager",
+        "made_at": "University",
+        "stack": [
+            "PHP",
+            "MVC",
+            "Gulp",
+            "JavaScript",
+            "SCSS"
+        ],
+        "links": {
+            "github": "https://github.com/lazzard/ftp-filemanager",
+            "behance": "https://www.behance.net/gallery/104400253/FTP-Client-web-application"
+        }
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2022-05-01"
+        },
+        "name": "PSR7 Response Sender",
+        "made_at": "Open Source",
+        "stack": [
+            "PHP",
+            "PHPUnit",
+            "Github Actions"
+        ],
+        "links": {
+            "github": "https://github.com/lazzard/psr7-response-sender"
+        }
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2021-05-01"
+        },
+        "name": "FTP Bridge",
+        "made_at": "Open Source",
+        "stack": [
+            "PHP",
+            "PHPUnit",
+            "Github Actions"
+        ],
+        "links": {
+            "github": "https://github.com/lazzard/ftp-bridge"
+        }
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2020-07-01"
+        },
+        "name": "PHP FTP Client",
+        "made_at": "Open Source",
+        "stack": [
+            "PHP",
+            "PHPUnit",
+            "Github Actions"
+        ],
+        "links": {
+            "github": "https://github.com/lazzard/php-ftp-client"
+        }
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2021-10-01"
+        },
+        "name": "how-jQuery-works",
+        "made_at": "Open Source",
+        "stack": [
+            "JavaScript"
+        ],
+        "links": {
+            "link": "https://laakil.com"
+        }
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2021-03-01"
+        },
+        "name": "LAAKIL Ameublemnt Showcase",
+        "made_at": "Map-concepts",
+        "stack": [
+            "Laravel",
+            "Voyager Admin",
+            "SweetAlert2",
+            "Slider Revolution",
+            "Bootstrap",
+            "SEO"
+        ],
+        "links": {
+            "link": "https://laakil.com"
+        }
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2021-02-01"
+        },
+        "name": "Alphaiz Consulting Showcase",
+        "made_at": "Map-concepts",
+        "stack": [
+            "Laravel",
+            "Voyager Admin",
+            "SweetAlert2",
+            "Slick Slider",
+            "Bootstrap",
+            "SEO"
+        ],
+        "links": {}
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2021-01-01"
+        },
+        "name": "TZBTP Showcase",
+        "made_at": "Map-concepts",
+        "stack": [
+            "Laravel",
+            "Voyager Admin",
+            "SweetAlert2",
+            "Slick Slider",
+            "Bootstrap",
+            "SEO"
+        ],
+        "links": {
+            "link": "https://tzbtp.ma"
+        }
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2020-11-01"
+        },
+        "name": "Virtual Keyboard",
+        "made_at": "Open Source",
+        "stack": [
+            "JavaScript",
+            "Gulp ",
+            "SCSS"
+        ],
+        "links": {
+            "github": "https://github.com/AmraniCh/virtual-keyboard",
+            "link": "https://codepen.io/AmraniCh/full/OJXwxxy"
+        }
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2020-10-01"
+        },
+        "name": "Jenny Wilson Portfolio Website",
+        "made_at": "Open Source",
+        "stack": [
+            "HTML5",
+            "SCSS",
+            "JavaScript"
+        ],
+        "links": {
+            "github": "https://github.com/AmraniCh/jenny-wilson-portfolio",
+            "behance": "https://www.behance.net/gallery/99187383/Web-Designer-Portfolio-Website"
+        }
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2020-03-01"
+        },
+        "name": "MySQL Databases Manager",
+        "made_at": "University",
+        "stack": [
+            "PHP",
+            "MySQL",
+            "jQuery",
+            "CSS"
+        ],
+        "links": {
+            "github": "https://github.com/AmraniCh/school-manager-application",
+            "behance": "https://www.behance.net/gallery/90446911/PHP-Databases-Manager"
+        }
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2020-02-01"
+        },
+        "name": "School Manager Application",
+        "made_at": "University",
+        "stack": [
+            "Java",
+            "MySQL",
+            "Java Swing"
+        ],
+        "links": {
+            "github": "https://github.com/AmraniCh/school-manager-application",
+            "behance": "https://www.behance.net/gallery/92662489/Mini-School-Management-Application-Java"
+        }
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2020-01-01"
+        },
+        "name": "School Projects Manager",
+        "made_at": "University",
+        "stack": [
+            "PHP",
+            "OOP mysqli",
+            "MySQL",
+            "CodeMirror",
+            "CSS",
+            "jQuery"
+        ],
+        "links": {
+            "github": "https://github.com/AmraniCh/tps-manager-for-php",
+            "behance": "https://www.behance.net/gallery/89157741/TPS-Manager-For-PHP-Environnement"
+        }
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2019-08-01"
+        },
+        "name": "e-commerce-website-plain-php",
+        "made_at": "University",
+        "stack": [
+            "PHP",
+            "PHPMailer",
+            "OpenWeatherMap API",
+            "OOP mysqli",
+            "MySQL",
+            "Bootstrap",
+            "jQuery"
+        ],
+        "links": {
+            "github": "https://github.com/AmraniCh/e-commerce-website-plain-php"
+        }
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2019-06-01"
+        },
+        "name": "e-learning-website-plain-php",
+        "made_at": "University",
+        "stack": [
+            "PHP",
+            "Procedural mysqli",
+            "MySQL",
+            "Bootstrap",
+            "jQuery"
+        ],
+        "links": {
+            "github": "https://github.com/AmraniCh/e-learning-website-plain-php"
+        }
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2018-11-01"
+        },
+        "name": "C# Messaging Application",
+        "made_at": "University",
+        "stack": [
+            "C#",
+            "Linq",
+            "SQL Server",
+            "Bunifu"
+        ],
+        "links": {
+            "github": "https://github.com/AmraniCh/c-sharp-email-application"
+        }
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2024-01-01"
+        },
+        "name": "Cloud Master",
+        "made_at": "PI Marketing",
+        "stack": [
+            "Laravel",
+            "Docker",
+            "Redis",
+            "MySQL",
+            "React",
+            "Redux",
+            "Swagger"
+        ],
+        "links": {}
+    }
+]

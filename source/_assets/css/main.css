@@ -61,11 +61,15 @@ html {
 
 /* Various Styles */
 .lang-switcher-btn {
-	@apply inline-block px-1 w-full bg-brown-50 text-yellow-800 hover:bg-yellow-800 hover:opacity-100 hover:text-yellow-50 dark:bg-transparent dark:text-yellow-200 dark:hover:bg-yellow-200 dark:hover:text-yellow-900;
+	@apply inline-block px-1 w-full text-center font-bold bg-brown-50 text-yellow-800 hover:bg-yellow-800 hover:opacity-100 hover:text-yellow-50 dark:bg-transparent dark:text-yellow-200 dark:hover:bg-yellow-200 dark:hover:text-yellow-900;
 }
 
 .lang-switcher-btn.selected {
 	@apply bg-yellow-800 text-yellow-50 cursor-default pointer-events-none dark:bg-yellow-200 dark:text-yellow-900;
+}
+
+#hero-section-footer-lang-switcher li:last-of-type .lang-switcher-btn {
+	@apply border-t-2 border-t-yellow-800
 }
 
 .hero-nav-item {
