@@ -60,7 +60,7 @@
 
             <div class="alerts flex flex-col gap-3 hidden"></div>
 
-            <x-buttons.primary submit="" text="send" />
+            <x-buttons.primary submit="" text="{!! $page->trans('contact-me.form.submit') !!}" />
 
         </form>
 
