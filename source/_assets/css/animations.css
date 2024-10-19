@@ -84,26 +84,22 @@
 
 @keyframes socialLinksFadeInUp {
     from {
-        opacity: 0;
-        @apply -bottom-96;
+        @apply opacity-0 -bottom-96;
     }
 
     to {
-        opacity: 1;
-        @apply bottom-20;
+        @apply opacity-100 bottom-16;
     }
 }
 
 
 @keyframes heroControlsFadeInUp {
     from {
-        opacity: 0;
-        @apply -bottom-96;
+        @apply opacity-0 -bottom-96;
     }
 
     to {
-        opacity: 1;
-        bottom: 3rem !important;
+        @apply opacity-100 !bottom-[2rem]
     }
 }
 

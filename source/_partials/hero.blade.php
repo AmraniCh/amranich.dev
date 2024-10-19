@@ -147,8 +147,7 @@
         <!-- Dark Mode Switcher Mobile End -->
 
         <!-- Scroll Down Icon Indicator Start -->
-        <button type="button" id="hero-section-footer-scroll-down-indicator"
-            class="cursor-default hidden -mb-3 lg:mb-3 lg:block">
+        <button type="button" id="hero-section-footer-scroll-down-indicator" class="cursor-default hidden lg:block">
             <svg class="h-8 w-8 fill-brown-50 lg:-translate-y-1/4 lg:opacity-0 lg:animate-[fadeIn_1s_ease-out_1.6s_forwards] drop-shadow-sm dark:fill-dark"
                 width="26" height="40" viewBox="0 0 26 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="stroke-2 stroke-yellow-950 dark:stroke-yellow-200"
@@ -162,7 +161,7 @@
 
         <!-- Language Switcher Start -->
         <ul id="hero-section-footer-lang-switcher"
-            class="flex flex-col absolute script-font border-2 border-yellow-800 hover:border-yellow-800 rounded shadow-sm right-4 -bottom-2 opacity-0 animate-[heroControlsFadeInUp_.5s_ease-out_forwards] animation-delay-[1.1s] lg:absolute lg:bottom-12 lg:right-0 lg:animation-delay-[1.2s] lg:animation-duration-[.7s] dark:border-yellow-200">
+            class="flex flex-col absolute script-font border-2 border-yellow-800 hover:border-yellow-800 rounded shadow-sm right-4 -bottom-2 opacity-0 animate-[heroControlsFadeInUp_.5s_ease-out_forwards] animation-delay-[1.1s] lg:absolute lg:bottom-8 lg:right-0 lg:animation-delay-[1.2s] lg:animation-duration-[.7s] dark:border-yellow-200">
             <li>
                 <a href="/en"
                     class="lang-switcher-btn {{ $page->getPath() ? $page->selected('en') : 'selected' }}">EN</a>
