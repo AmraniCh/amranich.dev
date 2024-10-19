@@ -25,7 +25,7 @@ html {
 
 /* Scroll indicators styles */
 #scroll-spy-indicators {
-	@apply hidden absolute top-0 items-center justify-center h-screen lg:flex lg:-right-6 xl:-right-10;
+	@apply hidden absolute top-0 items-center justify-center h-screen lg:flex lg:-right-2 xl:-right-4 2xl:-right-8;
 }
 
 #scroll-spy-indicators .indicators {
@@ -69,7 +69,7 @@ html {
 }
 
 #hero-section-footer-lang-switcher li:last-of-type .lang-switcher-btn {
-	@apply border-t-2 border-t-yellow-800
+	@apply border-t-2 border-t-yellow-800 dark:border-t-yellow-200;
 }
 
 .hero-nav-item {
