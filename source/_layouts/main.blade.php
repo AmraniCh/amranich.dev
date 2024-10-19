@@ -105,7 +105,7 @@
     </noscript>
 </head>
 
-<body class="bg-yellow-200 text-yellow-800 overflow-hidden dark:md:bg-dark dark:text-yellow-200">
+<body class="bg-yellow-50 text-yellow-800 overflow-hidden dark:md:bg-dark dark:text-yellow-200">
     <div id="wrapper"
         class="absolute top-0 left-0 bottom-0 right-0 overflow-auto sm:p-2 md:py-4 md:px-4 lg:px-8 lg:py-8">
         @yield('body')

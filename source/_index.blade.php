@@ -1,8 +1,7 @@
 @extends('_layouts.main')
 
 @section('body')
-    <div
-        class="container relative bg-yellow-50 max-w-7xl m-auto pt-4 rounded-b-xl overflow-hidden md:rounded-xl md:border-4 md:border-yellow-800 lg:pt-8 dark:bg-dark dark:md:border-yellow-200">
+    <div class="container relative bg-yellow-50 max-w-7xl m-auto pt-4 rounded-b-xl overflow-hidden lg:pt-0 dark:bg-dark">
 
         @include('_partials.hero')
         @include('_partials.about-me')
