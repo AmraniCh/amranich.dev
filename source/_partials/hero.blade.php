@@ -170,9 +170,6 @@
             <li>
                 <a href="/fr" class="lang-switcher-btn cursor-pointer {{ $page->selected('fr') }}">FR</a>
             </li>
-            <li>
-                <a href="/amz" class="lang-switcher-btn {{ $page->getPath() ? $page->selected('en') : '' }}">ⵣ</a>
-            </li>
         </ul>
         <!-- Language Switcher End -->
     </div>
