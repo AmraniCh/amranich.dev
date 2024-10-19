@@ -7,7 +7,8 @@
         <x-project-card highlight="{{ false }}" snapshot="website-snapshot.jpg"
             snapshotAlt="Shakir El Amrani's personal website snapshot" date="{!! $page->trans('featured-projects.first-project.date') !!}"
             title="{!! $page->trans('featured-projects.card-title') !!}" projectTitle="{!! $page->trans('featured-projects.first-project.title') !!}" projectDesc="{!! $page->trans('featured-projects.first-project.desc') !!}"
-            sourceLink="https://github.com/AmraniCh/amranich.dev" sketchLink="">
+            sourceLink="https://github.com/AmraniCh/amranich.dev" sketchLink="" sourceBtn="{!! $page->trans('featured-projects.source-button') !!}"
+            sketchesBtn="{!! $page->trans('featured-projects.sketches-button') !!}">
 
             <x-slot:stack>
                 <x-badge text="PHP" />
@@ -24,7 +25,8 @@
             snapshot="ftp-filemanager-snapshot.png" date="{!! $page->trans('featured-projects.second-project.date') !!}" title="{!! $page->trans('featured-projects.card-title') !!}"
             projectTitle="{!! $page->trans('featured-projects.second-project.title') !!}" projectDesc="{!! $page->trans('featured-projects.second-project.desc') !!}"
             sourceLink="https://github.com/AmraniCh/ftp-filemanager"
-            sketchLink="https://www.behance.net/gallery/104400253/FTP-Client-web-application">
+            sketchLink="https://www.behance.net/gallery/104400253/FTP-Client-web-application"
+            sourceBtn="{!! $page->trans('featured-projects.source-button') !!}" sketchesBtn="{!! $page->trans('featured-projects.sketches-button') !!}">
 
             <x-slot:stack>
                 <x-badge text="PHP" />
@@ -48,7 +50,8 @@
             snapshotAlt="MySQL Database Manager web application snapshot" date="{!! $page->trans('featured-projects.third-project.date') !!}"
             title="{!! $page->trans('featured-projects.card-title') !!}" projectTitle="{!! $page->trans('featured-projects.third-project.title') !!}"
             projectDesc="{!! $page->trans('featured-projects.third-project.desc') !!}" sourceLink="https://github.com/AmraniCh/php-databases-manager"
-            sketchLink="https://www.behance.net/gallery/90446911/PHP-Databases-Manager">
+            sketchLink="https://www.behance.net/gallery/90446911/PHP-Databases-Manager"
+            sourceBtn="{!! $page->trans('featured-projects.source-button') !!}" sketchesBtn="{!! $page->trans('featured-projects.sketches-button') !!}">
 
             <x-slot:stack>
                 <x-badge text="PHP" />
@@ -69,17 +72,12 @@
                         d="M 6.5292969 2.515625 A 1 1 0 0 0 5.8085938 2.8085938 A 1 1 0 0 0 5.8085938 4.2226562 A 1 1 0 0 0 7.2226562 4.2226562 A 1 1 0 0 0 7.2226562 2.8085938 A 1 1 0 0 0 6.5292969 2.515625 z M 23.5 2.515625 A 1 1 0 0 0 22.777344 2.8085938 A 1 1 0 0 0 22.777344 4.2226562 A 1 1 0 0 0 24.191406 4.2226562 A 1 1 0 0 0 24.191406 2.8085938 A 1 1 0 0 0 23.5 2.515625 z M 15 3 C 10.029 3 6 7.029 6 12 C 6 17 10 19 12 23 L 18 23 C 20 19 24 17 24 12 C 24 7.029 19.971 3 15 3 z M 15 6 L 15 11 L 19 11 L 15 18 L 15 13 L 11 13 L 15 6 z M 3 11 A 1 1 0 0 0 2 12 A 1 1 0 0 0 3 13 A 1 1 0 0 0 4 12 A 1 1 0 0 0 3 11 z M 27 11 A 1 1 0 0 0 26 12 A 1 1 0 0 0 27 13 A 1 1 0 0 0 28 12 A 1 1 0 0 0 27 11 z M 6.5292969 19.484375 A 1 1 0 0 0 5.8066406 19.777344 A 1 1 0 0 0 5.8066406 21.191406 A 1 1 0 0 0 7.2226562 21.191406 A 1 1 0 0 0 7.2226562 19.777344 A 1 1 0 0 0 6.5292969 19.484375 z M 23.498047 19.486328 A 1 1 0 0 0 22.777344 19.777344 A 1 1 0 0 0 22.777344 21.193359 A 1 1 0 0 0 24.191406 21.193359 A 1 1 0 0 0 24.191406 19.777344 A 1 1 0 0 0 23.498047 19.486328 z M 12 25 L 12 26 C 12 27.105 12.895 28 14 28 A 1 1 0 0 0 15 29 A 1 1 0 0 0 16 28 C 17.105 28 18 27.105 18 26 L 18 25 L 12 25 z" />
                 </svg>
                 <p class="inline lg:text-lg">
-                    These are my "classic" projects. Though a couple are older (completed in 2020), I learned a lot from
-                    them
-                    and I'm
-                    still
-                    proud of the work I did 😊. you can find a complete timeline of all my projects including
-                    professional
-                    ones here!
+                    {!! $page->trans('featured-projects.notice.text') !!}
                 </p>
             </div>
 
-            <x-buttons.secondary text="Archive" class="shrink-0" href="#projetcs-archive" :reverseDirection="true">
+            <x-buttons.secondary text="{!! $page->trans('featured-projects.notice.button') !!}" class="shrink-0" href="#projetcs-archive"
+                :reverseDirection="true">
                 <svg class="w-5 h-5 fill-brown-500 group-hover:fill-yellow-50 group-hover:scale-125 group-hover:duration-300 dark:fill-yellow-200 dark:group-hover:fill-yellow-900"
                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3"
                     stroke="currentColor" class="w-6 h-6">

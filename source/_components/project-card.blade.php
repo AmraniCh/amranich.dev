@@ -1,5 +1,5 @@
 <div
-    class="card noscript-opacity-1 opacity-0 {{ $highlight ? 'px-4 py-8 rounded-md bg-white border-2 border-dashed border-yellow-800 dark:bg-brown-900 dark:border-transparent' : '' }}">
+    class="card noscript-opacity-1 opacity-0 {{ $highlight ? 'px-4 py-8 rounded-md bg-white border-2 border-dashed border-yellow-800 dark:bg-brown-900 dark:border-yellow-200' : '' }}">
     <div class="flex flex-col w-full {{ $highlight ? 'lg:flex-row-reverse' : 'lg:flex-row' }} lg:gap-6">
         <!-- Project Snapshot -->
         <div class="lg:flex lg:items-center lg:flex-shrink-0">
@@ -40,7 +40,7 @@
 
             <!-- Actions -->
             <div class="flex items-center justify-center gap-4 lg:justify-start">
-                <x-buttons.secondary text="source" href="{{ $sourceLink ?? '' }}" target="_blank">
+                <x-buttons.secondary text="{{ $sourceBtn }}" href="{{ $sourceLink ?? '' }}" target="_blank">
 
                     <svg class="fill-yellow-800 group-hover:fill-yellow-50 dark:fill-yellow-200 dark:group-hover:fill-yellow-900"
                         xmlns="http://www.w3.org/2000/svg" height="16" width="15.5" viewBox="0 0 496 512">
@@ -49,7 +49,7 @@
                     </svg>
                 </x-buttons.secondary>
 
-                <x-buttons.secondary text="sketches" href="{{ $sketchLink ?? '' }}" target="_blank">
+                <x-buttons.secondary text="{{ $sketchesBtn }}" href="{{ $sketchLink ?? '' }}" target="_blank">
                     <svg class="fill-yellow-800 group-hover:fill-yellow-50 dark:fill-yellow-200 dark:group-hover:fill-yellow-900"
                         xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512">
                         <path
