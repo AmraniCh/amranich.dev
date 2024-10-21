@@ -60,8 +60,16 @@
     "featured-projects.third-project.date": "January 2020",
     "featured-projects.third-project.title": "MySQL Databases Manager",
     "featured-projects.third-project.desc": "a web application to manage MySQL databases locally with support of logging for all MySQL CRUD operations.",
-    "featured-projects.notice.text": "These are my \"classic\" projects. Though a couple are older (completed in 2020), I learned a lot from them and I'm still proud of the work I did 😊. you can find a complete timeline of all my projects including professional ones here!",
+    "featured-projects.notice": "These are my \"classic\" projects. Though a couple are older (completed in 2020), I learned a lot from them and I'm still proud of the work I did 😊. you can find a complete timeline of all my projects including professional ones here!",
     "featured-projects.notice.button": "archive",
+    "projects-archive.back-button": "back",
+    "projects-archive.headline": "projects archive",
+    "projects-archive.table.columns.date": "date",
+    "projects-archive.table.columns.name": "name",
+    "projects-archive.table.columns.made-at": "made at",
+    "projects-archive.table.columns.contribution-level": "contribution level",
+    "projects-archive.table.columns.stack": "stack",
+    "projects-archive.table.columns.links": "links",
     "open-source.heading": "open source",
     "contact-me.heading": "get in touch",
     "contact-me.p.1": "I am always open to discussing your project or sharing knowledge. Feel free to contact me with any questions or if you have a project we can work on together",
@@ -80,5 +88,5 @@
     "scroll-indicator.contact": "contact",
     "not-found-page.title": "Page Not Found",
     "not-found-page.p1": "the page you’re looking for is not found.",
-    "not-found-page.back-button-text": "home"
+    "not-found-page.back-button": "home"
 }

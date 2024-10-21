@@ -4,14 +4,15 @@
     <div class="max-w-7xl m-auto">
         <div class="relative flex justify-between items-center">
             <div class="flex flex-col gap-2.5">
-                <a class="group flex items-center gap-1.5 text-base font-bold hover:opacity-80" href="#projects-section">
+                <a class="group flex items-center gap-1.5 text-base font-bold capitalize hover:opacity-80"
+                    href="#projects-section">
                     <svg class="w-3.5 h-3.5 fill-yellow-900 group-hover:-translate-x-1 group-hover:duration-200 group-hover:ease-in dark:fill-yellow-200"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                         <path
                             d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
                     </svg>
 
-                    Back
+                    {!! $page->trans('projects-archive.back-button') !!}
                 </a>
 
                 <div class="flex justify-center items-center gap-2">
@@ -24,9 +25,8 @@
                     </svg>
 
                     <h2
-                        class="text-2xl md:text-3xl lg:text-4xl font-extrabold bg-gradient-to-l from-yellow-400 to-yellow-500 text-transparent bg-clip-text ">
-                        Projects
-                        Archive
+                        class="text-2xl md:text-3xl lg:text-4xl font-extrabold bg-gradient-to-l from-yellow-400 to-yellow-500 text-transparent bg-clip-text capitalize">
+                        {!! $page->trans('projects-archive.headline') !!}
                         ({{ $page->projects->count() }})
                     </h2>
                 </div>
@@ -48,12 +48,12 @@
                 <div class="content mt-8">
                     <table class="w-full text-left">
                         <thead class="capitalize">
-                            <th class="pr-6 py-4">date</th>
-                            <th class="pr-6 py-4">name</th>
-                            <th class="pr-6 py-4">made at</th>
-                            <th class="hidden pr-6 py-4 md:table-cell">Contribution Level</th>
-                            <th class="hidden pr-6 py-4 md:table-cell">stack</th>
-                            <th class="hidden pr-6 py-4 lg:table-cell">links</th>
+                            <th class="pr-6 py-4">{!! $page->trans('projects-archive.table.columns.date') !!}</th>
+                            <th class="pr-6 py-4">{!! $page->trans('projects-archive.table.columns.name') !!}</th>
+                            <th class="pr-6 py-4">{!! $page->trans('projects-archive.table.columns.made-at') !!}</th>
+                            <th class="hidden pr-6 py-4 md:table-cell">{!! $page->trans('projects-archive.table.columns.contribution-level') !!}</th>
+                            <th class="hidden pr-6 py-4 md:table-cell">{!! $page->trans('projects-archive.table.columns.stack') !!}</th>
+                            <th class="hidden pr-6 py-4 lg:table-cell">{!! $page->trans('projects-archive.table.columns.links') !!}</th>
                         </thead>
                         <tbody>
                             @foreach ($page->projects as $project)

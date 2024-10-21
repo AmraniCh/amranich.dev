@@ -60,8 +60,16 @@
     "featured-projects.third-project.date": "janvier 2020",
     "featured-projects.third-project.title": "Gestionnaire de bases de données MySQL",
     "featured-projects.third-project.desc": "Une application web pour gérer les bases de données MySQL localement avec prise en charge de la journalisation pour toutes les opérations CRUD MySQL.",
-    "featured-projects.notice.text": "Voici mes projets \"classiques\". Bien que certains soient plus anciens (réalisés en 2020), j'ai beaucoup appris grâce à eux et je suis toujours fier du travail que j'ai accompli 😊. Vous pouvez trouver une chronologie complète de tous mes projets, y compris les projets professionnels, ici !",
+    "featured-projects.notice": "Voici mes projets \"classiques\". Bien que certains soient plus anciens (réalisés en 2020), j'ai beaucoup appris grâce à eux et je suis toujours fier du travail que j'ai accompli 😊. Vous pouvez trouver une chronologie complète de tous mes projets, y compris les projets professionnels, ici !",
     "featured-projects.notice.button": "archive",
+    "projects-archive.back-button": "retour",
+    "projects-archive.headline": "archive des projets",
+    "projects-archive.table.columns.date": "date",
+    "projects-archive.table.columns.name": "nom",
+    "projects-archive.table.columns.made-at": "réalisé à",
+    "projects-archive.table.columns.contribution-level": "niveau de contribution",
+    "projects-archive.table.columns.stack": "stack",
+    "projects-archive.table.columns.links": "liens",
     "open-source.heading": "open source",
     "contact-me.heading": "me contacter",
     "contact-me.p.1": "Je suis toujours ouvert pour discuter de votre projet ou partager des connaissances. N'hésitez pas à me contacter pour toute question ou si vous avez un projet sur lequel nous pouvons travailler ensemble",
@@ -80,5 +88,5 @@
     "scroll-indicator.contact": "contact",
     "not-found-page.title": "Page non trouvée",
     "not-found-page.p1": "la page que vous recherchez est introuvable.",
-    "not-found-page.back-button-text": "accueil"
+    "not-found-page.back-button": "accueil"
 }
