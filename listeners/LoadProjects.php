@@ -2,8 +2,8 @@
 
 namespace App\Listeners;
 
-use App\Models\Project\ContributionLevel;
-use App\Models\Project\Project;
+use App\Models\ContributionLevel;
+use App\Models\Project;
 use TightenCo\Jigsaw\Jigsaw;
 
 class LoadProjects
@@ -34,7 +34,7 @@ class LoadProjects
         // sort projects by release date from older to newest
         usort(
             $projectsArray,
-            fn (Project $a, Project $b) =>  strtotime($b->getDate()['end'] ?: $b->getDate()['start']) - strtotime($a->getDate()['end'] ?: $a->getDate()['start'])
+            fn(Project $a, Project $b) =>  strtotime($b->getDate()['end'] ?: $b->getDate()['start']) - strtotime($a->getDate()['end'] ?: $a->getDate()['start'])
         );
 
         $jigsaw->setConfig('projects', collect($projectsArray));

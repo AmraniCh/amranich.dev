@@ -27,7 +27,7 @@
                     <h2
                         class="text-2xl md:text-3xl lg:text-4xl font-extrabold bg-gradient-to-l from-yellow-400 to-yellow-500 text-transparent bg-clip-text capitalize">
                         {!! $page->trans('projects-archive.headline') !!}
-                        ({{ $page->projects->count() }})
+                        {{ $page->projects->count() }}
                     </h2>
                 </div>
 
@@ -76,8 +76,9 @@
                                         </div>
                                     </td>
                                     <td class="pr-6 py-4">
-                                        {!! $project->getContributionLevelHtml(hideOnDesktop: true) !!}
-
+                                        <x-contribution-level-badge level="{{ $project->getContributionLevel() }}"
+                                            description="{{ $page->trans('projects-archive.contribution-level.' . str_replace(' ', '-', $project->getContributionLevel()->getLevel())) }}"
+                                            :tasks="$project->getTasks()" :hideOnDesktop=true />
                                         <div class="flex flex-col justify-center gap-1 mt-1">
                                             <span>
                                                 {{ $project->getName() }}
@@ -85,7 +86,7 @@
                                             @if (!$project->getLinks()->isEmpty())
                                                 <div class="flex flex-wrap gap-2 lg:hidden">
                                                     @foreach ($project->getLinks() as $source => $link)
-                                                        <?php $svgHtml = \App\Models\Project\Project::getLinkSvgHtml($source); ?>
+                                                        <?php $svgHtml = \App\Models\Project::getLinkSvgHtml($source); ?>
                                                         @if ($svgHtml)
                                                             <a href="{{ $link }}" target="_blank"
                                                                 title="{{ $source }}">
@@ -101,7 +102,9 @@
                                         {{ $project->getMadeAt() }}
                                     </td>
                                     <td class="hidden pr-6 py-4 whitespace-nowrap md:table-cell">
-                                        {!! $project->getContributionLevelHtml(hideOnDesktop: false) !!}
+                                        <x-contribution-level-badge level="{{ $project->getContributionLevel() }}"
+                                            description="{{ $page->trans('projects-archive.contribution-level.' . str_replace(' ', '-', $project->getContributionLevel()->getLevel())) }}"
+                                            :tasks="$project->getTasks()" :hideOnDesktop=false />
                                     </td>
                                     <td class="hidden pr-6 py-4 md:table-cell">
                                         @if (!$project->getStack()->isEmpty())
@@ -118,7 +121,7 @@
                                         @if (!$project->getLinks()->isEmpty())
                                             <div class="flex gap-2">
                                                 @foreach ($project->getLinks() as $source => $link)
-                                                    <?php $svgHtml = \App\Models\Project\Project::getLinkSvgHtml($source); ?>
+                                                    <?php $svgHtml = \App\Models\Project::getLinkSvgHtml($source); ?>
                                                     @if ($svgHtml)
                                                         <a href="{{ $link }}" target="_blank"
                                                             title="{{ $source }}">
