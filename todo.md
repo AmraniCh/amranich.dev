@@ -5,7 +5,7 @@
 - [X] contact form no js support.
 - [X] update my CV.
 - [X] projects archive translation.
-- [ ] projects archive contribution levels translation.
+- [X] projects archive contribution levels translation.
 - [ ] resume dropdown.
 - [ ] linkedin post.
 - [ ] featured projects action: personal website project: sketch button link. 
