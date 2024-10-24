@@ -19,7 +19,7 @@
         </button>
 
         <ul id="navbar-default"
-            class="hidden text-lg absolute top-[10%] left-[50%] translate-x-[-50%] lg:flex flex-col gap-2 grow-1 bg-yellow-300 rounded p-4 w-[92%] lg:translate-x-0 lg:gap-12 lg:items-center lg:justify-end lg:flex-row lg:sticky lg:bg-transparent lg:w-auto xl:gap-[3.6rem]">
+            class="hidden text-lg absolute top-[10%] left-[50%] translate-x-[-50%] lg:flex flex-col gap-3 grow-1 bg-brown-900 text-yellow-200 rounded p-4 w-[92%] shadow-lg z-10 lg:text-yellow-900 lg:shadow-none lg:translate-x-0 lg:gap-12 lg:items-center lg:justify-end lg:flex-row lg:sticky lg:bg-transparent lg:w-auto xl:gap-[3.6rem] dark:bg-brown-900  dark:lg:bg-transparent">
             <li>
                 <a href="#home"
                     class="hero-nav-item line-before-static lg:opacity-0 lg:animate-[fadeInDown_.3s_ease-out_.1s_forwards]">
