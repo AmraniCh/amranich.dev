@@ -32,9 +32,7 @@ try {
         throw new \LogicException("Cannot decide the base URL.");
     }
 
-    //header('Access-Control-Allow-Origin: ' . $baseUrl);
-
-    header('Access-Control-Allow-Origin: *');
+    header('Access-Control-Allow-Origin: ' . $baseUrl);
 
     if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
         $sender->emit(message: '', status: Emitter::ERROR_STATUS, code: 500);
