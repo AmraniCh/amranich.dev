@@ -27,7 +27,7 @@
                     <h2
                         class="text-2xl md:text-3xl lg:text-4xl font-extrabold bg-gradient-to-l from-yellow-400 to-yellow-500 text-transparent bg-clip-text capitalize">
                         {!! $page->trans('projects-archive.headline') !!}
-                        {{ $page->projects->count() }}
+                        ({{ $page->projects->count() }})
                     </h2>
                 </div>
 
