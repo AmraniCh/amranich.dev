@@ -4,18 +4,18 @@
 
     <div class="flex flex-col gap-12 lg:flex-row">
 
-        <div class="flex flex-col gap-6 lg:flex-1 lg:gap-10">
-            <p class="text-balance">
+        <div class="flex flex-col items-center gap-6 lg:items-start lg:flex-1 lg:gap-10">
+            <p class="text-center text-balance lg:text-left">
                 {!! $page->trans('contact-me.p.1') !!}.
             </p>
 
-            <div>
+            <div class="text-center lg:text-left">
                 <p>{!! $page->trans('contact-me.p.2') !!}</p>
                 <strong>contact@amranich.dev</strong>
             </div>
 
             <div>
-                <p>{!! $page->trans('contact-me.p.3') !!}</p>
+                <p class="text-center lg:text-left">{!! $page->trans('contact-me.p.3') !!}</p>
                 <ul class="flex items-center gap-3 mt-3">
                     <li>
                         <a href="{{ $page->links->github }}" target="_blank">
