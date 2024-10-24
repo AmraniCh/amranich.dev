@@ -37,6 +37,10 @@ jobs:
       - name: ⚙️ Run production
         run: npm run prod
 
+      - name: 📦 Install dependencies for email sending PHP script
+        working-directory: ./build_production
+        run: composer install
+
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
