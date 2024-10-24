@@ -89,7 +89,7 @@ html {
 }
 
 .line-before-static {
-	@apply line-before bg-white text-brown-500 hover:text-yellow-800 lg:text-yellow-800 lg:before:w-full lg:bg-transparent dark:text-yellow-400;
+	@apply line-before bg-yellow-200 text-brown-900 lg:text-yellow-800 lg:before:w-full lg:bg-transparent dark:text-yellow-900 dark:bg-yellow-200 dark:lg:bg-transparent dark:lg:text-yellow-200;
 }
 
 .section {
