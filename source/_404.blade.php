@@ -16,7 +16,7 @@
             <div
                 class="drop-shadow-none xl:after:content-[url('/assets/images/flash-dark.svg')] xl:after:absolute xl:after:top-[-159%] xl:after:right-[-191%] xl:after:-z-10 xl:before:content-[url('/assets/images/flash-dark.svg')] xl:before:absolute xl:before:bottom-[-146%] xl:before:left-[-194%] xl:before:-z-10 xl:before:rotate-180 dark:text-yellow-200 xl:dark:after:content-[url('/assets/images/flash-light.svg')] xl:dark:before:content-[url('/assets/images/flash-light.svg')]">
                 <strong
-                    class="text-dark text-[18.75rem] leading-[16rem] drop-shadow-[7px_7px_0px_rgba(225,193,113,1)] dark:text-yellow-200 dark:drop-shadow-[7px_7px_0px_rgba(106,87,38,1)]">404</strong>
+                    class="text-dark text-[14rem] lg:text-[18.75rem] leading-[10rem] lg:leading-[16rem] drop-shadow-[7px_7px_0px_rgba(225,193,113,1)] dark:text-yellow-200 dark:drop-shadow-[7px_7px_0px_rgba(106,87,38,1)]">404</strong>
             </div>
 
             <p class="text-dark dark:text-yellow-200">
