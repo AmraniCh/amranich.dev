@@ -11,3 +11,4 @@
 - [ ] support meta theme color for mobile browsers in dark mode ([MDN theme color](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color)).
 - [ ] support PWA.
 - [ ] resume dropdown (dark and light versions).
+- [ ] accessability.
