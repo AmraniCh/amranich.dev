@@ -10,7 +10,7 @@ mix.jigsaw()
         require('postcss-import'),
         require('tailwindcss'),
     ])
-    .css('source/_assets/css/app-down.css', 'css/app-down.css', [
+    .css('source/_assets/css/comingsoon.css', 'css/comingsoon.css', [
         require('postcss-import'),
         require('tailwindcss'),
     ])

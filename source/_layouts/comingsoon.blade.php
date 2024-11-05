@@ -44,15 +44,18 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dangrek:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
 
-    <link rel="stylesheet" href="{{ mix('css/app-down.css', 'assets/build') }}">
+    <link rel="stylesheet" href="{{ mix('css/comingsoon.css', 'assets/build') }}">
 
 </head>
 
-<body class="h-screen font-ubuntu text-yellow-800 dark:text-yellow-200">
+<body class="h-screen text-yellow-800 dark:text-yellow-200">
 
-    <div class="h-full bg-yellow-300 p-4 sm:p-0 sm:bg-transparent">
+    <div class="h-full bg-yellow-50">
         @yield('body')
     </div>
 
