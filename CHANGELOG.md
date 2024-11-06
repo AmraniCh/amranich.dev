@@ -1,6 +1,6 @@
 # Change Log
 
-## 1.1.1 (2024-11-05)
+## 1.1.1 (2024-11-06)
 
 * Fixed deployment with FTP (added missing files for coming soon page).
 
