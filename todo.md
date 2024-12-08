@@ -6,6 +6,7 @@
 - [X] update my CV.
 - [X] projects archive translation.
 - [X] projects archive contribution levels translation.
+- [ ] fixed seo issues with coming soon page.
 - [ ] linkedin post.
 - [ ] featured projects action: personal website project: sketch button link. 
 - [ ] support meta theme color for mobile browsers in dark mode ([MDN theme color](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color)).
