@@ -89,6 +89,24 @@
     {
         "date": {
             "start": "",
+            "end": "2021-02-01"
+        },
+        "name": "ACTIV TRAVAUX Website",
+        "made_at": "Map-concepts",
+        "stack": [
+            "PHP",
+            "jQuery",
+            "Bootstrap"
+        ],
+        "links": {
+            "link": "https://activtravaux.ma"
+        },
+        "contribution_level": "medium edit",
+        "tasks": []
+    },
+    {
+        "date": {
+            "start": "",
             "end": "2021-04-01"
         },
         "name": "Gulliver",
@@ -729,7 +747,7 @@
             "Figma"
         ],
         "links": {
-            "link": "https://www.figma.com/file/jv8B279eYreVUnlVhUnOdg/Ifmia-Website-Design?type=design&node-id=1-204&mode=design"
+            "figma": "https://www.figma.com/file/jv8B279eYreVUnlVhUnOdg/Ifmia-Website-Design?type=design&node-id=1-204&mode=design"
         },
         "contribution_level": "scratch",
         "tasks": []
@@ -820,7 +838,8 @@
             "JavaScript"
         ],
         "links": {
-            "link": "https://laakil.com"
+            "link": "https://laakil-ameublement.com/",
+            "instagram": "https://www.instagram.com/laakil.ameublement"
         },
         "contribution_level": "scratch",
         "tasks": []
@@ -861,7 +880,9 @@
             "Bootstrap",
             "SEO"
         ],
-        "links": {},
+        "links": {
+            "link": "https://www.alphaizconsulting.com/"
+        },
         "contribution_level": "high edit",
         "tasks": []
     },
