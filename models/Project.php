@@ -72,7 +72,7 @@ class Project
 
     public static function getLinkSvgHtml(string $source): string
     {
-        $svgFilePath = dirname(dirname(__DIR__)) . "/source/_components/svg/$source.blade.php";
+        $svgFilePath = dirname(__DIR__) . "/source/_components/svg/$source.blade.php";
 
         if (!file_exists($svgFilePath)) {
             return '';
