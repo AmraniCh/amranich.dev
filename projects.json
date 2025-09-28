@@ -1,5 +1,4 @@
-[
-    {
+[{
         "date": {
             "start": "2021-11-01",
             "end": ""
@@ -150,23 +149,7 @@
             "start": "",
             "end": "2023-07-01"
         },
-        "name": "تشير | تصميم داخلي | صناعة وتنفيذ الأثاث",
-        "made_at": "Freelance",
-        "stack": [],
-        "links": {
-            "link": "https://chair.sa"
-        },
-        "contribution_level": "low edit",
-        "tasks": [
-            "Optimize website load time by minifying JS files and optimizing images sizes."
-        ]
-    },
-    {
-        "date": {
-            "start": "",
-            "end": "2023-08-01"
-        },
-        "name": "Fatima Majdoub Consulting Team",
+        "name": "تشير Chair",
         "made_at": "Freelance",
         "stack": [
             "HTML",
@@ -175,10 +158,13 @@
             "Swiper"
         ],
         "links": {
-            "link": "https://majd.consulting"
+            "link": "https://chair.sa",
+            "instagram": "https://www.instagram.com/chairksa"
         },
         "contribution_level": "low edit",
-        "tasks": []
+        "tasks": [
+            "Optimize website load time by minifying JS files and optimizing images sizes."
+        ]
     },
     {
         "date": {
