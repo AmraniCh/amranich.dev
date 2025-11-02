@@ -1,23 +1,23 @@
 /* Firefox */
+
 @supports not selector(::-webkit-scrollbar) {
     * {
-        scrollbar-width: 12px;
         scrollbar-color: theme('colors.yellow.800') transparent;
     }
-
     html.dark * {
-        scrollbar-width: 12px;
         scrollbar-color: theme('colors.yellow.200') transparent;
     }
 }
 
+
 /* Chrome, Edge, Safari ... */
+
 ::-webkit-scrollbar {
-    @apply w-3;
+    @apply w-2;
 }
 
 ::-webkit-scrollbar-thumb {
-    @apply rounded bg-yellow-800;
+    @apply bg-yellow-800;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -25,7 +25,7 @@
 }
 
 html.dark ::-webkit-scrollbar-thumb {
-    @apply rounded bg-yellow-200;
+    @apply bg-yellow-200;
 }
 
 html.dark ::-webkit-scrollbar-thumb:hover {
