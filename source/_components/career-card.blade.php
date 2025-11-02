@@ -2,13 +2,13 @@
     style="{{ $style ?? '' }}">
     <div class="relative lg:flex lg:justify-between lg:items-center">
         <div>
-            <h3 class="script-font text-xl capitalize text-yellow lg:text-2xl">
+            <h3 class="script-font text-lg capitalize text-yellow lg:text-xl">
                 {!! $title !!}
             </h3>
-            <div class="mt-2">
-                <p class="text-md max-w-[180px] md:max-w-[initial]">
+            <div class="mt-1">
+                <p class="text-sm max-w-[180px] md:max-w-[initial]">
                     {!! $company !!}</p>
-                <p class="text-sm mt-1 max-w-[180px] md:max-w-[initial]">
+                <p class="text-xs mt-1 max-w-[180px] md:max-w-[initial]">
                     {!! $duration !!}</p>
                 <p class="text-xs mt-1 max-w-[180px] md:max-w-[initial]">
                     {!! $location !!}</p>

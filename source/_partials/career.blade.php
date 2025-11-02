@@ -2,7 +2,14 @@
     data-scroll-indicator-text="{!! $page->trans('scroll-indicator.career') !!}">
     <x-section-heading text="{!! $page->trans('career.heading') !!}" />
 
-    <div class="relative flex flex-col gap-5">
+    <div class="relative flex flex-col gap-2">
+        <x-career-card style="animation-delay: .1s" title="{{ $page->trans('career.5-position.title') }}"
+            company="{{ $page->trans('career.5-position.company') }}"
+            duration="{{ $page->trans('career.5-position.duration') }}"
+            location="{{ $page->trans('career.5-position.location') }}"
+            logo="{{ $page->trans('career.5-position.location') }}" logoUrl="/assets/images/pi-marketing.jpg"
+            logoAlt="{{ $page->trans('career.5-position.company') }}" />
+
         <x-career-card style="animation-delay: .2s" title="{{ $page->trans('career.4-position.title') }}"
             company="{{ $page->trans('career.4-position.company') }}"
             duration="{{ $page->trans('career.4-position.duration') }}"
