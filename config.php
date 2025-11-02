@@ -14,7 +14,7 @@ return [
     'links' => [
         'github'   => 'https://github.com/amranich',
         'behance'  => 'https://www.behance.net/amranich',
-        'linkedin' => 'https://www.linkedin.com/in/el-amrani-shakir/',
+        'linkedin' => 'https://www.linkedin.com/in/amranich',
     ],
 
     // helpers
