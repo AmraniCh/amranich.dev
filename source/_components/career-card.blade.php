@@ -1,22 +1,21 @@
-<div class="card noscript-opacity-1 relative group px-4 py-2 w-full bg-white border border-yellow-800 shadow-sm rounded opacity-0 animate-[fadeInDown_.5s_ease-out_forwards] hover:bg-yellow-100 hover:transition-colors hover:duration-300 dark:bg-brown-900 dark:border-transparent dark:hover:bg-dark dark:hover:border-yellow-200"
+<div {{ $attributes->merge(['class' => 'card noscript-opacity-1 group px-3 py-2.5 w-full bg-white border border-yellow-800 shadow-sm rounded opacity-0 animate-[fadeInDown_.5s_ease-out_forwards] hover:bg-yellow-100 hover:transition-colors hover:duration-300 dark:bg-brown-900 dark:border-transparent dark:hover:bg-dark dark:hover:border-yellow-200']) }}
     style="{{ $style ?? '' }}">
-    <div class="relative lg:flex lg:justify-between lg:items-center">
-        <div>
-            <h3 class="script-font text-lg capitalize text-yellow lg:text-xl">
+    <div class="flex items-center gap-3">
+        <!-- Logo -->
+        <img class="w-12 h-12 object-cover border border-yellow-800 rounded flex-shrink-0 transition-transform group-hover:scale-105 dark:border-transparent"
+            src="{{ $logoUrl }}" alt="{!! $logoAlt !!}">
+        
+        <!-- Content -->
+        <div class="flex-1 min-w-0">
+            <h3 class="script-font text-base text-yellow lg:text-lg leading-tight capitalize">
                 {!! $title !!}
             </h3>
-            <div class="mt-1">
-                <p class="text-sm max-w-[180px] md:max-w-[initial]">
-                    {!! $company !!}</p>
-                <p class="text-xs mt-1 max-w-[180px] md:max-w-[initial]">
-                    {!! $duration !!}</p>
-                <p class="text-xs mt-1 max-w-[180px] md:max-w-[initial]">
-                    {!! $location !!}</p>
+            <p class="text-sm mt-0.5 truncate">{!! $company !!}</p>
+            <div class="flex flex-wrap gap-x-2 text-xs mt-1">
+                <span>📅 {!! $duration !!}</span>
+                <span>•</span>
+                <span> {!! $location !!}</span>
             </div>
-        </div>
-        <div class="mr-4">
-            <img class="absolute right-0 bottom-0 max-w-[5rem] border border-yellow-800 rounded p-1 lg:static dark:border-transparent"
-                src="{{ $logoUrl }}" alt="{!! $logoAlt !!}">
         </div>
     </div>
 </div>
