@@ -73,7 +73,7 @@ html {
 }
 
 .hero-nav-item {
-	@apply font-medium text-lg block py-2 px-4 rounded capitalize relative lg:bg-transparent lg:p-0 dark:lg:text-yellow-200;
+	@apply font-medium text-lg block py-1 px-3 rounded capitalize relative lg:bg-transparent lg:p-0 dark:lg:text-yellow-200;
 }
 
 #navbar-default li:nth-child(1) .hero-nav-item {
@@ -105,7 +105,17 @@ html {
 }
 
 .career-section .card:not(:first-child) {
-	@apply before:content-[''] before:block before:w-1 before:h-[1.25rem] before:bg-yellow-800 before:absolute before:left-12 before:-top-[1.3rem] dark:before:bg-yellow-200 before:-z-10
+	@apply 
+		before:content-[''] 
+		before:block 
+		before:w-1 
+		before:h-[.6rem] 
+		before:bg-yellow-800 
+		before:absolute 
+		before:left-12 
+		before:-top-[.6rem] 
+		dark:before:bg-yellow-200 
+		before:-z-10;
 }
 
 .hero-section ul#hero-section-footer-social-links li:not(:last-child) .link {
