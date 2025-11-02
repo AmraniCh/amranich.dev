@@ -1,22 +1,26 @@
-<div class="border-t-2 border-yellow-800 mt-10 p-5 lg:mx-16 dark:border-yellow-200">
-    <div class="flex flex-col items-center gap-1 text-sm lg:flex-row lg:justify-center lg:text-xs">
-        <span>
-            Crafted with
-            <svg class="inline w-4 h-4 fill-yellow-300 mx-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path
-                    d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
-            </svg>
-            by AmraniCh
-        </span>
-        <span>| ☁️ Hosted on AWS |</span>
-        <span>🚀 Deployed via FTPS with GitHub Actions</span>
+<div class="border-t-2 border-yellow-800 mt-10 p-5 text-sm dark:border-yellow-200 lg:mx-16 lg:text-xs">
+    <p class="flex justify-center gap-1 mb-1">
+        Crafted with
+        <svg class="inline w-4 h-4 fill-yellow-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+                d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+        </svg>
+        by AmraniCh
+    </p>
+
+
+    <ul class="flex flex-col items-center gap-1 lg:flex-row lg:justify-center">
+        <li>Hosted on AWS, </li>
+        <li>Deployed via FTPS with GitHub Actions</li>
         @if ($page->version)
-            <a class="lg:ml-1" href="https://github.com/AmraniCh/amranich.dev/releases/tag/{{ $page->version }}"
-                target="_blank">
-                <x-badge text="{{ $page->version }}" />
-            </a>
+            <li>
+                <a href="..." target="_blank">
+                    <x-badge text="{{ $page->version }}" />
+                </a>
+            </li>
         @endif
-    </div>
+    </ul>
+
 
     <div class="text-center mt-1">
         <svg class="w-6 h-6 inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
