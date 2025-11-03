@@ -105,17 +105,7 @@ html {
 }
 
 .career-section .card:not(:first-child) {
-	@apply 
-		before:content-[''] 
-		before:block 
-		before:w-1 
-		before:h-[.6rem] 
-		before:bg-yellow-800 
-		before:absolute 
-		before:left-12 
-		before:-top-[.6rem] 
-		dark:before:bg-yellow-200 
-		before:-z-10;
+	@apply before:content-[''] before:block before:w-[.2rem] before:h-[.6rem] before:bg-yellow-800 before:absolute before:left-12 before:-top-[.6rem] dark:before:bg-yellow-200 before:-z-10;
 }
 
 .hero-section ul#hero-section-footer-social-links li:not(:last-child) .link {
