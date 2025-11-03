@@ -1,4 +1,5 @@
-<div class="border-t-2 border-yellow-800 mt-10 p-5 text-sm dark:border-yellow-200 lg:mx-16 lg:text-xs">
+<div class="relative border-t-2 border-yellow-800 mt-10 p-5 text-sm dark:border-yellow-200 lg:mx-16 lg:text-xs">
+
     <p class="flex justify-center gap-1 mb-1">
         Crafted with
         <svg class="inline w-4 h-4 fill-yellow-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -14,15 +15,16 @@
         <li>Deployed via FTPS with GitHub Actions</li>
         @if ($page->version)
             <li>
-                <a href="..." target="_blank">
-                    <x-badge text="{{ $page->version }}" />
-                </a>
+                <x-badge class="lg:absolute lg:top-3 lg:right-0" text="{{ $page->version }}" />
             </li>
         @endif
     </ul>
 
 
-    <div class="text-center mt-1">
+
+
+
+    <p class="text-center mt-1">
         <svg class="w-6 h-6 inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
             <rect x="1" y="4" width="30" height="24" rx="4" ry="4" fill="#b33431"></rect>
             <path
@@ -32,5 +34,5 @@
                 d="M20.224,21.868l-4.224-3.069-4.224,3.069,1.613-4.965-4.224-3.069h5.221l1.613-4.966,1.613,4.966h5.221l-4.224,3.069,1.613,4.965Zm-3.456-3.626l1.74,1.264-.665-2.045-1.075,.781Zm-2.611-.781l-.665,2.045,1.74-1.264-1.075-.781Zm.293-.902l1.55,1.126,1.55-1.126-.592-1.822h-1.916l-.592,1.822Zm3.456-1.822l.411,1.264,1.74-1.264h-2.151Zm-5.964,0l1.74,1.264,.411-1.264h-2.151Zm3.393-.902h1.329l-.665-2.046-.665,2.046Z"
                 fill="#286038"></path>
         </svg>
-    </div>
+    </p>
 </div>
