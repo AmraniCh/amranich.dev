@@ -4,7 +4,7 @@
         <!-- Logo -->
         <img class="w-12 h-12 object-cover border border-yellow-800 rounded flex-shrink-0 transition-transform group-hover:scale-105 dark:border-transparent"
             src="{{ $logoUrl }}" alt="{!! $logoAlt !!}">
-        
+
         <!-- Content -->
         <div class="flex-1 min-w-0">
             <h3 class="script-font text-base text-yellow lg:text-lg leading-tight capitalize">
@@ -12,10 +12,11 @@
             </h3>
             <p class="text-sm mt-0.5 truncate">{!! $company !!}</p>
             <div class="flex flex-wrap gap-x-2 text-xs mt-1">
-                <span>📅 {!! $duration !!}</span>
-                <span>•</span>
-                <span> {!! $location !!}</span>
+                <span>{!! $duration !!}</span>
+
             </div>
+
+            <span class="text-xs"> {!! $location !!}</span>
         </div>
     </div>
 </div>
