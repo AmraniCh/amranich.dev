@@ -1,5 +1,4 @@
 <div class="relative border-t-2 border-yellow-800 mt-10 p-5 text-sm dark:border-yellow-200 lg:mx-16 lg:text-xs">
-
     <p class="flex justify-center gap-1 mb-1">
         Crafted with
         <svg class="inline w-4 h-4 fill-yellow-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -8,7 +7,6 @@
         </svg>
         by AmraniCh
     </p>
-
 
     <ul class="flex flex-col items-center gap-1 lg:flex-row lg:justify-center">
         <li>Hosted on AWS, </li>
@@ -19,10 +17,6 @@
             </li>
         @endif
     </ul>
-
-
-
-
 
     <p class="text-center mt-1">
         <svg class="w-6 h-6 inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
