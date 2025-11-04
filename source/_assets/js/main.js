@@ -5,6 +5,7 @@ import animations from "./imports/animations";
 import githubRepos from "./imports/github-repos";
 import contactForm from "./imports/contact-form";
 import scrollSpyIndicators from "./imports/scroll-spy-indicators";
+import animatePortraitSketch from "./imports/portrait-sketch-animation";
 
 window.addEventListener("DOMContentLoaded", () => {
 	// set the hero section height (92% of viewport height) on window resize
@@ -17,10 +18,15 @@ window.addEventListener("DOMContentLoaded", () => {
 		return f;
 	})());
 
-	navbarMenu();
-	darkMode();
-	animations(settings.animations);
-	githubRepos(settings.githubRepos);
-	contactForm();
-	scrollSpyIndicators();
+	const initModules = [
+		navbarMenu,
+		darkMode,
+		() => animations(settings.animations),
+		() => githubRepos(settings.githubRepos),
+		contactForm,
+		scrollSpyIndicators,
+		animatePortraitSketch
+	];
+
+	initModules.forEach(fn => fn());
 });

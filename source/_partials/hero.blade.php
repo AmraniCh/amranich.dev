@@ -73,8 +73,11 @@
     <div
         class="flex items-center flex-col lg:mb-16 lg:flex-row lg:justify-between md:px-8 xl:gap-5 xl:px-28 lg:translate-x-[36px] xl:translate-x-[56px]">
 
-        <img class="rounded-full mb-2 w-40 select-none opacity-0 animate-[fadeInUp_.5s_ease-out_.4s_forwards] lg:w-[375px] lg:h-[90%] lg:animate-[fadeInUp_.5s_ease-out_.8s_forwards]"
-            src="/assets/images/me.png" alt="El Amrani Chakir">
+        <img id="sourceImage" class="hidden" src="/assets/images/me.png" />
+
+        <canvas
+            class=" mb-2 w-40 select-none opacity-0 animate-[fadeInUp_.5s_ease-out_.4s_forwards] lg:w-[375px] lg:h-[90%] lg:animate-[fadeInUp_.5s_ease-out_.8s_forwards]"
+            id="canvas"></canvas>
 
         <div class="flex flex-col items-center lg:items-start">
             <span
