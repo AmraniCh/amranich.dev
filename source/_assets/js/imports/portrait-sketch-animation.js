@@ -7,8 +7,8 @@ export default function animatePortraitSketch() {
     let animationId;
 
     const waveSettings = {
-        amplitude: 2, // Wave weight (height)
-        frequency: 2.2, // Wave frequency
+        amplitude: 2.2, // Wave weight (height)
+        frequency: 2.1, // Wave frequency
         speed: 0.1, // Wave speed
     };
 
