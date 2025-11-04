@@ -13,7 +13,9 @@
         <li>Deployed via FTPS with GitHub Actions</li>
         @if ($page->version)
             <li>
-                <x-badge class="lg:absolute lg:top-3 lg:right-0" text="{{ $page->version }}" />
+                <a href="{{ $page->changeLogUrl }}" target="_blank">
+                    <x-badge class="lg:absolute lg:top-3 lg:right-0" text="{{ $page->version }}" />
+                </a>
             </li>
         @endif
     </ul>
