@@ -1,58 +1,72 @@
 # Change Log
 
-## v1.2.0 (2025-11-4)
+## v1.2.0 (2025-11-04)
 
 ### Added
-
 - Animated portrait sketch in hero section.
 - Dynamic resume PDF path using docUrl variable.
 
 ### Fixed
-
 - Corrected job type and education duration in JSON files.
 - Adjusted hero, career cards, footer, and buttons layout issues.
 
 ### Style
-
 - Updated layout, spacing, and readability across multiple components.
 - Improved SVG hover effects and scrollbar styling.
 
-## 1.1.2 (2024-11-06)
+## v1.1.2 (2024-11-06)
+- Coming soon page: replaced the rounded glass background image.
 
-* Coming soon page: replaced the rounded glass background image.
+## v1.1.1 (2024-11-06)
+- Fixed deployment with FTP (added missing files for coming soon page).
 
-## 1.1.1 (2024-11-06)
+## v1.1.0 (2024-11-05)
+- Improved coming soon page design.
 
-* Fixed deployment with FTP (added missing files for coming soon page).
+## v1.0.6 (2024-10-24)
+- No description provided.
 
-## 1.1.0 (2024-11-05)
+## v1.0.5 (2024-10-24)
+- No description provided.
 
-* Improve coming soon page design.
+## v1.0.4 (2024-10-24)
+- No description provided.
 
-## 1.0.6 (2024-10-24)
+## v1.0.3 (2024-10-24)
+- No description provided.
 
-* No description provided.
+## v1.0.2 (2024-10-24)
+- No description provided.
 
-## 1.0.5 (2024-10-24)
+## v1.0.1 (2024-10-24)
+- No description provided.
 
-* No description provided.
+## v1.0.0 (2024-10-24)
+- No description provided.
 
-## 1.0.4 (2024-10-24)
+## v0.1.8 (2024-01-01)
+- No description provided.
 
-* No description provided.
+## v0.1.7 (2024-01-01)
+- No description provided.
 
-## 1.0.3 (2024-10-24)
+## v0.1.6 (2024-01-01)
+- No description provided.
 
-* No description provided.
+## v0.1.5 (2024-01-01)
+- No description provided.
 
-## 1.0.2 (2024-10-24)
+## v0.1.4 (2024-01-01)
+- No description provided.
 
-* No description provided.
+## v0.1.3 (2023-05-10)
+- No description provided.
 
-## 1.0.1 (2024-10-24)
+## v0.1.2 (2023-05-07)
+- No description provided.
 
-* No description provided.
+## v0.1.1 (2022-03-17)
+- No description provided.
 
-## 1.0.0
-
-* Initial release.
+## v0.1.0 (2022-03-17)
+- Initial development version.
