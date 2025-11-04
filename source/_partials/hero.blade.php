@@ -98,7 +98,7 @@
             </p>
             <div
                 class="mt-5 flex justify-between gap-5 opacity-0 animate-[fadeInUp_.3s_ease-out_.9s_forwards] md:justify-start lg:animate-[fadeInUp_.3s_ease-out_1.3s_forwards]">
-                <x-buttons.primary href="/CHAKIR_EL_AMRANI_EN.pdf" target="_blank">
+                <x-buttons.primary href="{{ $page->docUrl }}/Shakir-El-Amrani-Resume.pdf" target="_blank">
                     <x-slot:text>
                         {{ $page->trans('hero.resume') }}
                     </x-slot>
