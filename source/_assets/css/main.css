@@ -81,7 +81,7 @@ html {
 }
 
 .line-before {
-	@apply before:content-[''] before:block before:w-0 before:h-1 before:rounded before:absolute before:-top-2 before:bg-yellow-400 before:ease-linear before:duration-200;
+	@apply before:content-[''] before:block before:w-0 before:h-1 before:rounded-sm before:absolute before:-top-2 before:bg-yellow-400 before:ease-linear before:duration-200;
 }
 
 .line-before-hover {
