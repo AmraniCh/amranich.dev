@@ -20,8 +20,8 @@
 - [ ] upload resume & certificates
 - [ ] add links for resume & certificates
 - [ ] update projects.json
-- [ ] correct bachelor education date.
-- [ ] hero section: personal image: added loading effect
+- [X] correct bachelor education date.
+- [X] hero section: personal image: added loading effect
 - [ ] featured projects action: personal website project: sketch button link.
 - [ ] updated README.
 - [ ] create LinkedIn post.
