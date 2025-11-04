@@ -12,13 +12,14 @@
 - [ ] support PWA.
 - [ ] resume dropdown (support modern/classic options).
 - [ ] accessability.
+- [ ] consider to implement wildcard certificate for amranich.dev.
 
 
 ## Short Term
 
-- [ ] add a subdomain specific for uploaded documents
-- [ ] upload resume & certificates
-- [ ] add links for resume & certificates
+- [X] add a subdomain specific for uploaded documents
+- [X] upload resume & certificates
+- [X] add links for resume & certificates
 - [ ] update projects.json
 - [X] correct bachelor education date.
 - [X] hero section: personal image: added loading effect
