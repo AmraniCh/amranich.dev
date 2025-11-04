@@ -4,8 +4,13 @@
     <!-- Top Bar Start -->
     <div class="flex justify-between items-center flex-wrap">
         <a href="/">
-            <img class="w-16 lg:w-24 mb-4 select-none opacity-0 animate-[fadeIn_.6s_ease-out_.1s_forwards] lg:animate-[fadeIn_.3s_ease-out_.1s_forwards]"
-                src="/assets/images/logo.svg" alt="El Amrani Chakir">
+            <!-- Light mode logo -->
+            <img src="/assets/images/logo-outline-light.svg" alt="El Amrani Shakir"
+                class="w-16 lg:w-24 mb-4 select-none opacity-0 animate-[fadeIn_.6s_ease-out_.1s_forwards] lg:animate-[fadeIn_.3s_ease-out_.1s_forwards] dark:hidden" />
+
+            <!-- Dark mode logo -->
+            <img src="/assets/images/logo-outline-dark.svg" alt="El Amrani Shakir"
+                class="hidden dark:block w-16 lg:w-24 mb-4 select-none opacity-0 animate-[fadeIn_.6s_ease-out_.1s_forwards] lg:animate-[fadeIn_.3s_ease-out_.1s_forwards]" />
         </a>
 
         <button type="button" class="lg:hidden float-right opacity-0 animate-[fadeIn_.6s_ease-out_.3s_forwards]"
