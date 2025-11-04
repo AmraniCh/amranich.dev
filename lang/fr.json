@@ -59,7 +59,7 @@
     "featured-projects.first-project.title": "Mon Portfolio de Site Web Personnel",
     "featured-projects.first-project.desc": "Mon site web de portfolio est conçu pour présenter à la fois ma personnalité et mes compétences en tant que développeur de logiciels.",
     "featured-projects.second-project.date": "septembre 2020",
-    "featured-projects.second-project.title": "Gestionnaire de fichiers FTP",
+    "featured-projects.second-project.title": "Web Based FTP Client",
     "featured-projects.second-project.desc": "Une application web de client FTP pour gérer vos fichiers FTP, construite avec une architecture MVC simple, sans utiliser de frameworks ou de bibliothèques (sauf les miens).",
     "featured-projects.third-project.date": "janvier 2020",
     "featured-projects.third-project.title": "Gestionnaire de bases de données MySQL",
