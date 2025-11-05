@@ -21,9 +21,9 @@
 - [X] add a subdomain specific for uploaded documents
 - [X] upload resume & certificates
 - [X] add links for resume & certificates
-- [ ] update projects.json
-- [X] correct bachelor education date.
+- [X] correct bachelor education date
 - [X] hero section: personal image: added loading effect
-- [ ] featured projects action: personal website project: sketch button link.
-- [ ] updated README.
-- [ ] create LinkedIn post.
+- [ ] featured projects action: personal website project: sketch button link
+- [ ] update projects.json for personal website project - add behance link
+- [ ] update README
+- [ ] create LinkedIn post
