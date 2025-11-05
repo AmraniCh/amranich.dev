@@ -53,7 +53,7 @@
             </div>
         </div>
 
-        <form id="contactMeForm" action="/send_email.php" method="POST" class="flex flex-col gap-4 lg:flex-1">
+        <form id="contactMeForm" action="/backend/send_email.php" method="POST" class="flex flex-col gap-4 lg:flex-1">
 
             <input type="text" name="fullname" class="control" placeholder="{!! $page->trans('contact-me.form.fullname.placeholder') !!}" required>
 

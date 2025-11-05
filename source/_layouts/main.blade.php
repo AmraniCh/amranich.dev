@@ -103,6 +103,9 @@
             }
         </style>
     </noscript>
+
+    <script src="https://www.google.com/recaptcha/api.js?render=6LePjgIsAAAAAChBlEkVTlzVjXpmXFoOqPzcpUIp"></script>
+
 </head>
 
 <body class="bg-yellow-50 text-yellow-800 overflow-hidden dark:bg-dark dark:text-yellow-200">

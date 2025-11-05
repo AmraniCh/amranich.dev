@@ -40,7 +40,7 @@ try {
         $sender->emit(message: '', status: Emitter::ERROR_STATUS, code: 500);
     }
 
-    header('Content-Type: application/json');
+    verifyRecaptcha();
 
     // validate required parameters
     $validator = new Validator;
@@ -88,4 +88,54 @@ try {
         status: Emitter::ERROR_STATUS,
         code: 500
     );
+}
+
+
+/**
+ * verify recaptcha
+ * 
+ * https://developers.google.com/recaptcha/docs/verify
+ */
+function verifyRecaptcha()
+{
+    global $sender;
+
+    if (!isset($_POST['g-recaptcha-response']) || empty($_POST['g-recaptcha-response'])) {
+        $sender->emit(message: "reCAPTCHA verification required.", status: Emitter::ERROR_STATUS, code: 400);
+    }
+
+    $token = $_POST['g-recaptcha-response'];
+    $url = 'https://www.google.com/recaptcha/api/siteverify';
+    $data = array(
+        'secret' => $_ENV['RECAPTCHA_SECRET'],
+        'response' => $token
+    );
+
+    $options = array(
+        'http' => array(
+            'header' => "Content-Type: application/x-www-form-urlencoded\r\n",
+            'method' => 'POST',
+            'content' => http_build_query($data)
+        )
+    );
+
+    $context  = stream_context_create($options);
+    $result = file_get_contents($url, false, $context);
+    $response = json_decode($result);
+
+    if (!$response->success) {
+        error_log("reCAPTCHA verification failed: " . json_encode($response));
+        $sender->emit(message: "reCAPTCHA verification failed.", status: Emitter::ERROR_STATUS, code: 400);
+    }
+
+    if ($response->score < 0.5) {
+        error_log(sprintf(
+            "Bot detected: IP=%s, Score=%.2f, Email=%s",
+            $_SERVER['REMOTE_ADDR'] ?? 'unknown',
+            $response->score,
+            $_POST['email'] ?? 'unknown'
+        ));
+
+        $sender->emit(message: "Your request appears automated.", status: Emitter::ERROR_STATUS, code: 400);
+    }
 }

@@ -17,34 +17,39 @@ export default function () {
 
         toggleLoading(true);
 
-        const formData = new FormData(form);
-        const res = await fetch('/send_email.php', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
-                'X-REQUESTED-WITH': 'XMLHttpRequest'
-            },
-            body: new URLSearchParams({
-                fullname: formData.get('fullname'),
-                email: formData.get('email'),
-                message: formData.get('message')
-            })
-        }).catch(err => {
-            alert({
-                message: "A client error occurred while sending your email: " + err.message,
-                type: alert.ERROR_TYPE
+        grecaptcha.ready(function () {
+            grecaptcha.execute('6LePjgIsAAAAAChBlEkVTlzVjXpmXFoOqPzcpUIp', { action: 'submit' }).then(async function (token) {
+                const formData = new FormData(form);
+                const res = await fetch('/backend/send_email.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                        'X-REQUESTED-WITH': 'XMLHttpRequest'
+                    },
+                    body: new URLSearchParams({
+                        fullname: formData.get('fullname'),
+                        email: formData.get('email'),
+                        message: formData.get('message'),
+                        "g-recaptcha-response": token
+                    })
+                }).catch(err => {
+                    alert({
+                        message: "A client error occurred while sending your email: " + err.message,
+                        type: alert.ERROR_TYPE
+                    });
+                    toggleLoading(false);
+                    throw err;
+                });
+                const json = await res.json();
+                const message = json.message;
+
+                toggleLoading(false);
+
+                alert({
+                    message,
+                    type: json.status === 'success' ? alert.SUCCESS_TYPE : alert.ERROR_TYPE
+                });
             });
-            toggleLoading(false);
-            throw err;
-        });
-        const json = await res.json();
-        const message = json.message;
-
-        toggleLoading(false);
-
-        alert({
-            message,
-            type: json.status === 'success' ? alert.SUCCESS_TYPE : alert.ERROR_TYPE
         });
     });
 }
