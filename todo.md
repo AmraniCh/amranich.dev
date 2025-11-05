@@ -13,6 +13,7 @@
 - [ ] resume dropdown (support modern/classic options).
 - [ ] accessability.
 - [ ] consider to implement wildcard certificate for amranich.dev.
+- [ ] support contact form CAPTCHA for clients with JavaScript disabled
 
 
 ## Short Term
