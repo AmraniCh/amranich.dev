@@ -7,34 +7,29 @@ use Symfony\Component\Mime\Email;
 use Symfony\Component\Mailer\Mailer;
 use Symfony\Component\Mailer\Transport\Smtp\EsmtpTransport;
 
-$sender = new Emitter();
+$origins = [
+    'http://localhost:3000',
+    'https://amranich.dev',
+];
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-$dotenv->load();
+$requestOrigin = $_SERVER['HTTP_ORIGIN'] ?? '';
 
-const DEV_BASE_URL = 'http://localhost:3000';
-const PROD_BASE_URL = 'https://amranich.dev';
+if (in_array($requestOrigin, $origins)) {
+    header('Access-Control-Allow-Origin: ' . $requestOrigin);
+    header('Access-Control-Allow-Methods: POST, OPTIONS');
+    header('Access-Control-Allow-Headers: Content-Type, X-Requested-With');
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(200);
+    exit;
+}
 
 try {
-    if (!function_exists('getUrlDomain')) {
-        function getUrlDomain(string $url)
-        {
-            return str_ireplace('www.', '', parse_url($url, PHP_URL_HOST));
-        }
-    }
+    $sender = new Emitter();
 
-    $baseUrl = '';
-    $fullUrl = sprintf("%s://%s", isset($_SERVER['HTTPS']) && $_SERVER['HTTPS']  === 'on' ? 'https' : 'http', $_SERVER['HTTP_HOST']);
-
-    if (getUrlDomain($fullUrl) === getUrlDomain(PROD_BASE_URL)) {
-        $baseUrl = PROD_BASE_URL;
-    } elseif (getUrlDomain($fullUrl) === getUrlDomain(DEV_BASE_URL)) {
-        $baseUrl = DEV_BASE_URL;
-    } else {
-        throw new \LogicException("Cannot decide the base URL.");
-    }
-
-    header('Access-Control-Allow-Origin: ' . $baseUrl);
+    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+    $dotenv->load();
 
     if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
         $sender->emit(message: '', status: Emitter::ERROR_STATUS, code: 500);
