@@ -25,5 +25,6 @@
 - [X] hero section: personal image: added loading effect
 - [ ] featured projects action: personal website project: sketch button link
 - [ ] update projects.json for personal website project - add behance link
+- [ ] add nginx configuration for redirecting 404 requests to the custom 404 page 
 - [ ] update README
 - [ ] create LinkedIn post
