@@ -61,5 +61,5 @@ jobs:
           port: ${{ secrets.ssh_port }}
           script: |
             cd ${{ secrets.ftp_server_dir }}
-            ls -al
-            sudo chown www-data:www-data -R *
+            sudo chown -R www-data:www-data .
+            sudo chmod -R 755 .
