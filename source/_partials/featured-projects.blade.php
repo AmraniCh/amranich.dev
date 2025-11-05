@@ -67,7 +67,7 @@
 
         <div class="relative group/ctr">
             <span
-                class="absolute top-0 left-0 mt-1 ml-1 h-full w-full rounded bg-yellow-900 group-hover/ctr:top-0.5 group-hover/ctr:left-0.5 group-hover/ctr:duration-100 dark:bg-dark dark:border-2 dark:border-yellow-200"></span>
+                class="absolute top-0 left-0 mt-2 ml-2 h-full w-full rounded bg-yellow-200 group-hover/ctr:top-1 group-hover/ctr:left-1 group-hover/ctr:duration-100 dark:bg-brown-900 dark:brightness-[63%]"></span>
 
 
             <div
