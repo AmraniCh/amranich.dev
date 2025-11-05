@@ -1102,11 +1102,16 @@
             "React",
             "Shadcn",
             "Redux Toolkit",
-            "MSW"
+            "MSW",
+            "Figma Prototyping"
         ],
         "links": {},
         "contribution_level": "scratch",
-        "tasks": []
+        "tasks": [
+            "Designed a UI/UX mockup with Figma for various interfaces of the New Send System",
+            "Set up front-end architecture using React, Shadcn, Redux Toolkit",
+            "Implemented affiliate management (offers, creatives, suppression) consuming the backend REST API"
+        ]
     },
     {
         "date": {
