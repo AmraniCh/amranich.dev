@@ -5,26 +5,37 @@ export default function animatePortraitSketch() {
 
     let time = 0;
     let animationId;
+    let lastFrameTime = 0;
+    const frameInterval = 1000 / 60; // 60 FPS
 
     const waveSettings = {
-        amplitude: 2.2, // Wave weight (height)
-        frequency: 2.1, // Wave frequency
-        speed: 0.1, // Wave speed
+        amplitude: 2.3,
+        frequency: 2.2,
+        speed: 0.2,
     };
 
     sourceImage.onload = function () {
         canvas.width = sourceImage.width;
         canvas.height = sourceImage.height;
-        animate();
+        animate(0);
     };
 
     if (sourceImage.complete) {
         canvas.width = sourceImage.width;
         canvas.height = sourceImage.height;
-        animate();
+        animate(0);
     }
 
-    function animate() {
+    function animate(currentTime) {
+        const deltaTime = currentTime - lastFrameTime;
+
+        if (deltaTime < frameInterval) {
+            animationId = requestAnimationFrame(animate);
+            return;
+        }
+
+        lastFrameTime = currentTime - (deltaTime % frameInterval);
+
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
         const sliceHeight = 1;
