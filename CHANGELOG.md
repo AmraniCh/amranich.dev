@@ -1,5 +1,24 @@
 # Change Log
 
+## v1.4.0 (2025-11-06)
+
+### Added
+- New projects to archive: Send System and Personal Website.
+- SVG icon to contact form submit button.
+
+### Changed
+- Enhanced portrait animation performance with 60 FPS limit.
+- Improved deployment workflow with permission fixes.
+- Updated about section content.
+
+### Fixed
+- Deployment permissions for PHP-FPM execution.
+- Primary button styling and consistency.
+
+### Style
+- Updated social icons and featured projects hover effects.
+- Improved dark mode compatibility for buttons and icons.
+
 ## v1.3.2 (2025-11-05)
 
 ### Added
