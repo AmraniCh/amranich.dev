@@ -1,5 +1,22 @@
 # Change Log
 
+## v1.3.0 (2025-11-05)
+
+### Added
+- reCAPTCHA integration for contact form submissions.
+- Dark mode logo support with SVG assets.
+- Version badge in footer with changelog link.
+
+### Changed
+- Migrated to environment variables for email configuration.
+- Updated mail transport to SMTP with dotenv support.
+- Simplified CORS handling and removed base URL logic.
+- Project title updated to "Web Based FTP Client".
+- Portrait sketch animation wave parameters (amplitude: 2.2, frequency: 2.1).
+
+### Style
+- Added hover effect for project card image scaling.
+
 ## v1.2.0 (2025-11-04)
 
 ### Added
