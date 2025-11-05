@@ -111,3 +111,11 @@ html {
 .hero-section ul#hero-section-footer-social-links li:not(:last-child) .link {
 	@apply mb-32
 }
+
+.js-only {
+	display: none;
+}
+
+.js-enabled .js-only {
+	display: block;
+}

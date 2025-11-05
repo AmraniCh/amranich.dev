@@ -81,8 +81,13 @@
         <img id="sourceImage" class="hidden" src="/assets/images/me.png" />
 
         <canvas
-            class=" mb-2 w-40 select-none opacity-0 animate-[fadeInUp_.5s_ease-out_.4s_forwards] lg:w-[375px] lg:h-[90%] lg:animate-[fadeInUp_.5s_ease-out_.8s_forwards]"
+            class="mb-2 w-40 select-none opacity-0 animate-[fadeInUp_.5s_ease-out_.4s_forwards] lg:w-[375px] lg:h-[90%] lg:animate-[fadeInUp_.5s_ease-out_.8s_forwards] js-only"
             id="canvas"></canvas>
+
+        <noscript>
+            <img class="rounded-full mb-2 w-40 select-none opacity-0 animate-[fadeInUp_.5s_ease-out_.4s_forwards] lg:w-[800px] lg:h-[90%] lg:animate-[fadeInUp_.5s_ease-out_.8s_forwards]"
+                src="/assets/images/me.png" alt="El Amrani Chakir">
+        </noscript>
 
         <div class="flex flex-col items-center lg:items-start">
             <span

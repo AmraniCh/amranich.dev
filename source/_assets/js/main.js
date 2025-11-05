@@ -25,7 +25,8 @@ window.addEventListener("DOMContentLoaded", () => {
 		() => githubRepos(settings.githubRepos),
 		contactForm,
 		scrollSpyIndicators,
-		animatePortraitSketch
+		animatePortraitSketch,
+		() => document.documentElement.classList.add('js-enabled')
 	];
 
 	initModules.forEach(fn => fn());
