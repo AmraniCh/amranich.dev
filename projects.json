@@ -1,4 +1,5 @@
-[{
+[
+    {
         "date": {
             "start": "2021-11-01",
             "end": ""
@@ -585,7 +586,7 @@
             "end": "2019-10-01"
         },
         "name": "UI/UX Designer Landing Page",
-        "made_at": "Personal",
+        "made_at": "Open Source",
         "stack": [
             "Figma"
         ],
@@ -1087,6 +1088,69 @@
             "Swagger"
         ],
         "links": {},
+        "contribution_level": "scratch",
+        "tasks": []
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2025-11-01"
+        },
+        "name": "New Send System - Front End",
+        "made_at": "PI Marketing",
+        "stack": [
+            "React",
+            "Shadcn",
+            "Redux Toolkit",
+            "MSW"
+        ],
+        "links": {},
+        "contribution_level": "scratch",
+        "tasks": []
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2025-11-01"
+        },
+        "name": "New Send System - Back End",
+        "made_at": "PI Marketing",
+        "stack": [
+            "Java",
+            "Spring Boot",
+            "JUnit5",
+            "Wiki.js",
+            "Swagger"
+        ],
+        "links": {},
+        "contribution_level": "low edit",
+        "tasks": [
+            "Developed the new affiliate offer management system"
+        ]
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2025-12-01"
+        },
+        "name": "Personal Website V1",
+        "made_at": "Open Source",
+        "stack": [
+            "PHP",
+            "Jigsaw (SSG)",
+            "JavaScript (ES6)",
+            "Tailwind CSS",
+            "GitHub Actions (CI/CD)",
+            "AWS Lightsail",
+            "Debian",
+            "Nginx",
+            "vsftpd",
+            "FTPS"
+        ],
+        "links": {
+            "link": "https://amranich.dev",
+            "github": "https://github.com/AmraniCh/amranich.dev"
+        },
         "contribution_level": "scratch",
         "tasks": []
     }
