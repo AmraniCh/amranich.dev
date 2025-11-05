@@ -17,7 +17,7 @@ class Emitter
     {
         http_response_code($code);
 
-        if (!$this->isAjax) {
+        if ($this->isAjax) {
             header('Content-Type: application/json');
             exit(json_encode([
                 'message' => $message,
