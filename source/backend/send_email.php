@@ -62,8 +62,8 @@ try {
     $mailer = new Mailer($transport);
 
     $email = (new Email())
-        ->from("contact@amranich.dev")
-        ->to('contact@amranich.dev')
+        ->from($_ENV['SMTP_FROM_ADDRESS'])
+        ->to($_ENV['SMTP_TO_ADDRESS'])
         ->replyTo($_POST['email'])
         ->subject('Contact Form: ' . substr($_POST['message'], 0, 50))
         ->text(sprintf(
