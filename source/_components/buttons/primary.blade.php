@@ -6,7 +6,7 @@
     <span
         class="absolute top-0 left-0 mt-1 ml-1 h-full w-full rounded bg-yellow-900 group-hover:top-0.5 group-hover:left-0.5 group-hover:duration-100 dark:bg-dark dark:border-2 dark:border-yellow-200"></span>
     <span
-        class="flex justify-center items-center gap-2 uppercase script-font fold-normal relative h-full w-full rounded border-2 bg-yellow-800 px-3 py-1 md:px-6 md:py-2 text-base text-white transition duration-100 dark:bg-yellow-200 dark:text-yellow-900 dark:border-transparent">
+        class="flex justify-center items-center gap-2 uppercase script-font fold-normal relative h-full w-full rounded border-2 border-transparent bg-yellow-800 px-3 py-1 md:px-6 md:py-2 text-base text-white transition duration-100 dark:bg-yellow-200 dark:text-yellow-900">
 
         <svg class="spinner hidden w-4 h-4 me-2 text-white animate-spin" aria-hidden="true" role="status"
             viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
