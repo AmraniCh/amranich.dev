@@ -1,5 +1,15 @@
 # Change Log
 
+## v1.3.2 (2025-11-05)
+
+### Added
+- `<noscript>` fallback for canvas element in hero section (portrait sketch).
+
+### Changed
+- Removed `source/CHAKIR_EL_AMRANI_EN.pdf` from repository.
+- Renamed `.env.example` to `env.example` to fix workflow build issue.
+- Updated workflow working directory for email script dependencies installation.
+
 ## v1.3.0 (2025-11-05)
 
 ### Added
