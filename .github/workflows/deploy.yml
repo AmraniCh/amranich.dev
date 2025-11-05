@@ -1,4 +1,4 @@
-name: 🚀 Deloyement via FTP
+name: 🚀 Deployment via FTP
 
 on:
   push:
