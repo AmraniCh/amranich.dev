@@ -64,7 +64,7 @@
     "featured-projects.third-project.date": "janvier 2020",
     "featured-projects.third-project.title": "Gestionnaire de bases de données MySQL",
     "featured-projects.third-project.desc": "Une application web pour gérer les bases de données MySQL localement avec prise en charge de la journalisation pour toutes les opérations CRUD MySQL.",
-    "featured-projects.notice": "Voici mes projets \"classiques\". Bien que certains soient plus anciens (réalisés en 2020), j'ai beaucoup appris grâce à eux et je suis toujours fier du travail que j'ai accompli 😊. Vous pouvez trouver une chronologie complète de tous mes projets, y compris les projets professionnels, ici !",
+    "featured-projects.notice": " Voici mes projets préférés. Deux d’entre eux étaient des projets scolaires réalisés en 2020, mais j’en ai beaucoup appris et je suis toujours fier de ce que j’ai accompli. Si vous voulez voir tous les projets sur lesquels j’ai travaillé au fil du temps, consultez mon archive de projets ! ",
     "featured-projects.notice.button": "archive",
     "projects-archive.back-button": "retour",
     "projects-archive.headline": "archive des projets",
