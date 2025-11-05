@@ -51,3 +51,15 @@ jobs:
           port: ${{ secrets.ftp_port }}
           local-dir: ./build_production/
           server-dir: ${{ secrets.ftp_server_dir }}
+
+      - name: 🔐 Fix permissions via SSH
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.ssh_host }}
+          username: ${{ secrets.ssh_user }}
+          key: ${{ secrets.ssh_private_key }}
+          port: ${{ secrets.ssh_port }}
+          script: |
+            cd ${{ secrets.ftp_server_dir }}
+            ls -al
+            sudo chown www-data:www-data -R *
