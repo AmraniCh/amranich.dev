@@ -39,7 +39,7 @@ jobs:
         run: npm run prod
 
       - name: 📦 Install dependencies for email sending PHP script
-        working-directory: ./build_production
+        working-directory: ./build_production/backend
         run: composer install
 
       - name: 📂 Sync files
