@@ -4,11 +4,13 @@ require __DIR__ . '/vendor/autoload.php';
 
 use Rakit\Validation\Validator;
 use Symfony\Component\Mime\Email;
-use Symfony\Component\Mime\Address;
 use Symfony\Component\Mailer\Mailer;
-use Symfony\Component\Mailer\Transport\SendmailTransport;
+use Symfony\Component\Mailer\Transport\Smtp\EsmtpTransport;
 
 $sender = new Emitter();
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
 
 const DEV_BASE_URL = 'http://localhost:3000';
 const PROD_BASE_URL = 'https://amranich.dev';
@@ -54,14 +56,22 @@ try {
         $sender->emit(message: $validation->errors()->all(), status: Emitter::ERROR_STATUS, code: 400);
     }
 
-    $transport = new SendmailTransport();
+    $transport = new EsmtpTransport($_ENV['SMTP_HOST'], $_ENV['SMTP_PORT'], null);
+    $transport->setUsername($_ENV['SMTP_USERNAME']);
+    $transport->setPassword($_ENV['SMTP_PASSWORD']);
     $mailer = new Mailer($transport);
 
     $email = (new Email())
-        ->from(Address::create(sprintf("%s <%s>", $_POST['fullname'], $_POST['email'])))
+        ->from("contact@amranich.dev")
         ->to('contact@amranich.dev')
-        ->subject(substr($_POST['message'], 60) ?: $_POST['message'])
-        ->text($_POST['message']);
+        ->replyTo($_POST['email'])
+        ->subject('Contact Form: ' . substr($_POST['message'], 0, 50))
+        ->text(sprintf(
+            "Name: %s\nEmail: %s\n\nMessage:\n%s",
+            $_POST['fullname'],
+            $_POST['email'],
+            $_POST['message']
+        ));
 
     $mailer->send($email);
 
