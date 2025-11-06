@@ -24,7 +24,8 @@
 - [X] correct bachelor education date
 - [X] hero section: personal image: added loading effect
 - [X] add nginx configuration for redirecting 404 requests to the custom 404 page 
-- [ ] featured projects action: personal website project: sketch button link
-- [ ] update projects.json for personal website project - add behance link
+- [ ] prepare figma design to be published on Behance
+- [ ] publish the design on Behance
+- [ ] add behance link for personal website in projects sections and in projects.json
 - [ ] update README
-- [ ] create LinkedIn post
+- [ ] create and publish LinkedIn post
