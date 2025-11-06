@@ -2,17 +2,17 @@
 
 ## Long Term
 
-- [X] finish the figma design (add career section ?).
-- [X] customize the scrollbar.
-- [X] contact form no js support.
-- [X] projects archive translation.
-- [X] projects archive contribution levels translation.
-- [ ] fixed seo issues with coming soon page.
-- [ ] support meta theme color for mobile browsers in dark mode ([MDN theme color](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color)).
-- [ ] support PWA.
-- [ ] resume dropdown (support modern/classic options).
-- [ ] accessability.
-- [ ] consider to implement wildcard certificate for amranich.dev.
+- [X] finish the figma design (add career section ?)
+- [X] customize the scrollbar
+- [X] contact form no js support
+- [X] projects archive translation
+- [X] projects archive contribution levels translation
+- [ ] fixed seo issues with coming soon page
+- [ ] support meta theme color for mobile browsers in dark mode ([MDN theme color](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color))
+- [ ] support PWA
+- [ ] resume dropdown (support modern/classic options)
+- [ ] website accessibility support
+- [ ] consider to implement wildcard SSL certificate for domain amranich.dev
 - [ ] support contact form CAPTCHA for clients with JavaScript disabled
 
 
