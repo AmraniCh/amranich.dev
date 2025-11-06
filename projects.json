@@ -1036,7 +1036,7 @@
         "links": {
             "github": "https://github.com/AmraniCh/e-commerce-website-plain-php"
         },
-        "contribution_level": "full",
+        "contribution_level": "scratch",
         "tasks": []
     },
     {
@@ -1056,7 +1056,7 @@
         "links": {
             "github": "https://github.com/AmraniCh/e-learning-website-plain-php"
         },
-        "contribution_level": "full",
+        "contribution_level": "scratch",
         "tasks": []
     },
     {
@@ -1083,10 +1083,10 @@
             "start": "",
             "end": "2024-01-01"
         },
-        "name": "Cloud Master",
+        "name": "Cloud Master Platform",
         "made_at": "PI Marketing",
         "stack": [
-            "Laravel 9",
+            "Laravel",
             "Inertia",
             "Docker",
             "Nginx",
