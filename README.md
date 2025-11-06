@@ -3,9 +3,7 @@
 [![Deployment](https://img.shields.io/github/actions/workflow/status/AmraniCh/amranich.dev/deploy.yml?label=%F0%9F%9A%80%20Deloyement%20via%20FTP)](https://github.com/AmraniCh/amranich.dev/actions/workflows/deploy.yml)
 [![Version](https://img.shields.io/github/v/tag/amranich/amranich.dev?label=version)](https://github.com/AmraniCh/amranich.dev/releases)
 
-This my personal website built with Jigsaw SSG, depyload via FTP using Github actions.
-
-*The current version has only a landing page until I build the full website.*
+> My personal website, built with PHP and Jigsaw, Tailwind CSS, and deployed via FTPS using GitHub Actions.
 
 ## Contributing
 
