@@ -13,10 +13,14 @@
             <x-slot:stack>
                 <x-badge text="PHP" />
                 <x-badge text="Jigsaw (SSG)" />
-                <x-badge text="Tailwindcss" />
-                <x-badge text="Vanilla Js" />
-                <x-badge text="ES6" />
-                <x-badge text="Github Actions" />
+                <x-badge text="JavaScript (ES6)" />
+                <x-badge text="Tailwind CSS" />
+                <x-badge text="GitHub Actions" />
+                <x-badge text="AWS Lightsail" />
+                <x-badge text="Debian" />
+                <x-badge text="Nginx" />
+                <x-badge text="vsftpd" />
+                <x-badge text="FTPS" />
             </x-slot>
 
         </x-project-card>

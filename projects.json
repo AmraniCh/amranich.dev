@@ -758,14 +758,22 @@
             "start": "",
             "end": "2020-09-01"
         },
-        "name": "FTP File Manager",
+        "name": "Web Based FTP Client",
         "made_at": "University",
         "stack": [
             "PHP",
+            "Apache",
             "MVC",
-            "Gulp",
+            "PHPUnit",
+            "FTP",
+            "RFC959",
+            "SASS",
             "JavaScript",
-            "SCSS"
+            "Rollup",
+            "Gulp",
+            "PostCss",
+            "ES5",
+            "Pollyfills"
         ],
         "links": {
             "github": "https://github.com/lazzard/ftp-filemanager",
@@ -955,9 +963,11 @@
         "made_at": "University",
         "stack": [
             "PHP",
+            "Apache",
             "MySQL",
-            "jQuery",
-            "CSS"
+            "HTML5",
+            "CSS",
+            "jQuery"
         ],
         "links": {
             "github": "https://github.com/AmraniCh/school-manager-application",
@@ -1084,8 +1094,9 @@
             "MySQL",
             "React",
             "Redux",
-            "Tailwind",
-            "Swagger"
+            "Tailwindcss",
+            "Swagger",
+            "LaRecipe docs"
         ],
         "links": {},
         "contribution_level": "scratch",
