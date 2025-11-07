@@ -4,9 +4,9 @@
     <div class="max-w-7xl m-auto">
         <div class="relative flex justify-between items-center">
             <div class="flex flex-col gap-2.5">
-                <a class="group flex items-center gap-1.5 text-base font-bold capitalize hover:opacity-80"
+                <a class="group flex items-center gap-1.5 text-base font-bold capitalize text-yellow-500 dark:text-yellow-400 dark:hover:text-yellow-300 hover:tracking-widest-x2 transition-all"
                     href="#projects-section">
-                    <svg class="w-3.5 h-3.5 fill-yellow-900 group-hover:-translate-x-1 group-hover:duration-200 group-hover:ease-in dark:fill-yellow-200"
+                    <svg class="w-3.5 h-3.5 fill-yellow-500 group-hover:-translate-x-1 group-hover:duration-200 group-hover:ease-in dark:fill-yellow-400 dark:group-hover:fill-yellow-300"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                         <path
                             d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
@@ -17,7 +17,7 @@
 
                 <div class="flex justify-center items-center gap-2">
 
-                    <svg class="w-9 fill-yellow-500" viewBox="0 0 35 35" fill="none"
+                    <svg class="w-9 fill-yellow-800 dark:fill-yellow-200" viewBox="0 0 35 35" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M31.6539 7.71734L27.2804 3.34526C27.007 3.07175 26.6361 2.91805 26.2493 2.91797H8.74935C8.36261 2.91805 7.99173 3.07175 7.71831 3.34526L3.34477 7.71734C3.2089 7.85278 3.10109 8.0137 3.02752 8.19088C2.95395 8.36805 2.91606 8.558 2.91602 8.74984V27.7096C2.91602 29.3182 4.22414 30.6263 5.83268 30.6263H29.166C30.7746 30.6263 32.0827 29.3182 32.0827 27.7096V8.74984C32.0826 8.558 32.0447 8.36805 31.9712 8.19088C31.8976 8.0137 31.7898 7.85278 31.6539 7.71734ZM9.3531 5.83464H25.6456L27.1025 7.29151H7.89622L9.3531 5.83464ZM5.83268 27.7096V10.2082H29.166L29.1689 27.7096H5.83268Z" />
@@ -25,7 +25,7 @@
                     </svg>
 
                     <h2
-                        class="text-2xl md:text-3xl lg:text-4xl font-extrabold bg-gradient-to-l from-yellow-400 to-yellow-500 text-transparent bg-clip-text capitalize">
+                        class="text-2xl md:text-2xl lg:text-3xl font-extrabold text-yellow-800 text-transparent bg-clip-text capitalize dark:text-yellow-200">
                         {!! $page->trans('projects-archive.headline') !!}
                         ({{ $page->projects->count() }})
                     </h2>
@@ -34,7 +34,7 @@
             </div>
 
             <a href="#projects-section" class="absolute right-0 top-0">
-                <svg class="w-7 h-7 fill-yellow-900 hover:opacity-80 hover:rotate-180 transition-transform duration-200 dark:fill-yellow-200"
+                <svg class="w-7 h-7 fill-yellow-500 hover:rotate-180 transition-transform duration-200 dark:fill-yellow-400 dark:hover:fill-yellow-300"
                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                     <path
                         d=" M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6
