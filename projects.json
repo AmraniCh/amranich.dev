@@ -110,7 +110,7 @@
             "start": "",
             "end": "2021-04-01"
         },
-        "name": "Gulliver",
+        "name": "Gulliver Website",
         "made_at": "Map-concepts",
         "stack": [
             "Laravel",
@@ -149,7 +149,7 @@
             "start": "",
             "end": "2023-05-01"
         },
-        "name": "قلوبال لرعاية العين",
+        "name": "قلوبال لرعاية العين Website",
         "made_at": "Freelance",
         "stack": [
             "HTML",
@@ -168,7 +168,7 @@
             "start": "",
             "end": "2023-07-01"
         },
-        "name": "تشير Chair",
+        "name": "تشير Chair Website",
         "made_at": "Freelance",
         "stack": [
             "HTML",
@@ -708,7 +708,7 @@
             "start": "",
             "end": "2023-01-01"
         },
-        "name": "Slim Elegant",
+        "name": "Slim Elegant Framework",
         "made_at": "Open Source",
         "stack": [
             "PHP",
@@ -805,7 +805,7 @@
             "start": "",
             "end": "2021-05-01"
         },
-        "name": "FTP Bridge",
+        "name": "FTP Bridge Library",
         "made_at": "Open Source",
         "stack": [
             "PHP",
@@ -823,7 +823,7 @@
             "start": "",
             "end": "2020-07-01"
         },
-        "name": "PHP FTP Client",
+        "name": "FTP Client Library",
         "made_at": "Open Source",
         "stack": [
             "PHP",
@@ -847,8 +847,7 @@
             "JavaScript"
         ],
         "links": {
-            "link": "https://laakil-ameublement.com/",
-            "instagram": "https://www.instagram.com/laakil.ameublement"
+            "github": "https://github.com/AmraniCh/how-jQuery-works"
         },
         "contribution_level": "scratch",
         "tasks": []
@@ -869,7 +868,8 @@
             "SEO"
         ],
         "links": {
-            "link": "https://laakil.com"
+            "link": "https://laakil-ameublement.com/",
+            "instagram": "https://www.instagram.com/laakil.ameublement"
         },
         "contribution_level": "high edit",
         "tasks": []
