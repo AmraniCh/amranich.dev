@@ -384,7 +384,7 @@
             "start": "",
             "end": "2023-06-01"
         },
-        "name": "FreeDNS Manager",
+        "name": "FreeDNS domains Manager",
         "made_at": "PI Marketing",
         "stack": [
             "Python",
@@ -455,7 +455,7 @@
             "start": "",
             "end": "2023-01-01"
         },
-        "name": "VMTA SMTP Configurator",
+        "name": "PMTA VMTA SMTP Configurator",
         "made_at": "PI Marketing",
         "stack": [
             "PHP",
