@@ -7,8 +7,9 @@
         <x-project-card highlight="{{ false }}" snapshot="website-snapshot.jpg"
             snapshotAlt="Shakir El Amrani's personal website snapshot" date="{!! $page->trans('featured-projects.first-project.date') !!}"
             title="{!! $page->trans('featured-projects.card-title') !!}" projectTitle="{!! $page->trans('featured-projects.first-project.title') !!}" projectDesc="{!! $page->trans('featured-projects.first-project.desc') !!}"
-            sourceLink="https://github.com/AmraniCh/amranich.dev" sketchLink="" sourceBtn="{!! $page->trans('featured-projects.source-button') !!}"
-            sketchesBtn="{!! $page->trans('featured-projects.sketches-button') !!}">
+            sourceLink="https://github.com/AmraniCh/amranich.dev"
+            sketchLink="https://www.behance.net/gallery/205212091/Personal-Portfolio-Website-V1"
+            sourceBtn="{!! $page->trans('featured-projects.source-button') !!}" sketchesBtn="{!! $page->trans('featured-projects.sketches-button') !!}">
 
             <x-slot:stack>
                 <x-badge text="PHP" />
