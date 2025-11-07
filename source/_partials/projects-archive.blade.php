@@ -4,7 +4,7 @@
     <div class="max-w-7xl m-auto">
         <div class="relative flex justify-between items-center">
             <div class="flex flex-col gap-2.5">
-                <a class="group flex items-center gap-1.5 text-base font-bold capitalize text-yellow-500 dark:text-yellow-400 dark:hover:text-yellow-300 hover:tracking-widest-x2 transition-all"
+                <a class="group flex items-center gap-1.5 text-base font-bold uppercase text-yellow-500 dark:text-yellow-400 dark:hover:text-yellow-300 hover:tracking-widest-x2 transition-all"
                     href="#projects-section">
                     <svg class="w-3.5 h-3.5 fill-yellow-500 group-hover:-translate-x-1 group-hover:duration-200 group-hover:ease-in dark:fill-yellow-400 dark:group-hover:fill-yellow-300"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
