@@ -1,5 +1,19 @@
 # Change Log
 
+## v1.4.5 (2025-11-07)
+
+### Added
+- Behance link in project JSON and featured projects template.
+
+### Changed
+- Updated project names, details, and translations for consistency.  
+- Enhanced README with badges and banner.  
+- Improved text styling, color contrast, and hover interactions in the Coming Soon and Projects Archive sections.
+
+### Fixed
+- Replaced SVG icon in projects archive.  
+- Corrected project dates in translations.
+
 ## v1.4.0 (2025-11-06)
 
 ### Added
