@@ -9,9 +9,9 @@ export default function animatePortraitSketch() {
     const frameInterval = 1000 / 60; // 60 FPS
 
     const waveSettings = {
-        amplitude: 2.4,
-        frequency: 2.3,
-        speed: 0.2,
+        amplitude: 2.5,
+        frequency: 2.5,
+        speed: 0.3,
     };
 
     sourceImage.onload = function () {
