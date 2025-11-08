@@ -460,7 +460,7 @@
         "stack": [
             "PHP",
             "Slim 3",
-            "JavaScript",
+            "AlpineJs",
             "Tailwind",
             "Rollup"
         ],
