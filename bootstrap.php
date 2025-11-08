@@ -19,4 +19,10 @@ use App\Listeners\LoadProjects;
  */
 
 
-$events->beforeBuild([FetchVersion::class, FetchGhRepos::class, LoadProjects::class]);
+$events->beforeBuild(
+    [
+        FetchVersion::class,
+        FetchGhRepos::class,
+        LoadProjects::class
+    ]
+);
