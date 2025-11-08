@@ -17,7 +17,7 @@
     <meta property="og:type" content="{{ $page->type ?? 'website' }}" />
     <meta property="og:url" content="/" />
     <meta property="og:description" content="{{ $page->description ?? $page->trans('siteDescription') }}" />
-    <meta property="og:image" content="{{ $page->baseUrl }}/assets/images/me.png" />
+    <meta property="og:image" content="{{ $page->baseUrl }}/assets/images/og-image-dark.jpg" />
 
     <link rel="home" href="{{ $page->baseUrl }}">
 
