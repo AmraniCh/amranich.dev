@@ -1,5 +1,9 @@
 # Change Log
 
+## v1.4.9 (2025-11-09)
+- Update FTP-Deploy-Action to v4.3.6.
+- Add timeout (60 seconds) setting to FTP-Deploy-Action.
+
 ## v1.4.8 (2025-11-09)
 - Use explicit FTP over SSL/TLS for deployment (FTPS).
 - Hide grecaptcha badge on mobile/tablet devices.
