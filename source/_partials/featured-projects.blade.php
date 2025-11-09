@@ -4,7 +4,7 @@
 
     <div class="flex flex-col gap-10 lg:gap-16 xl:gap-24">
 
-        <x-project-card highlight="{{ false }}" snapshot="website-snapshot.jpg"
+        <x-project-card highlight="{{ false }}" snapshot="website-snapshot.png"
             snapshotAlt="Shakir El Amrani's personal website snapshot" date="{!! $page->trans('featured-projects.first-project.date') !!}"
             title="{!! $page->trans('featured-projects.card-title') !!}" projectTitle="{!! $page->trans('featured-projects.first-project.title') !!}" projectDesc="{!! $page->trans('featured-projects.first-project.desc') !!}"
             sourceLink="https://github.com/AmraniCh/amranich.dev"
