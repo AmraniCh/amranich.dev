@@ -119,3 +119,7 @@ html {
 .js-enabled .js-only {
 	display: block;
 }
+
+.grecaptcha-badge {
+	@apply lg:visible invisible;
+}
