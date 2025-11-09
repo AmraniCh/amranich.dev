@@ -1,9 +1,12 @@
 # Change Log
 
+## v1.4.8 (2025-11-09)
+- Use explicit FTP over SSL/TLS for deployment (FTPS).
+- Hide grecaptcha badge on mobile/tablet devices.
+
 ## v1.4.6 (2025-11-08)
 - Added new Open Graph images.
 - Increased wave animation setting for portrait sketch in the hero section.
-
 
 ## v1.4.5 (2025-11-07)
 
