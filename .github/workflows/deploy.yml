@@ -52,6 +52,7 @@ jobs:
           local-dir: ./build_production/
           server-dir: ${{ secrets.ftp_server_dir }}
           protocol: ftps
+          timeout: 60000
 
       - name: 🔐 Fix permissions via SSH
         uses: appleboy/ssh-action@v1
