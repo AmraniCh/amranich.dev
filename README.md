@@ -8,7 +8,7 @@
   
   [![Deployment](https://img.shields.io/github/actions/workflow/status/AmraniCh/amranich.dev/deploy.yml?label=🚀%20Deployment&style=flat-square)](https://github.com/AmraniCh/amranich.dev/actions/workflows/deploy.yml)
   [![Version](https://img.shields.io/github/v/tag/amranich/amranich.dev?label=version&style=flat-square&color=success)](https://github.com/AmraniCh/amranich.dev/releases)
-  [![License](https://img.shields.io/github/license/AmraniCh/amranich.dev?style=flat-square)](LICENSE)
+  [![License](https://img.shields.io/github/license/amranich/amranich.dev?style=flat-square)](LICENSE)
 
   [Visit Website](https://amranich.dev) • [View Changelog](CHANGELOG.md) • [Report Bug](https://github.com/AmraniCh/amranich.dev/issues)
 </div>
