@@ -51,6 +51,7 @@ jobs:
           port: ${{ secrets.ftp_port }}
           local-dir: ./build_production/
           server-dir: ${{ secrets.ftp_server_dir }}
+          protocol: ftps
 
       - name: 🔐 Fix permissions via SSH
         uses: appleboy/ssh-action@v1
