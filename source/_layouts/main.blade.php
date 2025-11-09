@@ -106,6 +106,19 @@
 
     <script src="https://www.google.com/recaptcha/api.js?render=6LePjgIsAAAAAChBlEkVTlzVjXpmXFoOqPzcpUIp"></script>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FX66RZWQZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-7FX66RZWQZ');
+    </script>
+
 </head>
 
 <body class="bg-yellow-50 text-yellow-800 overflow-hidden dark:bg-dark dark:text-yellow-200">
