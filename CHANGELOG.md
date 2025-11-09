@@ -1,5 +1,8 @@
 # Change Log
 
+## v1.5.0 (2025-11-09)
+- Integrate Google Analytics.
+
 ## v1.4.9 (2025-11-09)
 - Update FTP-Deploy-Action to v4.3.6.
 - Add timeout (60 seconds) setting to FTP-Deploy-Action.
