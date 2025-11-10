@@ -17,24 +17,23 @@
 
 ## 🔗 Links
 
-- **🌐 Live Website**: [amranich.dev](https://amranich.dev)
-- **🎨 Design on Behance**: [View Design](https://www.behance.net/gallery/238174557/Personal-Portfolio-Website-V1-amranichdev)
+- **Live Website**: [amranich.dev](https://amranich.dev)
+- **Design on Behance**: [View Design](https://www.behance.net/gallery/238174557/Personal-Portfolio-Website-V1-amranichdev)
 
 ## 🛠️ Tech Stack
 
 **Frontend**
-- [Jigsaw](https://jigsaw.tighten.co/) - Static site generator
 - [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
-- Vanilla JavaScript - Canvas animations & interactions
+- Vanilla JavaScript
 
 **Backend**
-- PHP 8.0 - Contact form processing
+- [Jigsaw](https://jigsaw.tighten.co/) - Static site generator
 - [PHPMailer](https://github.com/PHPMailer/PHPMailer) - Email sending via SMTP
 
-**Infrastructure**
+**Deployment**
 - AWS EC2 (Debian) - Hosting
-- nginx - as Web server
-- vsftpd - FTP server with FTPS support
+- nginx - Web server
+- vsftpd - FTP server with SSL/TLS support
 - GitHub Actions - CI/CD pipeline
 
 ## 🚀 Quick Start
@@ -48,45 +47,31 @@
 ### Installation
 
 ```bash
-# Clone the repository
+# clone the repository
 git clone https://github.com/AmraniCh/amranich.dev.git
 cd amranich.dev
 
-# Install PHP dependencies
+# install PHP dependencies
 composer install
 
-# Install Node dependencies
+# install Node packages
 npm install
 ```
 
 ### Development
 
 ```bash
-# Development server with hot reload
+# development server with hot reload
 npm run watch
 
-# One-time development build
+# development build
 npm run dev
 
-# Production build
+# production build
 npm run prod
 ```
 
 The site will be built in the `build_production` directory.
-
-## 📁 Project Structure
-
-```
-amranich.dev/
-├── source/           # Source files
-│   ├── backend/      # PHP backend (contact form)
-│   ├── css/          # Tailwind styles
-│   ├── js/           # JavaScript files
-│   ├── lang/         # Translations (en/fr)
-│   └── _layouts/     # Jigsaw layouts
-├── build_production/ # Production build output
-└── .github/          # GitHub Actions workflows
-```
 
 ## 🔧 Configuration
 
@@ -129,18 +114,8 @@ If you wish to use or adapt this project for your own website, please provide **
 
 If you’re interested in building a similar website or need assistance, feel free to reach out at **contact@amranich.dev**. I’ll be happy to help.
 
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to:
-- Report bugs
-- Suggest new features  
-- Submit pull requests
-
 ---
 
 <div align="center">
-  Made with ❤️ by <a href="https://github.com/AmraniCh">AmraniCh</a>
-  
-  ⭐ **Star this repo if you find it interesting or helpful, thank you!**
+  Made with 💛 by <a href="https://github.com/AmraniCh">AmraniCh</a>
 </div>
