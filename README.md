@@ -20,6 +20,16 @@
 - **Live Website**: [amranich.dev](https://amranich.dev)
 - **Design on Behance**: [View Design](https://www.behance.net/gallery/238174557/Personal-Portfolio-Website-V1-amranichdev)
 
+## ⚡ Features
+
+- Fully responsive design for all screen sizes  
+- Multilingual support (currently English and French)  
+- Secure contact form with PHPMailer and Google reCAPTCHA  
+- Custom 404/500 error pages  
+- SEO optimized metadata and Open Graph support
+- Automated CI/CD deployment using GitHub Actions  
+- Hosted on AWS Lightsail and Nginx as a web server
+
 ## 🛠️ Tech Stack
 
 **Frontend**
