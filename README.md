@@ -120,8 +120,6 @@ See [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) for details.
 
 This project’s **code** is released under the [MIT License](LICENSE).
 
-If you wish to use or adapt this project for your own website, please provide **proper attribution** by linking back to [amranich.dev](https://amranich.dev) or mentioning **AmraniCh** as the original author. I have put a lot of effort into this project, and I would sincerely appreciate it if you acknowledge that work by giving proper credit.
-
 If you’re interested in building a similar website or need assistance, feel free to reach out at **contact@amranich.dev**. I’ll be happy to help.
 
 ---
