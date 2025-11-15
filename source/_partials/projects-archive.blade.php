@@ -1,4 +1,4 @@
-<div id="projetcs-archive"
+<div id="projects-archive"
     class="fixed top-0 left-0 bottom-0 right-0 bg-yellow-50 opacity-0 transition-opacity duration-1000 px-4 py-4 invisible overflow-auto target:visible target:opacity-100 md:px-12 md:py-12 dark:bg-dark">
 
     <div class="max-w-7xl m-auto">

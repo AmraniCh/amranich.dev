@@ -92,7 +92,7 @@
                     </p>
                 </div>
 
-                <x-buttons.secondary text="{!! $page->trans('featured-projects.notice.button') !!}" class="shrink-0" href="#projetcs-archive"
+                <x-buttons.secondary text="{!! $page->trans('featured-projects.notice.button') !!}" class="shrink-0" href="#projects-archive"
                     :reverseDirection="true">
                     <svg class="w-5 h-5 fill-brown-500 group-hover:fill-yellow-50 group-hover:scale-125 group-hover:duration-300 dark:fill-yellow-200 dark:group-hover:fill-yellow-900"
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3"
