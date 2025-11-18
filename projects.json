@@ -1,10 +1,10 @@
 [
     {
         "date": {
-            "start": "2021-11-01",
+            "start": "2020-01-01",
             "end": ""
         },
-        "name": "Birds Manager",
+        "name": "Birds Manager Software",
         "made_at": "Freelance",
         "stack": [
             "C#",
