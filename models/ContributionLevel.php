@@ -6,7 +6,7 @@ use Stringable;
 
 class ContributionLevel implements Stringable
 {
-    private const LEVELS = ['low edit', 'medium edit', 'high edit', 'full', 'scratch'];
+    private const LEVELS = ['low edit', 'medium edit', 'high edit', 'full', 'scratch', 'tasks'];
     private string $level;
 
     public function __construct(string $level)

@@ -23,7 +23,7 @@ class LoadProjects
                     madeAt: $project['made_at'],
                     stack: collect($project['stack']),
                     links: collect($project['links']),
-                    contributionLevel: new ContributionLevel($project['contribution_level']),
+                    contributionLevel: new ContributionLevel(empty($project['tasks']) ? $project['contribution_level'] : 'tasks'),
                     tasks: collect($project['tasks']),
                 )
             );
