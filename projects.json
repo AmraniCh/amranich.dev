@@ -815,8 +815,8 @@
     },
     {
         "date": {
-            "start": "2020-05-01",
-            "end": ""
+            "start": "",
+            "end": "2020-09-01"
         },
         "name": "FTP Bridge Library",
         "made_at": "University",
@@ -835,8 +835,8 @@
     },
     {
         "date": {
-            "start": "2020-04-01",
-            "end": ""
+            "start": "",
+            "end": "2020-09-01"
         },
         "name": "FTP Client Library",
         "made_at": "University",
