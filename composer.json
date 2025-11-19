@@ -1,6 +1,6 @@
 {
     "require": {
-        "tightenco/jigsaw": "^1.6",
+        "tightenco/jigsaw": "1.7.1",
         "illuminate/translation": "^9.52",
         "guzzlehttp/guzzle": "^7.8"
     },
