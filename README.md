@@ -22,13 +22,14 @@
 
 ## ⚡ Features
 
-- Fully responsive design for all screen sizes  
+- Fully responsive design for all screen sizes
+- Support Non-JavaScript Clients
 - Multilingual support (currently English and French)  
 - Secure contact form with PHPMailer and Google reCAPTCHA  
 - Custom 404/500 error pages  
 - SEO optimized metadata and Open Graph support
 - Automated CI/CD deployment using GitHub Actions  
-- Hosted on AWS Lightsail and Nginx as a web server
+- Hosted on AWS Lightsail, used Nginx as a web server, vsftpd as an FTP server
 
 ## 🛠️ Tech Stack
 
