@@ -1,8 +1,8 @@
 [
     {
         "date": {
-            "start": "2020-01-01",
-            "end": ""
+            "start": "",
+            "end": "2020-01-01"
         },
         "name": "Birds Manager Software",
         "made_at": "Freelance",
@@ -20,14 +20,15 @@
             "start": "2021-11-01",
             "end": ""
         },
-        "name": "rdp-ipstatus-checker",
+        "name": "Proofpoint IP Status API",
         "made_at": "PI Marketing",
         "stack": [
-            "NodeJs",
+            "Node.js",
+            "Express.js",
             "Puppeteer"
         ],
         "links": {},
-        "contribution_level": "low Edit",
+        "contribution_level": "",
         "tasks": [
             "Fixing bugs and provide continuous maintenance."
         ]
@@ -37,17 +38,23 @@
             "start": "2022-12-01",
             "end": ""
         },
-        "name": "PMTA Monitoring Application",
+        "name": "PMTA Monitoring Platform",
         "made_at": "PI Marketing",
         "stack": [
             "Python 3",
             "Flask",
             "Angular 11",
+            "Bootstrap 5",
             "Docker",
-            "Nginx"
+            "Nginx",
+            "SocketIO",
+            "Gunicorn",
+            "Eventlet",
+            "SFTP/pysftp",
+            "SFTP/paramiko"
         ],
         "links": {},
-        "contribution_level": "low Edit",
+        "contribution_level": "",
         "tasks": [
             "Integrate VMTA Configurator module.",
             "Adding routes logs module.",
@@ -64,11 +71,14 @@
         "stack": [
             "Laravel 5",
             "Linux Supervisor",
-            "Laravel Jobs"
+            "Laravel Jobs",
+            "Bootstrap"
         ],
         "links": {},
-        "contribution_level": "Medium Edit",
-        "tasks": []
+        "contribution_level": "",
+        "tasks": [
+            "Added new features, fixed bugs, and provided continuous maintenance"
+        ]
     },
     {
         "date": {
@@ -160,7 +170,7 @@
         "links": {
             "link": "https://gec.med.sa"
         },
-        "contribution_level": "low edit",
+        "contribution_level": "",
         "tasks": [
             "Converting website layout to RTL."
         ]
@@ -182,7 +192,7 @@
             "link": "https://chair.sa",
             "instagram": "https://www.instagram.com/chairksa"
         },
-        "contribution_level": "low edit",
+        "contribution_level": "",
         "tasks": [
             "Optimize website load time by minifying JS files and optimizing images sizes."
         ]
@@ -301,7 +311,7 @@
             "start": "",
             "end": "2023-12-01"
         },
-        "name": "google-drive-suppression-file-crawler",
+        "name": "Google Drive Suppression File Crawler",
         "made_at": "PI Marketing",
         "stack": [
             "Python",
@@ -317,7 +327,7 @@
             "start": "",
             "end": "2023-01-01"
         },
-        "name": "ezepo-suppression-file-crawler",
+        "name": "Ezepo Suppression File Crawler",
         "made_at": "PI Marketing",
         "stack": [
             "PHP",
@@ -332,7 +342,7 @@
             "start": "",
             "end": "2023-01-01"
         },
-        "name": "enable-organization-customization-script",
+        "name": "Enable Organization Customization Script",
         "made_at": "PI Marketing",
         "stack": [
             "PowerShell",
@@ -345,9 +355,9 @@
     {
         "date": {
             "start": "",
-            "end": "2022-04-01"
+            "end": "2023-12-01"
         },
-        "name": "Office365 API Domains",
+        "name": "Office365 Domains Connector",
         "made_at": "PI Marketing",
         "stack": [
             "PHP",
@@ -585,10 +595,10 @@
     {
         "date": {
             "start": "",
-            "end": "2019-10-01"
+            "end": "2019-09-01"
         },
         "name": "UI/UX Designer Landing Page",
-        "made_at": "Open Source",
+        "made_at": "Personal Project",
         "stack": [
             "Figma"
         ],
@@ -603,7 +613,7 @@
             "start": "",
             "end": "2021-08-01"
         },
-        "name": "Form Validate JS Library",
+        "name": "Form Validation JS Library",
         "made_at": "Open Source",
         "stack": [
             "JavaScript",
@@ -728,7 +738,7 @@
             "start": "",
             "end": "2021-02-01"
         },
-        "name": "Map-Labels",
+        "name": "Map Labels",
         "made_at": "Map-concepts",
         "stack": [
             "C#",
@@ -744,13 +754,14 @@
             "start": "",
             "end": "2021-03-01"
         },
-        "name": "IFMIA Website UI Design",
-        "made_at": "Map-concepts",
+        "name": "LEMIA School Website Design",
+        "made_at": "Freelance",
         "stack": [
             "Figma"
         ],
         "links": {
-            "figma": "https://www.figma.com/file/jv8B279eYreVUnlVhUnOdg/Ifmia-Website-Design?type=design&node-id=1-204&mode=design"
+            "figma": "https://www.figma.com/file/jv8B279eYreVUnlVhUnOdg/Ifmia-Website-Design?type=design&node-id=1-204&mode=design",
+            "behance": "https://www.behance.net/gallery/205579103/LEMIA-School-Website-Design-FR-(French-Website)"
         },
         "contribution_level": "scratch",
         "tasks": []
@@ -843,7 +854,7 @@
             "start": "",
             "end": "2021-10-01"
         },
-        "name": "how-jQuery-works",
+        "name": "How jQuery Works",
         "made_at": "Open Source",
         "stack": [
             "JavaScript"
@@ -940,14 +951,15 @@
     {
         "date": {
             "start": "",
-            "end": "2020-10-01"
+            "end": "2020-06-01"
         },
-        "name": "Jenny Wilson Portfolio Website",
+        "name": "Jenny Wilson Portfolio Website Design",
         "made_at": "Open Source",
         "stack": [
             "HTML5",
             "SCSS",
-            "JavaScript"
+            "JavaScript",
+            "Figma"
         ],
         "links": {
             "github": "https://github.com/AmraniCh/jenny-wilson-portfolio",
@@ -1024,19 +1036,19 @@
             "start": "",
             "end": "2019-08-01"
         },
-        "name": "e-commerce-website-plain-php",
-        "made_at": "University",
+        "name": "E-Commerce Store with Admin",
+        "made_at": "Freelance",
         "stack": [
             "PHP",
             "PHPMailer",
             "OpenWeatherMap API",
-            "OOP mysqli",
+            "OOP MySQL",
             "MySQL",
             "Bootstrap",
             "jQuery"
         ],
         "links": {
-            "github": "https://github.com/AmraniCh/e-commerce-website-plain-php"
+            "github": "https://github.com/AmraniCh/php-ecommerce-with-admin"
         },
         "contribution_level": "scratch",
         "tasks": []
@@ -1046,17 +1058,16 @@
             "start": "",
             "end": "2019-06-01"
         },
-        "name": "e-learning-website-plain-php",
+        "name": "E-Learning Platform",
         "made_at": "University",
         "stack": [
             "PHP",
-            "Procedural mysqli",
             "MySQL",
             "Bootstrap",
             "jQuery"
         ],
         "links": {
-            "github": "https://github.com/AmraniCh/e-learning-website-plain-php"
+            "github": "https://github.com/AmraniCh/php-elearning-platform"
         },
         "contribution_level": "scratch",
         "tasks": []
@@ -1075,7 +1086,8 @@
             "Bunifu"
         ],
         "links": {
-            "github": "https://github.com/AmraniCh/c-sharp-email-application"
+            "github": "https://github.com/AmraniCh/c-sharp-email-application",
+            "behance": "https://www.behance.net/gallery/82096399/Desktop-application-Boite-de-messagerie-utilisant-C"
         },
         "contribution_level": "scratch",
         "tasks": []
@@ -1119,7 +1131,7 @@
             "Figma Prototyping"
         ],
         "links": {},
-        "contribution_level": "scratch",
+        "contribution_level": "",
         "tasks": [
             "Designed a UI/UX mockup with Figma for various interfaces of the New Send System",
             "Set up front-end architecture using React, Shadcn, Redux Toolkit",
@@ -1141,7 +1153,7 @@
             "Swagger"
         ],
         "links": {},
-        "contribution_level": "low edit",
+        "contribution_level": "",
         "tasks": [
             "Developed the new affiliate offer management system"
         ]
@@ -1151,7 +1163,7 @@
             "start": "",
             "end": "2025-12-01"
         },
-        "name": "Personal Website V1",
+        "name": "Personal Portfolio Website (V1)",
         "made_at": "Open Source",
         "stack": [
             "PHP",
@@ -1168,9 +1180,122 @@
         "links": {
             "link": "https://amranich.dev",
             "github": "https://github.com/AmraniCh/amranich.dev",
-            "behance": "https://www.behance.net/gallery/205212091/Personal-Portfolio-Website-V1"
+            "behance": "https://www.behance.net/gallery/238174557/Personal-Portfolio-Website-V1-amranichdev"
         },
         "contribution_level": "scratch",
         "tasks": []
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2019-09-01"
+        },
+        "name": "Movie App Landing Page UI",
+        "made_at": "Personal Project",
+        "stack": [
+            "Adobe XD",
+            "InVision Studio"
+        ],
+        "links": {
+            "behance": "https://www.behance.net/gallery/85404771/Movie-App-Landing-Page-UI"
+        },
+        "contribution_level": "scratch",
+        "tasks": []
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2021-09-01"
+        },
+        "name": "Personal Website Coming Soon Page",
+        "made_at": "Personal Project",
+        "stack": [
+            "Figma"
+        ],
+        "links": {
+            "behance": "https://www.behance.net/gallery/126718111/Personal-Website-Coming-Soon-Page"
+        },
+        "contribution_level": "scratch",
+        "tasks": []
+    },
+    {
+        "date": {
+            "start": "2022-06-01",
+            "end": ""
+        },
+        "name": "Email IMAP Checker",
+        "made_at": "PI Marketing",
+        "stack": [
+            "PHP",
+            "Python",
+            "Node.js",
+            "Express.js",
+            "Bootstrap",
+            "SocketIO",
+            "IMAP"
+        ],
+        "links": {},
+        "contribution_level": "",
+        "tasks": [
+            "Added new features, fixed bugs, and provided continuous maintenance"
+        ]
+    },
+    {
+        "date": {
+            "start": "2025-04-01",
+            "end": ""
+        },
+        "name": "Newsletters Subscriber App",
+        "description": "Automates Newsletters Subscription for 13+ Newsletters.",
+        "made_at": "PI Marketing",
+        "stack": [
+            "Python",
+            "Flask",
+            "pyppeteer",
+            "Tailwind"
+        ],
+        "links": {},
+        "contribution_level": "",
+        "tasks": [
+            "Fixing bugs and provide continuous maintenance."
+        ]
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2022-06-01"
+        },
+        "name": "Slim Boilerplate",
+        "description": "General purpose Slim boilerplate",
+        "made_at": "PI Marketing",
+        "stack": [
+            "Slim 3",
+            "React",
+            "Rollup"
+        ],
+        "links": {},
+        "contribution_level": "scratch",
+        "tasks": []
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2024-04-01"
+        },
+        "name": "Server Presence API",
+        "made_at": "PI Marketing",
+        "stack": [
+            "PHP",
+            "Cache Driver",
+            "FileWriter",
+            "Simple API Architecture"
+        ],
+        "links": {},
+        "contribution_level": "",
+        "tasks": [
+            "Built a lightweight PHP API to handle server presence checks in a database",
+            "Implemented a custom caching system and file based logging",
+            "Handled error reporting and response delivery without external frameworks"
+        ]
     }
 ]
