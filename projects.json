@@ -663,10 +663,10 @@
     {
         "date": {
             "start": "",
-            "end": "2020-08-01"
+            "end": "2020-09-01"
         },
         "name": "Vanilla File Manager",
-        "made_at": "Open Source",
+        "made_at": "University",
         "stack": [
             "HTML",
             "SCSS",
@@ -815,15 +815,17 @@
     },
     {
         "date": {
-            "start": "",
-            "end": "2021-05-01"
+            "start": "2020-05-01",
+            "end": ""
         },
         "name": "FTP Bridge Library",
-        "made_at": "Open Source",
+        "made_at": "University",
         "stack": [
             "PHP",
             "PHPUnit",
-            "Github Actions"
+            "Github Actions",
+            "RFC959",
+            "FTP"
         ],
         "links": {
             "github": "https://github.com/lazzard/ftp-bridge"
@@ -833,15 +835,17 @@
     },
     {
         "date": {
-            "start": "",
-            "end": "2020-07-01"
+            "start": "2020-04-01",
+            "end": ""
         },
         "name": "FTP Client Library",
-        "made_at": "Open Source",
+        "made_at": "University",
         "stack": [
             "PHP",
             "PHPUnit",
-            "Github Actions"
+            "Github Actions",
+            "vsftpd",
+            "Integration Tests"
         ],
         "links": {
             "github": "https://github.com/lazzard/php-ftp-client"
