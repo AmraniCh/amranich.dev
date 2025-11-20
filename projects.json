@@ -35,8 +35,8 @@
     },
     {
         "date": {
-            "start": "",
-            "end": "2025-05-01"
+            "start": "2022-11-01",
+            "end": ""
         },
         "name": "PMTA Monitoring Platform",
         "made_at": "PI Marketing",
@@ -273,8 +273,8 @@
     },
     {
         "date": {
-            "start": "",
-            "end": "2023-06-01"
+            "start": "2022-03-01",
+            "end": ""
         },
         "name": "Affiliates Portal",
         "made_at": "PI Marketing",
@@ -354,8 +354,8 @@
     },
     {
         "date": {
-            "start": "",
-            "end": "2023-12-01"
+            "start": "2021-12-01",
+            "end": ""
         },
         "name": "Office365 Domains Connector",
         "made_at": "PI Marketing",
@@ -1099,6 +1099,30 @@
     {
         "date": {
             "start": "",
+            "end": "2024-01-01"
+        },
+        "name": "Cloud Master Platform",
+        "made_at": "PI Marketing",
+        "stack": [
+            "Laravel",
+            "Inertia",
+            "Docker",
+            "Nginx",
+            "Redis",
+            "MySQL",
+            "React",
+            "Redux",
+            "Tailwindcss",
+            "Swagger",
+            "LaRecipe docs"
+        ],
+        "links": {},
+        "contribution_level": "scratch",
+        "tasks": []
+    },
+    {
+        "date": {
+            "start": "",
             "end": "2025-11-01"
         },
         "name": "New Send System - Front End",
@@ -1137,30 +1161,6 @@
         "tasks": [
             "Developed the new affiliate offer management system"
         ]
-    },
-    {
-        "date": {
-            "start": "",
-            "end": "2025-11-01"
-        },
-        "name": "Cloud Master Platform",
-        "made_at": "PI Marketing",
-        "stack": [
-            "Laravel",
-            "Inertia",
-            "Docker",
-            "Nginx",
-            "Redis",
-            "MySQL",
-            "React",
-            "Redux",
-            "Tailwindcss",
-            "Swagger",
-            "LaRecipe docs"
-        ],
-        "links": {},
-        "contribution_level": "scratch",
-        "tasks": []
     },
     {
         "date": {
