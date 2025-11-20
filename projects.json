@@ -535,8 +535,8 @@
     },
     {
         "date": {
-            "start": "",
-            "end": "2022-06-01"
+            "start": "2022-06-01",
+            "end": ""
         },
         "name": "ESP Emails Filter Tool",
         "made_at": "PI Marketing",
