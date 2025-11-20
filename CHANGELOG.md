@@ -1,5 +1,8 @@
 # Change Log
 
+## v1.5.2 (2025-11-20)
+- No description provided.
+
 ## v1.5.0 (2025-11-09)
 - Integrate Google Analytics.
 
