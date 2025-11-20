@@ -64,7 +64,7 @@
     "featured-projects.notice.button": "archive",
     "projects-archive.back-button": "retour",
     "projects-archive.headline": "archive des projets",
-    "projects-archive.table.columns.date": "date de réalisation",
+    "projects-archive.table.columns.date": "période",
     "projects-archive.table.columns.name": "nom",
     "projects-archive.table.columns.made-at": "réalisé à",
     "projects-archive.table.columns.contribution-level": "niveau de contribution",

@@ -64,7 +64,7 @@
     "featured-projects.notice.button": "archive",
     "projects-archive.back-button": "back",
     "projects-archive.headline": "projects archive",
-    "projects-archive.table.columns.date": "release date",
+    "projects-archive.table.columns.date": "Timeline",
     "projects-archive.table.columns.name": "name",
     "projects-archive.table.columns.made-at": "made at",
     "projects-archive.table.columns.contribution-level": "contribution level",

@@ -66,10 +66,47 @@
                                 <tr
                                     class="border-b border-brown-50 last:border-none hover:bg-yellow-100/60 dark:border-brown-900 dark:hover:bg-yellow-900/20">
                                     <td class="pr-6 py-4">
-                                        <div class="flex items-center gap-2">
+                                        <div class="flex flex-col leading-tight lg:whitespace-nowrap">
+                                            @if ($project->getStartDateHuman() && !$project->getEndDateHuman())
+                                                <span class="font-medium">
+                                                    {{ $project->getStartDateHuman() }}
+                                                </span>
+                                                <span class="text-xs">Start</span>
+                                            @endif
+
+                                            @if ($project->getEndDateHuman() && !$project->getStartDateHuman())
+                                                <span class="font-medium">
+                                                    {{ $project->getEndDateHuman() }}
+                                                </span>
+                                                <span class="text-xs">End</span>
+                                            @endif
+
+                                            @if ($project->getStartDateHuman() && $project->getEndDateHuman())
+                                                <div class="flex items-center gap-1">
+                                                    <span class="font-medium">
+                                                        {{ $project->getStartDateHuman() }}
+                                                    </span>
+
+                                                    <svg class="w-3 h-3 fill-yellow-800 dark:fill-yellow-200"
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                        <path
+                                                            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                    </svg>
+
+
+                                                    <span class="font-medium">
+                                                        {{ $project->getEndDateHuman() }}
+                                                    </span>
+                                                </div>
+                                            @endif
+
+                                        </div>
+
+
+                                        {{-- <div class="flex items-center gap-2">
                                             @if ($project->getStartDateHuman())
-                                                <span
-                                                    class="lg:whitespace-nowrap">{{ $project->getStartDateHuman() }}</span>
+                                                <span class="lg:whitespace-nowrap">Start:
+                                                    {{ $project->getStartDateHuman() }}</span>
                                             @endif
                                             @if ($project->getStartDateHuman() && $project->getEndDateHuman())
                                                 <svg class="w-4 h-4 fill-yellow-800 dark:fill-yellow-200"
@@ -78,8 +115,12 @@
                                                         d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
                                                 </svg>
                                             @endif
-                                            <span class="lg:whitespace-nowrap">{{ $project->getEndDateHuman() }} </span>
-                                        </div>
+                                            @if ($project->getEndDateHuman())
+                                                <span class="lg:whitespace-nowrap">End:
+                                                    {{ $project->getEndDateHuman() }}
+                                                </span>
+                                            @endif
+                                        </div> --}}
                                     </td>
                                     <td class="pr-6 py-4">
                                         <x-contribution-level-badge level="{{ $project->getContributionLevel() }}"
