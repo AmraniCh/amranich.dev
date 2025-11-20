@@ -35,8 +35,8 @@
     },
     {
         "date": {
-            "start": "2022-12-01",
-            "end": ""
+            "start": "",
+            "end": "2025-05-01"
         },
         "name": "PMTA Monitoring Platform",
         "made_at": "PI Marketing",
@@ -516,7 +516,7 @@
     {
         "date": {
             "start": "",
-            "end": "2022-08-01"
+            "end": "2022-11-01"
         },
         "name": "IBM VPS Manager",
         "made_at": "PI Marketing",
@@ -535,8 +535,8 @@
     },
     {
         "date": {
-            "start": "2022-06-01",
-            "end": ""
+            "start": "",
+            "end": "2022-10-01"
         },
         "name": "ESP Emails Filter Tool",
         "made_at": "PI Marketing",
@@ -1099,30 +1099,6 @@
     {
         "date": {
             "start": "",
-            "end": "2024-01-01"
-        },
-        "name": "Cloud Master Platform",
-        "made_at": "PI Marketing",
-        "stack": [
-            "Laravel",
-            "Inertia",
-            "Docker",
-            "Nginx",
-            "Redis",
-            "MySQL",
-            "React",
-            "Redux",
-            "Tailwindcss",
-            "Swagger",
-            "LaRecipe docs"
-        ],
-        "links": {},
-        "contribution_level": "scratch",
-        "tasks": []
-    },
-    {
-        "date": {
-            "start": "",
             "end": "2025-11-01"
         },
         "name": "New Send System - Front End",
@@ -1161,6 +1137,30 @@
         "tasks": [
             "Developed the new affiliate offer management system"
         ]
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2025-11-01"
+        },
+        "name": "Cloud Master Platform",
+        "made_at": "PI Marketing",
+        "stack": [
+            "Laravel",
+            "Inertia",
+            "Docker",
+            "Nginx",
+            "Redis",
+            "MySQL",
+            "React",
+            "Redux",
+            "Tailwindcss",
+            "Swagger",
+            "LaRecipe docs"
+        ],
+        "links": {},
+        "contribution_level": "scratch",
+        "tasks": []
     },
     {
         "date": {
@@ -1246,8 +1246,8 @@
     },
     {
         "date": {
-            "start": "2025-04-01",
-            "end": ""
+            "start": "",
+            "end": "2025-04-01"
         },
         "name": "Newsletters Subscriber App",
         "description": "Automates Newsletters Subscription for 13+ Newsletters.",
