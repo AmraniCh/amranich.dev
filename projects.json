@@ -775,22 +775,23 @@
         "made_at": "University",
         "stack": [
             "PHP",
-            "Apache",
             "MVC",
             "PHPUnit",
-            "FTP",
+            "FTP/FTPS",
             "RFC959",
+            "Apache",
             "SASS",
             "JavaScript",
             "Rollup",
             "Gulp",
             "PostCss",
             "ES5",
-            "Pollyfills"
+            "Pollyfills",
+            "Figma"
         ],
         "links": {
             "github": "https://github.com/lazzard/ftp-filemanager",
-            "behance": "https://www.behance.net/gallery/104400253/FTP-Client-web-application"
+            "behance": "https://www.behance.net/gallery/104400253/Web-Based-FTP-Client-App"
         },
         "contribution_level": "scratch",
         "tasks": []
