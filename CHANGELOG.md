@@ -1,5 +1,9 @@
 # Change Log
 
+## v1.6.0 (2025-12-03)
+- Added TopDesignKing & designnominees ribbons to the main layout.
+- Updated project archive.
+
 ## v1.5.2 (2025-11-20)
 - Mainly updating the projects archive.
 
