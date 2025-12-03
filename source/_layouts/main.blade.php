@@ -136,7 +136,7 @@
         target="_blank">Design Nominees</a>
 
     <div id="TopDesignKing" style="position: fixed; z-index: 999;bottom:20px; left:20px;">
-        <a href="https://www.topdesignking.com/" target="_blank">
+        <a href="https://topdesignking.com/website/3286/amranich-portfolio" target="_blank">
             <img src="https://topdesignking.com/public/images/ribbon-neon.png" alt="TopDesignKing" />
         </a>
     </div>
