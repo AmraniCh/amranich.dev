@@ -131,6 +131,10 @@
 
     <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
 
+    <a href="https://www.designnominees.com/sites/shakir-el-amrani-portfolio" title="Design Nominees"
+        style="width:70px;height:132px;position:fixed;top:100px;left:0px;z-index:99999;text-indent:-9999px;background: url(http://www.designnominees.com/ribbons/designnominees-ribbon-white-left.png) no-repeat;"
+        target="_blank">Design Nominees</a>
+
     @stack('scripts')
 </body>
 
