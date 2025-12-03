@@ -135,6 +135,12 @@
         style="width:70px;height:132px;position:fixed;top:100px;left:0px;z-index:99999;text-indent:-9999px;background: url(http://www.designnominees.com/ribbons/designnominees-ribbon-white-left.png) no-repeat;"
         target="_blank">Design Nominees</a>
 
+    <div id="TopDesignKing" style="position: fixed; z-index: 999;bottom:20px; left:20px;">
+        <a href="https://www.topdesignking.com/" target="_blank">
+            <img src="https://topdesignking.com/public/images/ribbon-neon.png" alt="TopDesignKing" />
+        </a>
+    </div>
+
     @stack('scripts')
 </body>
 
