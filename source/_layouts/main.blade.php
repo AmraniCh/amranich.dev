@@ -119,6 +119,7 @@
         gtag('config', 'G-7FX66RZWQZ');
     </script>
 
+
 </head>
 
 <body class="bg-yellow-50 text-yellow-800 overflow-hidden dark:bg-dark dark:text-yellow-200">
@@ -132,14 +133,17 @@
     <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
 
     <a href="https://www.designnominees.com/sites/shakir-el-amrani-portfolio" title="Design Nominees"
-        style="width:70px;height:132px;position:fixed;top:100px;left:0px;z-index:99999;text-indent:-9999px;background: url(http://www.designnominees.com/ribbons/designnominees-ribbon-white-left.png) no-repeat;"
-        target="_blank">Design Nominees</a>
+        style="width:70px;height:132px;position:fixed;top:100px;left:0px;z-index:99999;text-indent:-9999px;background: url(http://www.designnominees.com/ribbons/designnominees-ribbon-sotd-black-left.png) no-repeat;"
+        target="_blank">
+        Design Nominees
+    </a>
 
     <div id="TopDesignKing" style="position: fixed; z-index: 999;bottom:20px; left:20px;">
         <a href="https://topdesignking.com/website/3286/amranich-portfolio" target="_blank">
             <img src="https://topdesignking.com/public/images/ribbon-neon.png" alt="TopDesignKing" />
         </a>
     </div>
+
 
     @stack('scripts')
 </body>
