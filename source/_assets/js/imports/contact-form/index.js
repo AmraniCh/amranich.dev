@@ -2,7 +2,8 @@ import initAlert from "./alert";
 
 export default function () {
     const form = document.getElementById('contactMeForm');
-    const submitBtn = form.querySelector('.primary-btn');
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const resetBtn = form.querySelector('button[type="reset"]');
     const alert = initAlert(form);
 
     function toggleLoading(loading) {
@@ -14,7 +15,6 @@ export default function () {
         e.preventDefault();
 
         alert.clear();
-
         toggleLoading(true);
 
         grecaptcha.ready(function () {
@@ -40,14 +40,18 @@ export default function () {
                     toggleLoading(false);
                     throw err;
                 });
-                const json = await res.json();
-                const message = json.message;
 
                 toggleLoading(false);
 
+                const json = await res.json();
+                const message = json.message;
+                const isSuccess = json.status === 'success';
+
+                isSuccess && resetBtn.click();
+
                 alert({
                     message,
-                    type: json.status === 'success' ? alert.SUCCESS_TYPE : alert.ERROR_TYPE
+                    type: isSuccess ? alert.SUCCESS_TYPE : alert.ERROR_TYPE
                 });
             });
         });

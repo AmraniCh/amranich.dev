@@ -72,6 +72,7 @@
                 </svg>
             </x-buttons.primary>
 
+            <button type='reset' name='reset' class="hidden">
         </form>
 
     </div>
