@@ -1,5 +1,10 @@
 # Change Log
 
+## v1.6.1 (2025-12-12)
+- Added Enhancements for contact form (Added transition for ring focus).
+- Updated designnominees ribbon title to 'Site of the Day'.
+- Updated TopDesignKing ribbon link to my personal portfolio page.
+
 ## v1.6.0 (2025-12-03)
 - Added TopDesignKing & designnominees ribbons to the main layout.
 - Updated project archive.
