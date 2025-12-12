@@ -1,7 +1,7 @@
 # Change Log
 
 ## v1.6.1 (2025-12-12)
-- Added Enhancements for contact form (Added transition for ring focus).
+- Added Enhancements for contact form (Added transition for ring focus - Reset form on success).
 - Updated designnominees ribbon title to 'Site of the Day'.
 - Updated TopDesignKing ribbon link to my personal portfolio page.
 
