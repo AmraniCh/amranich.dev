@@ -14,9 +14,9 @@ html {
 	@apply font-mono font-medium -tracking-wider
 }
 
+/* TODO create a separate class for this like script-font class */
 #hero-section-footer-social-links .link {
 	font-family: 'Roboto Mono';
-	@apply !font-normal
 }
 
 .script-font {
