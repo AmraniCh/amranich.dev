@@ -63,7 +63,8 @@
 
             <div class="alerts flex flex-col gap-3 hidden"></div>
 
-            <x-buttons.primary submit="" text="{!! $page->trans('contact-me.form.submit') !!}">
+            <x-buttons.primary submit="" class="disabled:opacity-80 disabled:cursor-not-allowed"
+                text="{!! $page->trans('contact-me.form.submit') !!}">
                 <svg class="w-4 h-4 fill-white group-hover:scale-105 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform dark:fill-yellow-900"
                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                     <path

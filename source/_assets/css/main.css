@@ -52,7 +52,7 @@ html {
 
 /* control class (for input/textarea..) */
 .control {
-	@apply border border-yellow-800 p-3 bg-white rounded-md text-lg font-semibold focus:ring-4 focus:ring-brown-500 !outline-none focus:border-transparent dark:bg-brown-900 dark:border-transparent dark:focus:border-transparent dark:focus:ring-yellow-200 dark:focus:bg-transparent
+	@apply border border-yellow-800 p-3 bg-white rounded-md text-lg font-semibold transition-all !outline-none focus:ring-4 focus:ring-yellow-500 focus:border-transparent dark:bg-brown-900 dark:border-transparent dark:focus:border-transparent dark:focus:ring-yellow-200 dark:focus:bg-transparent
 }
 
 .control::placeholder {
