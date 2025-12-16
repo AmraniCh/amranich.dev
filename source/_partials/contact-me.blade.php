@@ -50,7 +50,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{ $page->links->stackoverflow }}" target="_blank">
+                        <a href="{{ $page->links->twitter }}" target="_blank">
 
                             <svg class="group w-8 h-8 hover:scale-110" viewBox="0 0 26 26"
                                 xmlns="http://www.w3.org/2000/svg">
