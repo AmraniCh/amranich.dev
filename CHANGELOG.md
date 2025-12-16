@@ -1,5 +1,11 @@
 # Change Log
 
+## v1.6.2 (2025-12-16)
+- Added Stackoverflow and twitter X links to contact form section.
+- Enhanced style of the hero section social vertical links (Hover color in dark mode, font weight on hover).
+- Updated designnominees ribbon color to white.
+- Updated TopDesignKing ribbon to a white 'The King of the Day' ribbon.
+
 ## v1.6.1 (2025-12-12)
 - Added Enhancements for contact form (Added transition for ring focus - Reset form on success).
 - Updated designnominees ribbon title to 'Site of the Day'.
