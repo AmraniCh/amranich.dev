@@ -22,9 +22,10 @@ return [
     'changeLogUrl' => 'https://github.com/AmraniCh/amranich.dev/blob/master/CHANGELOG.md',
 
     'links' => [
-        'github'   => 'https://github.com/amranich',
-        'behance'  => 'https://www.behance.net/amranich',
-        'linkedin' => 'https://www.linkedin.com/in/amranich',
+        'github'        => 'https://github.com/amranich',
+        'behance'       => 'https://www.behance.net/amranich',
+        'linkedin'      => 'https://www.linkedin.com/in/amranich',
+        'stackoverflow' => 'https://stackoverflow.com/u/12919545'
     ],
 
     // helpers
