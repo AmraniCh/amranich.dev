@@ -20,15 +20,23 @@
         @endif
     </ul>
 
-    <p class="text-center mt-1">
-        <svg class="w-6 h-6 inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+    <div class="relative left-1/2 -translate-x-1/2 inline-block mt-0.5 group">
+        <svg class="w-6 h-6 inline-block cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
             <rect x="1" y="4" width="30" height="24" rx="4" ry="4" fill="#b33431"></rect>
-            <path
-                d="M27,4H5c-2.209,0-4,1.791-4,4V24c0,2.209,1.791,4,4,4H27c2.209,0,4-1.791,4-4V8c0-2.209-1.791-4-4-4Zm3,20c0,1.654-1.346,3-3,3H5c-1.654,0-3-1.346-3-3V8c0-1.654,1.346-3,3-3H27c1.654,0,3,1.346,3,3V24Z"
+            <path d="M27,4H5c-2.209,0-4,1.791-4,4V24c0,2.209,1.791,4,4,4H27c2.209,0,4-1.791,4-4V8c0-2.209-1.791-4-4-4Z"
                 opacity=".15"></path>
             <path
-                d="M20.224,21.868l-4.224-3.069-4.224,3.069,1.613-4.965-4.224-3.069h5.221l1.613-4.966,1.613,4.966h5.221l-4.224,3.069,1.613,4.965Zm-3.456-3.626l1.74,1.264-.665-2.045-1.075,.781Zm-2.611-.781l-.665,2.045,1.74-1.264-1.075-.781Zm.293-.902l1.55,1.126,1.55-1.126-.592-1.822h-1.916l-.592,1.822Zm3.456-1.822l.411,1.264,1.74-1.264h-2.151Zm-5.964,0l1.74,1.264,.411-1.264h-2.151Zm3.393-.902h1.329l-.665-2.046-.665,2.046Z"
+                d="M20.224,21.868l-4.224-3.069-4.224,3.069 1.613-4.965-4.224-3.069h5.221l1.613-4.966 1.613,4.966h5.221l-4.224,3.069 1.613,4.965Z"
                 fill="#286038"></path>
         </svg>
-    </p>
+
+        <div
+            class="absolute bottom-full left-1/2 mb-2 -translate-x-1/2
+                whitespace-nowrap rounded-md bg-black px-2 py-1 text-xs
+                text-white opacity-0 shadow-lg transition-opacity
+                group-hover:opacity-100">
+            اَلْمَغْرِبُ أَوَّلًا وَأَخِيرًا وَلَا غَالِبَ إِلَّا اللهُ
+        </div>
+    </div>
+
 </div>
