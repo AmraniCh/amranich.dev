@@ -7,21 +7,21 @@
             company="{{ $page->trans('career.4-position.company') }}"
             duration="{{ $page->trans('career.4-position.duration') }}"
             location="{{ $page->trans('career.4-position.location') }}"
-            logo="{{ $page->trans('career.4-position.location') }}" logoUrl="/assets/images/pi-marketing.jpg"
+            logo="{{ $page->trans('career.4-position.location') }}" logoUrl="/assets/images/company-placeholder.svg"
             logoAlt="{{ $page->trans('career.4-position.company') }}" />
 
         <x-career-card style="animation-delay: .3s" title="{{ $page->trans('career.3-position.title') }}"
             company="{{ $page->trans('career.3-position.company') }}"
             duration="{{ $page->trans('career.3-position.duration') }}"
             location="{{ $page->trans('career.3-position.location') }}"
-            logo="{{ $page->trans('career.3-position.location') }}" logoUrl="/assets/images/pi-marketing.jpg"
+            logo="{{ $page->trans('career.3-position.location') }}" logoUrl="/assets/images/company-placeholder.svg"
             logoAlt="{{ $page->trans('career.3-position.company') }}" />
 
         <x-career-card style="animation-delay: .4s" title="{{ $page->trans('career.2-position.title') }}"
             company="{{ $page->trans('career.2-position.company') }}"
             duration="{{ $page->trans('career.2-position.duration') }}"
             location="{{ $page->trans('career.2-position.location') }}"
-            logo="{{ $page->trans('career.2-position.location') }}" logoUrl="/assets/images/pi-marketing.jpg"
+            logo="{{ $page->trans('career.2-position.location') }}" logoUrl="/assets/images/company-placeholder.svg"
             logoAlt="{{ $page->trans('career.2-position.company') }}" />
 
         <x-career-card style="animation-delay: .5s" title="{{ $page->trans('career.1-position.title') }}"
