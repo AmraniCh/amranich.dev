@@ -20,15 +20,10 @@
 - **Live Website**: [amranich.dev](https://amranich.dev)
 - **Design on Behance**: [View Design](https://www.behance.net/gallery/238174557/Personal-Portfolio-Website-V1-amranichdev)
 
-## 🏆 Awards & Recognition
+## Awards & Recognition
 
-
-| Award                  | Organization                                                                           | Date              |
-| ---------------------- | -------------------------------------------------------------------------------------- | ----------------- |
-| **King of the Day**    | [Top Design King](https://topdesignking.com/website/3286/amranich-portfolio)           | December 16, 2025 |
-| **Site of the Day**    | [Design Nominees](https://www.designnominees.com/sites/shakir-el-amrani-portfolio)     | December 4, 2025  |
-| **Website of the Day** | [CSS Nectar](https://cssnectar.com/css-gallery-inspiration/shakir-el-amrani-portfolio) | December 2, 2025  |
-
+- **Website of the Day** — [CSS Nectar](https://cssnectar.com/css-gallery-inspiration/shakir-el-amrani-portfolio)  
+  *December 2, 2025*
 
 ## ⚡ Features
 
@@ -137,4 +132,5 @@ If you’re interested in building a similar website or need assistance, feel fr
 
 <div align="center">
   Made with 💛 by <a href="https://github.com/AmraniCh">AmraniCh</a>
+
 </div>
