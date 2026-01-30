@@ -1,5 +1,12 @@
 # Change Log
 
+## v1.6.3 (2026-01-30)
+- Adjusted form control styles for improved UX.
+- Hide reCAPTCHA badge and added reCAPTCHA notice with Privacy Policy and Terms of Service links.
+- Added circular border to the Top Design King ribbon.
+- Hide Design Nominees ribbon and limited Top Design King ribbon to large screens only.
+
+
 ## v1.6.2 (2025-12-16)
 - Added Stackoverflow and twitter X links to contact form section.
 - Enhanced style of the hero section social vertical links (Hover color in dark mode, font weight on hover).
