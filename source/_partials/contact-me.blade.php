@@ -98,6 +98,21 @@
                 </svg>
             </x-buttons.primary>
 
+            <p class="mt-2 text-xs text-brown-700 opacity-70 text-center lg:text-left dark:text-yellow-200">
+                This site is protected by reCAPTCHA and the Google
+                <a href="https://policies.google.com/privacy" target="_blank"
+                    class="underline underline-offset-2 hover:text-yellow-900 dark:hover:text-yellow-300">
+                    Privacy Policy
+                </a>
+                and
+                <a href="https://policies.google.com/terms" target="_blank"
+                    class="underline underline-offset-2 hover:text-yellow-900 dark:hover:text-yellow-300">
+                    Terms of Service
+                </a>
+                apply.
+            </p>
+
+
             <button type='reset' name='reset' class="hidden">
         </form>
 
