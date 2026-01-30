@@ -14,6 +14,11 @@
             <div class="flex flex-wrap gap-x-2 text-xs mt-1">
                 <span>{!! $duration !!}</span>
 
+                @if (!empty($durationShort))
+                    <span class="opacity-70">
+                        ({!! $durationShort !!})
+                    </span>
+                @endif
             </div>
 
             <span class="text-xs"> {!! $location !!}</span>
