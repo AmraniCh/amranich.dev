@@ -7,7 +7,7 @@
 
         <!-- Content -->
         <div class="flex-1 min-w-0">
-            <h3 class="script-font text-base text-yellow lg:text-lg leading-tight capitalize">
+            <h3 class="script-font text-base text-yellow lg:text-lg leading-tight">
                 {!! $title !!}
             </h3>
             <p class="text-sm mt-0.5 truncate">{!! $company !!}</p>
