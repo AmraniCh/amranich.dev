@@ -35,12 +35,12 @@
             logo="{{ $page->trans('career.1-position.location') }}" logoUrl="/assets/images/map-concepts.jpg"
             logoAlt="{{ $page->trans('career.1-position.company') }}" />
 
-        <x-career-card style="animation-delay: .6s" title="{{ $page->trans('career.last-education.title') }}"
-            company="{{ $page->trans('career.last-education.institute') }}"
-            duration="{{ $page->trans('career.last-education.duration') }}"
-            location="{{ $page->trans('career.last-education.location') }}"
-            logo="{{ $page->trans('career.last-education.location') }}" logoUrl="/assets/images/university-logo.jpg"
-            logoAlt="{{ $page->trans('career.last-education.institute') }}" />
+        <x-career-card style="animation-delay: .6s" title="{{ $page->trans('career.1-education.title') }}"
+            company="{{ $page->trans('career.1-education.institute') }}"
+            duration="{{ $page->trans('career.1-education.duration') }}"
+            location="{{ $page->trans('career.1-education.location') }}"
+            logo="{{ $page->trans('career.1-education.location') }}" logoUrl="/assets/images/university-logo.jpg"
+            logoAlt="{{ $page->trans('career.1-education.institute') }}" />
     </div>
 
     <x-anchor class="view-more-link opacity-0" link="{{ $page->links->linkedin }}"
