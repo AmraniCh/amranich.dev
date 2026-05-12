@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: 🚚 Get latest code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: 🐘 Setup PHP
         uses: shivammathur/setup-php@v2
@@ -28,12 +28,12 @@ jobs:
         run: composer -V
 
       - name: 📦 Install dependencies for PHP
-        run: composer update --prefer-dist --no-progress
+        run: composer install --prefer-dist --no-progress
 
       - name: ⭐ Setup NodeJs
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
-          node-version: '14'
+          node-version: '20'
       - run: npm install
 
       - name: ⚙️ Run production
