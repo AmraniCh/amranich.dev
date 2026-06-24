@@ -78,9 +78,11 @@
                 </ul>
             </div>
         </div>
+        
 
         <form id="contactMeForm" action="/backend/send_email.php" method="POST" class="flex flex-col gap-4 lg:flex-1">
 
+            
             <input type="text" name="fullname" class="control" placeholder="{!! $page->trans('contact-me.form.fullname.placeholder') !!}" required>
 
             <input type="email" name="email" class="control" placeholder="{!! $page->trans('contact-me.form.email.placeholder') !!}" required>
@@ -113,7 +115,15 @@
             </p>
 
 
+            <div class="w-full p-2 text-sm text-center border rounded-lg 
+                    bg-yellow-100 text-yellow-900 border-yellow-300
+                    dark:bg-yellow-900/20 dark:text-yellow-200 dark:border-yellow-700">
+            ⚠️ The contact form is currently unavailable. Please use email instead:
+            <strong>contact@amranich.dev</strong>
+        </div>
+
             <button type='reset' name='reset' class="hidden">
+                
         </form>
 
     </div>
