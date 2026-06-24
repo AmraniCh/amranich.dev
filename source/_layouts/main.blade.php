@@ -132,12 +132,6 @@
 
     <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
 
-    {{-- <a href="https://www.designnominees.com/sites/shakir-el-amrani-portfolio" title="Design Nominees"
-        style="width:70px;height:132px;position:fixed;top:100px;left:0px;z-index:99999;text-indent:-9999px;background: url(http://www.designnominees.com/ribbons/designnominees-ribbon-sotd-white-left.png) no-repeat;"
-        target="_blank">
-        Design Nominees
-    </a> --}}
-
     <div id="TopDesignKing" class="hidden lg:block fixed bottom-5 left-5 z-[999]">
         <a href="https://topdesignking.com/website/3286/amranich-portfolio" target="_blank" rel="noopener noreferrer"
             class="flex items-center justify-center w-24 h-24 rounded-full border border-brown-700/40
@@ -146,8 +140,6 @@
                 class="w-20" />
         </a>
     </div>
-
-
 
     @stack('scripts')
 </body>
