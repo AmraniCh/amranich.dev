@@ -10,24 +10,24 @@
 }
 
 
-/* Chrome, Edge, Safari ... */
+/* Chrome, Edge, Safari */
 
 ::-webkit-scrollbar {
     @apply w-2;
 }
 
 ::-webkit-scrollbar-thumb {
-    @apply bg-yellow-800;
+    @apply bg-yellow-800 rounded-full;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    @apply bg-yellow-800/90
+    @apply bg-yellow-800/90;
 }
 
 html.dark ::-webkit-scrollbar-thumb {
-    @apply bg-yellow-200;
+    @apply bg-yellow-200 rounded-full;
 }
 
 html.dark ::-webkit-scrollbar-thumb:hover {
-    @apply bg-yellow-300
+    @apply bg-yellow-300;
 }
