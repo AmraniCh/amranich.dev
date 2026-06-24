@@ -26,7 +26,7 @@ return [
         'behance'       => 'https://www.behance.net/amranich',
         'linkedin'      => 'https://www.linkedin.com/in/amranich',
         'stackoverflow' => 'https://stackoverflow.com/u/12919545',
-        'twitter'       => 'https://x.com/amranich'
+        // 'twitter'       => 'https://x.com/amranich'
     ],
 
     // helpers
