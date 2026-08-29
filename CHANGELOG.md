@@ -13,6 +13,12 @@
 - Made scrollbar thumbs rounded and removed design nominees badge code.
 - Updated career position titles, company names, and university logo.
 
+## v1.7.1 (2026-08-29)
+- Removed "what I care about" section.
+- Replaced resume download button with "request resume" linking to contact section.
+- Reduced TopDesignKing badge size.
+- Cleaned up README formatting and converted links and awards to badges.
+
 ## v1.6.3 (2026-01-30)
 - Adjusted form control styles for improved UX.
 - Hide reCAPTCHA badge and added reCAPTCHA notice with Privacy Policy and Terms of Service links.
