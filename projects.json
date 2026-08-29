@@ -1282,6 +1282,7 @@
             "UDP",
             "librosa",
             "PESQ",
+            "Jupyter",
             "Raspberry Pi 4",
             "Deep Learning"
         ],
@@ -1306,7 +1307,8 @@
             "Altair"
         ],
         "links": {
-            "github": "https://github.com/AmraniCh/spotify-listening-analytics-mongodb"
+            "github": "https://github.com/AmraniCh/spotify-listening-analytics-mongodb",
+            "link": "https://spotify-listening-analytics-app.streamlit.app/"
         },
         "contribution_level": "scratch",
         "tasks": []
