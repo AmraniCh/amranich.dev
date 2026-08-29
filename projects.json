@@ -140,66 +140,6 @@
     {
         "date": {
             "start": "",
-            "end": "2023-03-01"
-        },
-        "name": "Al Raed Consultant Medical Center",
-        "made_at": "Freelance",
-        "stack": [
-            "HTML",
-            "CSS",
-            "jQuery",
-            "Swiper"
-        ],
-        "links": {
-            "link": "https://www.alraed.med.sa"
-        },
-        "contribution_level": "low edit",
-        "tasks": []
-    },
-    {
-        "date": {
-            "start": "",
-            "end": "2023-05-01"
-        },
-        "name": "قلوبال لرعاية العين Website",
-        "made_at": "Freelance",
-        "stack": [
-            "HTML",
-            "CSS"
-        ],
-        "links": {
-            "link": "https://gec.med.sa"
-        },
-        "contribution_level": "",
-        "tasks": [
-            "Converting website layout to RTL."
-        ]
-    },
-    {
-        "date": {
-            "start": "",
-            "end": "2023-07-01"
-        },
-        "name": "تشير Chair Website",
-        "made_at": "Freelance",
-        "stack": [
-            "HTML",
-            "CSS",
-            "Bootstrap",
-            "Swiper"
-        ],
-        "links": {
-            "link": "https://chair.sa",
-            "instagram": "https://www.instagram.com/chairksa"
-        },
-        "contribution_level": "",
-        "tasks": [
-            "Optimize website load time by minifying JS files and optimizing images sizes."
-        ]
-    },
-    {
-        "date": {
-            "start": "",
             "end": "2021-07-01"
         },
         "name": "Foodbuzz Agency Showcase",
