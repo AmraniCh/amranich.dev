@@ -15,7 +15,7 @@
     "about.heading": "a little about me",
     "about.content.1": "Software Developer based in Morocco, with over 4 years of experience and 1+ year of technical leadership. Experienced in both frontend and backend engineering, with hands-on management of large-scale bare-metal infrastructure and databases. Currently pursuing a Master's in Computer Science and Telecommunications at Mohammed V University in Rabat.",
     "about.content.2": "My recent work applies machine learning to anomaly detection and evaluates neural audio codec performance on embedded hardware. I also enjoy learning about new technologies, exploring different programming languages, and expanding my knowledge in networking, cloud computing, and telecommunications.",
-    "about.content.3": "Beyond my work, I'm passionate about open source software. I've contributed to projects like filp/whoops (previously used in Laravel), and created several libraries — one with over 200K downloads. I was also selected as an LFX Mentee at The Linux Foundation, contributing to the Magma Core project.",
+    "about.content.3": "Beyond my work, I'm passionate about open source software. I've contributed to projects like filp/whoops (previously used in Laravel), and created several libraries, one with over 200K downloads. I was also selected as an LFX Mentee at The Linux Foundation, contributing to the Magma Core project.",
     "care-about.heading": "what I care about",
     "care-about.1.title": "performance",
     "care-about.1.desc": "Optimizing performance is essential, and prioritizing strategies to enhance efficiency should be a key focus during software development.",
