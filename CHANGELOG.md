@@ -1,5 +1,18 @@
 # Change Log
 
+## v1.7.0 (2026-08-29)
+- Updated hero and about me sections to reflect current profile.
+- Added LFX Mentee role and fixed Headstarter dates in career section.
+- Separated education cards into their own side-by-side row below work experience.
+- Excluded education cards from career timeline connectors.
+- Added NeuralCodec-RPi and FTPGuard as featured projects, removed old projects.
+- Updated projects archive with 4 new projects (FTPGuard, NeuralCodec-RPi, Spotify Analytics, Qasir).
+- Removed 3 low-value freelance entries from projects archive.
+- Updated site meta description.
+- Commented out twitter link and added unavailable form alert with email info.
+- Made scrollbar thumbs rounded and removed design nominees badge code.
+- Updated career position titles, company names, and university logo.
+
 ## v1.6.3 (2026-01-30)
 - Adjusted form control styles for improved UX.
 - Hide reCAPTCHA badge and added reCAPTCHA notice with Privacy Policy and Terms of Service links.
