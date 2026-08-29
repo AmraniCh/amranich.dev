@@ -5,7 +5,6 @@
 
         @include('_partials.hero')
         @include('_partials.about-me')
-        @include('_partials.care-about')
         @include('_partials.career')
         @include('_partials.featured-projects')
         @include('_partials.open-source')
