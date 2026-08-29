@@ -1262,7 +1262,8 @@
             "Docker"
         ],
         "links": {
-            "github": "https://github.com/AmraniCh/ftp-ids-ml"
+            "github": "https://github.com/AmraniCh/ftp-ids-ml",
+            "presentation": "https://docs.google.com/presentation/d/1dzeuGmleFqmDxFh8jwYWeoPqGfiyU1ZX/edit?usp=sharing&ouid=107858341399528336890&rtpof=true&sd=true"
         },
         "contribution_level": "scratch",
         "tasks": []
@@ -1289,7 +1290,8 @@
             "Deep Learning"
         ],
         "links": {
-            "github": "https://github.com/AmraniCh/neuralcodec-rpi"
+            "github": "https://github.com/AmraniCh/neuralcodec-rpi",
+            "presentation": "https://docs.google.com/presentation/d/1hQYhwkQ50h8B6FzDyU0gc3K56KJAA9j0/edit?usp=sharing&ouid=107858341399528336890&rtpof=true&sd=true"
         },
         "contribution_level": "scratch",
         "tasks": []
