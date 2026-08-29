@@ -4,7 +4,7 @@
 
     <div class="flex flex-col gap-10 lg:gap-16 xl:gap-24">
 
-        <x-project-card highlight="{{ false }}" snapshot="neuralcodec-rpi-snapshot.jpg"
+        <x-project-card highlight="{{ false }}" snapshot="neuralcodec-rpi-snapshot.png"
             snapshotAlt="NeuralCodec-RPi project snapshot" date="{!! $page->trans('featured-projects.fourth-project.date') !!}"
             title="{!! $page->trans('featured-projects.card-title') !!}" projectTitle="{!! $page->trans('featured-projects.fourth-project.title') !!}" projectDesc="{!! $page->trans('featured-projects.fourth-project.desc') !!}"
             sourceLink="https://github.com/AmraniCh/neuralcodec-rpi"
@@ -13,8 +13,14 @@
             <x-slot:stack>
                 <x-badge text="Python" />
                 <x-badge text="Bazel" />
-                <x-badge text="SoundStream/Lyra" />
+                <x-badge text="Lyra/SoundStream" />
+                <x-badge text="EnCodec" />
                 <x-badge text="UDP" />
+                <x-badge text="librosa" />
+                <x-badge text="PESQ" />
+                <x-badge text="NumPy" />
+                <x-badge text="Matplotlib" />
+                <x-badge text="Jupyter" />
                 <x-badge text="Raspberry Pi 4" />
                 <x-badge text="Deep Learning" />
             </x-slot>
