@@ -1302,5 +1302,96 @@
             "Implemented a custom caching system and file based logging",
             "Handled error reporting and response delivery without external frameworks"
         ]
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2026-06-01"
+        },
+        "name": "FTPGuard",
+        "made_at": "University",
+        "stack": [
+            "Python",
+            "Machine Learning",
+            "Isolation Forest",
+            "scikit-learn",
+            "Jupyter",
+            "Flask",
+            "Chart.js",
+            "Tailwind CSS",
+            "Docker"
+        ],
+        "links": {
+            "github": "https://github.com/AmraniCh/ftp-ids-ml"
+        },
+        "contribution_level": "scratch",
+        "tasks": []
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2026-07-01"
+        },
+        "name": "NeuralCodec-RPi",
+        "made_at": "University",
+        "stack": [
+            "Python",
+            "Bazel",
+            "Lyra/SoundStream",
+            "EnCodec",
+            "UDP",
+            "librosa",
+            "PESQ",
+            "Raspberry Pi 4",
+            "Deep Learning"
+        ],
+        "links": {
+            "github": "https://github.com/AmraniCh/neuralcodec-rpi"
+        },
+        "contribution_level": "scratch",
+        "tasks": []
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2026-07-01"
+        },
+        "name": "Spotify Listening Analytics",
+        "made_at": "University",
+        "stack": [
+            "Python",
+            "MongoDB",
+            "Streamlit",
+            "Pandas",
+            "Altair"
+        ],
+        "links": {
+            "github": "https://github.com/AmraniCh/spotify-listening-analytics-mongodb"
+        },
+        "contribution_level": "scratch",
+        "tasks": []
+    },
+    {
+        "date": {
+            "start": "",
+            "end": "2026-08-01"
+        },
+        "name": "Qasir URL Shortener",
+        "made_at": "Headstarter",
+        "stack": [
+            "TypeScript",
+            "Express",
+            "PostgreSQL",
+            "Redis",
+            "React",
+            "Shadcn",
+            "Tailwind CSS",
+            "Docker"
+        ],
+        "links": {
+            "github": "https://github.com/AmraniCh/qasir-url-shortener"
+        },
+        "contribution_level": "scratch",
+        "tasks": []
     }
 ]
