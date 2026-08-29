@@ -21,7 +21,7 @@
 
         </x-project-card>
 
-        <x-project-card highlight="{{ true }}" snapshot="ftpguard-snapshot.png"
+        <x-project-card highlight="{{ true }}" snapshot="ftpguard-snapshot.jpg"
             snapshotAlt="FTPGuard ML-based intrusion detection system snapshot" date="{!! $page->trans('featured-projects.fifth-project.date') !!}"
             title="{!! $page->trans('featured-projects.card-title') !!}" projectTitle="{!! $page->trans('featured-projects.fifth-project.title') !!}" projectDesc="{!! $page->trans('featured-projects.fifth-project.desc') !!}"
             sourceLink="https://github.com/AmraniCh/ftp-ids-ml"
@@ -29,7 +29,10 @@
 
             <x-slot:stack>
                 <x-badge text="Python" />
+                <x-badge text="Machine Learning" />
+                <x-badge text="Isolation Forest" />
                 <x-badge text="scikit-learn" />
+                <x-badge text="Jupyter" />
                 <x-badge text="Flask" />
                 <x-badge text="Chart.js" />
                 <x-badge text="Tailwind CSS" />
