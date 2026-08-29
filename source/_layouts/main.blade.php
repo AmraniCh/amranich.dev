@@ -134,7 +134,7 @@
 
     <div id="TopDesignKing" class="hidden lg:block fixed bottom-5 left-5 z-[999]">
         <a href="https://topdesignking.com/website/3286/amranich-portfolio" target="_blank" rel="noopener noreferrer"
-            class="flex items-center justify-center w-24 h-24 rounded-full border border-brown-700/40
+            class="flex items-center justify-center w-16 h-16 rounded-full border border-brown-700/40
            dark:border-yellow-200/40 hover:scale-105 transition-transform">
             <img src="https://topdesignking.com/public/images/kotd-ribbon-white.svg" alt="TopDesignKing"
                 class="w-20" />
