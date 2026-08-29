@@ -104,7 +104,7 @@ html {
 	@apply inline;
 }
 
-.career-section .card:not(:first-child) {
+.career-section .card:not(:first-child):not(.career-education .card) {
 	@apply before:content-[''] before:block before:w-[.2rem] before:h-[.6rem] before:bg-yellow-800 before:absolute before:left-12 before:-top-[.6rem] dark:before:bg-yellow-200 before:-z-10;
 }
 

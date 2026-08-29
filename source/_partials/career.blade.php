@@ -19,13 +19,6 @@
             logo="{{ $page->trans('career.4-position.location') }}" logoUrl="/assets/images/headstarter-logo.jpg"
             logoAlt="{{ $page->trans('career.4-position.company') }}" />
 
-        <x-career-card style="animation-delay: .6s" title="{{ $page->trans('career.2-education.title') }}"
-            company="{{ $page->trans('career.2-education.institute') }}"
-            duration="{{ $page->trans('career.2-education.duration') }}"
-            location="{{ $page->trans('career.2-education.location') }}"
-            logo="{{ $page->trans('career.2-education.location') }}" logoUrl="/assets/images/university-um5-logo.png"
-            logoAlt="{{ $page->trans('career.1-education.institute') }}" />
-
         <x-career-card style="animation-delay: .3s" title="{{ $page->trans('career.3-position.title') }}"
             company="{{ $page->trans('career.3-position.company') }}"
             duration="{{ $page->trans('career.3-position.duration') }}"
@@ -49,8 +42,17 @@
             location="{{ $page->trans('career.1-position.location') }}"
             logo="{{ $page->trans('career.1-position.location') }}" logoUrl="/assets/images/map-concepts.jpg"
             logoAlt="{{ $page->trans('career.1-position.company') }}" />
+    </div>
 
-        <x-career-card style="animation-delay: .6s" title="{{ $page->trans('career.1-education.title') }}"
+    <div class="career-education relative flex flex-col gap-2 mt-4 lg:grid lg:grid-cols-2">
+        <x-career-card style="animation-delay: .6s" title="{{ $page->trans('career.2-education.title') }}"
+            company="{{ $page->trans('career.2-education.institute') }}"
+            duration="{{ $page->trans('career.2-education.duration') }}"
+            location="{{ $page->trans('career.2-education.location') }}"
+            logo="{{ $page->trans('career.2-education.location') }}" logoUrl="/assets/images/university-um5-logo.png"
+            logoAlt="{{ $page->trans('career.2-education.institute') }}" />
+
+        <x-career-card style="animation-delay: .7s" title="{{ $page->trans('career.1-education.title') }}"
             company="{{ $page->trans('career.1-education.institute') }}"
             duration="{{ $page->trans('career.1-education.duration') }}"
             location="{{ $page->trans('career.1-education.location') }}"
