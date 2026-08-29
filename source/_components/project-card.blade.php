@@ -59,6 +59,16 @@
                     </svg>
                 </x-buttons.secondary>
                 @endif
+
+                @if (!empty($presentationLink))
+                <x-buttons.secondary text="{{ $presentationBtn }}" href="{{ $presentationLink }}" target="_blank">
+                    <svg class="fill-yellow-800 group-hover:fill-yellow-50 dark:fill-yellow-200 dark:group-hover:fill-yellow-900"
+                        xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                        <path
+                            d="M0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zm176 96v72c0 13.3 10.7 24 24 24h112c13.3 0 24-10.7 24-24V224c0-13.3-10.7-24-24-24H200c-13.3 0-24 10.7-24 24z" />
+                    </svg>
+                </x-buttons.secondary>
+                @endif
             </div>
         </div>
     </div>

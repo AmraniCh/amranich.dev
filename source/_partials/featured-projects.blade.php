@@ -8,7 +8,9 @@
             snapshotAlt="NeuralCodec-RPi project snapshot" date="{!! $page->trans('featured-projects.fourth-project.date') !!}"
             title="{!! $page->trans('featured-projects.card-title') !!}" projectTitle="{!! $page->trans('featured-projects.fourth-project.title') !!}" projectDesc="{!! $page->trans('featured-projects.fourth-project.desc') !!}"
             sourceLink="https://github.com/AmraniCh/neuralcodec-rpi"
-            sourceBtn="{!! $page->trans('featured-projects.source-button') !!}" sketchesBtn="" sketchLink="">
+            sourceBtn="{!! $page->trans('featured-projects.source-button') !!}" sketchesBtn="" sketchLink=""
+            presentationBtn="{!! $page->trans('featured-projects.presentation-button') !!}"
+            presentationLink="https://docs.google.com/presentation/d/1hQYhwkQ50h8B6FzDyU0gc3K56KJAA9j0/edit?usp=sharing&ouid=107858341399528336890&rtpof=true&sd=true">
 
             <x-slot:stack>
                 <x-badge text="Python" />
@@ -31,7 +33,9 @@
             snapshotAlt="FTPGuard ML-based intrusion detection system snapshot" date="{!! $page->trans('featured-projects.fifth-project.date') !!}"
             title="{!! $page->trans('featured-projects.card-title') !!}" projectTitle="{!! $page->trans('featured-projects.fifth-project.title') !!}" projectDesc="{!! $page->trans('featured-projects.fifth-project.desc') !!}"
             sourceLink="https://github.com/AmraniCh/ftp-ids-ml"
-            sourceBtn="{!! $page->trans('featured-projects.source-button') !!}" sketchesBtn="" sketchLink="">
+            sourceBtn="{!! $page->trans('featured-projects.source-button') !!}" sketchesBtn="" sketchLink=""
+            presentationBtn="{!! $page->trans('featured-projects.presentation-button') !!}"
+            presentationLink="https://docs.google.com/presentation/d/1dzeuGmleFqmDxFh8jwYWeoPqGfiyU1ZX/edit?usp=sharing&ouid=107858341399528336890&rtpof=true&sd=true">
 
             <x-slot:stack>
                 <x-badge text="Python" />
