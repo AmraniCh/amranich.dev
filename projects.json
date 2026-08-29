@@ -1282,6 +1282,8 @@
             "UDP",
             "librosa",
             "PESQ",
+            "NumPy",
+            "Matplotlib",
             "Jupyter",
             "Raspberry Pi 4",
             "Deep Learning"
@@ -1327,8 +1329,7 @@
             "Redis",
             "React",
             "Shadcn",
-            "Tailwind CSS",
-            "Docker"
+            "Tailwind CSS"
         ],
         "links": {
             "github": "https://github.com/AmraniCh/qasir-url-shortener"
