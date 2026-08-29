@@ -1,5 +1,12 @@
 # Change Log
 
+## v1.7.2 (2026-08-29)
+- Added presentation links for NeuralCodec-RPi and FTPGuard in featured projects and projects archive.
+- Added total GitHub stars counter in the open source section.
+- Simplified NeuralCodec-RPi and FTPGuard featured project titles and synced badges with archive.
+- Combined two PI Marketing career positions into a single card.
+- Replaced resume button PDF icon with envelope icon.
+
 ## v1.7.1 (2026-08-29)
 - Removed "what I care about" section.
 - Replaced resume download button with "request resume" linking to contact section.
