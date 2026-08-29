@@ -13,12 +13,12 @@ class FetchGhRepos
     private Client $client;
 
     private const PINNED_REPOS = [
-        "lazzard/php-ftp-client",
-        "amranich/github-code-font-changer",
-        "amranich/ftp-filemanager",
-        "amranich/vanilla-filemanager",
-        "amranich/ajax-router",
-        "amranich/how-jQuery-works",
+        // "lazzard/php-ftp-client",
+        // "amranich/github-code-font-changer",
+        // "amranich/ftp-filemanager",
+        // "amranich/vanilla-filemanager",
+        // "amranich/ajax-router",
+        // "amranich/how-jQuery-works",
     ];
 
     public function __construct()
@@ -30,6 +30,9 @@ class FetchGhRepos
     public function handle(Jigsaw $jigsaw)
     {
         $jigsaw->setConfig('githubRepos', collect());
+        $jigsaw->setConfig('githubTotalStars',
+            $this->fetchTotalStars('AmraniCh') + $this->fetchTotalStars('lazzard')
+        );
 
         foreach (self::PINNED_REPOS as $repo) {
             try {
@@ -58,6 +61,39 @@ class FetchGhRepos
                 echo "Unable to fetch repository '$repo' information from GitHub API: {$ex->getMessage()}";
             }
         }
+    }
+
+    private function fetchTotalStars(string $username): int
+    {
+        $totalStars = 0;
+        $page = 1;
+
+        try {
+            do {
+                $response = $this->client->get("https://api.github.com/users/$username/repos", [
+                    'query' => [
+                        'per_page' => 100,
+                        'page' => $page,
+                        'type' => 'owner',
+                    ],
+                ]);
+
+                $repos = json_decode((string) $response->getBody(), true);
+
+                foreach ($repos as $repo) {
+                    if ($repo['fork']) {
+                        continue;
+                    }
+                    $totalStars += $repo['stargazers_count'];
+                }
+
+                $page++;
+            } while (count($repos) === 100);
+        } catch (ClientException $ex) {
+            echo "Unable to fetch total stars from GitHub API: {$ex->getMessage()}\n";
+        }
+
+        return $totalStars;
     }
 
     private function getGithubRepo(string $repo): array

@@ -1,6 +1,26 @@
 <div id="opensource-section" class="section opensource-section scroll-spy-indicator-subscriber"
     data-scroll-indicator-text="{!! $page->trans('scroll-indicator.open-source') !!}">
-    <x-section-heading text="{!! $page->trans('open-source.heading') !!}" />
+    <div class="flex items-center justify-between mb-20">
+        <div class="script-font text-center lg:text-left">
+            <h3
+                class="text-xl md:text-2xl font-medium tracking-wider capitalize inline-block relative before:block before:h-1 before:rounded before:absolute before:-top-2 before:bg-yellow-400 before:ease-linear before:duration-200 before:max-w-full before:left-1/2 lg:before:left-0 lg:before:translate-x-0 before:-translate-x-1/2 before:w-3/4 lg:before:w-1/3 after:content-['.'] after:inline-block after:text-2xl after:md:text-3xl">
+                {!! $page->trans('open-source.heading') !!}
+            </h3>
+        </div>
+        @if ($page->githubTotalStars)
+            <a href="https://github.com/AmraniCh?tab=repositories&sort=stargazers" target="_blank"
+                title="total stars on GitHub"
+                class="group inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-yellow-800 text-sm hover:bg-yellow-800 hover:text-yellow-50 transition-colors dark:border-yellow-200 dark:hover:bg-yellow-200 dark:hover:text-yellow-900">
+                <svg class="w-3.5 h-3.5 fill-yellow-800 group-hover:fill-yellow-50 dark:fill-yellow-200 dark:group-hover:fill-yellow-900"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                    <path
+                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                </svg>
+                <span class="script-font font-medium">{{ $page->githubTotalStars }}</span>
+            </a>
+        @endif
+    </div>
+
     <ol class="cards-ctr flex flex-wrap gap-4 md:gap-0 min-h-[500px]">
 
         @if (!$page->githubRepos->isEmpty())
