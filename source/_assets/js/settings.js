@@ -35,6 +35,9 @@ export default {
 			"amranich/how-jQuery-works",
 		],
 		packagistRepos: ["lazzard/php-ftp-client", "amranich/ajax-router"],
+		chromeExtensionRepos: {
+			"amranich/github-code-font-changer": "jmbophfanmlfkloliildahlpnlbojhfi",
+		},
 		cacheExpireHours: 8,
 		skeletonTimeoutSeconds: 2,
 	},

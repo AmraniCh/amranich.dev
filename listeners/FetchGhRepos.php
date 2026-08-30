@@ -13,12 +13,16 @@ class FetchGhRepos
     private Client $client;
 
     private const PINNED_REPOS = [
-        // "lazzard/php-ftp-client",
-        // "amranich/github-code-font-changer",
-        // "amranich/ftp-filemanager",
-        // "amranich/vanilla-filemanager",
-        // "amranich/ajax-router",
-        // "amranich/how-jQuery-works",
+        "lazzard/php-ftp-client",
+        "amranich/github-code-font-changer",
+        "amranich/ftp-filemanager",
+        "amranich/vanilla-filemanager",
+        "amranich/ajax-router",
+        "amranich/how-jQuery-works",
+    ];
+
+    private const CHROME_EXTENSION_IDS = [
+        'amranich/github-code-font-changer' => 'jmbophfanmlfkloliildahlpnlbojhfi',
     ];
 
     public function __construct()
@@ -39,9 +43,12 @@ class FetchGhRepos
                 $ghRepoData = $this->getGithubRepo($repo);
                 $ghRepoLangs = $this->getGithubRepoLanguages($repo);
                 $packagistData = $this->getPackagistRepo($repo);
+                $chromeUsers = $this->getChromeWebStoreUsers($repo);
 
                 /** @var Collection */
                 $repos = $jigsaw->getConfig('githubRepos');
+
+                $extensionId = self::CHROME_EXTENSION_IDS[$repo] ?? '';
 
                 $jigsaw->setConfig('githubRepos', $repos->push(new Repository(
                     fullName: $ghRepoData['full_name'],
@@ -51,7 +58,9 @@ class FetchGhRepos
                     forksCount: $ghRepoData['forks_count'],
                     languages: collect(array_keys($ghRepoLangs)),
                     packagistUrl: !empty($packagistData) ? "https://packagist.org/packages/$repo" : '',
-                    packagistDownloadsCount: !empty($packagistData) ? $packagistData['downloads']['total'] : 0
+                    packagistDownloadsCount: !empty($packagistData) ? $packagistData['downloads']['total'] : 0,
+                    chromeWebStoreUrl: $extensionId ? "https://chromewebstore.google.com/detail/$extensionId" : '',
+                    chromeWebStoreUsers: $chromeUsers,
                 )));
             } catch (ClientException $ex) {
                 if (!in_array($ex->getCode(), [403, 429])) {
@@ -94,6 +103,25 @@ class FetchGhRepos
         }
 
         return $totalStars;
+    }
+
+    private function getChromeWebStoreUsers(string $repo): int
+    {
+        $extensionId = self::CHROME_EXTENSION_IDS[$repo] ?? '';
+
+        if (!$extensionId) {
+            return 0;
+        }
+
+        try {
+            $response = $this->client->get("https://img.shields.io/chrome-web-store/users/$extensionId.json");
+            $data = json_decode((string) $response->getBody(), true);
+
+            return (int) $data['value'];
+        } catch (\Exception $ex) {
+            echo "Unable to fetch Chrome Web Store users: {$ex->getMessage()}\n";
+            return 0;
+        }
     }
 
     private function getGithubRepo(string $repo): array

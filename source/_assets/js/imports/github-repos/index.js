@@ -23,8 +23,9 @@ export default function (settings) {
         settings.pinnedRepos.forEach(repo => cardsContainer.innerHTML += skeleton(repo));
 
         const reposCache = JSON.parse(localStorage.getItem('repos'));
+        const isReposCacheNotEmpty = reposCache && reposCache.data.length > 0;
 
-        if (reposCache && (new Date().getTime()) < reposCache.ttl) {
+        if (isReposCacheNotEmpty && (new Date().getTime()) < reposCache.ttl) {
             reposCache.data.forEach(repo => renderRepository(repo));
             return;
         }
@@ -63,6 +64,16 @@ export default function (settings) {
                     cardData.downloads = {
                         url: `https://packagist.org/packages/${repo}`,
                         count: packagistStatsJson.downloads.total
+                    };
+                }
+
+                const extensionId = settings.chromeExtensionRepos?.[repo];
+                if (extensionId) {
+                    const cwsResponse = await fetch(`https://img.shields.io/chrome-web-store/users/${extensionId}.json`);
+                    const cwsData = await cwsResponse.json();
+                    cardData.chromeWebStore = {
+                        url: `https://chromewebstore.google.com/detail/${extensionId}`,
+                        users: parseInt(cwsData.value) || 0
                     };
                 }
 

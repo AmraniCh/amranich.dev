@@ -64,6 +64,23 @@
                                         </span>
                                     </a>
                                 @endif
+
+                                @if ($repo->getChromeWebStoreUrl())
+                                    <a href="{{ $repo->getChromeWebStoreUrl() }}" target="_blank"
+                                        class="flex items-center gap-1">
+                                        <svg class="h-4 w-4 fill-yellow-800 dark:fill-yellow-200"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16"
+                                            height="16">
+                                            <path
+                                                d="M1.5 8a6.5 6.5 0 1 1 13 0 6.5 6.5 0 0 1-13 0ZM8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM6.379 5.227A2.5 2.5 0 0 1 10 7.5c0 .526-.18 1.016-.474 1.404l-.422.563-.252.335-3.178 4.236a.75.75 0 0 1-1.2-.9l1.306-1.741A2.5 2.5 0 0 1 6 7.5c0-.526.18-1.016.474-1.404l.422-.563.252-.335.131-.175ZM8 6a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z">
+                                            </path>
+                                        </svg>
+
+                                        <span class="script-font text-sm">
+                                            {{ $repo->getChromeWebStoreUsers() }}
+                                        </span>
+                                    </a>
+                                @endif
                             </div>
 
                             <!-- body -->
