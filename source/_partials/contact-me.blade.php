@@ -80,50 +80,37 @@
         </div>
         
 
-        <form id="contactMeForm" action="/backend/send_email.php" method="POST" class="flex flex-col gap-4 lg:flex-1">
+        <form id="contactMeForm" action="/backend/send_email.php" method="POST" class="flex flex-col gap-4 lg:flex-1 pointer-events-none">
 
-            
-            <input type="text" name="fullname" class="control" placeholder="{!! $page->trans('contact-me.form.fullname.placeholder') !!}" required>
 
-            <input type="email" name="email" class="control" placeholder="{!! $page->trans('contact-me.form.email.placeholder') !!}" required>
+            <input type="text" name="fullname" class="control opacity-50" placeholder="{!! $page->trans('contact-me.form.fullname.placeholder') !!}" disabled>
 
-            <textarea name="message" class="control h-36" placeholder="{!! $page->trans('contact-me.form.message.placeholder') !!}" required></textarea>
+            <input type="email" name="email" class="control opacity-50" placeholder="{!! $page->trans('contact-me.form.email.placeholder') !!}" disabled>
+
+            <textarea name="message" class="control h-36 opacity-50" placeholder="{!! $page->trans('contact-me.form.message.placeholder') !!}" disabled></textarea>
 
             <div class="alerts flex flex-col gap-3 hidden"></div>
 
-            <x-buttons.primary submit="" class="disabled:opacity-80 disabled:cursor-not-allowed"
-                text="{!! $page->trans('contact-me.form.submit') !!}">
-                <svg class="w-4 h-4 fill-white group-hover:scale-105 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform dark:fill-yellow-900"
-                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                    <path
-                        d="M568.4 37.7C578.2 34.2 589 36.7 596.4 44C603.8 51.3 606.2 62.2 602.7 72L424.7 568.9C419.7 582.8 406.6 592 391.9 592C377.7 592 364.9 583.4 359.6 570.3L295.4 412.3C290.9 401.3 292.9 388.7 300.6 379.7L395.1 267.3C400.2 261.2 399.8 252.3 394.2 246.7C388.6 241.1 379.6 240.7 373.6 245.8L261.2 340.1C252.1 347.7 239.6 349.7 228.6 345.3L70.1 280.8C57 275.5 48.4 262.7 48.4 248.5C48.4 233.8 57.6 220.7 71.5 215.7L568.4 37.7z" />
-                </svg>
-            </x-buttons.primary>
+            <div class="opacity-50">
+                <x-buttons.primary submit="" class="disabled:opacity-80 disabled:cursor-not-allowed"
+                    text="{!! $page->trans('contact-me.form.submit') !!}" disabled="">
+                    <svg class="w-4 h-4 fill-white group-hover:scale-105 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform dark:fill-yellow-900"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                        <path
+                            d="M568.4 37.7C578.2 34.2 589 36.7 596.4 44C603.8 51.3 606.2 62.2 602.7 72L424.7 568.9C419.7 582.8 406.6 592 391.9 592C377.7 592 364.9 583.4 359.6 570.3L295.4 412.3C290.9 401.3 292.9 388.7 300.6 379.7L395.1 267.3C400.2 261.2 399.8 252.3 394.2 246.7C388.6 241.1 379.6 240.7 373.6 245.8L261.2 340.1C252.1 347.7 239.6 349.7 228.6 345.3L70.1 280.8C57 275.5 48.4 262.7 48.4 248.5C48.4 233.8 57.6 220.7 71.5 215.7L568.4 37.7z" />
+                    </svg>
+                </x-buttons.primary>
+            </div>
 
-            <p class="mt-2 text-xs text-brown-700 opacity-70 text-center lg:text-left dark:text-yellow-200">
-                This site is protected by reCAPTCHA and the Google
-                <a href="https://policies.google.com/privacy" target="_blank"
-                    class="underline underline-offset-2 hover:text-yellow-900 dark:hover:text-yellow-300">
-                    Privacy Policy
-                </a>
-                and
-                <a href="https://policies.google.com/terms" target="_blank"
-                    class="underline underline-offset-2 hover:text-yellow-900 dark:hover:text-yellow-300">
-                    Terms of Service
-                </a>
-                apply.
-            </p>
-
-
-            <div class="w-full p-2 text-sm text-center border rounded-lg 
+            <div class="w-full p-2 text-sm text-center border rounded-lg pointer-events-auto
                     bg-yellow-100 text-yellow-900 border-yellow-300
                     dark:bg-yellow-900/20 dark:text-yellow-200 dark:border-yellow-700">
-            The contact form is currently unavailable. Please use email instead:
-            <strong>contact@amranich.dev</strong>
-        </div>
+                Contact form under maintenance, reach out directly at
+                <strong>contact@amranich.dev</strong>
+            </div>
 
             <button type='reset' name='reset' class="hidden">
-                
+
         </form>
 
     </div>
