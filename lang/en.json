@@ -62,7 +62,7 @@
     "featured-projects.card-title": "featured project",
     "featured-projects.fourth-project.date": "july 2026",
     "featured-projects.fourth-project.title": "NeuralCodec-RPi",
-    "featured-projects.fourth-project.desc": "real-time voice transmission on Raspberry Pi 4 using neural speech codecs for low-bandwidth networks (3-6 kbps). Benchmarked 4 codecs and built a UDP pipeline for live transmission between two Pi boards.",
+    "featured-projects.fourth-project.desc": "a research-oriented project on real-time neural speech codec deployed on embedded hardware (two Raspberry Pi 4) for low-bandwidth networks (3 to 6 kbps).",
     "featured-projects.fifth-project.date": "june 2026",
     "featured-projects.fifth-project.title": "FTPGuard",
     "featured-projects.fifth-project.desc": "a host-based intrusion detection system for FTP servers combining an Isolation Forest ML model with a rule-based signature engine and a human-in-the-loop feedback loop, evaluated on real production FTP sessions.",
