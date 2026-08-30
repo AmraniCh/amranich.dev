@@ -1,5 +1,9 @@
 # Change Log
 
+## v1.7.3 (2026-08-30)
+- Added Chrome Web Store users count for browser extension repos in open source section.
+- Disabled contact form with maintenance notice.
+
 ## v1.7.2 (2026-08-29)
 - Added presentation links for NeuralCodec-RPi and FTPGuard in featured projects and projects archive.
 - Added total GitHub stars counter in the open source section.
