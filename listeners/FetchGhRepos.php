@@ -37,6 +37,7 @@ class FetchGhRepos
         $jigsaw->setConfig('githubTotalStars',
             $this->fetchTotalStars('AmraniCh') + $this->fetchTotalStars('lazzard')
         );
+        $jigsaw->setConfig('githubFollowers', $this->fetchFollowers('AmraniCh'));
 
         foreach (self::PINNED_REPOS as $repo) {
             try {
@@ -103,6 +104,19 @@ class FetchGhRepos
         }
 
         return $totalStars;
+    }
+
+    private function fetchFollowers(string $username): int
+    {
+        try {
+            $response = $this->client->get("https://api.github.com/users/$username");
+            $data = json_decode((string) $response->getBody(), true);
+
+            return (int) ($data['followers'] ?? 0);
+        } catch (ClientException $ex) {
+            echo "Unable to fetch followers from GitHub API: {$ex->getMessage()}\n";
+            return 0;
+        }
     }
 
     private function getChromeWebStoreUsers(string $repo): int

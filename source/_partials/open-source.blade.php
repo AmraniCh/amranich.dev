@@ -7,18 +7,32 @@
                 {!! $page->trans('open-source.heading') !!}
             </h3>
         </div>
-        @if ($page->githubTotalStars)
-            <a href="https://github.com/AmraniCh?tab=repositories&sort=stargazers" target="_blank"
-                title="total stars on GitHub"
-                class="group inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-yellow-800 text-sm hover:bg-yellow-800 hover:text-yellow-50 transition-colors dark:border-yellow-200 dark:hover:bg-yellow-200 dark:hover:text-yellow-900">
-                <svg class="w-3.5 h-3.5 fill-yellow-800 group-hover:fill-yellow-50 dark:fill-yellow-200 dark:group-hover:fill-yellow-900"
-                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                    <path
-                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                </svg>
-                <span class="script-font font-medium">{{ $page->githubTotalStars }}</span>
-            </a>
-        @endif
+        <div class="hidden sm:flex items-center gap-2">
+            @if ($page->githubTotalStars)
+                <a href="https://github.com/AmraniCh?tab=repositories&sort=stargazers" target="_blank"
+                    title="total stars on GitHub"
+                    class="group inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-yellow-800 text-sm hover:bg-yellow-800 hover:text-yellow-50 transition-colors dark:border-yellow-200 dark:hover:bg-yellow-200 dark:hover:text-yellow-900">
+                    <svg class="w-3.5 h-3.5 fill-yellow-800 group-hover:fill-yellow-50 dark:fill-yellow-200 dark:group-hover:fill-yellow-900"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path
+                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                    </svg>
+                    <span class="script-font font-medium">{{ $page->githubTotalStars }}</span>
+                </a>
+            @endif
+            @if ($page->githubFollowers)
+                <a href="https://github.com/AmraniCh?tab=followers" target="_blank"
+                    title="followers on GitHub"
+                    class="group inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-yellow-800 text-sm hover:bg-yellow-800 hover:text-yellow-50 transition-colors dark:border-yellow-200 dark:hover:bg-yellow-200 dark:hover:text-yellow-900">
+                    <svg class="w-3.5 h-3.5 fill-yellow-800 group-hover:fill-yellow-50 dark:fill-yellow-200 dark:group-hover:fill-yellow-900"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                        <path
+                            d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM609.3 512l-137.8 0c5.4-9.4 8.6-20.3 8.6-32l0-8c0-60.7-27.1-115.2-69.8-151.8c2.4-.1 4.7-.2 7.1-.2l61.4 0C567.8 320 640 392.2 640 481.3c0 17-13.8 30.7-30.7 30.7zM432 256c-31 0-59-12.6-79.3-32.9C372.4 196.5 384 163.6 384 128c0-26.8-6.6-52.1-18.3-74.3C384.3 40.1 407.2 32 432 32c61.9 0 112 50.1 112 112s-50.1 112-112 112z" />
+                    </svg>
+                    <span class="script-font font-medium">{{ $page->githubFollowers }}</span>
+                </a>
+            @endif
+        </div>
     </div>
 
     <ol class="cards-ctr flex flex-wrap gap-4 md:gap-0 min-h-[500px]">
