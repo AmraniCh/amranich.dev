@@ -7,7 +7,7 @@ export default async ({
     chromeWebStore
 }) => `
     <li class="md:p-3 w-full md:w-1/2">
-        <div class="card  group bg-white border border-yellow-800 rounded-md p-4 h-full flex animate-[fadeIn_.5s_ease-out_forwards] hover:animate-[moveUp_.3s_ease-out_forwards] hover:bg-yellow-100 hover:duration-500 hover:shadow-lg dark:border-transparent dark:bg-brown-900 dark:hover:bg-dark dark:hover:border-yellow-200">
+        <div class="card  group bg-white border border-yellow-800 rounded-md p-4 h-full flex animate-[fadeIn_.5s_ease-out_forwards] hover:animate-[moveUp_.3s_ease-out_forwards] hover:bg-yellow-100 hover:duration-500 hover:shadow-lg dark:border-yellow-200/20 dark:bg-transparent glass-card dark:hover:border-yellow-200/40">
             <div class="relative flex flex-col w-full">
                 <!-- header -->
                 <div class="flex justify-between">

@@ -20,7 +20,8 @@ module.exports = {
 			},
 			colors: {
 				transparent: "transparent",
-				dark: "#3d3325",
+				dark: "#1a1714",
+				"dark-card": "rgba(84, 72, 55, 0.4)",
 				yellow: {
 					50: "#FFFDF7",
 					100: "#F7EED9",
