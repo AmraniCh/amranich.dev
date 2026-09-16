@@ -2,7 +2,7 @@
     style="{{ $style ?? '' }}">
     <div class="flex items-center gap-3">
         <!-- Logo -->
-        <img class="w-12 h-12 object-cover border border-yellow-800 rounded flex-shrink-0 transition-transform group-hover:scale-105 dark:border-transparent"
+        <img class="w-14 h-14 object-cover border border-yellow-800 rounded flex-shrink-0 transition-transform group-hover:scale-105 dark:border-transparent"
             src="{{ $logoUrl }}" alt="{!! $logoAlt !!}">
 
         <!-- Content -->

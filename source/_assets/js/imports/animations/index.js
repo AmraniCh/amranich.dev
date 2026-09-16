@@ -21,4 +21,9 @@ function animateSections() {
 		animationClass: "animate-[fadeInUp_.7s_ease-out_forwards]",
 		options: { threshold: 0 }
 	});
+
+	animateOnVisibility({
+		element: document.querySelectorAll(".opensource-section .view-more-link"),
+		animationClass: "animate-[fadeInLeft_.6s_ease-out_.5s_forwards]",
+	});
 }

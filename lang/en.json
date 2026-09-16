@@ -94,6 +94,7 @@
     "projects-archive.contribution-level.full": "Projects initiated from scratch, with occasional integration of pre-existing elements for efficiency. While some components may not be entirely custom-built, the project largely reflects unique solutions, ensuring significant originality and adaptability.",
     "projects-archive.contribution-level.scratch": "Projects created from scratch, with little use of ready-made templates or frameworks. Emphasizes custom solutions tailored to specific needs, showing creativity and flexibility in tool choices.",
     "open-source.heading": "open source",
+    "open-source.github-notice": "view all my repos on GitHub",
     "contact-me.heading": "get in touch",
     "contact-me.p.1": "I am always open to discussing your project or sharing knowledge. Feel free to contact me with any questions or if you have a project we can work on together",
     "contact-me.p.2": "If you don’t like forms email me at",

@@ -94,6 +94,7 @@
     "projects-archive.contribution-level.full": "Projets initiés à partir de zéro, avec intégration occasionnelle d'éléments préexistants pour des raisons d'efficacité. Bien que certains composants ne soient pas entièrement personnalisés, le projet reflète en grande partie des solutions uniques, assurant une originalité et une adaptabilité significatives.",
     "projects-archive.contribution-level.scratch": "Projets créés de toutes pièces, avec peu d'utilisation de modèles ou de cadres préétablis. Met l'accent sur des solutions personnalisées adaptées à des besoins spécifiques, montrant créativité et flexibilité dans le choix des outils.",
     "open-source.heading": "open source",
+    "open-source.github-notice": "voir tous mes repos sur GitHub",
     "contact-me.heading": "me contacter",
     "contact-me.p.1": "Je suis toujours ouvert pour discuter de votre projet ou partager des connaissances. N'hésitez pas à me contacter pour toute question ou si vous avez un projet sur lequel nous pouvons travailler ensemble",
     "contact-me.p.2": "Si vous n'aimez pas les formulaires, envoyez-moi un e-mail à",

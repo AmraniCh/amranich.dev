@@ -155,4 +155,7 @@
         @endif
 
     </ol>
+
+    <x-anchor class="view-more-link opacity-0" link="https://github.com/AmraniCh?tab=repositories"
+        text="{{ $page->trans('open-source.github-notice') }}" />
 </div>
