@@ -1,5 +1,13 @@
 # Change Log
 
+## v1.7.4 (2026-09-16)
+- Added glass effect on cards in both light and dark mode.
+- Added circle ripple animation on theme toggle.
+- Added GitHub followers badge in open source section.
+- Added "view all repos" link below open source cards.
+- Updated career details: Map Concepts internship, Magma US location, expanded education titles.
+- Increased career card image size.
+
 ## v1.7.3 (2026-08-30)
 - Added Chrome Web Store users count for browser extension repos in open source section.
 - Disabled contact form with maintenance notice.
