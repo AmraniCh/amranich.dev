@@ -10,7 +10,7 @@
             sourceLink="https://github.com/AmraniCh/neuralcodec-rpi"
             sourceBtn="{!! $page->trans('featured-projects.source-button') !!}" sketchesBtn="" sketchLink=""
             presentationBtn="{!! $page->trans('featured-projects.presentation-button') !!}"
-            presentationLink="https://docs.google.com/presentation/d/1hQYhwkQ50h8B6FzDyU0gc3K56KJAA9j0/edit?usp=sharing&ouid=107858341399528336890&rtpof=true&sd=true">
+            presentationLink="https://docs.google.com/presentation/d/1jTJBTlxikmoFLc05C_EwTi4AU4RvBV-j/edit?usp=drive_link&ouid=107858341399528336890&rtpof=true&sd=true">
 
             <x-slot:stack>
                 <x-badge text="Python" />
