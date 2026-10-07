@@ -1,6 +1,6 @@
 {
     "siteName": "Shakir El Amrani - Software Developer",
-    "siteDescription": "Software developer with 4+ years of experience in backend engineering, infrastructure, and technical leadership. Currently pursuing a Master's in Computer Science and Telecommunications, with recent work in machine learning and open source contributions.",
+    "siteDescription": "Software developer with 4+ years of experience in backend engineering, infrastructure, and technical leadership. Currently pursuing a Master's in Computer Science and Telecommunications, with recent work in machine learning and research-oriented projects.",
     "nav.home": "intro",
     "nav.1": "career",
     "nav.2": "projects",
@@ -9,7 +9,7 @@
     "hero.greet": "hi there 👋 I'am",
     "hero.fullname": "shakir el amrani,",
     "hero.title": "a software developer.",
-    "hero.short": "software developer with 4+ years of experience in backend engineering, infrastructure, and technical leadership. Currently pursuing a Master's in Computer Science and Telecommunications, with recent work in machine learning and scientific research.",
+    "hero.short": "software developer with 4+ years of experience in backend engineering, infrastructure, and technical leadership. Currently pursuing a Master's in Computer Science and Telecommunications, with recent work in machine learning and research-oriented projects.",
     "hero.resume": "request resume",
     "hero.contact": "contact me",
     "about.heading": "a little about me",

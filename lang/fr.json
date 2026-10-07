@@ -1,6 +1,6 @@
 {
     "siteName": "El Amrani Shakir - Développeur Logiciels",
-    "siteDescription": "Développeur logiciel avec plus de 4 ans d'expérience en ingénierie backend, infrastructure et leadership technique. Actuellement en Master en Informatique et Télécommunications, avec des travaux récents en apprentissage automatique et des contributions open source.",
+    "siteDescription": "Développeur logiciel avec plus de 4 ans d'expérience en ingénierie backend, infrastructure et leadership technique. Actuellement en Master en Informatique et Télécommunications, avec des travaux récents en apprentissage automatique et projets à orientation recherche.",
     "nav.home": "accueil",
     "nav.1": "carrière",
     "nav.2": "projets",
@@ -9,7 +9,7 @@
     "hero.greet": "bonjour! 👋 je suis",
     "hero.fullname": "shakir el amrani,",
     "hero.title": "un développeur logiciels.",
-    "hero.short": "développeur logiciel avec plus de 4 ans d'expérience en ingénierie backend, infrastructure et leadership technique. Actuellement en Master en Informatique et Télécommunications, avec des travaux récents en apprentissage automatique et recherche scientifique.",
+    "hero.short": "développeur logiciel avec plus de 4 ans d'expérience en ingénierie backend, infrastructure et leadership technique. Actuellement en Master en Informatique et Télécommunications, avec des travaux récents en apprentissage automatique et projets à orientation recherche.",
     "hero.resume": "demander mon CV",
     "hero.contact": "contact",
     "about.heading": "un peu à propos de moi",
