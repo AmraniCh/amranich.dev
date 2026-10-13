@@ -42,7 +42,9 @@ const items = entries.map(({ id, data }) => {
                                     {item.paper && <p class="text-sm text-muted-foreground text-pretty">{item.paper}</p>}
                                     {item.subtitle && <p class="text-sm text-muted-foreground text-pretty">{item.subtitle}</p>}
                                     <p class="text-xs text-muted-foreground text-pretty">
-                                        {[item.context, item.date, !item.slides && item.language].filter(Boolean).join(" · ")}
+                                        {item.context}
+                                        {item.date && <Fragment> · <span class="whitespace-nowrap">{item.date}</span></Fragment>}
+                                        {item.language && !item.slides && ` · ${item.language}`}
                                     </p>
                                     {item.supervisor && <p class="text-xs text-muted-foreground">Supervised by {item.supervisor}</p>}
                                     {item.jury && <p class="text-xs text-muted-foreground">Jury: {item.jury}</p>}
