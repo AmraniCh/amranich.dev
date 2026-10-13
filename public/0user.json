@@ -35,6 +35,90 @@
             "rel": "noopener noreferrer"
         }
     ],
+    "projects": [
+        {
+            "title": "NeuralCodec-RPi",
+            "subtitle": "Neural Speech Codec on Embedded Hardware for Low-Bandwidth Networks",
+            "date": "Jun 2026 – Jul 2026",
+            "paragraphs": [
+                "A research oriented project on a real-time neural speech codec deployed on embedded hardware (two Raspberry Pi 4 boards) for low-bandwidth networks (3 to 6 kbps).",
+                "Benchmarked 4 codecs (Opus, Codec2, EnCodec, SoundStream) on Pi hardware (Raspberry Pi 4) and measured the codecs' performance with PESQ quality and Real-Time Factor (RTF). SoundStream was selected for deployment.",
+                "Built a UDP pipeline for live microphone-to-speaker voice transmission between two Pi boards over Ethernet (RJ45) and WiFi channels."
+            ],
+            "material": "Two Raspberry Pi 4 boards, USB microphone, RJ45 Ethernet cable, WiFi hotspot.",
+            "stack": [
+                "Python",
+                "Bazel",
+                "Lyra/SoundStream",
+                "EnCodec",
+                "UDP",
+                "librosa",
+                "PESQ",
+                "Raspberry Pi",
+                "Deep Learning",
+                "Audio Processing"
+            ],
+            "contributors": [
+                {
+                    "name": "Ibrahim Lasfar",
+                    "url": "https://www.linkedin.com/in/ibrahim-lasfar-90a556259/"
+                }
+            ],
+            "associatedWith": "Mohammed V University in Rabat",
+            "links": [
+                {
+                    "label": "source",
+                    "text": "github",
+                    "url": "https://github.com/AmraniCh/neuralcodec-rpi"
+                },
+                {
+                    "label": "slides",
+                    "text": "presentation",
+                    "url": "https://docs.google.com/presentation/d/1jTJBTlxikmoFLc05C_EwTi4AU4RvBV-j/edit?usp=drive_link&ouid=107858341399528336890&rtpof=true&sd=true"
+                }
+            ]
+        },
+        {
+            "title": "FTPGuard",
+            "subtitle": "ML-Based Intrusion Detection for FTP Servers",
+            "date": "May 2026 – Jun 2026",
+            "paragraphs": [
+                "A host-based intrusion detection system for FTP servers that combines machine learning with rule-based signatures, evaluated on real production FTP sessions (from the EC2 instance that hosts my portfolio website).",
+                "It reads the vsftpd logs and groups them by session. For each session, we extract 17 features about user behavior, and then an Isolation Forest model gives it a score between 0 and 1. For static and known attacks like CVE-2011-2523, brute force and others, we rely on signature rules.",
+                "It includes a Flask dashboard (Chart.js + Tailwind CSS) with real-time alert monitoring, session review, and a feedback loop that lets users correct false positives and retrain the model."
+            ],
+            "stack": [
+                "Python",
+                "Machine Learning",
+                "Isolation Forest",
+                "scikit-learn",
+                "Jupyter",
+                "Flask",
+                "Chart.js",
+                "Tailwind CSS",
+                "Docker"
+            ],
+            "contributors": [
+                {
+                    "name": "Hasbi Badr",
+                    "url": "https://www.linkedin.com/in/hasbi-badr-4287b4370/"
+                }
+            ],
+            "associatedWith": "Mohammed V University in Rabat",
+            "links": [
+                {
+                    "label": "source",
+                    "text": "github",
+                    "url": "https://github.com/AmraniCh/ftp-ids-ml"
+                },
+                {
+                    "label": "slides",
+                    "text": "presentation",
+                    "url": "https://docs.google.com/presentation/d/1dzeuGmleFqmDxFh8jwYWeoPqGfiyU1ZX/edit?usp=sharing&ouid=107858341399528336890&rtpof=true&sd=true"
+                }
+            ]
+        }
+    ],
     "openSource": {
         "github": "AmraniCh",
         "orgs": [

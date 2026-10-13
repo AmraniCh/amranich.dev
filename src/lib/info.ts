@@ -101,12 +101,36 @@ export interface OpenSourceData {
     moreContributions?: TextLink[];
 }
 
+export interface ProjectLink {
+    label: string;
+    text: string;
+    url: string;
+}
+
+export interface Contributor {
+    name: string;
+    url?: string;
+}
+
+export interface Project {
+    title: string;
+    subtitle?: string;
+    date: string;
+    paragraphs: string[];
+    material?: string;
+    stack: string[];
+    contributors?: Contributor[];
+    associatedWith?: string;
+    links: ProjectLink[];
+}
+
 export interface SiteInfo {
     name: string;
     role: string;
     blog: boolean;
     site: SiteMeta;
     contacts: ContactLink[];
+    projects: Project[];
     openSource: OpenSourceData;
     resume: ResumeData;
 }
