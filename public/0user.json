@@ -340,46 +340,109 @@
         ],
         "skills": [
             {
-                "category": "Languages",
+                "category": "Programming Languages",
                 "items": [
-                    "TypeScript",
-                    "JavaScript",
+                    "Java",
                     "Python",
-                    "Go",
-                    "SQL",
-                    "Bash"
+                    "PHP",
+                    "JavaScript/TypeScript",
+                    "Bash",
+                    "C",
+                    "C++",
+                    "C#",
+                    "Perl",
+                    "PowerShell",
+                    "MATLAB"
                 ]
             },
             {
-                "category": "Frameworks & Libraries",
+                "category": "AI & Signal Processing",
                 "items": [
-                    "React",
-                    "Node.js",
-                    "Express",
-                    "Astro",
-                    "Prisma",
-                    "Tailwind CSS"
+                    "scikit-learn",
+                    "pandas",
+                    "Matplotlib",
+                    "Jupyter",
+                    "librosa",
+                    "Deep Learning",
+                    "Anomaly Detection",
+                    "Digital Signal Processing",
+                    "Audio Processing"
                 ]
             },
             {
-                "category": "Infrastructure",
+                "category": "Networking & Telecom",
                 "items": [
+                    "Wireshark",
+                    "srsRAN (4G LTE)",
+                    "ZeroMQ",
+                    "UDP",
+                    "TCP/IP",
+                    "Raspberry Pi"
+                ]
+            },
+            {
+                "category": "DevOps & Tools",
+                "items": [
+                    "Linux (Debian/CentOS/AlmaLinux)",
+                    "Git",
                     "Docker",
                     "Kubernetes",
+                    "Minikube",
+                    "Helm",
+                    "Nginx",
+                    "Apache",
                     "AWS",
-                    "GCP",
-                    "Terraform",
-                    "CI/CD"
+                    "Nagios Core"
                 ]
             },
             {
-                "category": "Practices",
+                "category": "Databases",
                 "items": [
-                    "Testing",
-                    "Code Review",
-                    "Agile",
-                    "Observability",
-                    "Security Awareness"
+                    "MySQL",
+                    "PostgreSQL",
+                    "Oracle PL/SQL",
+                    "MongoDB",
+                    "Redis",
+                    "Percona Toolkit"
+                ]
+            },
+            {
+                "category": "Web Programming",
+                "items": [
+                    "Spring Boot",
+                    "Laravel",
+                    "Node.js",
+                    "Flask",
+                    "WebSockets",
+                    "React.js",
+                    "Redux",
+                    "Tailwind CSS",
+                    "Shadcn/ui",
+                    "SASS",
+                    "jQuery",
+                    "HTML5/CSS3"
+                ]
+            },
+            {
+                "category": "Testing & CI/CD",
+                "items": [
+                    "JUnit 5",
+                    "PHPUnit",
+                    "Playwright",
+                    "Puppeteer",
+                    "SonarQube",
+                    "Jenkins",
+                    "GitHub Actions",
+                    "Bitbucket Pipelines"
+                ]
+            },
+            {
+                "category": "Methodologies",
+                "items": [
+                    "Design Patterns",
+                    "SOLID",
+                    "UML",
+                    "TDD"
                 ]
             }
         ],
