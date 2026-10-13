@@ -19,6 +19,7 @@ export interface RepoStats {
     description: string;
     stars: number;
     forks: number;
+    commits: number;
     languages: string[];
     downloads?: { count: number; label: string; url: string };
     award?: TextLink;
@@ -145,9 +146,10 @@ async function load(): Promise<OpenSourceStats> {
             throw new Error(`Open source stats: ${item.repo} was not found under ${github} or ${orgs.join(', ')}`);
         }
 
-        const [languages, downloads] = await Promise.all([
+        const [languages, downloads, commits] = await Promise.all([
             getJson<Record<string, number>>(`https://api.github.com/repos/${item.repo}/languages`),
             getDownloads(item),
+            getCommitCount(item.repo),
         ]);
 
         return {
@@ -156,6 +158,7 @@ async function load(): Promise<OpenSourceStats> {
             description: item.description ?? cleanDescription(repo.description),
             stars: repo.stargazers_count,
             forks: repo.forks_count,
+            commits,
             languages: Object.keys(languages).slice(0, 3),
             downloads,
             award: item.award,

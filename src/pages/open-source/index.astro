@@ -40,6 +40,7 @@ const linkClass = "text-muted-foreground underline underline-offset-2 decoration
                                 {repo.award && (
                                     <span>[award: <a href={repo.award.url} target="_blank" rel="noopener noreferrer" class={linkClass}>{repo.award.text}</a>]</span>
                                 )}
+                                <span>[commits: <a href={`${repo.url}/commits`} target="_blank" rel="noopener noreferrer" class={linkClass}>{formatCount(repo.commits)}</a>]</span>
                                 <span>{repo.languages.join(" · ")}</span>
                             </div>
                         </div>
