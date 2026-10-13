@@ -475,7 +475,10 @@
             {
                 "degree": "Bachelor's Degree in Software and Web Development (Software Engineering)",
                 "institution": "Abdelmalek Essaâdi University (UAE), École Normale Supérieure, Tétouan",
-                "period": "2020"
+                "period": "2020",
+                "details": [
+                    "Mention Très Bien (highest honors)"
+                ]
             }
         ],
         "awards": [
