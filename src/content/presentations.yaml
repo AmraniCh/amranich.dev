@@ -38,6 +38,8 @@
   date: "2025–2026"
   description: "I presented this paper (in French) about free software as an economic phenomenon: how thousands of volunteers build excellent software like Linux, without a boss or an owner. The paper calls this \"commons-based peer production\", a third way to produce next to the firm and the market."
   slides: "https://docs.google.com/presentation/d/1kOO9zCpye3TogYx_dJugDuCI9U3MZOYw/edit?usp=drive_link&ouid=107858341399528336890&rtpof=true&sd=true"
+  links:
+    - { label: paper, text: pdf, url: "https://www.yalelawjournal.org/pdf/354_t5aih5i1.pdf" }
   language: in French
 
 - id: neuralcodec-rpi-defense
