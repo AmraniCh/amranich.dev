@@ -59,18 +59,62 @@ export interface SiteMeta {
     ogImage?: string;
 }
 
+export interface TextLink {
+    text: string;
+    url: string;
+}
+
+export interface OpenSourceRepo {
+    repo: string;
+    description?: string;
+    packagist?: string;
+    chromeWebStore?: string;
+    award?: TextLink;
+}
+
+export interface PullRequestLink {
+    title: string;
+    url: string;
+    status?: string;
+}
+
+export interface ContributionLink {
+    label: string;
+    text: string;
+    url: string;
+}
+
+export interface Contribution {
+    repo: string;
+    description?: string;
+    note?: string;
+    links?: ContributionLink[];
+    pullRequests: PullRequestLink[];
+    allPullRequests?: string;
+}
+
+export interface OpenSourceData {
+    github: string;
+    orgs: string[];
+    repos: OpenSourceRepo[];
+    contributions: Contribution[];
+    moreContributions?: TextLink[];
+}
+
 export interface SiteInfo {
     name: string;
     role: string;
     blog: boolean;
     site: SiteMeta;
     contacts: ContactLink[];
+    openSource: OpenSourceData;
     resume: ResumeData;
 }
 
 export const info: SiteInfo = rawSiteInfo as SiteInfo;
 
 export const contacts = info.contacts;
+export const openSource = info.openSource;
 export const resume = info.resume;
 
 export default info;

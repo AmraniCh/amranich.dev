@@ -35,6 +35,145 @@
             "rel": "noopener noreferrer"
         }
     ],
+    "openSource": {
+        "github": "AmraniCh",
+        "orgs": [
+            "lazzard"
+        ],
+        "repos": [
+            {
+                "repo": "lazzard/php-ftp-client",
+                "packagist": "lazzard/php-ftp-client",
+                "award": {
+                    "text": "PHP Innovation Award, #3 Dec 2021",
+                    "url": "/certs/phpclasses-december-2021-innovation-award.png"
+                }
+            },
+            {
+                "repo": "lazzard/ftp-bridge",
+                "packagist": "lazzard/ftp-bridge"
+            },
+            {
+                "repo": "AmraniCh/github-code-font-changer",
+                "chromeWebStore": "jmbophfanmlfkloliildahlpnlbojhfi"
+            },
+            {
+                "repo": "AmraniCh/ftp-filemanager",
+                "description": "A web-based FTP client application, built with a simple MVC architecture with no frameworks or libraries (except my own)."
+            },
+            {
+                "repo": "AmraniCh/ajax-router",
+                "packagist": "amranich/ajax-router",
+                "award": {
+                    "text": "PHP Innovation Award, #1 Feb 2022",
+                    "url": "/certs/phpclasses-february-2022-innovation-award.pdf"
+                }
+            }
+        ],
+        "contributions": [
+            {
+                "repo": "magma/magma",
+                "note": "I contributed to it during my LFX mentorship at The Linux Foundation.",
+                "links": [
+                    {
+                        "label": "notes",
+                        "text": "magma-lfx-mentorship-notes",
+                        "url": "https://github.com/AmraniCh/magma-lfx-mentorship-notes"
+                    }
+                ],
+                "pullRequests": [
+                    {
+                        "title": "fix(orc8r): update removed Kubernetes beta API versions in Helm charts",
+                        "url": "https://github.com/magma/magma/pull/16032",
+                        "status": "open"
+                    },
+                    {
+                        "title": "docs(orc8r): improve Minikube deployment guide",
+                        "url": "https://github.com/magma/magma-documentation/pull/80",
+                        "status": "open"
+                    }
+                ],
+                "allPullRequests": "https://github.com/pulls?q=is%3Apr+author%3AAmraniCh+org%3Amagma"
+            },
+            {
+                "repo": "filp/whoops",
+                "description": "Error handler for PHP, previously used in Laravel.",
+                "note": "I added support for frame filters, and I improved the docs and the change logs.",
+                "pullRequests": [
+                    {
+                        "title": "Support frame filters",
+                        "url": "https://github.com/filp/whoops/pull/749"
+                    },
+                    {
+                        "title": "Added documentation for addFrameFilter method",
+                        "url": "https://github.com/filp/whoops/pull/757"
+                    },
+                    {
+                        "title": "Fix copy button issue",
+                        "url": "https://github.com/filp/whoops/pull/678"
+                    }
+                ],
+                "allPullRequests": "https://github.com/filp/whoops/pulls?q=author%3AAmraniCh"
+            },
+            {
+                "repo": "jolicode/JoliTypo",
+                "pullRequests": [
+                    {
+                        "title": "Upgrade the code base to support type declarations features (PHP 7.4 and prior)",
+                        "url": "https://github.com/jolicode/JoliTypo/pull/84"
+                    },
+                    {
+                        "title": "Switch to more semantic exception classes",
+                        "url": "https://github.com/jolicode/JoliTypo/pull/82"
+                    },
+                    {
+                        "title": "fix: fixed extending final class (DomException)",
+                        "url": "https://github.com/jolicode/JoliTypo/pull/81"
+                    }
+                ],
+                "allPullRequests": "https://github.com/jolicode/JoliTypo/pulls?q=author%3AAmraniCh"
+            },
+            {
+                "repo": "guzzle/psr7",
+                "pullRequests": [
+                    {
+                        "title": "Stream::getContents triggers notice error with unreadable/unwritable streams",
+                        "url": "https://github.com/guzzle/psr7/issues/480",
+                        "status": "bug report"
+                    }
+                ],
+                "links": [
+                    {
+                        "label": "fixed in",
+                        "text": "#515",
+                        "url": "https://github.com/guzzle/psr7/pull/515"
+                    }
+                ]
+            }
+        ],
+        "moreContributions": [
+            {
+                "text": "php-curl-class",
+                "url": "https://github.com/php-curl-class/php-curl-class/pulls?q=author%3AAmraniCh"
+            },
+            {
+                "text": "Nicolab/php-ftp-client",
+                "url": "https://github.com/Nicolab/php-ftp-client/pulls?q=author%3AAmraniCh"
+            },
+            {
+                "text": "url-tracker",
+                "url": "https://github.com/peter279k/url-tracker/pulls?q=author%3AAmraniCh"
+            },
+            {
+                "text": "slide-element",
+                "url": "https://github.com/alexmacarthur/slide-element/pulls?q=author%3AAmraniCh"
+            },
+            {
+                "text": "mootools-core",
+                "url": "https://github.com/mootools/mootools-core/pulls?q=author%3AAmraniCh"
+            }
+        ]
+    },
     "resume": {
         "name": "Shakir El Amrani",
         "role": "Software Engineer | DevOps · Applied AI · Telecom",
