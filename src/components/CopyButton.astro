@@ -1,0 +1,55 @@
+---
+// Small icon button that copies `value` to the clipboard. It needs JavaScript,
+// so it stays hidden until the script runs; the text next to it is still
+// visible and selectable without JS.
+import { Copy, Check } from '@lucide/astro';
+
+interface Props {
+    value: string;
+    label: string;
+}
+
+const { value, label } = Astro.props;
+---
+
+<button
+    type="button"
+    data-copy={value}
+    aria-label={label}
+    title={label}
+    hidden
+    class="copy-button inline-flex items-center gap-1 align-middle ml-1 text-muted-foreground hover:text-accent transition-colors cursor-pointer"
+>
+    <span data-icon="copy"><Copy size={13} /></span>
+    <span data-icon="done" hidden><Check size={13} /></span>
+    <span data-status class="text-xs" aria-live="polite"></span>
+</button>
+
+<script>
+    for (const button of document.querySelectorAll<HTMLButtonElement>('button[data-copy]')) {
+        if (!navigator.clipboard) continue;
+        button.hidden = false;
+
+        const copyIcon = button.querySelector<HTMLElement>('[data-icon="copy"]')!;
+        const doneIcon = button.querySelector<HTMLElement>('[data-icon="done"]')!;
+        const status = button.querySelector<HTMLElement>('[data-status]')!;
+        let timer: number | undefined;
+
+        button.addEventListener('click', async () => {
+            try {
+                await navigator.clipboard.writeText(button.dataset.copy ?? '');
+            } catch {
+                return;
+            }
+            copyIcon.hidden = true;
+            doneIcon.hidden = false;
+            status.textContent = 'Copied';
+            clearTimeout(timer);
+            timer = window.setTimeout(() => {
+                copyIcon.hidden = false;
+                doneIcon.hidden = true;
+                status.textContent = '';
+            }, 1500);
+        });
+    }
+</script>

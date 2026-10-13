@@ -6,6 +6,7 @@ export interface ContactLink {
     href: string;
     target?: string;
     rel?: string;
+    copy?: string;
 }
 
 export interface ExperienceItem {

@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import CopyButton from "../components/CopyButton.astro";
 import siteInfo from "../../public/0user.json";
 import { getCommitCount, formatCount } from "../lib/opensource";
 
@@ -34,7 +35,7 @@ const projects = await Promise.all(siteInfo.projects.map(async (project) => ({
                                 target={contact.target}
                                 rel={contact.rel}
                                 class="text-muted-foreground underline underline-offset-2 decoration-accent/50 hover:text-accent hover:decoration-accent transition-colors"
-                        >{contact.text}</a>]
+                        >{contact.text}</a>{contact.copy && <CopyButton value={contact.copy} label={`Copy ${contact.label}`} />}]
                         </div>
                 ))}
             </div>

@@ -18,7 +18,8 @@
         {
             "label": "email",
             "text": "contact@amranich.dev",
-            "href": "mailto:contact@amranich.dev"
+            "href": "mailto:contact@amranich.dev",
+            "copy": "contact@amranich.dev"
         },
         {
             "label": "github",

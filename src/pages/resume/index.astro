@@ -1,5 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
+import CopyButton from "../../components/CopyButton.astro";
 import { Shield, Briefcase, GraduationCap, BadgeCheck, Award, FolderGit2 } from '@lucide/astro';
 import { info, resume, contacts } from "../../lib/info";
 
@@ -29,7 +30,7 @@ const projects = info.projects.filter((project) => project.short);
                                 target={contact.target}
                                 rel={contact.rel}
                                 class={linkClass}
-                            >{contact.text}</a>]
+                            >{contact.text}</a>{contact.copy && <CopyButton value={contact.copy} label={`Copy ${contact.label}`} />}]
                         </div>
                     ))}
                 </div>
