@@ -1,6 +1,7 @@
 // @ts-check
 import {defineConfig} from 'astro/config'
 import react from '@astrojs/react'
+import sitemap from '@astrojs/sitemap'
 import tailwindcss from '@tailwindcss/vite'
 import {unified} from '@astrojs/markdown-remark'
 import rehypeExpressiveCode from 'rehype-expressive-code'
@@ -71,7 +72,13 @@ const processor = unified({
 })
 
 export default defineConfig({
-    integrations: [react()],
+    site: 'https://amranich.dev',
+    integrations: [react(), sitemap()],
+    // The old site had /en and /fr versions; send those links to the new home page.
+    redirects: {
+        '/en': '/',
+        '/fr': '/',
+    },
     vite: {
         plugins: [tailwindcss()],
     },

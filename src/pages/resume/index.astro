@@ -4,13 +4,13 @@ import CopyButton from "../../components/CopyButton.astro";
 import { Shield, Briefcase, GraduationCap, BadgeCheck, Award, FolderGit2 } from '@lucide/astro';
 import { info, resume, contacts } from "../../lib/info";
 
-const linkClass = "text-muted-foreground underline underline-offset-2 decoration-accent/50 hover:text-accent hover:decoration-accent transition-colors";
+const linkClass = "text-accent underline underline-offset-2 decoration-accent/50 hover:decoration-accent transition-colors";
 // Short version of the home page projects: only the ones with a one line "short" text.
 const projects = info.projects.filter((project) => project.short);
 ---
 
 <Base title={`${resume.name} - Resume`}
-      description={`${resume.role} resume for ${resume.name}.`}>
+      description={`Resume of ${resume.name}: software engineer (backend, DevOps, Linux) and MSc student in Computer Science and Telecommunications in Rabat.`}>
 
     <section class="container mx-auto px-6 pt-16 pb-20 flex-grow flex flex-col justify-center">
         <div class="max-w-3xl mx-auto w-full">
@@ -134,7 +134,7 @@ const projects = info.projects.filter((project) => project.short);
                                 <h3 class="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">{cat.category}</h3>
                                 <div class="flex flex-wrap gap-1.5">
                                     {cat.items.map((skill) => (
-                                        <span class="text-xs px-2 py-0.5 rounded border border-border bg-card font-mono text-muted-foreground">
+                                        <span class="text-xs px-2 py-0.5 rounded border border-border bg-card font-mono text-border">
                                             {skill}
                                         </span>
                                     ))}

@@ -7,16 +7,17 @@ import { info } from '../lib/info.ts';
 const links = [
   { href: '/', label: 'Home' },
   ...(info.blog ? [
-    { href: '/blog', label: 'Blog' },
-    { href: '/tags', label: 'Tags' },
+    { href: '/blog/', label: 'Blog' },
+    { href: '/tags/', label: 'Tags' },
   ] : []),
-  { href: '/resume', label: 'Resume' },
-  { href: '/open-source', label: 'Open Source' },
+  { href: '/resume/', label: 'Resume' },
+  { href: '/open-source/', label: 'Open Source' },
 ];
 const pathname = Astro.url.pathname;
 function isActiveHref(href: string) {
   if (href === '/') return pathname === '/';
-  return pathname === href || pathname.startsWith(href + '/');
+  const section = href.replace(/\/$/, '');
+  return pathname === section || pathname.startsWith(section + '/');
 }
 function linkClass(href: string) {
   const active = isActiveHref(href);
