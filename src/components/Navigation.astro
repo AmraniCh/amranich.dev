@@ -1,8 +1,15 @@
 ---
+import { info } from '../lib/info.ts';
+
+// The blog is hidden while "blog" is false in public/0user.json.
+// To show it again, set it to true and rename src/pages/_blog and
+// src/pages/_tags back to blog and tags (Astro skips "_" folders).
 const links = [
   { href: '/', label: 'Home' },
-  { href: '/archives', label: 'Archive' },
-  { href: '/tags', label: 'Tags' },
+  ...(info.blog ? [
+    { href: '/blog', label: 'Blog' },
+    { href: '/tags', label: 'Tags' },
+  ] : []),
   { href: '/resume', label: 'Resume' },
 ];
 const pathname = Astro.url.pathname;

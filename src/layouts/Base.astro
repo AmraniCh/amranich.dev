@@ -61,11 +61,13 @@ const resolvedOgImage = ogImage ?? (info.site.ogImage || undefined);
         "@type": "WebSite",
         "name": siteName,
         "url": siteUrl,
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": `${siteUrl}/archives?q={search_term_string}`,
-          "query-input": "required name=search_term_string"
-        }
+        ...(info.blog && {
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": `${siteUrl}/blog?q={search_term_string}`,
+            "query-input": "required name=search_term_string"
+          }
+        })
       })} />
     )}
 </head>

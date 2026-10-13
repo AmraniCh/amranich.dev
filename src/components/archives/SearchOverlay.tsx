@@ -159,7 +159,7 @@ export default function SearchOverlay({
               return (
                 <a
                   key={post.slug}
-                  href={`/archives/${post.slug}`}
+                  href={`/blog/${post.slug}`}
                   data-active={active ? 'true' : undefined}
                   onMouseEnter={() => setActiveIndex(idx)}
                   onClick={() => onSelect(post)}

@@ -62,6 +62,7 @@ export interface SiteMeta {
 export interface SiteInfo {
     name: string;
     role: string;
+    blog: boolean;
     site: SiteMeta;
     contacts: ContactLink[];
     resume: ResumeData;

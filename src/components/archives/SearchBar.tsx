@@ -40,7 +40,7 @@ export default function SearchBar({
   const handleSelect = (post: Post) => {
     setOpen(false)
     onChange?.(post.title)
-    window.location.assign(`/archives/${post.slug}`)
+    window.location.assign(`/blog/${post.slug}`)
   }
 
   return (

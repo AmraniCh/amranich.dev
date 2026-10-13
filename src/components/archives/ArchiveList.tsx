@@ -70,7 +70,7 @@ function PostItem({ post }: { post: Post }) {
       <div className="flex items-start justify-between gap-6 sm:gap-8">
         <div className="flex-1 min-w-0">
           <h3 className="text-lg sm:text-xl font-bold tracking-tight text-foreground group-hover:text-primary transition-colors text-balance">
-            <a href={`/archives/${post.slug}`} className="hover:text-primary">
+            <a href={`/blog/${post.slug}`} className="hover:text-primary">
               {post.title}
             </a>
           </h3>
