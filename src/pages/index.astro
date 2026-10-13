@@ -2,12 +2,6 @@
 import Base from "../layouts/Base.astro";
 import CopyButton from "../components/CopyButton.astro";
 import siteInfo from "../../public/0user.json";
-import { getCommitCount, formatCount } from "../lib/opensource";
-
-const projects = await Promise.all(siteInfo.projects.map(async (project) => ({
-    ...project,
-    commits: project.repo ? await getCommitCount(project.repo) : undefined,
-})));
 ---
 
 <Base title={siteInfo.site.title}
@@ -49,59 +43,6 @@ const projects = await Promise.all(siteInfo.projects.map(async (project) => ({
                         </div>
                 ))}
             </div>
-
-            {projects.length > 0 && (
-                <div class="mt-14">
-                    <h2 class="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-4">
-                        Recent work
-                    </h2>
-                    <div class="space-y-8">
-                        {projects.map((project) => (
-                            <article class="border-l-2 border-border/60 pl-4 space-y-2">
-                                <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
-                                    <h3 class="text-base font-semibold text-foreground">{project.title}</h3>
-                                    <span class="text-xs text-muted-foreground shrink-0">{project.date}</span>
-                                </div>
-                                {project.subtitle && <p class="text-sm text-muted-foreground text-pretty">{project.subtitle}</p>}
-                                {project.paragraphs.map((paragraph) => (
-                                    <p class="text-sm text-foreground/80 leading-relaxed text-pretty">{paragraph}</p>
-                                ))}
-                                {project.material && (
-                                    <p class="text-sm text-foreground/80 text-pretty"><span class="text-muted-foreground">Material:</span> {project.material}</p>
-                                )}
-                                <p class="text-xs text-muted-foreground">{project.stack.join(" · ")}</p>
-                                {(project.associatedWith || project.contributors?.length) && (
-                                    <p class="text-xs text-muted-foreground">
-                                        {project.associatedWith}
-                                        {project.associatedWith && project.contributors?.length && " · "}
-                                        {project.contributors?.length && (
-                                            <Fragment>
-                                                with{" "}
-                                                {project.contributors.map((person, i) => (
-                                                    <Fragment>
-                                                        {i > 0 && ", "}
-                                                        {person.url
-                                                            ? <a href={person.url} target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 decoration-accent/50 hover:text-accent hover:decoration-accent transition-colors">{person.name}</a>
-                                                            : person.name}
-                                                    </Fragment>
-                                                ))}
-                                            </Fragment>
-                                        )}
-                                    </p>
-                                )}
-                                <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs">
-                                    {project.links.map((link) => (
-                                        <span>[{link.label}: <a href={link.url} target="_blank" rel="noopener noreferrer" class="text-muted-foreground underline underline-offset-2 decoration-accent/50 hover:text-accent hover:decoration-accent transition-colors">{link.text}</a>]</span>
-                                    ))}
-                                    {project.commits !== undefined && (
-                                        <span>[commits: <a href={`https://github.com/${project.repo}/commits`} target="_blank" rel="noopener noreferrer" class="text-muted-foreground underline underline-offset-2 decoration-accent/50 hover:text-accent hover:decoration-accent transition-colors">{formatCount(project.commits)}</a>]</span>
-                                    )}
-                                </div>
-                            </article>
-                        ))}
-                    </div>
-                </div>
-            )}
         </div>
     </section>
 

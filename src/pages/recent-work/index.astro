@@ -1,0 +1,67 @@
+---
+import Base from "../../layouts/Base.astro";
+import { info } from "../../lib/info";
+import { getCommitCount, formatCount } from "../../lib/opensource";
+import { slug } from "../../lib/slug";
+
+const projects = await Promise.all(info.projects.map(async (project) => ({
+    ...project,
+    commits: project.repo ? await getCommitCount(project.repo) : undefined,
+})));
+---
+
+<Base title={`${info.name} - Recent work`}
+      description={`Recent projects by ${info.name}: neural speech codecs on Raspberry Pi, intrusion detection for FTP servers, and the Magma 4G/LTE core network.`}>
+
+    <section class="container mx-auto px-6 pt-16 pb-20 flex-grow">
+        <div class="max-w-3xl mx-auto w-full">
+            <h1 class="mb-10 text-4xl md:text-5xl font-bold tracking-tight text-balance">Recent work</h1>
+            <div class="space-y-8">
+                {projects.map((project) => (
+                    <article id={slug(project.title)} class="border-l-2 border-border/60 pl-4 space-y-2 scroll-mt-20">
+                        <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+                            <h3 class="text-base font-semibold text-foreground">{project.title}</h3>
+                            <span class="text-xs text-muted-foreground shrink-0">{project.date}</span>
+                        </div>
+                        {project.subtitle && <p class="text-sm text-muted-foreground text-pretty">{project.subtitle}</p>}
+                        {project.paragraphs.map((paragraph) => (
+                            <p class="text-sm text-foreground/80 leading-relaxed text-pretty">{paragraph}</p>
+                        ))}
+                        {project.material && (
+                            <p class="text-sm text-foreground/80 text-pretty"><span class="text-muted-foreground">Material:</span> {project.material}</p>
+                        )}
+                        <p class="text-xs text-muted-foreground">{project.stack.join(" · ")}</p>
+                        {(project.associatedWith || project.contributors?.length) && (
+                            <p class="text-xs text-muted-foreground">
+                                {project.associatedWith}
+                                {project.associatedWith && project.contributors?.length && " · "}
+                                {project.contributors?.length && (
+                                    <Fragment>
+                                        with{" "}
+                                        {project.contributors.map((person, i) => (
+                                            <Fragment>
+                                                {i > 0 && ", "}
+                                                {person.url
+                                                    ? <a href={person.url} target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 decoration-accent/50 hover:text-accent hover:decoration-accent transition-colors">{person.name}</a>
+                                                    : person.name}
+                                            </Fragment>
+                                        ))}
+                                    </Fragment>
+                                )}
+                            </p>
+                        )}
+                        <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs">
+                            {project.links.map((link) => (
+                                <span>[{link.label}: <a href={link.url} target="_blank" rel="noopener noreferrer" class="text-muted-foreground underline underline-offset-2 decoration-accent/50 hover:text-accent hover:decoration-accent transition-colors">{link.text}</a>]</span>
+                            ))}
+                            {project.commits !== undefined && (
+                                <span>[commits: <a href={`https://github.com/${project.repo}/commits`} target="_blank" rel="noopener noreferrer" class="text-muted-foreground underline underline-offset-2 decoration-accent/50 hover:text-accent hover:decoration-accent transition-colors">{formatCount(project.commits)}</a>]</span>
+                            )}
+                        </div>
+                    </article>
+                ))}
+            </div>
+        </div>
+    </section>
+
+</Base>
