@@ -8,13 +8,6 @@ export interface ContactLink {
     rel?: string;
 }
 
-export interface DownloadItem {
-    label: string;
-    text: string;
-    href: string;
-    filename?: string;
-}
-
 export interface ExperienceItem {
     role: string;
     company?: string;
@@ -35,19 +28,29 @@ export interface SkillCategory {
     items: string[];
 }
 
+export interface CertificationItem {
+    name: string;
+    issuer?: string;
+    date?: string;
+    url?: string;
+}
+
+export interface AwardItem {
+    title: string;
+    detail: string;
+    date: string;
+    url?: string;
+}
+
 export interface ResumeData {
     name: string;
     role: string;
     bio: string;
-    downloads: {
-        cv: DownloadItem;
-        pgp: DownloadItem;
-    };
-    pgpFingerprint?: string;
     experience: ExperienceItem[];
     skills: SkillCategory[];
     education?: EducationItem[];
-    certifications?: string[];
+    certifications?: CertificationItem[];
+    awards?: AwardItem[];
 }
 
 export interface SiteMeta {
@@ -117,6 +120,7 @@ export interface Project {
     repo?: string;
     subtitle?: string;
     date: string;
+    short?: string;
     paragraphs: string[];
     material?: string;
     stack: string[];

@@ -41,6 +41,7 @@
             "repo": "AmraniCh/neuralcodec-rpi",
             "subtitle": "Neural Speech Codec on Embedded Hardware for Low-Bandwidth Networks",
             "date": "Jun 2026 – Jul 2026",
+            "short": "Neural speech codec on Raspberry Pi for networks with low bandwidth (3 to 6 kbps).",
             "paragraphs": [
                 "A research oriented project on a real-time neural speech codec deployed on embedded hardware (two Raspberry Pi 4 boards) for low-bandwidth networks (3 to 6 kbps).",
                 "Benchmarked 4 codecs (Opus, Codec2, EnCodec, SoundStream) on Pi hardware (Raspberry Pi 4) and measured the codecs' performance with PESQ quality and Real-Time Factor (RTF). SoundStream was selected for deployment.",
@@ -84,6 +85,7 @@
             "repo": "AmraniCh/ftp-ids-ml",
             "subtitle": "ML-Based Intrusion Detection for FTP Servers",
             "date": "May 2026 – Jun 2026",
+            "short": "ML-based intrusion detection for FTP servers, on real vsftpd logs.",
             "paragraphs": [
                 "A host-based intrusion detection system for FTP servers that combines machine learning with rule-based signatures, evaluated on real production FTP sessions (from the EC2 instance that hosts my portfolio website).",
                 "It reads the vsftpd logs and groups them by session. For each session, we extract 17 features about user behavior, and then an Isolation Forest model gives it a score between 0 and 1. For static and known attacks like CVE-2011-2523, brute force and others, we rely on signature rules.",
@@ -299,22 +301,7 @@
     "resume": {
         "name": "Shakir El Amrani",
         "role": "Software Engineer | DevOps · Applied AI · Telecom",
-        "bio": "Software engineer with a broad background across web applications, APIs, databases, and cloud infrastructure. Focused on clean architecture, automation, and shipping reliable software.",
-        "downloads": {
-            "cv": {
-                "label": "download cv",
-                "text": "cv.pdf",
-                "href": "/cv.pdf",
-                "filename": "john-doe-cv.pdf"
-            },
-            "pgp": {
-                "label": "download pgp",
-                "text": "publickey.asc",
-                "href": "/pgp/publickey.asc",
-                "filename": "publickey.asc"
-            }
-        },
-        "pgpFingerprint": "AAAA AAAA AAAA AAAA AAAA AAAA AAAA",
+        "bio": "I am a software engineer based in Rabat, Morocco, with 4+ years of experience in backend, DevOps and Linux infrastructure, including 1+ year as Tech Lead. I am currently pursuing a Master's degree in Computer Science and Telecommunications (Applied AI track) at Université Mohammed V. As a scientific research enthusiast, I am mainly interested in AI for speech and audio signal processing, and AI applied to telecom.",
         "experience": [
             {
                 "role": "LFX Mentee, Magma Core (Cloud/4G/LTE)",
@@ -446,6 +433,38 @@
                 ]
             }
         ],
+        "certifications": [
+            {
+                "name": "Certified Linux Administrator (LPIC-1)",
+                "issuer": "Linux Professional Institute (LPI)",
+                "date": "Oct 2026",
+                "url": "https://www.credly.com/badges/ba97b502-2263-427a-ab82-0cc4d7ad7125/public_url"
+            },
+            {
+                "name": "AWS Certified AI Practitioner",
+                "issuer": "Amazon Web Services (AWS)",
+                "date": "Aug 2026",
+                "url": "https://www.credly.com/badges/fe4886d9-7c6c-49d9-b666-f4cbcfce73b9/public_url"
+            },
+            {
+                "name": "AWS Certified Cloud Practitioner",
+                "issuer": "Amazon Web Services (AWS)",
+                "date": "Jun 2026",
+                "url": "https://www.credly.com/badges/57648b98-eabb-4ec6-a5f8-978dfc81bf97/public_url"
+            },
+            {
+                "name": "CCNAv7: Switching, Routing, and Wireless Essentials",
+                "issuer": "Cisco",
+                "date": "Jul 2022",
+                "url": "https://www.credly.com/badges/a5eebad9-61e8-42ce-89ed-6d7c5b45cbf4"
+            },
+            {
+                "name": "CCNAv7: Introduction to Networks",
+                "issuer": "Cisco",
+                "date": "Jul 2022",
+                "url": "https://www.credly.com/badges/4bf42225-fda5-4e53-b982-0be6268476c9"
+            }
+        ],
         "education": [
             {
                 "degree": "Master of Science (MSc) in Computer Science and Telecommunications (Applied AI track)",
@@ -456,6 +475,20 @@
                 "degree": "Bachelor's Degree in Software and Web Development (Software Engineering)",
                 "institution": "Abdelmalek Essaâdi University (UAE), École Normale Supérieure, Tétouan",
                 "period": "2020"
+            }
+        ],
+        "awards": [
+            {
+                "title": "PHP Innovation Award, #1",
+                "detail": "PHP AJAX Response Router (ajax-router), phpclasses.org",
+                "date": "Feb 2022",
+                "url": "/certs/phpclasses-february-2022-innovation-award.pdf"
+            },
+            {
+                "title": "PHP Innovation Award, #3",
+                "detail": "PHP FTP Client Library (php-ftp-client), phpclasses.org",
+                "date": "Dec 2021",
+                "url": "/certs/phpclasses-december-2021-innovation-award.png"
             }
         ]
     }

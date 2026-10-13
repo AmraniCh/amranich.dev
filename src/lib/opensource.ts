@@ -48,7 +48,19 @@ async function request(url: string): Promise<Response> {
         headers.Authorization = `Bearer ${token}`;
     }
 
-    const response = await fetch(url, { headers });
+    // Retry network errors and 5xx answers, so one short failure does not
+    // stop the whole build.
+    let response: Response | undefined;
+    for (let attempt = 1; ; attempt++) {
+        try {
+            response = await fetch(url, { headers });
+            if (response.status < 500 || attempt === 3) break;
+        } catch (error) {
+            if (attempt === 3) throw new Error(`Open source stats: ${url} failed (${error})`);
+        }
+        await new Promise((resolve) => setTimeout(resolve, 1000 * attempt));
+    }
+
     if (!response.ok) {
         const hint = isGitHub && !token && (response.status === 403 || response.status === 429)
             ? ' (GitHub rate limit: set GITHUB_TOKEN in .env)'
