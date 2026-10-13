@@ -1,5 +1,6 @@
 ---
 import { info } from '../lib/info.ts';
+import ThemeToggle from './ThemeToggle.astro';
 
 // The blog is hidden while "blog" is false in public/0user.json.
 // To show it again, set it to true and rename src/pages/_blog and
@@ -31,6 +32,7 @@ function linkClass(href: string) {
         {links.map((l) => (
           <a href={l.href} class={linkClass(l.href)} aria-current={isActiveHref(l.href) ? 'page' : undefined}>{l.label}</a>
         ))}
+        <ThemeToggle />
       </div>
     </div>
   </div>

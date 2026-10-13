@@ -1,0 +1,56 @@
+---
+// Switches between light and dark mode and remembers the choice in
+// localStorage. Base.astro applies the saved choice (or the system setting)
+// before the page renders. Hidden without JavaScript: the page then simply
+// follows the system setting.
+import { Sun, Moon } from '@lucide/astro';
+---
+
+<button
+    type="button"
+    data-theme-toggle
+    aria-label="Switch to dark mode"
+    title="Switch to dark mode"
+    hidden
+    class="inline-flex items-center text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
+>
+    <span class="dark:hidden"><Moon size={16} /></span>
+    <span class="hidden dark:inline"><Sun size={16} /></span>
+</button>
+
+<script>
+    const button = document.querySelector<HTMLButtonElement>('[data-theme-toggle]');
+    if (button) {
+        const root = document.documentElement;
+        const update = () => {
+            const label = root.classList.contains('dark') ? 'Switch to light mode' : 'Switch to dark mode';
+            button.setAttribute('aria-label', label);
+            button.title = label;
+        };
+
+        button.hidden = false;
+        update();
+
+        button.addEventListener('click', () => {
+            const dark = root.classList.toggle('dark');
+            try {
+                localStorage.setItem('theme', dark ? 'dark' : 'light');
+            } catch {
+                // Storage can be blocked; the switch still works for this page.
+            }
+            update();
+        });
+
+        // Follow system changes until the visitor picks a mode.
+        matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
+            let stored: string | null = null;
+            try {
+                stored = localStorage.getItem('theme');
+            } catch {}
+            if (!stored) {
+                root.classList.toggle('dark', event.matches);
+                update();
+            }
+        });
+    }
+</script>
