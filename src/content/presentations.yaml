@@ -20,7 +20,7 @@
   title: "A fork() in the road"
   section: Paper presentations
   paper: "Andrew Baumann, Jonathan Appavoo, Orran Krieger, Timothy Roscoe. HotOS 2019 (Microsoft Research, Boston University, ETH Zurich)"
-  context: "Master's, module \"Méthodologie de la recherche scientifique\" (Scientific Research Methodology)"
+  context: "Master's, module \"Méthodologie de la recherche scientifique\""
   supervisor: Pr. Tarik Houichime
   date: "2025–2026"
   description: "Analyzed and presented (in English) the paper \"A fork() in the road\", written by researchers from Microsoft Research, Boston University, and ETH Zurich."
@@ -33,7 +33,7 @@
   title: "Coase's Penguin, or, Linux and the Nature of the Firm"
   section: Paper presentations
   paper: Yochai Benkler, Yale Law Journal, 2002
-  context: "Master's, module \"Techniques de communication – Culture entrepreneuriale\" (Communication Techniques – Entrepreneurial Culture)"
+  context: "Master's, module \"Techniques de communication – Culture entrepreneuriale\""
   supervisor: Pr. Soumaya Houari
   date: "2025–2026"
   description: "I presented this paper (in French) about free software as an economic phenomenon: how thousands of volunteers build excellent software like Linux, without a boss or an owner. The paper calls this \"commons-based peer production\", a third way to produce next to the firm and the market."
@@ -46,9 +46,9 @@
   title: NeuralCodec-RPi project defense
   section: Project presentations
   subtitle: Neural Codecs for Real-Time Voice Transmission over Low-Bandwidth Networks on Raspberry Pi
-  context: "Master's, module \"Architecture avancée\" (Advanced Architecture)"
+  context: "Master's, module \"Architecture avancée\""
   jury: Pr. Hanae Belmajdoub
-  date: "2026"
+  date: "Jun–Jul 2026"
   description: "Benchmarking traditional and neural speech codecs on two Raspberry Pi boards, and using the best one for real-time voice transmission over UDP."
   project: NeuralCodec-RPi
   language: in French
@@ -58,6 +58,7 @@
   section: Project presentations
   subtitle: "FTPGuard: A host-based FTP intrusion detection system using unsupervised machine learning and signature rules"
   context: "Master's, Machine Learning project"
+  date: "May–Jun 2026"
   jury: Pr. Abdelhak Mahmoudi
   description: "Host-based FTP intrusion detection combining an Isolation Forest model with signature rules and human-in-the-loop retraining."
   project: FTPGuard
@@ -67,7 +68,7 @@
   title: "Patent drafting exercise: adaptive system for low-frequency magnetic field cancellation with digital signal processing"
   section: Coursework
   subtitle: "Original title: « Système adaptatif de régulation de l'ambiance électromagnétique par traitement numérique en boucle fermée et synthèse d'ondes biocompatibles »"
-  context: "Master's, module \"Innovation et propriété intellectuelle\" (Innovation and Intellectual Property)"
+  context: "Master's, module \"Innovation et propriété intellectuelle\""
   description: "As a team, we wrote a patent-style document (prior art, claims and drawings) for a system that cancels low-frequency magnetic fields with digital signal processing. It is not a filed patent, but a project to teach us how to write a patent for an invention."
   slides: "https://docs.google.com/presentation/d/1n8v5I3cdpvd4kyKz2MIeCnPlsS5Rcu44/edit?usp=sharing&ouid=107858341399528336890&rtpof=true&sd=true"
   links:
