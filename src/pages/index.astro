@@ -79,12 +79,12 @@ const projects = await Promise.all(siteInfo.projects.map(async (project) => ({
                                     </p>
                                 )}
                                 <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs">
-                                    {project.commits !== undefined && (
-                                        <span>[commits: <a href={`https://github.com/${project.repo}/commits`} target="_blank" rel="noopener noreferrer" class="text-muted-foreground underline underline-offset-2 decoration-accent/50 hover:text-accent hover:decoration-accent transition-colors">{formatCount(project.commits)}</a>]</span>
-                                    )}
                                     {project.links.map((link) => (
                                         <span>[{link.label}: <a href={link.url} target="_blank" rel="noopener noreferrer" class="text-muted-foreground underline underline-offset-2 decoration-accent/50 hover:text-accent hover:decoration-accent transition-colors">{link.text}</a>]</span>
                                     ))}
+                                    {project.commits !== undefined && (
+                                        <span>[commits: <a href={`https://github.com/${project.repo}/commits`} target="_blank" rel="noopener noreferrer" class="text-muted-foreground underline underline-offset-2 decoration-accent/50 hover:text-accent hover:decoration-accent transition-colors">{formatCount(project.commits)}</a>]</span>
+                                    )}
                                 </div>
                             </article>
                         ))}
