@@ -18,9 +18,19 @@ const projects = await Promise.all(siteInfo.projects.map(async (project) => ({
             <h1 class="mb-2 text-4xl md:text-5xl font-bold tracking-tight text-balance">{siteInfo.name}</h1>
             <p class="mb-4 text-lg md:text-xl text-muted-foreground">{siteInfo.role}</p>
 
-            <p class:list={["text-base md:text-lg text-foreground/85 leading-relaxed text-pretty", siteInfo.home.note ? "mb-4" : "mb-10"]}>
+            <p class:list={["text-base md:text-lg text-foreground/85 leading-relaxed text-pretty", siteInfo.home.note || siteInfo.home.funFacts?.length ? "mb-4" : "mb-10"]}>
                 {siteInfo.home.bio}
             </p>
+            {siteInfo.home.funFacts && siteInfo.home.funFacts.length > 0 && (
+                <div class:list={["text-sm text-muted-foreground", siteInfo.home.note ? "mb-4" : "mb-10"]}>
+                    <p class="mb-1">Fun facts</p>
+                    <ul class="list-disc list-inside space-y-0.5">
+                        {siteInfo.home.funFacts.map((fact) => (
+                            <li class="text-pretty">{fact}</li>
+                        ))}
+                    </ul>
+                </div>
+            )}
             {siteInfo.home.note && (
                 <p class="mb-10 text-base md:text-lg text-foreground/85 leading-relaxed text-pretty">
                     {siteInfo.home.note}
