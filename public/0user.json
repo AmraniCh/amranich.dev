@@ -38,6 +38,7 @@
     "projects": [
         {
             "title": "NeuralCodec-RPi",
+            "repo": "AmraniCh/neuralcodec-rpi",
             "subtitle": "Neural Speech Codec on Embedded Hardware for Low-Bandwidth Networks",
             "date": "Jun 2026 – Jul 2026",
             "paragraphs": [
@@ -80,6 +81,7 @@
         },
         {
             "title": "FTPGuard",
+            "repo": "AmraniCh/ftp-ids-ml",
             "subtitle": "ML-Based Intrusion Detection for FTP Servers",
             "date": "May 2026 – Jun 2026",
             "paragraphs": [

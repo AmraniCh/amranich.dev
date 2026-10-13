@@ -114,6 +114,7 @@ export interface Contributor {
 
 export interface Project {
     title: string;
+    repo?: string;
     subtitle?: string;
     date: string;
     paragraphs: string[];

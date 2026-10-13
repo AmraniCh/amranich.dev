@@ -37,10 +37,10 @@ export interface OpenSourceStats {
     contributions: ContributionStats[];
 }
 
-async function getJson<T>(url: string): Promise<T> {
+async function request(url: string): Promise<Response> {
     const headers: Record<string, string> = { 'User-Agent': 'amranich.dev' };
     // Without a token GitHub allows only 60 requests per hour. Set GITHUB_TOKEN
-    // in .env for local work (for example the output of `gh auth token`).
+    // in .env for local work (a fine-grained token with public read access).
     const token = import.meta.env.GITHUB_TOKEN ?? process.env.GITHUB_TOKEN;
     const isGitHub = url.startsWith('https://api.github.com/');
     if (token && isGitHub) {
@@ -54,7 +54,38 @@ async function getJson<T>(url: string): Promise<T> {
             : '';
         throw new Error(`Open source stats: ${url} returned ${response.status}${hint}`);
     }
+    return response;
+}
+
+async function getJson<T>(url: string): Promise<T> {
+    const response = await request(url);
     return response.json() as Promise<T>;
+}
+
+// GitHub has no commit count field. With one commit per page, the page
+// number of the "last" link is the total number of commits.
+async function loadCommitCount(repo: string): Promise<number> {
+    const response = await request(`https://api.github.com/repos/${repo}/commits?per_page=1`);
+    const last = response.headers.get('link')?.match(/[?&]page=(\d+)>;\s*rel="last"/);
+    if (last) {
+        return Number.parseInt(last[1], 10);
+    }
+    const commits = await response.json() as unknown[];
+    return commits.length;
+}
+
+const commitCounts = new Map<string, Promise<number>>();
+
+export function getCommitCount(repo: string): Promise<number> {
+    let count = commitCounts.get(repo);
+    if (!count) {
+        count = loadCommitCount(repo).catch((error) => {
+            commitCounts.delete(repo);
+            throw error;
+        });
+        commitCounts.set(repo, count);
+    }
+    return count;
 }
 
 // GitHub descriptions often start with an emoji (":package:" or a real one),
