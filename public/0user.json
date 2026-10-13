@@ -119,6 +119,42 @@
                     "url": "https://docs.google.com/presentation/d/1dzeuGmleFqmDxFh8jwYWeoPqGfiyU1ZX/edit?usp=sharing&ouid=107858341399528336890&rtpof=true&sd=true"
                 }
             ]
+        },
+        {
+            "title": "Magma Core",
+            "subtitle": "LFX Mentorship at The Linux Foundation (Cloud/4G/LTE)",
+            "date": "Jun 2026 – Aug 2026",
+            "paragraphs": [
+                "In this mentorship I worked on making Magma easier to deploy on a local machine with Minikube. The orc8r and lte-orc8r Helm charts still used old Kubernetes APIs, so helm install failed on Kubernetes 1.25 and newer. I updated the API versions in the charts to fix it.",
+                "I also updated the Minikube guide. I fixed the Kubernetes version and wrote down the problems I hit on the way, like the fluentd gem and the cert ownership, with their fixes. Then I added a new section to install the LTE chart.",
+                "To test everything, I connected srsRAN to the Magma AGW, ran a 4G LTE attach and checked the messages in Wireshark."
+            ],
+            "stack": [
+                "Kubernetes",
+                "Minikube",
+                "Helm",
+                "srsRAN 4G",
+                "Wireshark",
+                "4G/LTE"
+            ],
+            "associatedWith": "The Linux Foundation",
+            "links": [
+                {
+                    "label": "notes",
+                    "text": "github",
+                    "url": "https://github.com/AmraniCh/magma-lfx-mentorship-notes"
+                },
+                {
+                    "label": "report",
+                    "text": "LTE attach test",
+                    "url": "https://github.com/AmraniCh/magma-lfx-mentorship-notes/blob/main/delivrables/network-testing-report.md"
+                },
+                {
+                    "label": "PRs",
+                    "text": "magma",
+                    "url": "https://github.com/pulls?q=is%3Apr+author%3AAmraniCh+org%3Amagma"
+                }
+            ]
         }
     ],
     "openSource": {
