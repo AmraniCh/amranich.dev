@@ -95,11 +95,13 @@ import { resume, contacts } from "../../lib/info";
                                     </h3>
                                     <span class="text-xs text-muted-foreground shrink-0">{exp.period}</span>
                                 </div>
-                                <ul class="list-disc list-inside space-y-1 text-sm text-foreground/80">
-                                    {exp.description.map((desc) => (
-                                        <li class="text-pretty">{desc}</li>
-                                    ))}
-                                </ul>
+                                {exp.description.length > 0 && (
+                                    <ul class="list-disc list-inside space-y-1 text-sm text-foreground/80">
+                                        {exp.description.map((desc) => (
+                                            <li class="text-pretty">{desc}</li>
+                                        ))}
+                                    </ul>
+                                )}
                             </div>
                         ))}
                     </div>
@@ -133,7 +135,7 @@ import { resume, contacts } from "../../lib/info";
                 <div class="mb-10">
                     <h2 class="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-4 flex items-center gap-2">
                         <GraduationCap size={14} class="text-muted-foreground" />
-                        <span>Education & Certifications</span>
+                        <span>Education</span>
                     </h2>
                     <div class="space-y-4">
                         {resume.education.map((edu) => (

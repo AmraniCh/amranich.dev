@@ -35,8 +35,8 @@
         }
     ],
     "resume": {
-        "name": "John Doe",
-        "role": "Software Engineer",
+        "name": "Shakir El Amrani",
+        "role": "Software Engineer | DevOps · Applied AI · Telecom",
         "bio": "Software engineer with a broad background across web applications, APIs, databases, and cloud infrastructure. Focused on clean architecture, automation, and shipping reliable software.",
         "downloads": {
             "cv": {
@@ -55,24 +55,25 @@
         "pgpFingerprint": "AAAA AAAA AAAA AAAA AAAA AAAA AAAA",
         "experience": [
             {
-                "role": "Senior Software Engineer",
-                "company": "Example Company",
-                "period": "2023 — Present",
-                "description": [
-                    "Led feature development for a large-scale web application, improving reliability and performance.",
-                    "Designed and maintained internal tooling, CI pipelines, and automated testing strategies.",
-                    "Mentored junior engineers and drove code review and architecture discussions."
-                ]
+                "role": "LFX Mentee, Magma Core (Cloud/4G/LTE)",
+                "company": "The Linux Foundation",
+                "location": "Remote",
+                "period": "Jun 2026 - Aug 2026",
+                "description": []
             },
             {
-                "role": "Software Engineer",
-                "company": "Example Company",
-                "period": "2021 — 2023",
-                "description": [
-                    "Built and shipped REST and GraphQL APIs backed by relational and NoSQL databases.",
-                    "Deployed and operated services on cloud infrastructure with monitoring and alerting.",
-                    "Collaborated across teams to plan and deliver multi-quarter product initiatives."
-                ]
+                "role": "Software Developer & Technical Lead",
+                "company": "PI Marketing",
+                "location": "Tangier, Morocco",
+                "period": "Nov 2021 - Nov 2025",
+                "description": []
+            },
+            {
+                "role": "Full Stack Developer (Internship)",
+                "company": "Map-concepts",
+                "location": "Tangier, Morocco",
+                "period": "Jan 2021 - Jun 2021",
+                "description": []
             }
         ],
         "skills": [
@@ -122,9 +123,14 @@
         ],
         "education": [
             {
-                "degree": "B.S. in Computer Science",
-                "institution": "Example University",
-                "period": "2017 — 2021"
+                "degree": "Master of Science (MSc) in Computer Science and Telecommunications (Applied AI track)",
+                "institution": "Université Mohammed V (UM5), Faculté des Sciences, Rabat",
+                "period": "2025 - 2027"
+            },
+            {
+                "degree": "Bachelor's Degree in Software and Web Development (Software Engineering)",
+                "institution": "Abdelmalek Essaâdi University (UAE), École Normale Supérieure, Tétouan",
+                "period": "2020"
             }
         ]
     }
