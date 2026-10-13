@@ -1,0 +1,131 @@
+{
+    "name": "Shakir El Amrani",
+    "role": "Software Engineer · MSc Student in Applied AI",
+    "home": {
+        "bio": "I am a software engineer based in Rabat, Morocco, with 4+ years of experience in backend, DevOps and Linux infrastructure, including 1+ year as Tech Lead. I am currently pursuing a master's degree in Computer Science and Telecommunications at Université Mohammed V. I am a Computer Science research enthusiast, and my research interests include AI for speech and audio signal processing, and AI applied to telecom.",
+        "note": ""
+    },
+    "site": {
+        "name": "amranich.dev",
+        "url": "https://amranich.dev",
+        "title": "Shakir El Amrani - Software Engineer",
+        "description": "Software engineer and MSc student in Computer Science and Telecommunications at Université Mohammed V, Rabat. Research interests: AI for speech and audio signal processing, and AI applied to telecom.",
+        "locale": "en_US",
+        "ogImage": ""
+    },
+    "contacts": [
+        {
+            "label": "email",
+            "text": "contact@amranich.dev",
+            "href": "mailto:contact@amranich.dev"
+        },
+        {
+            "label": "github",
+            "text": "@AmraniCh",
+            "href": "https://github.com/AmraniCh",
+            "target": "_blank",
+            "rel": "noopener noreferrer"
+        },
+        {
+            "label": "linkedin",
+            "text": "in/amranich",
+            "href": "https://www.linkedin.com/in/amranich",
+            "target": "_blank",
+            "rel": "noopener noreferrer"
+        }
+    ],
+    "resume": {
+        "name": "John Doe",
+        "role": "Software Engineer",
+        "bio": "Software engineer with a broad background across web applications, APIs, databases, and cloud infrastructure. Focused on clean architecture, automation, and shipping reliable software.",
+        "downloads": {
+            "cv": {
+                "label": "download cv",
+                "text": "cv.pdf",
+                "href": "/cv.pdf",
+                "filename": "john-doe-cv.pdf"
+            },
+            "pgp": {
+                "label": "download pgp",
+                "text": "publickey.asc",
+                "href": "/pgp/publickey.asc",
+                "filename": "publickey.asc"
+            }
+        },
+        "pgpFingerprint": "AAAA AAAA AAAA AAAA AAAA AAAA AAAA",
+        "experience": [
+            {
+                "role": "Senior Software Engineer",
+                "company": "Example Company",
+                "period": "2023 — Present",
+                "description": [
+                    "Led feature development for a large-scale web application, improving reliability and performance.",
+                    "Designed and maintained internal tooling, CI pipelines, and automated testing strategies.",
+                    "Mentored junior engineers and drove code review and architecture discussions."
+                ]
+            },
+            {
+                "role": "Software Engineer",
+                "company": "Example Company",
+                "period": "2021 — 2023",
+                "description": [
+                    "Built and shipped REST and GraphQL APIs backed by relational and NoSQL databases.",
+                    "Deployed and operated services on cloud infrastructure with monitoring and alerting.",
+                    "Collaborated across teams to plan and deliver multi-quarter product initiatives."
+                ]
+            }
+        ],
+        "skills": [
+            {
+                "category": "Languages",
+                "items": [
+                    "TypeScript",
+                    "JavaScript",
+                    "Python",
+                    "Go",
+                    "SQL",
+                    "Bash"
+                ]
+            },
+            {
+                "category": "Frameworks & Libraries",
+                "items": [
+                    "React",
+                    "Node.js",
+                    "Express",
+                    "Astro",
+                    "Prisma",
+                    "Tailwind CSS"
+                ]
+            },
+            {
+                "category": "Infrastructure",
+                "items": [
+                    "Docker",
+                    "Kubernetes",
+                    "AWS",
+                    "GCP",
+                    "Terraform",
+                    "CI/CD"
+                ]
+            },
+            {
+                "category": "Practices",
+                "items": [
+                    "Testing",
+                    "Code Review",
+                    "Agile",
+                    "Observability",
+                    "Security Awareness"
+                ]
+            }
+        ],
+        "education": [
+            {
+                "degree": "B.S. in Computer Science",
+                "institution": "Example University",
+                "period": "2017 — 2021"
+            }
+        ]
+    }
+}
