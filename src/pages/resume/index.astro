@@ -111,6 +111,7 @@ const projects = info.projects.filter((project) => project.short);
                                     <h3 class="text-sm font-semibold text-foreground">{edu.degree}</h3>
                                     <span class="text-xs text-muted-foreground shrink-0">{edu.period}</span>
                                 </div>
+                                {edu.subtitle && <p class="text-xs text-foreground/80">{edu.subtitle}</p>}
                                 <p class="text-xs text-muted-foreground">{edu.institution}</p>
                                 {edu.details?.map((detail) => (
                                     <p class="text-xs text-foreground/80">{detail}</p>

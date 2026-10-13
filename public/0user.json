@@ -468,7 +468,8 @@
         ],
         "education": [
             {
-                "degree": "Master of Science (MSc) in Computer Science and Telecommunications (Applied AI track)",
+                "degree": "Master of Science (MSc) in Computer Science and Telecommunications",
+                "subtitle": "Track: Applied Artificial Intelligence (Informatique et IA appliquée)",
                 "institution": "Université Mohammed V (UM5), Faculté des Sciences, Rabat",
                 "period": "2025 - 2027"
             },
