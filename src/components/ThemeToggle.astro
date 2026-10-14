@@ -35,6 +35,7 @@ import { Sun, Moon } from '@lucide/astro';
 
         button.addEventListener('click', () => {
             const dark = root.classList.toggle('dark');
+            root.classList.toggle('light', !dark);
             try {
                 // Remember the OS theme too, so the choice is dropped when the OS changes.
                 localStorage.setItem('theme', dark ? 'dark' : 'light');
@@ -52,6 +53,7 @@ import { Sun, Moon } from '@lucide/astro';
                 localStorage.removeItem('theme-os');
             } catch {}
             root.classList.toggle('dark', event.matches);
+            root.classList.toggle('light', !event.matches);
             update();
         });
     }

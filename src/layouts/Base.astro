@@ -71,6 +71,7 @@ const website = {
           }
         } catch {}
         document.documentElement.classList.toggle('dark', theme === 'dark');
+        document.documentElement.classList.toggle('light', theme !== 'dark');
       })();
     </script>
 

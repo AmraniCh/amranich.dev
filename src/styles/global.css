@@ -88,6 +88,51 @@
   --sidebar-ring: #7aa2d6;        /* sidebar focus ring */
 }
 
+/* Without JavaScript nothing sets .dark or .light, so follow the OS here.
+   Same tokens as .dark above: keep both blocks in sync. */
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) {
+    color-scheme: dark;
+    /* ===== EDITABLE DESIGN TOKENS — DARK MODE ===== */
+    --background: oklch(14.8% .004 286);         /* page background */
+    --foreground: oklch(92% .004 286);           /* main text colour */
+    --card: oklch(18.5% .005 286);               /* card / box background */
+    --card-foreground: oklch(92% .004 286);      /* text on cards */
+    --popover: oklch(18.5% .005 286);            /* popup / search panel bg */
+    --popover-foreground: oklch(92% .004 286);   /* text on popups */
+    --primary: oklch(92% .004 286);              /* primary button bg */
+    --primary-foreground: oklch(16.5% .005 286); /* text on primary buttons */
+    --secondary: oklch(22.5% .006 286);          /* secondary bg */
+    --secondary-foreground: oklch(92% .004 286); /* text on secondary */
+    --muted: oklch(22.5% .006 286);              /* subtle / disabled bg */
+    --muted-foreground: oklch(65% .012 286);     /* secondary / muted text */
+    --accent: #7aa2d6;              /* highlight: links, focus */
+    --accent-foreground: oklch(16.5% .005 286);  /* text on accent */
+    --destructive: oklch(63.7% .237 25.331);     /* error / delete colour */
+    --destructive-foreground: oklch(92% .004 286); /* text on error */
+    --border: oklch(26.8% .006 286);             /* borders & dividers */
+    --input: oklch(26.8% .006 286);              /* form input borders */
+    --ring: #7aa2d6;                /* focus ring */
+    --chart-1: #7aa2d6;             /* chart palette 1 */
+    --chart-2: oklch(69.6% .17 162.48);          /* chart palette 2 */
+    --chart-3: oklch(76.9% .188 70.08);          /* chart palette 3 */
+    --chart-4: oklch(62.7% .265 303.9);          /* chart palette 4 */
+    --chart-5: oklch(64.5% .246 16.439);         /* chart palette 5 */
+    --code-bg: oklch(17.2% .004 286);            /* inline code bg */
+    --success: oklch(72% .19 149);               /* success / tip colour */
+    --warning: oklch(77% .16 70);                /* warning callout colour */
+    --caution: oklch(64% .21 25);                /* caution / danger callout */
+    --sidebar: oklch(20.5% 0 0);                 /* sidebar background */
+    --sidebar-foreground: oklch(92% .004 286);   /* text in sidebar */
+    --sidebar-primary: #7aa2d6;     /* sidebar primary accent */
+    --sidebar-primary-foreground: oklch(16.5% .005 286); /* text on sidebar primary */
+    --sidebar-accent: oklch(22.5% .006 286);     /* sidebar hover bg */
+    --sidebar-accent-foreground: oklch(92% .004 286); /* text on sidebar hover */
+    --sidebar-border: oklch(26.8% .006 286);     /* sidebar borders */
+    --sidebar-ring: #7aa2d6;        /* sidebar focus ring */
+  }
+}
+
 @theme inline {
   --font-sans: var(--font-jetbrains);
   --font-mono: var(--font-jetbrains);
