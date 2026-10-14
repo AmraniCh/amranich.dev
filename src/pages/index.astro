@@ -17,7 +17,7 @@ import siteInfo from "../../public/0user.json";
             </p>
             {siteInfo.home.funFacts && siteInfo.home.funFacts.length > 0 && (
                 <div class:list={["text-sm text-muted-foreground", siteInfo.home.note ? "mb-4" : "mb-10"]}>
-                    <p class="mb-1">Fun facts</p>
+                    <p class="mb-1">Fun facts <span aria-hidden="true">📌</span></p>
                     <ul class="list-disc list-inside space-y-0.5">
                         {siteInfo.home.funFacts.map((fact) => (
                             <li class="text-pretty">{fact}</li>
