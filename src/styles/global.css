@@ -334,3 +334,44 @@
 .blink-caret {
   animation: caret-blink 1s steps(1, end) infinite;
 }
+/* Links that open in a new tab get an arrow icon (Lucide "arrow-up-right"),
+   drawn in the link color. Screen readers hear the text after the "/"
+   instead (browsers without support for it keep the first rule). */
+a[target="_blank"]::after {
+  content: "";
+  content: "" / " (opens in a new tab)";
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  margin-left: 0.15em;
+  vertical-align: -0.1em;
+  background-color: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.25' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 7h10v10'/%3E%3Cpath d='M7 17 17 7'/%3E%3C/svg%3E") no-repeat center / contain;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.25' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 7h10v10'/%3E%3Cpath d='M7 17 17 7'/%3E%3C/svg%3E") no-repeat center / contain;
+}
+
+/* With a mouse, the arrow appears only on hover or keyboard focus, with a
+   short fade and slide. Touch screens have no hover, so they keep it visible. */
+@media (hover: hover) {
+  a[target="_blank"]::after {
+    width: 0;
+    margin-left: 0;
+    opacity: 0;
+    transform: translate(-0.2em, 0.2em);
+    transition: width 0.15s ease, margin-left 0.15s ease, opacity 0.15s ease, transform 0.15s ease;
+  }
+
+  a[target="_blank"]:hover::after,
+  a[target="_blank"]:focus-visible::after {
+    width: 0.9em;
+    margin-left: 0.15em;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (hover: hover) and (prefers-reduced-motion: reduce) {
+  a[target="_blank"]::after {
+    transition: none;
+  }
+}
