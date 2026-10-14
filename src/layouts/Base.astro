@@ -56,11 +56,21 @@ const website = {
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap"
           rel="stylesheet"/>
     <script is:inline>
+      // Follow the OS theme. A manual choice from the toggle is kept only while
+      // the OS theme stays the one it was made under.
       (() => {
-        let stored = null;
-        try { stored = localStorage.getItem('theme'); } catch {}
-        const dark = stored ? stored === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
-        document.documentElement.classList.toggle('dark', dark);
+        const os = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        let theme = os;
+        try {
+          const stored = localStorage.getItem('theme');
+          if (stored && localStorage.getItem('theme-os') === os) {
+            theme = stored;
+          } else {
+            localStorage.removeItem('theme');
+            localStorage.removeItem('theme-os');
+          }
+        } catch {}
+        document.documentElement.classList.toggle('dark', theme === 'dark');
       })();
     </script>
 

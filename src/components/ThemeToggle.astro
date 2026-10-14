@@ -1,8 +1,8 @@
 ---
-// Switches between light and dark mode and remembers the choice in
-// localStorage. Base.astro applies the saved choice (or the system setting)
-// before the page renders. Hidden without JavaScript: the page then simply
-// follows the system setting.
+// Switches between light and dark mode. The choice is saved in localStorage
+// with the OS theme of that moment; Base.astro applies it before the page
+// renders, but only while the OS theme is still the same. Hidden without
+// JavaScript: the page then simply follows the system setting.
 import { Sun, Moon } from '@lucide/astro';
 ---
 
@@ -31,26 +31,28 @@ import { Sun, Moon } from '@lucide/astro';
         button.hidden = false;
         update();
 
+        const system = matchMedia('(prefers-color-scheme: dark)');
+
         button.addEventListener('click', () => {
             const dark = root.classList.toggle('dark');
             try {
+                // Remember the OS theme too, so the choice is dropped when the OS changes.
                 localStorage.setItem('theme', dark ? 'dark' : 'light');
+                localStorage.setItem('theme-os', system.matches ? 'dark' : 'light');
             } catch {
                 // Storage can be blocked; the switch still works for this page.
             }
             update();
         });
 
-        // Follow system changes until the visitor picks a mode.
-        matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
-            let stored: string | null = null;
+        // When the OS theme changes, follow it and forget the manual choice.
+        system.addEventListener('change', (event) => {
             try {
-                stored = localStorage.getItem('theme');
+                localStorage.removeItem('theme');
+                localStorage.removeItem('theme-os');
             } catch {}
-            if (!stored) {
-                root.classList.toggle('dark', event.matches);
-                update();
-            }
+            root.classList.toggle('dark', event.matches);
+            update();
         });
     }
 </script>
