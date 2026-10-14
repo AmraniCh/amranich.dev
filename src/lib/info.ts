@@ -123,6 +123,8 @@ export interface Project {
     subtitle?: string;
     date: string;
     short?: string;
+    // false = only on the resume page, not on the Recent work page.
+    recentWork?: boolean;
     paragraphs: string[];
     material?: string;
     stack: string[];

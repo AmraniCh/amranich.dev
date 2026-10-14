@@ -164,6 +164,22 @@
                     "url": "https://docs.google.com/presentation/d/1dzeuGmleFqmDxFh8jwYWeoPqGfiyU1ZX/edit?usp=sharing&ouid=107858341399528336890&rtpof=true&sd=true"
                 }
             ]
+        },
+        {
+            "title": "Web Based FTP Client",
+            "repo": "AmraniCh/ftp-filemanager",
+            "date": "Sep 2020",
+            "short": "A web FTP client in PHP, built on my own MVC framework instead of an existing one.",
+            "recentWork": false,
+            "paragraphs": [],
+            "stack": [],
+            "links": [
+                {
+                    "label": "source",
+                    "text": "github",
+                    "url": "https://github.com/AmraniCh/ftp-filemanager"
+                }
+            ]
         }
     ],
     "openSource": {

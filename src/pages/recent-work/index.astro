@@ -4,7 +4,7 @@ import { info } from "../../lib/info";
 import { getCommitCount, formatCount } from "../../lib/opensource";
 import { slug } from "../../lib/slug";
 
-const projects = await Promise.all(info.projects.map(async (project) => ({
+const projects = await Promise.all(info.projects.filter((project) => project.recentWork !== false).map(async (project) => ({
     ...project,
     commits: project.repo ? await getCommitCount(project.repo) : undefined,
 })));
