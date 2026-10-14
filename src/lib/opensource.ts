@@ -114,7 +114,15 @@ async function listRepos(path: string): Promise<GitHubRepo[]> {
     return getJson<GitHubRepo[]>(`https://api.github.com/${path}/repos?per_page=100`);
 }
 
-async function getDownloads(item: OpenSourceRepo): Promise<RepoStats["downloads"]> {
+/**
+ * Returns the downloads (Packagist) or users (Chrome Web Store) of a package, if it has one.
+ *
+ * @param {Pick<OpenSourceRepo, "packagist" | "chromeWebStore">} item - The package names.
+ * @returns {Promise<RepoStats["downloads"]>} A promise that resolves to the count, label and url.
+ */
+export async function getDownloads(
+    item: Pick<OpenSourceRepo, "packagist" | "chromeWebStore">
+): Promise<RepoStats["downloads"]> {
     if (item.packagist) {
         const data = await getJson<{ downloads: { total: number } }>(
             `https://packagist.org/packages/${item.packagist}/stats.json`

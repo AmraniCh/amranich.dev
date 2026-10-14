@@ -1,19 +1,36 @@
 ---
 import Base from "../../layouts/Base.astro";
 import CopyButton from "../../components/CopyButton.astro";
+import ProjectLinkItem from "../../components/ProjectLinkItem.astro";
+import type { ProjectLink } from "../../lib/info";
 import { Shield, Briefcase, GraduationCap, BadgeCheck, Award, FolderGit2 } from "@lucide/astro";
 import { info, resume, contacts } from "../../lib/info";
-import { getCommitCount, formatCount } from "../../lib/opensource";
+import { getCommitCount, getDownloads, formatCount } from "../../lib/opensource";
 
 const linkClass =
     "text-muted-foreground underline underline-offset-2 decoration-accent/50 hover:text-accent hover:decoration-accent transition-colors";
+const withStats = (links: ProjectLink[]) =>
+    Promise.all(
+        links.map(async link => ({
+            ...link,
+            commits: link.repo ? await getCommitCount(link.repo) : undefined,
+            downloads: await getDownloads(link),
+        }))
+    );
 const projects = await Promise.all(
     info.projects
         .filter(project => project.short)
-        .map(async project => ({
-            ...project,
-            commits: project.repo ? await getCommitCount(project.repo) : undefined,
-        }))
+        .map(async project => {
+            const links = await withStats(project.links);
+            // skip the project commits when one of its links already shows them
+            const counted = links.some(link => link.repo === project.repo);
+            return {
+                ...project,
+                links,
+                related: await withStats(project.related ?? []),
+                commits: project.repo && !counted ? await getCommitCount(project.repo) : undefined,
+            };
+        })
 );
 ---
 
@@ -94,18 +111,7 @@ const projects = await Promise.all(
                                 <p class="text-sm text-foreground/80 text-pretty">{project.short}</p>
                                 <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs">
                                     {project.links.map(link => (
-                                        <span>
-                                            [{link.label}:{" "}
-                                            <a
-                                                href={link.url}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                class={linkClass}
-                                            >
-                                                {link.text}
-                                            </a>
-                                            ]
-                                        </span>
+                                        <ProjectLinkItem link={link} linkClass={linkClass} />
                                     ))}
                                     {project.commits !== undefined && (
                                         <span>
@@ -122,6 +128,19 @@ const projects = await Promise.all(
                                         </span>
                                     )}
                                 </div>
+                                {project.related.length > 0 && (
+                                    <details class="group text-xs">
+                                        <summary class="w-fit cursor-pointer list-none text-muted-foreground hover:text-accent transition-colors [&::-webkit-details-marker]:hidden">
+                                            <span class="group-open:hidden">[+ show related repos]</span>
+                                            <span class="hidden group-open:inline">[- hide related repos]</span>
+                                        </summary>
+                                        <div class="mt-1 flex flex-col gap-y-1">
+                                            {project.related.map(link => (
+                                                <ProjectLinkItem link={link} linkClass={linkClass} />
+                                            ))}
+                                        </div>
+                                    </details>
+                                )}
                             </div>
                         ))}
                     </div>

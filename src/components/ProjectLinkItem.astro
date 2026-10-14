@@ -1,0 +1,41 @@
+---
+import type { ProjectLink } from "../lib/info";
+import type { RepoStats } from "../lib/opensource";
+import { formatCount } from "../lib/opensource";
+
+interface Props {
+    link: ProjectLink & { commits?: number; downloads?: RepoStats["downloads"] };
+    linkClass: string;
+}
+
+const { link, linkClass } = Astro.props;
+---
+
+<span>
+    [{link.label}:{" "}
+    <a href={link.url} target="_blank" rel="noopener noreferrer" class={linkClass}>
+        {link.text}
+    </a>
+    {link.commits !== undefined && (
+        <>
+            ,{" "}
+            <a
+                href={`https://github.com/${link.repo}/commits`}
+                target="_blank"
+                rel="noopener noreferrer"
+                class={linkClass}
+            >
+                {formatCount(link.commits)} commits
+            </a>
+        </>
+    )}
+    {link.downloads && (
+        <>
+            ,{" "}
+            <a href={link.downloads.url} target="_blank" rel="noopener noreferrer" class={linkClass}>
+                {formatCount(link.downloads.count)} {link.downloads.label}
+            </a>
+        </>
+    )}
+    ]
+</span>

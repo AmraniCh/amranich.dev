@@ -171,7 +171,30 @@
                 {
                     "label": "source",
                     "text": "github",
-                    "url": "https://github.com/AmraniCh/ftp-filemanager"
+                    "url": "https://github.com/AmraniCh/ftp-filemanager",
+                    "repo": "AmraniCh/ftp-filemanager"
+                }
+            ],
+            "related": [
+                {
+                    "label": "ftp library",
+                    "text": "php-ftp-client",
+                    "url": "https://github.com/lazzard/php-ftp-client",
+                    "repo": "lazzard/php-ftp-client",
+                    "packagist": "lazzard/php-ftp-client"
+                },
+                {
+                    "label": "ftp protocol",
+                    "text": "ftp-bridge",
+                    "url": "https://github.com/lazzard/ftp-bridge",
+                    "repo": "lazzard/ftp-bridge",
+                    "packagist": "lazzard/ftp-bridge"
+                },
+                {
+                    "label": "ui template",
+                    "text": "vanilla-filemanager",
+                    "url": "https://github.com/AmraniCh/vanilla-filemanager",
+                    "repo": "AmraniCh/vanilla-filemanager"
                 }
             ]
         }

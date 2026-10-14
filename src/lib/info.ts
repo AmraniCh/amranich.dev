@@ -110,6 +110,8 @@ export interface ProjectLink {
     label: string;
     text: string;
     url: string;
+    repo?: string;
+    packagist?: string;
 }
 
 export interface Contributor {
@@ -131,6 +133,8 @@ export interface Project {
     contributors?: Contributor[];
     associatedWith?: string;
     links: ProjectLink[];
+    // repos the project is built on, shown on the resume page behind a toggle
+    related?: ProjectLink[];
 }
 
 export interface SiteInfo {
