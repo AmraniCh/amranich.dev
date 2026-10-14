@@ -1,29 +1,13 @@
-# Presentations page (/presentations/). To add a presentation, add an item here.
-#
-# Fields:
-#   id           unique, lowercase with dashes (also the #anchor on the page)
-#   title        shown in bold
-#   section      "Paper presentations", "Project presentations" or "Coursework"
-#   paper        optional: authors, venue, year
-#   subtitle     optional: another line under the title, for example the original title
-#   context      module or event
-#   supervisor   optional: for example "Pr. First Last", shown on its own line
-#   jury         optional: same format, shown as "Jury: ..." on its own line
-#   date         optional: for example "Mar 2026"
-#   description  1-2 sentences, in my own words
-#   slides       optional: link to the slides
-#   project      optional: a project title from public/0user.json; its slides link is used
-#   links        optional: extra links, for example { label: paper, text: pdf, url: ... }
-#   language     "in English" or "in French", shown next to the slides link
+# shown in this order on the presentations page, the fields are in src/content.config.ts
 
 - id: fork-in-the-road
   title: "A fork() in the road"
   section: Paper presentations
   paper: "Andrew Baumann, Jonathan Appavoo, Orran Krieger, Timothy Roscoe. HotOS 2019 (Microsoft Research, Boston University, ETH Zurich)"
-  context: "Master's, module \"Méthodologie de la recherche scientifique\""
+  context: 'Master''s, module "Méthodologie de la recherche scientifique"'
   supervisor: Pr. Tarik Houichime
   date: "2025–2026"
-  description: "Analyzed and presented (in English) the paper \"A fork() in the road\", written by researchers from Microsoft Research, Boston University, and ETH Zurich."
+  description: 'Analyzed and presented (in English) the paper "A fork() in the road", written by researchers from Microsoft Research, Boston University, and ETH Zurich.'
   slides: "https://docs.google.com/presentation/d/1XQDyVij-PTLafXP4HQR9CN_RPT086GwV/edit?usp=drive_link&ouid=107858341399528336890&rtpof=true&sd=true"
   links:
     - { label: paper, text: pdf, url: "https://web.eecs.umich.edu/~ryanph/jhu/cs318/fall21/readings/fork-hotos19.pdf" }
@@ -33,10 +17,10 @@
   title: "Coase's Penguin, or, Linux and the Nature of the Firm"
   section: Paper presentations
   paper: Yochai Benkler, Yale Law Journal, 2002
-  context: "Master's, module \"Techniques de communication – Culture entrepreneuriale\""
+  context: 'Master''s, module "Techniques de communication – Culture entrepreneuriale"'
   supervisor: Pr. Soumaya Houari
   date: "2025–2026"
-  description: "I presented this paper (in French) about free software as an economic phenomenon: how thousands of volunteers build excellent software like Linux, without a boss or an owner. The paper calls this \"commons-based peer production\", a third way to produce next to the firm and the market."
+  description: 'I presented this paper (in French) about free software as an economic phenomenon: how thousands of volunteers build excellent software like Linux, without a boss or an owner. The paper calls this "commons-based peer production", a third way to produce next to the firm and the market.'
   slides: "https://docs.google.com/presentation/d/1kOO9zCpye3TogYx_dJugDuCI9U3MZOYw/edit?usp=drive_link&ouid=107858341399528336890&rtpof=true&sd=true"
   links:
     - { label: paper, text: pdf, url: "https://www.yalelawjournal.org/pdf/354_t5aih5i1.pdf" }
@@ -46,7 +30,7 @@
   title: NeuralCodec-RPi project defense
   section: Project presentations
   subtitle: Neural Codecs for Real-Time Voice Transmission over Low-Bandwidth Networks on Raspberry Pi
-  context: "Master's, module \"Architecture avancée\""
+  context: 'Master''s, module "Architecture avancée"'
   jury: Pr. Hanae Belmajdoub
   date: "Jun–Jul 2026"
   description: "Benchmarking traditional and neural speech codecs on two Raspberry Pi boards, and using the best one for real-time voice transmission over UDP."
@@ -68,10 +52,14 @@
   title: "Patent drafting exercise: adaptive system for low-frequency magnetic field cancellation with digital signal processing"
   section: Coursework
   subtitle: "Original title: « Système adaptatif de régulation de l'ambiance électromagnétique par traitement numérique en boucle fermée et synthèse d'ondes biocompatibles »"
-  context: "Master's, module \"Innovation et propriété intellectuelle\""
+  context: 'Master''s, module "Innovation et propriété intellectuelle"'
   date: "Apr 2026"
   description: "As a team, we wrote a patent-style document (prior art, claims and drawings) for a system that cancels low-frequency magnetic fields with digital signal processing. It is not a filed patent, but a project to teach us how to write a patent for an invention."
   slides: "https://docs.google.com/presentation/d/1n8v5I3cdpvd4kyKz2MIeCnPlsS5Rcu44/edit?usp=sharing&ouid=107858341399528336890&rtpof=true&sd=true"
   links:
-    - { label: document, text: patent draft, url: "https://drive.google.com/file/d/1JkiT_ovRnC8vANcKXTanRIJ7xCx8dY52/view?usp=drive_link" }
+    - {
+        label: document,
+        text: patent draft,
+        url: "https://drive.google.com/file/d/1JkiT_ovRnC8vANcKXTanRIJ7xCx8dY52/view?usp=drive_link",
+      }
   language: in French

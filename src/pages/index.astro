@@ -4,22 +4,27 @@ import CopyButton from "../components/CopyButton.astro";
 import siteInfo from "../../public/0user.json";
 ---
 
-<Base title={siteInfo.site.title}
-      description={siteInfo.site.description}>
-
+<Base title={siteInfo.site.title} description={siteInfo.site.description}>
     <section class="container mx-auto px-6 py-16 flex-grow flex flex-col justify-center">
         <div class="max-w-3xl mx-auto w-full">
             <h1 class="mb-2 text-4xl md:text-5xl font-bold tracking-tight text-balance">{siteInfo.name}</h1>
             <p class="mb-4 text-lg md:text-xl text-muted-foreground">{siteInfo.role}</p>
 
-            <p class:list={["text-base md:text-lg text-foreground/85 leading-relaxed text-pretty", siteInfo.home.note || siteInfo.home.funFacts?.length ? "mb-4" : "mb-10"]}>
+            <p
+                class:list={[
+                    "text-base md:text-lg text-foreground/85 leading-relaxed text-pretty",
+                    siteInfo.home.note || siteInfo.home.funFacts?.length ? "mb-4" : "mb-10",
+                ]}
+            >
                 {siteInfo.home.bio}
             </p>
             {siteInfo.home.funFacts && siteInfo.home.funFacts.length > 0 && (
                 <div class:list={["text-sm text-muted-foreground", siteInfo.home.note ? "mb-4" : "mb-10"]}>
-                    <p class="mb-1">Fun facts <span aria-hidden="true">📌</span></p>
+                    <p class="mb-1">
+                        Fun facts <span aria-hidden="true">📌</span>
+                    </p>
                     <ul class="list-disc list-inside space-y-0.5">
-                        {siteInfo.home.funFacts.map((fact) => (
+                        {siteInfo.home.funFacts.map(fact => (
                             <li class="text-pretty">{fact}</li>
                         ))}
                     </ul>
@@ -32,18 +37,21 @@ import siteInfo from "../../public/0user.json";
             )}
 
             <div class="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm">
-                {siteInfo.contacts.map((contact) => (
-                        <div>
-                            [{contact.label}: <a
-                                href={contact.href}
-                                target={contact.target}
-                                rel={contact.rel}
-                                class="text-muted-foreground underline underline-offset-2 decoration-accent/50 hover:text-accent hover:decoration-accent transition-colors"
-                        >{contact.text}</a>{contact.copy && <CopyButton value={contact.copy} label={`Copy ${contact.label}`} />}]
-                        </div>
+                {siteInfo.contacts.map(contact => (
+                    <div>
+                        [{contact.label}:{" "}
+                        <a
+                            href={contact.href}
+                            target={contact.target}
+                            rel={contact.rel}
+                            class="text-muted-foreground underline underline-offset-2 decoration-accent/50 hover:text-accent hover:decoration-accent transition-colors"
+                        >
+                            {contact.text}
+                        </a>
+                        {contact.copy && <CopyButton value={contact.copy} label={`Copy ${contact.label}`} />}]
+                    </div>
                 ))}
             </div>
         </div>
     </section>
-
 </Base>

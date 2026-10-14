@@ -26,23 +26,23 @@ This document shows every markdown feature available on the site.
 
 Write a callout as a blockquote whose first line starts with a type marker. An optional custom title follows the marker on the same line.
 
-````md
+```md
 > [!SUCCESS] One in, one out
 > Every new tool has to replace something. Tool collections grow entropy —
 > the stack should get smaller and sharper over time, not wider.
-````
+```
 
 **Supported types** (case-insensitive, unknown types render as a normal blockquote):
 
-| Marker | Default title | Accent color |
-| --- | --- | --- |
-| `[!NOTE]` | Note | blue |
-| `[!INFO]` | Info | blue |
-| `[!TIP]` | Tip | green |
-| `[!SUCCESS]` | Success | green |
-| `[!IMPORTANT]` | Important | purple |
-| `[!WARNING]` | Warning | amber |
-| `[!CAUTION]` | Caution | red |
+| Marker         | Default title | Accent color |
+| -------------- | ------------- | ------------ |
+| `[!NOTE]`      | Note          | blue         |
+| `[!INFO]`      | Info          | blue         |
+| `[!TIP]`       | Tip           | green        |
+| `[!SUCCESS]`   | Success       | green        |
+| `[!IMPORTANT]` | Important     | purple       |
+| `[!WARNING]`   | Warning       | amber        |
+| `[!CAUTION]`   | Caution       | red          |
 
 **Examples:**
 
@@ -76,17 +76,17 @@ Callout bodies are real markdown, so formatting still works:
 
 Reference a footnote with `[^label]` anywhere in the text, then define it once with `[^label]:` at the end of the file. Definitions render automatically in a numbered **Footnotes** section at the bottom of the page — there is no reference list to maintain by hand.
 
-````md
+```md
 The claim needs a source.[^rhees]
 
-[^rhees]: Wittgenstein, *Philosophical Investigations* §223. Translated from the German by Rush Rhees.
-````
+[^rhees]: Wittgenstein, _Philosophical Investigations_ §223. Translated from the German by Rush Rhees.
+```
 
 **Example:**
 
 The quote below is attributed to Wittgenstein, and the argument is Nagel's.[^wit]
 
-[^wit]: Wittgenstein, *Philosophical Investigations* §223, translated from the German by Rush Rhees. Nagel, "What Is It Like to Be a Bat?", *The Philosophical Review* 83(4), 435–450 (1974).
+[^wit]: Wittgenstein, _Philosophical Investigations_ §223, translated from the German by Rush Rhees. Nagel, "What Is It Like to Be a Bat?", _The Philosophical Review_ 83(4), 435–450 (1974).
 
 > [!NOTE]
 > Definitions are renumbered automatically by order of first reference, so you can label them freely (`[^a]`, `[^source-2]`, …) and reorder the prose without renumbering anything. Links, emphasis, and inline code all work inside a definition.
@@ -97,13 +97,13 @@ The quote below is attributed to Wittgenstein, and the argument is Nagel's.[^wit
 
 Inline math uses single dollar signs, display math uses `$$` on its own lines. Both render through KaTeX, so anything KaTeX supports is available.
 
-````md
+```md
 Inline math puts the result in the sentence: $\ell = 0.3950$.
 
 $$
 \mathrm{Attention}(Q, K, V) = \mathrm{softmax}\!\left(\frac{QK^\top}{\sqrt{d_k}}\right)V
 $$
-````
+```
 
 **Example:**
 
@@ -204,18 +204,18 @@ Plain blockquotes keep their styling: a left rule, muted text, no italics.
 Pipe tables with a header row and a `---` separator. Alignment is set with `:` in the separator row.
 
 ```md
-| Element | Style | Weight |
-| --- | :--- | ---: |
-| Body | muted | 400 |
-| `strong` | foreground | 600 |
+| Element  | Style      | Weight |
+| -------- | :--------- | -----: |
+| Body     | muted      |    400 |
+| `strong` | foreground |    600 |
 ```
 
 **Example:**
 
-| Element | Style | Weight |
-| --- | :--- | ---: |
-| Body | muted | 400 |
-| `strong` | foreground | 600 |
+| Element  | Style      | Weight |
+| -------- | :--------- | -----: |
+| Body     | muted      |    400 |
+| `strong` | foreground |    600 |
 
 > [!TIP]
 > Tables are wrapped in a horizontally scrollable container, so a wide table will not break the layout on a phone. Keep the header row short and let the body wrap.
@@ -261,14 +261,14 @@ Standard markdown image syntax, with alt text:
 
 These come from GitHub Flavored Markdown and need no extra syntax.
 
-````md
+```md
 ~~Struck through~~ text.
 
 A bare URL becomes a link: https://astro.build
 
 Straight quotes "like this" and dashes - become "curly" and an em dash.
 Ellipses... too.
-````
+```
 
 **Example:**
 
@@ -308,15 +308,15 @@ An [inline link](https://astro.build), or a [reference link][astro].
 
 The prose scale is em-based so it scales with the font size.
 
-| Element | Style |
-| --- | --- |
-| Body | `line-height: 1.75` |
-| `h2` | `1.5em`, margin `2em 0 1em` |
-| `h3` | `1.25em`, margin `1.6em 0 .6em` |
-| Links | underline, turns accent on hover |
-| `strong` | `font-weight: 600` |
-| Tables | bordered, `bg-muted` head, scrollable |
-| `hr` | `margin: 2.5rem 0` |
+| Element  | Style                                 |
+| -------- | ------------------------------------- |
+| Body     | `line-height: 1.75`                   |
+| `h2`     | `1.5em`, margin `2em 0 1em`           |
+| `h3`     | `1.25em`, margin `1.6em 0 .6em`       |
+| Links    | underline, turns accent on hover      |
+| `strong` | `font-weight: 600`                    |
+| Tables   | bordered, `bg-muted` head, scrollable |
+| `hr`     | `margin: 2.5rem 0`                    |
 
 ---
 
@@ -332,16 +332,16 @@ Code blocks are rendered by **Expressive Code**: syntax highlighting, copy butto
 
 Small remark/rehype steps in `astro.config.mjs` sit on top of Expressive Code:
 
-| Step | Role |
-| --- | --- |
-| `remarkGfm` | Tables, task lists, strikethrough, autolinks, and footnotes. |
-| `remarkMath` + `rehypeKatex` | `$…$` inline and `$$…$$` display math, rendered by KaTeX. |
-| `rehypeSlug` | Stable `id` anchors on every heading. |
-| `rehypeExternalLinks` | Adds `target="_blank" rel="noopener noreferrer"` to off-site links only. |
-| `remarkCodeGroups` (remark) | Reads `group="…"` / `tab="…"` from the fence meta and inserts a group marker. |
-| `rehypeCodeTabs` (rehype) | Builds the static `.ec-tabs` widget with shared-name radios. |
-| `remarkCallouts` | Converts `> [!TYPE]` blockquotes into styled callout `<aside>` elements. |
-| `rehypeExpressiveCode` | Syntax highlighting, copy button, and the `title` / `frame` chrome. |
+| Step                         | Role                                                                          |
+| ---------------------------- | ----------------------------------------------------------------------------- |
+| `remarkGfm`                  | Tables, task lists, strikethrough, autolinks, and footnotes.                  |
+| `remarkMath` + `rehypeKatex` | `$…$` inline and `$$…$$` display math, rendered by KaTeX.                     |
+| `rehypeSlug`                 | Stable `id` anchors on every heading.                                         |
+| `rehypeExternalLinks`        | Adds `target="_blank" rel="noopener noreferrer"` to off-site links only.      |
+| `remarkCodeGroups` (remark)  | Reads `group="…"` / `tab="…"` from the fence meta and inserts a group marker. |
+| `rehypeCodeTabs` (rehype)    | Builds the static `.ec-tabs` widget with shared-name radios.                  |
+| `remarkCallouts`             | Converts `> [!TYPE]` blockquotes into styled callout `<aside>` elements.      |
+| `rehypeExpressiveCode`       | Syntax highlighting, copy button, and the `title` / `frame` chrome.           |
 
 > [!NOTE]
 > `rehypeExternalLinks` runs **before** `rehypeKatex` and `rehypeExpressiveCode` on purpose. It only ever sees links you wrote by hand, never the ones those two generate.

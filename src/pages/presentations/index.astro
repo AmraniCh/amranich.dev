@@ -5,70 +5,118 @@ import { info } from "../../lib/info";
 import presentationsYaml from "../../content/presentations.yaml?raw";
 
 const sections = ["Paper presentations", "Project presentations", "Coursework"] as const;
-const linkClass = "text-muted-foreground underline underline-offset-2 decoration-accent/50 hover:text-accent hover:decoration-accent transition-colors";
+const linkClass =
+    "text-muted-foreground underline underline-offset-2 decoration-accent/50 hover:text-accent hover:decoration-accent transition-colors";
 
-// Astro sorts entries by id; keep the order of src/content/presentations.yaml instead.
-const fileOrder = [...presentationsYaml.matchAll(/^- id:\s*(\S+)/gm)].map((match) => match[1]);
-const entries = (await getCollection("presentations"))
-    .sort((a, b) => fileOrder.indexOf(a.id) - fileOrder.indexOf(b.id));
+// keep the order of presentations.yaml (astro sorts the entries by id)
+const fileOrder = [...presentationsYaml.matchAll(/^- id:\s*(\S+)/gm)].map(match => match[1]);
+const entries = (await getCollection("presentations")).sort(
+    (a, b) => fileOrder.indexOf(a.id) - fileOrder.indexOf(b.id)
+);
 
 const items = entries.map(({ id, data }) => {
-    // A project defense reuses the slides link of that project.
-    const project = data.project ? info.projects.find((p) => p.title === data.project) : undefined;
+    const project = data.project ? info.projects.find(p => p.title === data.project) : undefined;
     if (data.project && !project) {
         throw new Error(`presentations.yaml: no project named "${data.project}" in public/0user.json`);
     }
-    const slides = data.slides ?? project?.links.find((link) => link.label === "slides")?.url;
+    const slides = data.slides ?? project?.links.find(link => link.label === "slides")?.url;
     return { id, ...data, slides };
 });
 ---
 
-<Base title={`${info.name} - Presentations`}
-      description={`Paper presentations, project defenses and coursework presented by ${info.name}.`}>
-
+<Base
+    title={`${info.name} - Presentations`}
+    description={`Paper presentations, project defenses and coursework presented by ${info.name}.`}
+>
     <section class="container mx-auto px-6 pt-16 pb-20 flex-grow">
         <div class="max-w-3xl mx-auto w-full">
             <h1 class="mb-10 text-4xl md:text-5xl font-bold tracking-tight text-balance">Presentations</h1>
 
-            {sections.map((section) => {
-                const list = items.filter((item) => item.section === section);
-                return list.length > 0 && (
-                    <div class="mb-12">
-                        <h2 class="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-4">{section}</h2>
-                        <div class="space-y-8">
-                            {list.map((item) => (
-                                <article id={item.id} class="border-l-2 border-border/60 pl-4 space-y-2 scroll-mt-20">
-                                    <h3 class="text-base font-semibold text-foreground text-pretty">{item.title}</h3>
-                                    {item.paper && <p class="text-sm text-muted-foreground text-pretty">{item.paper}</p>}
-                                    {item.subtitle && <p class="text-sm text-muted-foreground text-pretty">{item.subtitle}</p>}
-                                    <p class="text-xs text-muted-foreground text-pretty">
-                                        {item.context}
-                                        {item.date && <Fragment> · <span class="whitespace-nowrap">{item.date}</span></Fragment>}
-                                        {item.language && !item.slides && ` · ${item.language}`}
-                                    </p>
-                                    {item.supervisor && <p class="text-xs text-muted-foreground">Supervised by {item.supervisor}</p>}
-                                    {item.jury && <p class="text-xs text-muted-foreground">Jury: {item.jury}</p>}
-                                    <p class="text-sm text-foreground/80 leading-relaxed text-pretty">{item.description}</p>
-                                    {(item.slides || item.links.length > 0) && (
-                                        <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs">
-                                            {item.slides && (
-                                                <span>
-                                                    [slides: <a href={item.slides} target="_blank" rel="noopener noreferrer" class={linkClass}>presentation</a>]
-                                                    {item.language && <span class="text-muted-foreground"> ({item.language})</span>}
-                                                </span>
+            {sections.map(section => {
+                const list = items.filter(item => item.section === section);
+                return (
+                    list.length > 0 && (
+                        <div class="mb-12">
+                            <h2 class="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-4">
+                                {section}
+                            </h2>
+                            <div class="space-y-8">
+                                {list.map(item => (
+                                    <article
+                                        id={item.id}
+                                        class="border-l-2 border-border/60 pl-4 space-y-2 scroll-mt-20"
+                                    >
+                                        <h3 class="text-base font-semibold text-foreground text-pretty">
+                                            {item.title}
+                                        </h3>
+                                        {item.paper && (
+                                            <p class="text-sm text-muted-foreground text-pretty">{item.paper}</p>
+                                        )}
+                                        {item.subtitle && (
+                                            <p class="text-sm text-muted-foreground text-pretty">{item.subtitle}</p>
+                                        )}
+                                        <p class="text-xs text-muted-foreground text-pretty">
+                                            {item.context}
+                                            {item.date && (
+                                                <Fragment>
+                                                    {" "}
+                                                    · <span class="whitespace-nowrap">{item.date}</span>
+                                                </Fragment>
                                             )}
-                                            {item.links.map((link) => (
-                                                <span>[{link.label}: <a href={link.url} target="_blank" rel="noopener noreferrer" class={linkClass}>{link.text}</a>]</span>
-                                            ))}
-                                        </div>
-                                    )}
-                                </article>
-                            ))}
+                                            {item.language && !item.slides && ` · ${item.language}`}
+                                        </p>
+                                        {item.supervisor && (
+                                            <p class="text-xs text-muted-foreground">Supervised by {item.supervisor}</p>
+                                        )}
+                                        {item.jury && <p class="text-xs text-muted-foreground">Jury: {item.jury}</p>}
+                                        <p class="text-sm text-foreground/80 leading-relaxed text-pretty">
+                                            {item.description}
+                                        </p>
+                                        {(item.slides || item.links.length > 0) && (
+                                            <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs">
+                                                {item.slides && (
+                                                    <span>
+                                                        [slides:{" "}
+                                                        <a
+                                                            href={item.slides}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            class={linkClass}
+                                                        >
+                                                            presentation
+                                                        </a>
+                                                        ]
+                                                        {item.language && (
+                                                            <span class="text-muted-foreground">
+                                                                {" "}
+                                                                ({item.language})
+                                                            </span>
+                                                        )}
+                                                    </span>
+                                                )}
+                                                {item.links.map(link => (
+                                                    <span>
+                                                        [{link.label}:{" "}
+                                                        <a
+                                                            href={link.url}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            class={linkClass}
+                                                        >
+                                                            {link.text}
+                                                        </a>
+                                                        ]
+                                                    </span>
+                                                ))}
+                                            </div>
+                                        )}
+                                    </article>
+                                ))}
+                            </div>
                         </div>
-                    </div>
+                    )
                 );
             })}
         </div>
     </section>
-
 </Base>

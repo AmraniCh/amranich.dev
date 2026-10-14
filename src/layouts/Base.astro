@@ -1,117 +1,128 @@
 ---
 import "../styles/global.css";
-import Navigation from '../components/Navigation.astro';
-import { info } from '../lib/info.ts';
+import Navigation from "../components/Navigation.astro";
+import { info } from "../lib/info.ts";
 
-interface BaseProps { title?: string; description?: string; ogImage?: string; noindex?: boolean }
-const { title = info.site.title, description = info.site.description, ogImage, noindex = false } = Astro.props as BaseProps;
+interface BaseProps {
+    title?: string;
+    description?: string;
+    ogImage?: string;
+    noindex?: boolean;
+}
+const {
+    title = info.site.title,
+    description = info.site.description,
+    ogImage,
+    noindex = false,
+} = Astro.props as BaseProps;
 const siteName = info.site.name;
 const siteUrl = info.site.url;
-// Each page is its own canonical URL. GitHub Pages serves folders with a
-// trailing slash (/resume/), so the canonical URL uses it too.
-const path = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
+// github pages serves the folders with a trailing slash (/resume/)
+const path = Astro.url.pathname.endsWith("/") ? Astro.url.pathname : `${Astro.url.pathname}/`;
 const canonical = noindex ? undefined : new URL(path, siteUrl).href;
-const siteLocale = info.site.locale ?? 'en_US';
+const siteLocale = info.site.locale ?? "en_US";
 const resolvedOgImage = ogImage ?? (info.site.ogImage || undefined);
 
-const email = info.contacts.find((contact) => contact.href.startsWith('mailto:'));
+const email = info.contacts.find(contact => contact.href.startsWith("mailto:"));
 const person = {
     "@type": "Person",
     "@id": `${siteUrl}/#person`,
-    "name": info.name,
-    "url": siteUrl,
-    "jobTitle": "Software Engineer",
-    ...(email && { "email": email.href }),
-    "sameAs": info.contacts.filter((contact) => contact.href.startsWith('https://')).map((contact) => contact.href),
-    "alumniOf": (info.resume.education ?? []).map((edu) => ({ "@type": "CollegeOrUniversity", "name": edu.institution })),
+    name: info.name,
+    url: siteUrl,
+    jobTitle: "Software Engineer",
+    ...(email && { email: email.href }),
+    sameAs: info.contacts.filter(contact => contact.href.startsWith("https://")).map(contact => contact.href),
+    alumniOf: (info.resume.education ?? []).map(edu => ({ "@type": "CollegeOrUniversity", name: edu.institution })),
 };
 const website = {
     "@type": "WebSite",
-    "name": siteName,
-    "url": siteUrl,
-    "author": { "@id": `${siteUrl}/#person` },
+    name: siteName,
+    url: siteUrl,
+    author: { "@id": `${siteUrl}/#person` },
     ...(info.blog && {
-        "potentialAction": {
+        potentialAction: {
             "@type": "SearchAction",
-            "target": `${siteUrl}/blog?q={search_term_string}`,
-            "query-input": "required name=search_term_string"
-        }
-    })
+            target: `${siteUrl}/blog?q={search_term_string}`,
+            "query-input": "required name=search_term_string",
+        },
+    }),
 };
 ---
+
 <html lang="en">
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
-    <meta name="description" content={description}/>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"/>
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#131316"/>
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fcfcfd"/>
-    <meta name="msapplication-TileColor" content="#131316"/>
-    <meta name="robots" content={noindex ? "noindex,follow" : "index,follow"}/>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap"
-          rel="stylesheet"/>
-    <script is:inline>
-      // Follow the OS theme. A manual choice from the toggle is kept only while
-      // the OS theme stays the one it was made under.
-      (() => {
-        const os = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-        let theme = os;
-        try {
-          const stored = localStorage.getItem('theme');
-          if (stored && localStorage.getItem('theme-os') === os) {
-            theme = stored;
-          } else {
-            localStorage.removeItem('theme');
-            localStorage.removeItem('theme-os');
-          }
-        } catch {}
-        document.documentElement.classList.toggle('dark', theme === 'dark');
-        document.documentElement.classList.toggle('light', theme !== 'dark');
-      })();
-    </script>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta name="description" content={description} />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#131316" />
+        <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fcfcfd" />
+        <meta name="msapplication-TileColor" content="#131316" />
+        <meta name="robots" content={noindex ? "noindex,follow" : "index,follow"} />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap"
+            rel="stylesheet"
+        />
+        <script is:inline>
+            // use the os theme, or the toggle choice if the os theme did not change since
+            (() => {
+                const os = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+                let theme = os;
+                try {
+                    const stored = localStorage.getItem("theme");
+                    if (stored && localStorage.getItem("theme-os") === os) {
+                        theme = stored;
+                    } else {
+                        localStorage.removeItem("theme");
+                        localStorage.removeItem("theme-os");
+                    }
+                } catch {}
+                document.documentElement.classList.toggle("dark", theme === "dark");
+                document.documentElement.classList.toggle("light", theme !== "dark");
+            })();
+        </script>
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content={siteName} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:locale" content={siteLocale} />
+        {canonical && <meta property="og:url" content={canonical} />}
+        {resolvedOgImage && (
+            <Fragment>
+                <meta property="og:image" content={resolvedOgImage} />
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="630" />
+                <meta property="og:image:alt" content={`${info.name}, ${info.role}`} />
+            </Fragment>
+        )}
 
-    <meta property="og:type" content="website"/>
-    <meta property="og:site_name" content={siteName}/>
-    <meta property="og:title" content={title}/>
-    <meta property="og:description" content={description}/>
-    <meta property="og:locale" content={siteLocale}/>
-    {canonical &&
-            <meta property="og:url" content={canonical}/>}
-    {resolvedOgImage && (
-        <Fragment>
-            <meta property="og:image" content={resolvedOgImage}/>
-            <meta property="og:image:width" content="1200"/>
-            <meta property="og:image:height" content="630"/>
-            <meta property="og:image:alt" content={`${info.name}, ${info.role}`}/>
-        </Fragment>
-    )}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        {resolvedOgImage && <meta name="twitter:image" content={resolvedOgImage} />}
 
-    <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:title" content={title}/>
-    <meta name="twitter:description" content={description}/>
-    {resolvedOgImage &&
-            <meta name="twitter:image" content={resolvedOgImage}/>}
+        {canonical && <link rel="canonical" href={canonical} />}
 
-    {canonical &&
-            <link rel="canonical" href={canonical}/>}
-
-    <title>{title}</title>
-    {!noindex && (
-      <script is:inline type="application/ld+json" set:html={JSON.stringify({
-        "@context": "https://schema.org",
-        "@graph": [website, person]
-      })} />
-    )}
-</head>
-<body class="font-sans antialiased bg-background text-foreground flex flex-col min-h-screen">
-<Navigation />
-<main class="flex-grow flex flex-col">
-<slot/>
-</main>
-</body>
+        <title>{title}</title>
+        {!noindex && (
+            <script
+                is:inline
+                type="application/ld+json"
+                set:html={JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@graph": [website, person],
+                })}
+            />
+        )}
+    </head>
+    <body class="font-sans antialiased bg-background text-foreground flex flex-col min-h-screen">
+        <Navigation />
+        <main class="flex-grow flex flex-col">
+            <slot />
+        </main>
+    </body>
 </html>

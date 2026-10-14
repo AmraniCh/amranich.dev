@@ -53,14 +53,7 @@
                 "I also updated the Minikube guide. I fixed the Kubernetes version and wrote down the problems I hit on the way, like the fluentd gem and the cert ownership, with their fixes. Then I added a new section to install the LTE chart.",
                 "To test everything, I connected srsRAN to the Magma AGW, ran a 4G LTE attach and checked the messages in Wireshark."
             ],
-            "stack": [
-                "Kubernetes",
-                "Minikube",
-                "Helm",
-                "srsRAN 4G",
-                "Wireshark",
-                "4G/LTE"
-            ],
+            "stack": ["Kubernetes", "Minikube", "Helm", "srsRAN 4G", "Wireshark", "4G/LTE"],
             "associatedWith": "The Linux Foundation",
             "links": [
                 {
@@ -185,9 +178,7 @@
     ],
     "openSource": {
         "github": "AmraniCh",
-        "orgs": [
-            "lazzard"
-        ],
+        "orgs": ["lazzard"],
         "repos": [
             {
                 "repo": "lazzard/php-ftp-client",
@@ -382,14 +373,7 @@
             },
             {
                 "category": "Networking, Telecom & Embedded",
-                "items": [
-                    "Wireshark",
-                    "srsRAN (4G LTE)",
-                    "ZeroMQ",
-                    "UDP",
-                    "TCP/IP",
-                    "Raspberry Pi"
-                ]
+                "items": ["Wireshark", "srsRAN (4G LTE)", "ZeroMQ", "UDP", "TCP/IP", "Raspberry Pi"]
             },
             {
                 "category": "DevOps & Tools",
@@ -408,14 +392,7 @@
             },
             {
                 "category": "Databases",
-                "items": [
-                    "MySQL",
-                    "PostgreSQL",
-                    "Oracle PL/SQL",
-                    "MongoDB",
-                    "Redis",
-                    "Percona Toolkit"
-                ]
+                "items": ["MySQL", "PostgreSQL", "Oracle PL/SQL", "MongoDB", "Redis", "Percona Toolkit"]
             },
             {
                 "category": "Web Programming",
@@ -449,12 +426,7 @@
             },
             {
                 "category": "Methodologies",
-                "items": [
-                    "Design Patterns",
-                    "SOLID",
-                    "UML",
-                    "TDD"
-                ]
+                "items": ["Design Patterns", "SOLID", "UML", "TDD"]
             }
         ],
         "certifications": [
@@ -495,17 +467,13 @@
                 "subtitle": "Track: Applied Artificial Intelligence (Informatique et IA appliquée)",
                 "institution": "Université Mohammed V (UM5), Faculté des Sciences, Rabat",
                 "period": "2025 - 2027",
-                "details": [
-                    "1st-year grade: 14.64/20 (Mention Bien)"
-                ]
+                "details": ["1st-year grade: 14.64/20 (Mention Bien)"]
             },
             {
                 "degree": "Bachelor's Degree in Software and Web Development (Software Engineering)",
                 "institution": "Abdelmalek Essaâdi University (UAE), École Normale Supérieure, Tétouan",
                 "period": "2020",
-                "details": [
-                    "Mention Très Bien (highest honors)"
-                ]
+                "details": ["Mention Très Bien (highest honors)"]
             }
         ],
         "awards": [
