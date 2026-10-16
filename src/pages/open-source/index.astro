@@ -71,18 +71,20 @@ const linkClass =
                                     </a>
                                     ]
                                 </span>
-                                <span>
-                                    [forks:{" "}
-                                    <a
-                                        href={`${repo.url}/forks`}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        class={linkClass}
-                                    >
-                                        {formatCount(repo.forks)}
-                                    </a>
-                                    ]
-                                </span>
+                                {repo.forks > 0 && (
+                                    <span>
+                                        [forks:{" "}
+                                        <a
+                                            href={`${repo.url}/forks`}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            class={linkClass}
+                                        >
+                                            {formatCount(repo.forks)}
+                                        </a>
+                                        ]
+                                    </span>
+                                )}
                                 {repo.downloads && (
                                     <span>
                                         [{repo.downloads.label}:{" "}
