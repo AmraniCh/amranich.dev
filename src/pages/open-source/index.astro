@@ -34,7 +34,7 @@ const linkClass =
                     ]
                 </div>
                 <div>
-                    [stars:{" "}
+                    [total stars:{" "}
                     <a
                         href={`${stats.profileUrl}?tab=repositories&sort=stargazers`}
                         target="_blank"
@@ -143,7 +143,9 @@ const linkClass =
             </div>
 
             <div>
-                <h2 class="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-4">Contributions</h2>
+                <h2 class="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-4">
+                    Featured contributions
+                </h2>
                 <div class="space-y-6">
                     {stats.contributions.map(item => (
                         <div class="border-l-2 border-border/60 pl-4 space-y-1.5">
