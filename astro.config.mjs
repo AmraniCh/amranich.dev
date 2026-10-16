@@ -15,6 +15,7 @@ import { remarkCodeGroups, rehypeCodeTabs } from "./src/plugins/code-tabs.ts";
 import { rehypeExternalLinks } from "./src/plugins/rehype-external-links.ts";
 
 // also serve the sitemap at /sitemap.xml, the address most tools try first
+/** @type {import("astro").AstroIntegration} */
 const sitemapAlias = {
     name: "sitemap-alias",
     hooks: {
