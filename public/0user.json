@@ -489,14 +489,20 @@
                 "degree": "Master of Science (MSc) in Computer Science and Telecommunications",
                 "subtitle": "Track: Applied Artificial Intelligence (Informatique et IA appliquée)",
                 "institution": "Université Mohammed V (UM5), Faculté des Sciences, Rabat",
-                "period": "2025 - 2027",
-                "details": ["1st-year grade: 14.64/20 (Mention Bien)"]
+                "period": "2025 – 2027",
+                "details": ["Grade (1st year): Mention Bien (with honors)"]
             },
             {
                 "degree": "Bachelor's Degree in Software and Web Development (Software Engineering)",
                 "institution": "Abdelmalek Essaâdi University (UAE), École Normale Supérieure, Tétouan",
                 "period": "2020",
-                "details": ["Mention Très Bien (highest honors)"]
+                "details": ["Grade: Mention Très Bien (highest honors)"]
+            },
+            {
+                "degree": "High School Diploma (Baccalauréat) in Physical Sciences",
+                "institution": "Lycée Roi Fahd Ibn Abdelaziz, Tangier",
+                "period": "2017",
+                "details": ["Main subjects: Mathematics, Calculus, Probability, Physics"]
             }
         ],
         "awards": [
