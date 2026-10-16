@@ -1,4 +1,5 @@
 // @ts-check
+import { copyFileSync } from "node:fs";
 import { defineConfig } from "astro/config";
 import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
@@ -12,6 +13,16 @@ import rehypeSlug from "rehype-slug";
 import { remarkCallouts } from "./src/plugins/remark-callouts.ts";
 import { remarkCodeGroups, rehypeCodeTabs } from "./src/plugins/code-tabs.ts";
 import { rehypeExternalLinks } from "./src/plugins/rehype-external-links.ts";
+
+// also serve the sitemap at /sitemap.xml, the address most tools try first
+const sitemapAlias = {
+    name: "sitemap-alias",
+    hooks: {
+        "astro:build:done": ({ dir }) => {
+            copyFileSync(new URL("sitemap-0.xml", dir), new URL("sitemap.xml", dir));
+        },
+    },
+};
 
 const expressiveConfig = {
     themes: ["github-dark"],
@@ -73,7 +84,7 @@ const processor = unified({
 
 export default defineConfig({
     site: "https://amranich.dev",
-    integrations: [react(), sitemap()],
+    integrations: [react(), sitemap(), sitemapAlias],
     // old site languages
     redirects: {
         "/en": "/",
