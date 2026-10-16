@@ -230,6 +230,10 @@
                     "text": "PHP Innovation Award, #1 Feb 2022",
                     "url": "/certs/phpclasses-february-2022-innovation-award.pdf"
                 }
+            },
+            {
+                "repo": "lazzard/psr7-response-sender",
+                "packagist": "lazzard/psr7-response-sender"
             }
         ],
         "contributions": [
