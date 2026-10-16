@@ -43,10 +43,8 @@
     --sidebar-accent-foreground: oklch(21% 0.006 286);
     --sidebar-border: oklch(90% 0.004 286);
     --sidebar-ring: #2f5f9e;
-    --font-jetbrains-mono:
-        "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-        monospace;
-    --font-jetbrains: var(--font-jetbrains-mono);
+    --font-body: "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+    --font-code: "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
 }
 
 /* Dark theme colors */
@@ -134,8 +132,8 @@
 }
 
 @theme inline {
-    --font-sans: var(--font-jetbrains);
-    --font-mono: var(--font-jetbrains);
+    --font-sans: var(--font-body);
+    --font-mono: var(--font-code);
     --color-background: var(--background);
     --color-foreground: var(--foreground);
     --color-card: var(--card);

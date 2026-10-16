@@ -25,7 +25,7 @@ const expressiveConfig = {
         borderColor: "var(--border)",
         codeBackground: "var(--code-panel-bg)",
         codeForeground: "#e1e4e8",
-        codeFontFamily: "var(--font-jetbrains-mono)",
+        codeFontFamily: "var(--font-code)",
         codeFontSize: "0.8125rem",
         codeLineHeight: "1.7",
         codePaddingBlock: "1rem",

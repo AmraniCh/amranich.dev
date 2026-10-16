@@ -46,7 +46,7 @@ const projects = await Promise.all(
             <h2 class="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Connect</h2>
 
             <div class="mb-10 p-4 border border-border/70 bg-card rounded-lg">
-                <div class="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm">
+                <div class="font-mono flex flex-wrap items-center gap-x-5 gap-y-2 text-sm">
                     {contacts.map(contact => (
                         <div>
                             [{contact.label}:{" "}
@@ -109,7 +109,7 @@ const projects = await Promise.all(
                                     <span class="text-xs text-muted-foreground shrink-0">{project.date}</span>
                                 </div>
                                 <p class="text-sm text-foreground/80 text-pretty">{project.short}</p>
-                                <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs">
+                                <div class="font-mono flex flex-wrap items-center gap-x-4 gap-y-1 text-xs">
                                     {project.links.map(link => (
                                         <ProjectLinkItem link={link} linkClass={linkClass} />
                                     ))}
@@ -129,7 +129,7 @@ const projects = await Promise.all(
                                     )}
                                 </div>
                                 {project.related.length > 0 && (
-                                    <details class="group text-xs">
+                                    <details class="font-mono group text-xs">
                                         <summary class="w-fit cursor-pointer list-none text-muted-foreground hover:text-accent transition-colors [&::-webkit-details-marker]:hidden">
                                             <span class="group-open:hidden">[+ show related repos]</span>
                                             <span class="hidden group-open:inline">[- hide related repos]</span>
