@@ -124,5 +124,13 @@ const website = {
         <main class="flex-grow flex flex-col">
             <slot />
         </main>
+        {import.meta.env.PROD && (
+            <script
+                is:inline
+                type="module"
+                src="https://static.cloudflareinsights.com/beacon.min.js"
+                data-cf-beacon='{"token": "7bc644d34e45424590adcedf2761f6ec"}'
+            />
+        )}
     </body>
 </html>
