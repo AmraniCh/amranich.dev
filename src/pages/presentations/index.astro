@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import Base from "../../layouts/Base.astro";
 import { info } from "../../lib/info";
+import { getCommitCount, formatCount } from "../../lib/opensource";
 import presentationsYaml from "../../content/presentations.yaml?raw";
 
 const sections = ["Paper presentations", "Project presentations", "Coursework"] as const;
@@ -14,14 +15,17 @@ const entries = (await getCollection("presentations")).sort(
     (a, b) => fileOrder.indexOf(a.id) - fileOrder.indexOf(b.id)
 );
 
-const items = entries.map(({ id, data }) => {
-    const project = data.project ? info.projects.find(p => p.title === data.project) : undefined;
-    if (data.project && !project) {
-        throw new Error(`presentations.yaml: no project named "${data.project}" in public/0user.json`);
-    }
-    const slides = data.slides ?? project?.links.find(link => link.label === "slides")?.url;
-    return { id, ...data, slides };
-});
+const items = await Promise.all(
+    entries.map(async ({ id, data }) => {
+        const project = data.project ? info.projects.find(p => p.title === data.project) : undefined;
+        if (data.project && !project) {
+            throw new Error(`presentations.yaml: no project named "${data.project}" in public/0user.json`);
+        }
+        const slides = data.slides ?? project?.links.find(link => link.label === "slides")?.url;
+        const commits = data.repo ? await getCommitCount(data.repo) : undefined;
+        return { id, ...data, slides, commits };
+    })
+);
 ---
 
 <Base
@@ -72,7 +76,7 @@ const items = entries.map(({ id, data }) => {
                                         <p class="text-sm text-foreground/80 leading-relaxed text-pretty">
                                             {item.description}
                                         </p>
-                                        {(item.slides || item.links.length > 0) && (
+                                        {(item.slides || item.links.length > 0 || item.commits !== undefined) && (
                                             <div class="font-mono flex flex-wrap items-center gap-x-4 gap-y-1 text-xs">
                                                 {item.slides && (
                                                     <span>
@@ -108,6 +112,20 @@ const items = entries.map(({ id, data }) => {
                                                         ]
                                                     </span>
                                                 ))}
+                                                {item.commits !== undefined && (
+                                                    <span>
+                                                        [commits:{" "}
+                                                        <a
+                                                            href={`https://github.com/${item.repo}/commits`}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            class={linkClass}
+                                                        >
+                                                            {formatCount(item.commits)}
+                                                        </a>
+                                                        ]
+                                                    </span>
+                                                )}
                                             </div>
                                         )}
                                     </article>

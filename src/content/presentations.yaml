@@ -54,6 +54,7 @@
   subtitle: "Original title: « Modélisation et analyse d'un historique d'écoutes Spotify avec MongoDB »"
   context: "Course: Data Engineering"
   supervisor: Pr. Safae Cherdal
+  repo: AmraniCh/spotify-listening-analytics-mongodb
   date: "Jul 2026"
   description: "As a team of 2, we modeled 12,000 Spotify listening events from a Kaggle dataset in MongoDB, added music genres with the Last.fm API, and measured the effect of indexes on query speed. I built the data pipeline, the MongoDB queries and the live dashboard."
   links:

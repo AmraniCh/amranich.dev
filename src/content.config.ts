@@ -41,6 +41,8 @@ const presentations = defineCollection({
             // project defenses can use the slides link of the project instead
             slides: z.string().optional(),
             project: z.string().optional(),
+            // github repo, to show its commits count
+            repo: z.string().optional(),
             links: z.array(link).default([]),
             language: z.string().optional(),
         })
