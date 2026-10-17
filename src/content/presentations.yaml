@@ -48,6 +48,29 @@
   project: FTPGuard
   language: in English
 
+- id: spotify-listening-analytics
+  title: "Spotify listening analytics with MongoDB"
+  section: Coursework
+  subtitle: "Original title: « Modélisation et analyse d'un historique d'écoutes Spotify avec MongoDB »"
+  context: "Course: Data Engineering"
+  supervisor: Pr. Safae Cherdal
+  date: "Jul 2026"
+  description: "As a team of 2, we modeled 12,000 Spotify listening events from a Kaggle dataset in MongoDB, added music genres with the Last.fm API, and measured the effect of indexes on query speed. I built the data pipeline, the MongoDB queries and the live dashboard."
+  links:
+    - {
+        label: report,
+        text: pdf,
+        url: "https://github.com/AmraniCh/spotify-listening-analytics-mongodb/blob/master/docs/Benrhanem_Chaymae_El_Amrani_Chakir_MGO6_Rapport.pdf",
+      }
+    - {
+        label: dataset,
+        text: kaggle,
+        url: "https://www.kaggle.com/datasets/arshmankhalid/shopify-streaming-history-dataset",
+      }
+    - { label: dashboard, text: live, url: "https://spotify-listening-analytics-app.streamlit.app" }
+    - { label: source, text: github, url: "https://github.com/AmraniCh/spotify-listening-analytics-mongodb" }
+  language: in French
+
 - id: patent-drafting-exercise
   title: "Patent drafting exercise: adaptive system for low-frequency magnetic field cancellation with digital signal processing"
   section: Coursework
